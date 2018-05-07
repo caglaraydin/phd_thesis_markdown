@@ -1,12 +1,49 @@
 
+% Dizin Ayarları
 
-% Table of contents formatting
-\renewcommand{\contentsname}{Table of Contents}
-\setcounter{tocdepth}{3}
+% \def\contentsname{\empty}
+% \setcounter{tocdepth}{6}
+\usepackage[dotinlabels]{titletoc}
+% \contentsmargin{2em}
+\titlecontents{chapter}[0em]{\singlespace}{\makebox[4em][l]{\thecontentslabel.\quad\enspace}}{}{\titlerule*[0.75pc]{.}\contentspage}
 
-% Headers and page numbering
+% Sections
+\dottedcontents{section}[4pc]{\singlespace}{4pc}{0.75pc}% %
+\dottedcontents{subsection}[4pc]{\singlespace}{4pc}{0.75pc}% %
+\dottedcontents{subsubsection}[4em]{\singlespace}{4em}{0.75pc}% %
+
+% Dizinlere Sayfa No yazısı eklemek için
+\addtocontents{toc}{~\hfill\textbf{\underline{Sayfa No}}\par}
+\addtocontents{lof}{~\hfill\textbf{\underline{Sayfa No}}\par}
+\addtocontents{lot}{~\hfill\textbf{\underline{Sayfa No}}\par}
+
+% Dizin başlıklarını düzeltmek için
+\setlength{\cftbeforetoctitleskip}{-8mm}
+\renewcommand{\contentsname}{\hfill\normalfont\normalsize\textbf{İÇİNDEKİLER}\hfill}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\setlength{\cftaftertoctitleskip}{28pt}
+
+\setlength{\cftbeforeloftitleskip}{-8mm}
+\renewcommand{\listfigurename}{\hfill\normalfont\normalsize\textbf{ŞEKİLLER DİZİNİ}\hfill}
+\setlength{\cftafterloftitleskip}{28pt}
+
+\setlength{\cftbeforelottitleskip}{-8mm}
+\renewcommand{\listtablename}{\hfill\normalfont\normalsize\textbf{TABLOLAR DİZİNİ}\hfill}
+\setlength{\cftafterlottitleskip}{28pt}
+
+% SAYFA NUMARALARI
 \usepackage{fancyhdr}
-\pagestyle{plain}
+\fancypagestyle{main}{              % Başlıklar
+    \fancyhf{}
+    \fancyhead[C]{\thepage}
+    \renewcommand{\headrulewidth}{0.0pt}
+    \pagenumbering{arabic}
+    \setcounter{page}{1}        
+}
+\pagestyle{plain}{                  % Ön Sayfalar
+    \pagenumbering{Roman}
+}
+
 
 % Following package is used to add background image to front page
 \usepackage{wallpaper}
@@ -25,9 +62,9 @@
 % \newcommand{\hsp}{\hspace{20pt}}
 % \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
 
-% % Fonts and typesetting
-% \setmainfont[Scale=1.1]{Helvetica}
-% \setsansfont[Scale=1.1]{Verdana}
+% Fonts and typesetting
+\setmainfont[Scale=1.0]{Times New Roman}
+\setsansfont[Scale=1.0]{Verdana}
 
 % FONTS
 \usepackage{xunicode}
@@ -40,6 +77,40 @@
 %Following line controls size of figure legends
 % \setsansfont[Scale=1.2]{Optima Regular}
 
+% CODE BLOCKS
+% \usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+
+% JAVA CODE BLOCKS
+\definecolor{backcolour}{RGB}{242,242,242}
+\definecolor{javared}{rgb}{0.6,0,0}
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35}
+\definecolor{javapurple}{rgb}{0.5,0,0.35}
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75}
+
+\lstdefinestyle{javaCodeStyle}{
+  language=Java,                         % the language of the code
+  backgroundcolor=\color{backcolour},    % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\fontsize{10}{8}\sffamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  keywordstyle=\color{javapurple}\bfseries,
+  stringstyle=\color{javared},
+  commentstyle=\color{javagreen},
+  morecomment=[s][\color{javadocblue}]{/**}{*/},
+  captionpos=t,                          % sets the caption-position to bottom
+  frame=single,                          % adds a frame around the code
+  numbers=left,
+  numbersep=10pt,                         % margin between number and code block
+  keepspaces=true,                       % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  columns=fullflexible,
+  showspaces=false,                      % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,                % underline spaces within strings only
+  showtabs=false,                        % show tabs within strings adding particular underscores
+  tabsize=2                              % sets default tabsize to 2 spaces
+}
+
 %Attempt to set math size
 %First size must match the text size in the document or command will not work
 %\DeclareMathSizes{display size}{text size}{script size}{scriptscript size}.
@@ -48,39 +119,87 @@
 % ---- CUSTOM AMPERSAND
 % \newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
 
-% HEADINGS
-\usepackage{sectsty}
-\usepackage[normalem]{ulem}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\scshape\large}
-\subsubsectionfont{\rmfamily\bfseries\upshape\large}
-% \sectionfont{\rmfamily\mdseries\Large}
-% \subsectionfont{\rmfamily\mdseries\scshape\normalsize}
-% \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+% Başlıklar
+\usepackage{titlesec}
+\titleformat{name=\chapter,numberless}[block]           % Ön sayfaların başlık ayarı
+{\normalfont\normalsize\bfseries\centering}{}{0pt}{}
+\titlespacing{name=\chapter,numberless}{0mm}{-8mm}{28pt}
+
+\titleformat{\chapter}[hang]                     % \titleformat{⟨command⟩}[⟨shape⟩]{⟨format⟩}{⟨label⟩}{⟨sep⟩}{⟨before-code⟩}[⟨after-code⟩]
+{\normalfont\normalsize\bfseries}{\thechapter.}{1ex}{}
+\titlespacing{\chapter}{10mm}{2mm}{28pt}          %\titlespacing*{⟨command⟩}{⟨left⟩}{⟨before-sep⟩}{⟨after-sep⟩}[⟨right-sep⟩]
+\titlelabel{\thetitle.\quad}                        % Section başlıklarında rakamdan sonra nokta koymak için
+% \assignpagestyle{\chapter}{empty}                   % Chapter larda sayfa numarasını iptal etmek için
+
+\titleformat{\section}[hang]
+{\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesection.}{1ex}{}
+\titlespacing{\section}{10mm}{40pt}{21pt}
+
+\titleformat{\subsection}[hang]
+{\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesubsection.}{1ex}{}
+\titlespacing{\subsection}{10mm}{40pt}{21pt}
+
+\titleformat{\subsubsection}[hang]
+{\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesubsection.}{1ex}{}
+\titlespacing{\subsubsection}{10mm}{40pt}{21pt}
+
 
 % Set figure legends and captions to be smaller sized sans serif font
-\usepackage[font={footnotesize,sf}]{caption}
-
+\usepackage[singlelinecheck=false, format=hang, justification=justified, font=normalsize, labelsep=period]{caption}
 \usepackage{siunitx}
+\captionsetup[figure]{name=Şekil}
+\captionsetup[table]{name=Tablo}
+% \newlength{\mylen}
 
-% Adjust spacing between lines to 1.5
+\addtolength{\cftfignumwidth}{30pt}% More space
+\addtolength{\cfttabnumwidth}{30pt}% More space
+\DeclareCaptionListFormat{figprefix}{#1\figurename~#2}
+\DeclareCaptionListFormat{tabprefix}{#1\tablename~#2}
+\captionsetup[figure]{listformat=figprefix}
+\captionsetup[table]{listformat=tabprefix}
+
+
+
+% \renewcommand{\cftfigpresnum}{\figurename\enspace}
+% \renewcommand{\cftfigaftersnum}{:}
+% \settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+% \addtolength{\cftfignumwidth}{\mylen}
+
+% \renewcommand{\cfttabpresnum}{\tablename\enspace}
+% \renewcommand{\cfttabaftersnum}{:}
+% \settowidth{\mylen}{\cfttabpresnum\cfttabaftersnum}
+% \addtolength{\cfttabnumwidth}{\mylen}
+
+
+% \usepackage{etoolbox}
+% \makeatletter
+% \patchcmd{\@caption}{\csname the#1\endcsname}{\csname fnum@#1\endcsname}{}{}
+% \renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{4.5em}} % default for 3rd arg: 2.3em
+% \let\l@table\l@figure % as in article.cls
+% \makeatother
+
+
+% Satır aralığı ayarı
 \usepackage{setspace}
-\onehalfspacing
+% \onehalfspacing
 % \doublespacing
-\raggedbottom
+% \raggedbottom
+\setstretch{1.44}
 
-% Set margins
-\usepackage[top=1.5in,bottom=1.5in,left=1.5in,right=1.4in]{geometry}
-% \setlength\parindent{0.4in} % indent at start of paragraphs (set to 0.3?)
-\setlength{\parskip}{9pt}
 
-% Add space between pararaphs
-% http://texblog.org/2012/11/07/correctly-typesetting-paragraphs-in-latex/
-% \usepackage{parskip}
-% \setlength{\parskip}{\baselineskip}
+% Sayfa yapısı 
+\usepackage[top=3cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
+
+
+
+% Parağraf ayarları
+\usepackage{indentfirst}        % Başlık sonrası ilk parağrafın çekmesi
+\setlength{\parindent}{10mm}    % Parağraf başlarının çekme mesafesi
+\setlength{\parskip}{0pt}       % Parağraflar arası mesafe http://texblog.org/2012/11/07/correctly-typesetting-paragraphs-in-latex/
+
 
 % Set colour of links to black so that they don't show up when printed
-\usepackage{hyperref}
+% \usepackage{hyperref}
 \hypersetup{colorlinks=false, linkcolor=black}
 
 % Tables

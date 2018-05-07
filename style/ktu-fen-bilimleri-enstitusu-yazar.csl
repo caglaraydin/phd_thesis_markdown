@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="tr-TR">
+  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
+  <info>
+    <title>KTÜ Fen Bilimleri Enstitüsü - Yazar</title>
+    <title-short>KTÜ FBE - Yazar</title-short>
+    <id>http://www.zotero.org/styles/ktu-fen-bilimleri-enstitusu-yazar</id>
+    <link rel="self" href="http://www.zotero.org/styles/ktu-fen-bilimleri-enstitusu-yazar"/>
+    <author>
+      <email>caglaraydin@ktu.edu.tr</email>
+      <name>Çağlar Aydın</name>
+    </author>
+    <updated>2018-01-08T12:13:01+00:00</updated>
+  </info>
+  <citation et-al-min="3" et-al-use-first="1">
+    <layout delimiter="; " prefix="(" suffix=")">
+      <names variable="author" suffix=", ">
+        <name form="short" and="text" initialize-with="."/>
+        <substitute>
+          <names variable="editor translator"/>
+        </substitute>
+      </names>
+      <date date-parts="year" form="text" variable="issued"/>
+    </layout>
+  </citation>
+  <bibliography hanging-indent="true">
+    <sort>
+      <key variable="author"/>
+      <key variable="issued"/>
+    </sort>
+    <layout suffix=".">
+      <names variable="author" suffix=",">
+        <name and="text" delimiter-precedes-last="never" initialize-with="." name-as-sort-order="all"/>
+        <substitute>
+          <names variable="editor translator"/>
+        </substitute>
+      </names>
+      <date date-parts="year" form="text" variable="issued" prefix=" " suffix="."/>
+      <text variable="title" prefix=" "/>
+      <text variable="container-title" prefix=", "/>
+      <text variable="publisher" text-decoration="underline" prefix=", "/>
+      <text variable="volume" prefix=", "/>
+      <text variable="issue" prefix=", "/>
+      <text variable="page" prefix=", "/>
+      <text variable="publisher-place" prefix=", "/>
+    </layout>
+  </bibliography>
+</style>

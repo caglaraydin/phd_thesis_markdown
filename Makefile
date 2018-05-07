@@ -6,6 +6,7 @@ INPUTDIR=$(BASEDIR)/source
 OUTPUTDIR=$(BASEDIR)/output
 TEMPLATEDIR=$(INPUTDIR)/templates
 STYLEDIR=$(BASEDIR)/style
+APPENDIXDIR=$(INPUTDIR)/appendix
 
 BIBFILE=$(INPUTDIR)/references.bib
 
@@ -26,6 +27,7 @@ help:
 
 pdf:
 	pandoc "$(INPUTDIR)"/*.md \
+	-A "$(APPENDIXDIR)"/*.md \
 	-o "$(OUTPUTDIR)/thesis.pdf" \
 	-H "$(STYLEDIR)/preamble.tex" \
 	--template="$(STYLEDIR)/template.tex" \
@@ -34,9 +36,11 @@ pdf:
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
-	-V documentclass:report \
+	-V documentclass=report \
+	-V lang=tr-TR \
 	-N \
-	--pdf-engine=xelatex 
+	--pdf-engine=xelatex \
+	--verbose
 
 tex:
 	pandoc "$(INPUTDIR)"/*.md \
@@ -45,10 +49,11 @@ tex:
 	--bibliography="$(BIBFILE)" \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
-	-V documentclass:report \
+	-V documentclass=report \
+	-V lang=tr-TR \
 	-N \
 	--csl="$(STYLEDIR)/ref_format.csl" \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 docx:
 	pandoc "$(INPUTDIR)"/*.md \
