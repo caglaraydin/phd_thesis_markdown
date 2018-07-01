@@ -36,6 +36,7 @@
 \fancypagestyle{main}{              % Başlıklar
     \fancyhf{}
     \fancyhead[C]{\thepage}
+    \setlength{\headheight}{15pt} 
     \renewcommand{\headrulewidth}{0.0pt}
     \pagenumbering{arabic}
     \setcounter{page}{1}        
@@ -140,8 +141,12 @@
 \titlespacing{\subsection}{10mm}{40pt}{21pt}
 
 \titleformat{\subsubsection}[hang]
-{\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesubsection.}{1ex}{}
+{\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesubsubsection.}{1ex}{}
 \titlespacing{\subsubsection}{10mm}{40pt}{21pt}
+
+% \titleformat{\paragraph}[hang]
+% {\normalfont\normalsize\bfseries\setstretch{0.1}}{\thesubsection.}{1ex}{}
+% \titlespacing{\paragraph}{10mm}{40pt}{21pt}
 
 
 % Set figure legends and captions to be smaller sized sans serif font
@@ -189,14 +194,14 @@
 
 % Sayfa yapısı 
 \usepackage[top=3cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
-
+% \usepackage{showframe}
 
 
 % Parağraf ayarları
 \usepackage{indentfirst}        % Başlık sonrası ilk parağrafın çekmesi
 \setlength{\parindent}{10mm}    % Parağraf başlarının çekme mesafesi
 \setlength{\parskip}{0pt}       % Parağraflar arası mesafe http://texblog.org/2012/11/07/correctly-typesetting-paragraphs-in-latex/
-
+\hyphenpenalty=100000           % Kelimelerde hecelemeyi engellemek için değeri büyüt
 
 % Set colour of links to black so that they don't show up when printed
 % \usepackage{hyperref}

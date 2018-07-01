@@ -1,28 +1,16 @@
 # BULGULAR VE İRDELEMELER
 
-\thispagestyle{empty}
-
-## Ortahisar’ın Genel Karakteri
-
-### Konum ve Ulaşım
-
-### Tarihi ve Karakteri
-
-### Sosyal ve Kültürel Yaşam
-
-### Coğrafya ve İklim
-
- 
+\thispagestyle{empty} 
 
 ## Ortahisar’ın Mimari Dil Analizi ve Biçim Grameri
 
-### Analiz Yöntemi
+### Fiziki Analiz
 
 #### Parsel Kullanım Analizi
 
 #### İnşa Edilmiş Alan ve Açık Alan Analizi
 
-#### Yol Ağı ve Değişikleri Analizi
+<!-- #### Yol Ağı ve Değişikleri Analizi-->
 
 #### Yapı Taban Alanı Analizi
 
@@ -36,9 +24,9 @@
 
 #### Çatı Formu ve Karakteri Analizi
 
-#### Taşıyıcı Sistem Analizi
+<!-- #### Taşıyıcı Sistem Analizi-->
 
-#### Ek Bina Analizi
+<!-- #### Ek Bina Analizi-->
 
 #### Cephe Bitiş Analizi
 
@@ -47,3 +35,6 @@
 #### Cephe Çıkmaları Analizi
 
 ### Bağlamsal Analizler
+
+## Yazılım
+

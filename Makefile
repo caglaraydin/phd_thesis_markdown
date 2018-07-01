@@ -32,7 +32,7 @@ pdf:
 	-H "$(STYLEDIR)/preamble.tex" \
 	--template="$(STYLEDIR)/template.tex" \
 	--bibliography="$(BIBFILE)" 2>pandoc.log \
-	--csl="$(STYLEDIR)/ref_format.csl" \
+	--csl="$(STYLEDIR)/apa.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
