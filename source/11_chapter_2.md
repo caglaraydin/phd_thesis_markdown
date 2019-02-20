@@ -1,5 +1,3 @@
-
-
 # YAPILAN ÇALIŞMALAR
 
 \thispagestyle{empty}
@@ -96,7 +94,7 @@ Yöresel mimari analizlerine bakıldığında Japon çay odaları, Buffalo'nun b
 
 Sanat stillerinin analizini yapan çalışmalarda *Richard Diebenkorn*, *Georges Vantongerloo* ve *Fritz Glarner*'ın tabloları, *Hepplewhite* tarzı sandalyelerin arkalıklarının tasarımı, *Frank Lloyd Wright*'ın pencere tasarımları ve antik Yunan çömleklerinin süsleme tasarımları incelenmiştir [@Kirsch:1986bi; @Knight:1989ec; @Knight:1980cl; @Rollo:1995bz; @Knight:1986wu]. *Wright*'ın mimari tarzı için hazırlanan gramer ilk üç boyutlu mimari gramer çalışması olması açısından önemlidir.
 
-Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villaları, Malagueira konutları ve Prairie konutlarını oluşturdukları tek gramer, Osmanlı camilerinin ontolojisini kullanan tipolojik tanımlama (description) gramerleri  ve tipolojik tanımlama gramerleri için genel gösterim önerisi göze çarpmaktadır [@Benros:2014bx; @Stouffs:2015if; @Stouffs:2016ip]. 
+Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villaları, Malagueira konutları ve Prairie konutlarını oluşturdukları tek gramer, Osmanlı camilerinin ontolojisini kullanan tipolojik tanımlama (description) gramerleri ve tipolojik tanımlama gramerleri için genel gösterim önerisi göze çarpmaktadır [@Benros:2014bx; @Stouffs:2015if; @Stouffs:2016ip]. 
 
 <!-- [@Aksoy:2001vq] Örneklere buradan bakılabilir -->
 
@@ -170,7 +168,13 @@ CGA gramerlerinin tanımlanmasının ardından yordamsal modellemenin kolaylaşt
 - Rome Reborn 2.0: A Case Study of Virtual City Reconstruction Using Procedural Modeling Techniques [@Dylla:2010tm]
 - Urban Topography of Magnesia on the Maeander [@Saldana:2015wj].
 
+<!-- 
 
+[@Zhu:2017vm]
+
+[@Jesus:fi] Related work kısmı
+
+-->
 
 <!--
 
@@ -368,6 +372,12 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 
 ## Ortahisar’ın Genel Karakteri
 
+Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.
+
+![Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.](source/figures/vaziyetplanitescilli.pdf){width=100%}
+
+<!-- 
+
 Zağnos ve Tabakhane vadileri arasında kalan plato üzerine kurulu olan Ortahisar, Trabzon kentinin en eski yerleşimi olarak surlar tarafından çevrilmiş şekilde 
 
 "Orta - İç Kale" yerleşkesi
@@ -380,10 +390,20 @@ Kentin mimar yapı kültürü M.Ö. 7. yy.a kadar dayanmaktadır.
 
 ![TrabzonMap](source/figures/TrabzonMap.png){width=100%}
 
-### Konum ve Ulaşım
+-->
+
+### Konum
 
 ### Tarihi ve Karakteri
+
+## Alan Çalışması
+
+Alan rölöveleri iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
+
+<!-- 
 
 ### Sosyal ve Kültürel Yaşam
 
 ### Coğrafya ve İklim
+
+-->
