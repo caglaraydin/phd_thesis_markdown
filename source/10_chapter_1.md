@@ -52,16 +52,20 @@ Araştırma da iki kademeli bir süreç işlenecektir;
    2. Analiz çalışması: Evlere ait veriler toplandıktan sonra aşağıda belirtilen özelliklere göre analizleri yapılacaktır.
 
        - Yapı taban alanı
-       - Yapı hacmi
 
-         <!--Plan tipi-->
-       - Kat sayısı
-       - Yapı kademelenmesi
-       - Çatı tipi ve özellikleri
-       - Cephe karakteri ve elemanları
-       - Çıkma tipi
-       - Parsel kullanımı
-       - Bahçe içi yerleşim
+         <!--Yapı hacmi, Plan tipi-->
+
+       - Kat sayısı ve yüksekslikleri
+
+       - Cephe karakteri
+
+       - Cephe çıkmaları
+
+       - Pencere genişlikleri ve yükseklikleri
+
+       - Çatı formu ve eğimi
+
+         <!-- Parsel kullanımı, Bahçe içi yerleşim -->
 
    3. Sentez çalışması: Çıkarılan veriler gruplar halinde tablolara dökülerek kural oluşturmak için gerekli sayısal özellikler organize edilecektir. Bu sayısal veriler eklenti oluştururken izlenecek veri akış şemasının oluşturulmasında kullanılacaktır.
 
