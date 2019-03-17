@@ -2,105 +2,37 @@
 
 \thispagestyle{empty}
 
-## Kompütasyonel Tasarım ve Algoritmaların Tarihi
-
->   When God calculates and exercises his thought, the world is created. *Leibniz*
-
-**Kompütasyon Nedir?**
-
-Latince *computare* kökünden gelen kompütasyon (computation) kelimesi aritmetik hesaplama yapma metodu/işlemi/süreci olarak tanımlanmaktadır. Kökü oluşturan *com* beraber/ile anlamına gelirken, *putare* hesap etmek/hesap görmek, çözmek ya da birşey hakkında anlaşmaya varmak anlamlarına gelmektedir [@Anonymous:rwSizyaB]. Fakat genellikle dijitalleştirme, bilgisayara işleme-kaydetmek, otomasyon anlamlarına gelen kompütarize etmek (computerization) ile karıştırılmaktadır. Kompütasyon bilinmeyeni veya net olmayanı tanımlanmış süreçler üzerinden matematiksel veya mantıksal yöntemler ile araştırarak çözmeye çalışmaktadır [@Terzidis:2006ud]. Bu matematiksel veya mantıksal yöntem grupları algoritmaları oluşturmaktadır.
-
-<!-- Kompütasyon biraz daha açılabilir burada Menges:2011tm s.10, s.13 Systems thinkingden bir önceki paragraf -->
-
-**Algoritma Nedir?**
-
-Günümüzde algoritmalar artık her yerde karşımıza çıkmakta ve insanın günlük yaşamını kolaylaştırmak için geliştirilmektedir. Makinelerin icadından önce algoritmalar matematiksel ve mantıksal problemlerin çözülmesi veya anlaşılması için kullanılmaktaydılar. Makinelerin, özellikle bilgisayarların, hayatımıza girmesi ile beraber algoritmalar makineler ile anlaşabilmemize yarayan vazgeçilmez bir dil haline geldiler. Başlangıçta hesaplama yapabilmek için geliştirilen algoritmalar günümüzde yapay zeka olarak karşımızı çıkmaktadırlar.
-
-Algoritma, sınırlı sayıda adımda bir sorunun cevabını veya bir problemin çözümünü üreten sistematik işlem/yöntem olarak tanımlanmaktadır. Kelime arapça kökenli olup 9. yüzyılda yaşamış İranlı matematikçi El-Harezmī'nin aritmetik ile ilgili olan “Hint Rakamlarıyla Hesaplama Üzerine” eserinin latince çevirisi *Algoritmi de numero Indorum*'dan türemiştir [@Brittanica:2006tb]. Başka kaynaklarda ise kelimenin El-Harezmī‘nin isminin latinceye çevirisi olan *Algorismus'dan* geldiği belirtilmektedir [@Anonymous:15wfbqHt; @Anonymous:RePk8dlh].
-
-**Algoritmaların ilk kullanımı**
-
-<!-- Egyptian multiplication ilk algoritma olabilir. https://en.wikipedia.org/wiki/Timeline_of_algorithms -->
-
-Tarihte bilinen ilk algoritma muhtemelen Babil Metodu‘dur. Bir sayının karekökünün bulunması amacı ile kullanılmıştır. Babilliler bu algoritmanın matematiksel yöntemini açıklamak yerine örnekler göstererek tanımlamıştırlar. Bu yöntemin tanımlanması İskenderiyeli Heron tarafından yapılmıştır [@heath2013history]. Bu yüzden Heron Metodu olarakta adlandırılmaktadır. Ancak yazılı olarak bilinen ilk algoritma *Euclid* tarafından MÖ. 300’lü yıllarda tanımlanmıştır. Öklid algoritması olarak adlandırılan yöntem iki sayının en büyük ortak bölenini bulmak için kullanılmaktadır.
-
-**Algoritmaların makinelerde kullanımı ve ilk programlama**
-
-İnsanlar işleri kolaylaştırabilmek veya hızlandırabilmek için tarih boyunca yeni keşiflerde bulunmuşlardır. Bu keşifler algoritmaların çalıştığı makineler olarak karşımıza çıkmaktadır. Buharlı makinelerin icadından yaklaşık bir asır sonra Fransız Joseph Marie Jacquard 1800'lerin başında delikli kart dizisi ile çalışan programlanabilir ilk makineyi üretmiştir (Şekil \ref{JacquardLoom}). Dokuma işlerini hızlandırmak için ürettiği makine karmaşık desenli halıları renkli ipliklerin takılı olduğu iğnelerin kartlar üzerindeki boşluklardan geçip geçmemesini kontrol ederek üretim yapıyordu. Bu ikili (binary) sistem bir anlamda yazılımların ve numerik kontrollü makinelerin başlangıcı olmuştur [@Llach:2015ev].
-
-![Jacquard Loom diye adlandırılan ilk programlanabilir makine. \label{JacquardLoom}](http://www.pvcloom.com/wp-content/uploads/2012/04/PSM_V39_D325_Carpet_loom_with_jacquard_attachment.jpg)
-
-Delikli kartlar ile programlama özelliği Charles Babbage tarafından 1837’de tasarlanan ilk bilgisayar olarak adlandırılan Analitik Makine ile kullanıcı arasındaki iletişimi sağladı. Ada Lovelace bu bilgisayar üzerinde Charles Babbage‘ın algoritmalarını altlık olarak kullanarak ilk bilgisayar programını 1843 yılında yazdı. İlk bilgisayar programı olarak adlandırılmasının sebebi Ada Lovelace tarafından “backing” olarak adlandırılan çeşitli parametrelere bağlı bir dizi döngülerin ve koşulların kullanılmasıdır[^1] [@Frazer:2016bs]. Yaklaşık bir asır sonra, 1936 yılında Alan Turing günümüzde kullandığımız dijital bilgisayarların atası Turing Makinesi’ni icat etti. Turing, genel amaçlı bir bilgisayar modeli olarak düşünülebilen Turing Makinesi ile algoritma ve hesaplama kavramlarını araştıran teorik bilgisayar bilimlerinin geliştirilmesinde oldukça etkili oldu [@Cooper:2013iu].
-
-[^1]: Luigi Federico Menabrea, Sketch of the Analytical Engine invented by Charles Babbage, translated and appended with additional notes by Augusta Ada, Countess of Lovelace. Richard & JohnTaylor (London), 1843. Kitap *Analitik Makine*’nin çizimleri ve notları ile beraber *Ada Lovelace* tarafından yazılan notları ve programı kapsamaktadır.
-
-**Bilgisayarların gelişmesi ve savaş döneminin etkilerinin mimarlığa yansımaları**
-
-İkinci dünya savaşı sırasında ve sonrasında büyük ölçekli askeri faaliyetlerin sınırlı kaynak ile planlanması otomasyon ve programlama konularını yükselen trendler haline getirdi [@Dantzig:1998tv]. Bu trendler ile gelişen yöneylem araştırması (operations research), istatistiksel analiz ve matematiksel optimizasyon gibi teknikler bilim adamları tarafından benzer problemlerin çözüme ulaşması için sivil hayatta şirketlere, sanayiye ve devlet kuruluşlarına aktarıldı [@Hillier:2006tg]. Bu dönemde ortaya çıkan sibernetik, bilişsel bilim ve yapay zeka disiplinleri ile beraber tasarım eylemi bilişsel, algısal ve davranışsal temellere bağlı olarak yeniden şekillendirilmeye başlandı [@Upitis:2008wi]. Savaş sonrası bilimsel optimist ortamda, Eylül 1962’de John Christopher Jones ve Denis Thornley tarafından Imperial College London‘da düzenlenen Tasarım Yöntemleri Konferansı tasarıma rasyonel ve açık süreçler olarak bakılmasını başlattı ve tasarım yöntemlerini akademik anlamda bir konu veya araştırma alanı olarak tanımladı [@Cross:1993jv]. Konferans katılımcılarından matematikçi Gordon Pask tasarımın algoritmalar ve hesaplanabilir süreçler ile açıkça ifade edilebileceğini savunan ilk bilim insanlarındandı [@Pask:1963vc]. Ardı sıra gelen benzer konferanslar ile beraber Tasarım Yöntemleri Hareketi başta Bruce Archer, John Christopher Jones, Christopher Alexander ve Horst Rittel‘in ve diğer bilim insanlarının tasarım yöntemleri üzerine çalışmalarından doğdu [@Langrish:2016tm].
-
-<!-- Menges:2011tm s.11 son paragrafta sibernetiğin gelişmesi ile bilgisayarın insan gibi. -->
-
-**İlk CAD yazılımları**
-
-1960’ların başında Massachusetts Teknoloji Enstitüsü’nde de (MIT) bilgisayarları tasarım sürecine eklemleyebilmek için deneysel çalışmalar sürüyordu. Marvin Minsky [-@Minsky:1974ut] ve ekibi özellikle insan-bilgisayar etkileşimi kapsamında görsel algı ve eskiz çalışmaları üzerine çalışıyordu. Modern CAD programlarının atası olarak nitelendirilen Sketchpad programı Ivan Sutherland tarafından 1963 yılında doktora tezi çalışmasının ürünü olarak geliştirildi (Şekil \ref{Sketchpad}). Yazılım sonuç ürünün oluşturulmasında kullanılan geometrilerin arasındaki ilişkileri Sutherland’in atomic constraints diye adlandırdığı kısıtlar kullanarak organize ediyordu. Değiştirilebilir kısıt tanımlamaları ile beraber çizilen geometriler parametrik nesneler olarak sistem üzerinde oluşturuluyordu. Geometriler bir ışık kalemi vasıtasıyla geometriyi tanımlayan noktaların ekran üzerinden sisteme kaydedilmesiyle bilgisayara aktarılıyordu [@Sutherland:1963tw]. Grafik arayüzünün tam anlamıyla kullanıldığı ve insan bilgisayar ilişkisinin sibernetik açıdan ayrı bir boyuta taşındığı ilk program oldu.
-
-1965 yılında Harvard Üniversitesi’nde kurulan Bilgisayar Grafikleri ve Mekansal Analiz Laboratuvarı kartografik ve mimari bilgisayar uygulamaları üzerine çalışıyordu. Bu uygulamaların ilk örneklerinden *GRASP* adlı yazılım Eric Teicholz tarafından Sutherland‘in grafik arayüz altyapısı kullanılarak geliştirildi. Mekan planlama üzerine geliştirilen bu uygulama rastlantısal form yapım süreçleri ve yapı, güneş ve işlevsel organizasyon arasındaki karşılıklı ilişkileri temel alan kısıtları kullanan bir üretken sistem olarak çalışmaktaydı [@Howard:1998wf]. Bu iki program haricinde ilerleyen süreçte birçok programlar geliştirildi. Sketchpad‘in ortaya koyduğu parametriklik, ilişkilendirilebilirlik, kural tabanlı sistemler oluşturmak kompütasyonel yöntemleri tanımlamada temel oluşturmuştur. Ayrıca maddi bir nesne olarak görülen mimarlık algısını yıkarak birbiriyle bağlantılı ve beraber çalışan bir dizi sistemden oluşan bir sistem algısı yarattı [@Menges:2011tm].
-
-![Ivan Sutherland tarafından yazılan Sketchpad programı. \label{Sketchpad}](https://gajitz.com/wp-content/uploads/2009/09/sketchpad.jpg)
-
-Parametrik tasarım veya parametrik mimarlık terimleri bilgisayarın mimarlık alanında kullanımından daha önce İtalyan mimar Luigi Moretti tarafından 1940-42 arasında yaptığı çalışmalarla test edildi. *Architetture Parametrica* diye adlandırdığı çalışmalarında bilgisayar kullanmadan mimari tasarım ile parametrik eşitliklerin ilişkilerini araştırıyordu. Stadyum örneği üzerinden geliştirdiği parametrik model izleme açısı, beton maliyeti vb. 19 değişkenin birbiriyle ilişkisinin stadyum formunu nasıl şekillendirdiğini 1960’da Onikinci Milan Trienali'nde Parametrik Mimari sergisinde sergiledi [@Moretti:2002ve]. 1960-65 arasında tasarladığı Watergate Complex bilgisayarların önemli ölçüde kullanıldığı ilk inşaat işi olarak bilinmektedir [@Livingston:2002wf].
-
-![1960’da Onikinci Milan Trienali'nin Parametrik Mimari sergisinde sergilenen Luigi Moretti'nin Stadyum N modeli. Stadyum, ondokuz parametreden oluşan bir parametrik modelden türemiştir [@Moretti:2002ve]. \label{StadiumN}](source/figures/stadium_N.jpg)
-
-**Üretken Tasarım Sistemleri**
-
-1930’larda birçok filozof ve matematikçi, özellikle Alan Turing, Kurt Gödel, Alonzo Church gibi isimler bilgisayar biliminin gelişmesini ve kompütasyonun günümüzde ne anlamda olduğunu ve sınırlarını belirlediler [@Copeland:2013vk]. Devam eden yıllarda kompütasyon üzerine yapılan çalışmaları mantıksal ve biyolojik olarak iki dalda gruplamak mümkündür. Mantıksal dalda gelişen kompütasyonel çalışmalar matematik ve mantık dallarından gelen soyut çalışmalar üzerinden gelişirken, biyolojik dalda gelişenler ise biyoloji ve doğadan temellerini almaktadır (Tablo \ref{KompütasyonTarihi}). Günümüzdeki çalışmalarda artık bu iki dalda net ayrımlara gitmek pekte mümkün olmamaktadır [@Knight:2012ue].
-
-Table: Kompütasyonun ilk 50 yıllık kısa tarihi [@Knight:2012ue]. \label{KompütasyonTarihi}
-
-|          | **Mantıksal​**                    | **Biyolojiden esinlenen**                |
-| -------- | -------------------------------- | ---------------------------------------- |
-| 1940’lar | Üretim Sistemleri (Post)         | Sinir Ağları                             |
-| 1950’ler | Üretken Gramerler (Chomsky)      | Cellular Automata, Paralel Kompütasyon   |
-| 1960’lar | Pattern Gramerleri (Fu)          | Evrimsel Kompütasyon                     |
-| 1970’ler | Biçim Gramerleri (Stiny ve Gips) | ---                                      |
-| 1980’ler | ---                              | Artificial Life, Self Organizing Systems |
-
-\newpage
-
-Mantık tabanlı gelişmeler 1940’larda *Emil Post*‘un üretim sistemleri üzerine çalışmaları ile başladı. Üretim sistemleri soyut mantıksal dilleri tanımlamak ve anlamak için kullanıldı. 1950’lerin sonunda *Chomsky* bu çalışmayı geliştirdi ve üretken gramerleri kullanarak gündelik iletişimimizi sağlayan dillere uyguladı. 1960’ların sonuna gelindiğinde ise ilk defa semboller kullanarak model üretimi ve iki boyutlu desenlerin üretimi için Desen (*Pattern*) Gramerleri çalışması *King Sun Fu* tarafından tanıtıldı. 1972 yılında kurallarını direk olarak biçimler üzerinden tanımlayan, tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan Biçim Gramerleri *George Stiny* ve *James Gips* [-@Stiny:1972tt] tarafından tanıtıldı.
-
 ## Biçim Gramerleri
 
-Biçim gramerleri kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanabilir. 
+Biçim gramerleri 1972 yılında *George Stiny* ve *James Gips* [-@Stiny:1972tt] tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanmaktadır [@Tepavcevic:2012bl].
 
-Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar [@Knight:2012ue]. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil \ref{shapegrammarrule}). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü (magnitude) gösteren ağırlıklara (weight) sahip olabilirler [@Stiny:1980it]. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir. 
+Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar [@Knight:2012ue]. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil \ref{shapegrammarrule}). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü (magnitude) gösteren ağırlıklara (weight) sahip olabilirler [@Stiny:1980it]. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.
 
 ![Örnek biçim grameri kuralı [@Stiny:2006tq]. \label{shapegrammarrule}](source/figures/shape_grammar_rule.pdf){width=100%}
 
-Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarakta tanımlanabilmektedir. Görsel tasarım gramerleri olarakta adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan ayrıştırma-tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan ayrıştırmalardan-tanımlamalardan bakabilme düşüncesidir-**yöntemidir** [@Ozkar:2009ga].
+Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarakta tanımlanabilmektedir. Görsel tasarım gramerleri olarakta adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan ayrıştırma-tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan ayrıştırmalardan-tanımlamalardan bakabilme düşüncesidir [@Ozkar:2009ga].
 
 Tanıtımından sonra *Gips* [-@Gips:1975jg] doktora tezinde biçim gramerlerinin bilgisayar uygulamalarını geliştirdi, *Stiny* [-@Stiny:1975fj] ise matematiksel temelleri üzerine yoğunlaştı. *Stiny* [-@Stiny:1976im] tezinin ardından yazdığı *Two exercises in formal composition* adlı makalede biçim gramerlerinin kullanımını iki örnek üzerinden açıkladı ve bu örnekler daha sonra yapılan çalışmalara temel oluşturdu. Bu örneklerden ilki biçim gramerlerinin üretken bir sistem olarak yeni tasarım dili veya tarzı oluşturmak için özgün hali ile nasıl kullanılabildiğini açıklarken ikinci örnek ise mevcut bir tasarım dilinin veya tarzının biçim gramerleri kullanılarak analizinin nasıl yapılabildiğini göstermektedir. Ayrıca hem analitik hem de sentetik kullanıldığı örneklere de rastlamak mümkündür [@Knight:1999uf].
 
 ### Analiz Aracı Olarak Kullanımı (Analiz Gramerleri)
 
-Biçim gramerlerinin ilk kez analiz aracı olarak kullanımı *Stiny* [-@Stiny:1977im] tarafından Çin buz ışını pencere tasarımları üzerine yaptığı çalışmada ortaya konuldu. Bu çalışma ayrıca biçim gramerlerinin parametrik tasarım ile entegre edilerek parametrik biçim gramerlerinin tanımlandığı çalışma oldu. Beş adet kuraldan oluşan gramer Çin buz ışını ızgaraların bir araya gelme düzenini açıklamayı, örnek ızgaralar oluşturmayı ve sayısız yeni ızgara düzenleri oluşturmayı başardı. Ertesi yıl *Stiny* ve *Mitchell* [-@Stiny:1978cl] biçim gramerlerini *Pallodio* stili üzerinden test ederek ilk kez bir mimari üslubun analizinde kullandılar. "Palladio Grameri" kurallarını *Andrea Palladio* tarafından 1570 yılında yazılmış *Quattro Libri dell'Architettura*'da bulunan villa planı örneklerini inceleyerek tanımladılar. Parametrik biçim gramerlerini kullanarak villaların zemin kat planlarını önerdikleri sekiz aşamalı bir süreç ile oluşturdular. 
+Biçim gramerlerinin ilk kez analiz aracı olarak kullanımı *Stiny* [-@Stiny:1977im] tarafından Çin buz ışını pencere tasarımları üzerine yaptığı çalışmada ortaya konuldu. Bu çalışma ayrıca biçim gramerlerinin parametrik tasarım ile entegre edilerek parametrik biçim gramerlerinin tanımlandığı çalışma oldu. Beş adet kuraldan oluşan gramer Çin buz ışını ızgaraların bir araya gelme düzenini açıklamayı, örnek ızgaralar oluşturmayı ve sayısız yeni ızgara düzenleri oluşturmayı başardı. Ertesi yıl *Stiny* ve *Mitchell* [-@Stiny:1978cl] biçim gramerlerini *Pallodio* stili üzerinden test ederek ilk kez bir mimari üslubun analizinde kullandılar. "Palladio Grameri" kurallarını *Andrea Palladio* tarafından 1570 yılında yazılmış *Quattro Libri dell'Architettura*'da bulunan villa planı örneklerini inceleyerek tanımladılar. Parametrik biçim gramerlerini kullanarak villaların zemin kat planlarını önerdikleri sekiz aşamalı bir süreç ile oluşturdular.
 
-Bu çalışmanın ardından gelen yirmi yıllık bir dönemde biçim gramerleri neredeyse tamamen bir analiz aracı olarak mimarların tarzını, yöresel mimariyi, sanat stillerini vb. açıklamada kullanıldı. 
+Bu çalışmanın ardından gelen yirmi yıllık bir dönemde biçim gramerleri neredeyse tamamen bir analiz aracı olarak mimarların tarzını, yöresel mimariyi, sanat stillerini vb. açıklamada kullanıldı.
 
-Bu çalışmalar arasında *Giuseppe Terragni*, *Frank Lloyd Wright*, *Glenn Murcutt*, *Christopher Wren* gibi mimarların tarzları analiz edildi [@Flemming:1981hm; @Koning:1981bd; @Hanson:1986ty; @Buelinckx:1993io]. 
+Bu çalışmalar arasında *Giuseppe Terragni*, *Frank Lloyd Wright*, *Glenn Murcutt*, *Christopher Wren* gibi mimarların tarzları analiz edildi [@Flemming:1981hm; @Koning:1981bd; @Hanson:1986ty; @Buelinckx:1993io].
 
 Yöresel mimari analizlerine bakıldığında Japon çay odaları, Buffalo'nun bungalovları, Queen Anne evleri, geleneksel Tayvan evleri, geleneksel Türk evleri, sıra evler, klasik Osmanlı dönemi camileri ve Mughul bahçelerinin peyzaj mimarisi çalışmaları bulunmaktadır [@Knight:1981gp; @Downing:1981dx; @Flemming:1987js; @Chiou:1995gj; @Cagdas:1996ft; @Cagdas:1996fe; @Aksoy:2001wz; @Stiny:1980dya].
 
 Sanat stillerinin analizini yapan çalışmalarda *Richard Diebenkorn*, *Georges Vantongerloo* ve *Fritz Glarner*'ın tabloları, *Hepplewhite* tarzı sandalyelerin arkalıklarının tasarımı, *Frank Lloyd Wright*'ın pencere tasarımları ve antik Yunan çömleklerinin süsleme tasarımları incelenmiştir [@Kirsch:1986bi; @Knight:1989ec; @Knight:1980cl; @Rollo:1995bz; @Knight:1986wu]. *Wright*'ın mimari tarzı için hazırlanan gramer ilk üç boyutlu mimari gramer çalışması olması açısından önemlidir.
 
-Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villaları, Malagueira konutları ve Prairie konutlarını oluşturdukları tek gramer, Osmanlı camilerinin ontolojisini kullanan tipolojik tanımlama (description) gramerleri ve tipolojik tanımlama gramerleri için genel gösterim önerisi göze çarpmaktadır [@Benros:2014bx; @Stouffs:2015if; @Stouffs:2016ip]. 
+Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villaları, Malagueira konutları ve Prairie konutlarını oluşturdukları tek gramer, Osmanlı camilerinin ontolojisini kullanan tipolojik tanımlama (description) gramerleri ve tipolojik tanımlama gramerleri için genel gösterim önerisi göze çarpmaktadır [@Benros:2014bx; @Stouffs:2015if; @Stouffs:2016ip].
 
 <!-- [@Aksoy:2001vq] Örneklere buradan bakılabilir -->
 
 ### Tasarım Aracı Olarak Kullanımı (Özgün Gramerler)
 
-Biçim gramerlerinin analiz aracı olarak kullanımı yukarıdaki örneklere bakıldığında önemli ölçüde etkin olduğunu göstermektedir. Buna karşı başlangıçtan itibaren tamamen yeni tasarım dilleri oluşturma konusunda şaşırtıcı bir şekilde sınırlı sayıda örneğe rastlanmaktadır. Bu anlamda ilk çalışma *Stiny* ve *Gips* [-@Stiny:1972tt] tarafından tablolar üzerine yapılan biçim gramerleri oldu. *Stiny* ve *Gips*'in tezleri ve beraber yazdıkları *Algorithmic Aesthetics* kitabı da yine aynı konu üzerinde biçim grameri formalizmini örnekliyordu [@Knight:1999uf]. 
+Biçim gramerlerinin analiz aracı olarak kullanımı yukarıdaki örneklere bakıldığında önemli ölçüde etkin olduğunu göstermektedir. Buna karşı başlangıçtan itibaren tamamen yeni tasarım dilleri oluşturma konusunda şaşırtıcı bir şekilde sınırlı sayıda örneğe rastlanmaktadır. Bu anlamda ilk çalışma *Stiny* ve *Gips* [-@Stiny:1972tt] tarafından tablolar üzerine yapılan biçim gramerleri oldu. *Stiny* ve *Gips*'in tezleri ve beraber yazdıkları *Algorithmic Aesthetics* kitabı da yine aynı konu üzerinde biçim grameri formalizmini örnekliyordu [@Knight:1999uf].
 
 Bu çalışmalar haricinde *Stiny*'nin [-@Stiny:1976im] iki boyutlu formal kompozisyonlar ve ilk üç boyutlu biçim grameri çalışması olan Froebel'in yapı blokları üzerine çalışmaları örnek oluşturmaktadır [@Stiny:1980kq]. Froebel yapı blokları üzerine olan çalışma özgün gramerleri kullanarak sıfırdan yeni bir tasarım dili oluşturmak için izlenecek işleyişi tanımlamaktadır. Yeni tasarım dilini oluşturmak için önerilen işleyişte biçim sözlüğü, mekansal ilişkiler, biçim kuralları, başlangıç biçimi ve biçim gramerlerinin aşamalı olarak oluşturulması gerekmektedir. Bu alanda mimarlık ve diğer dallarda çeşitli çalışmalar kısıtlı sayıda gerçekleştirildi [@Knight:1989ex; @Knight:1992tp; @Knight:1993jka; @Knight:1994hx].
 
@@ -108,26 +40,23 @@ Bu çalışmalar haricinde *Stiny*'nin [-@Stiny:1976im] iki boyutlu formal kompo
 
 Özgün gramelerin tamamen baştan oluşturulması teori üzerinde olmaktadır [@Knight:1999uf]. Uygulamada ise yeni tasarım dilleri eski ve güncel dillerin değiştirilmesi, geliştirilmesi veya birleştirmesi gibi işlemler ile oluşturulur. Knight [-@Knight:1981ky] önerdiği mevcut tasarım dilleri üzerinden yeni tasarım dilleri üretme yönteminde ilk önce mevcut dil için bir gramer çıkartılarak analiz edilir, çıkarılan gramerin kuralları dönüştürülür ve dönüştürülen kurallar yeni bir gramerin ve dilin temeli haline gelir. Knight bu yöntemin bilinen dillerin tarihsel evrimini başarılı bir şekilde tanımlamak ve yeni tasarımlar geliştirmek için kullanabileceğini belirtmektedir. Bu nedenle bu yöntem hem analitik hem sentetiktir. Knight *Transformations in Design* adlı kitabında bu yöntemi kullanarak Frank Lloyd Wright'ın çalışmalarında, De Stijl resminde ve antik Yunan süsleme tasarımlarında stilistik değişimleri analiz etmek için uygulamaktadır [@Knight:1999uf]. Flemming [-@Flemming:1990tn] Knight'ın yöntemine benzer bir yöntemi bilgisayar üzerinde mimari kompozisyonları öğretebilmek için kullanmmıştır.
 
-Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de *Zaouiat Lakhdar* bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
+Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de *Zaouiat Lakhdar* bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
 
-
-<!-- 
+<!--
 [@Sonmez:2018jx] Eklenmeyen referans listesi.
 [25] Correia R, Duarte J, Leitão A. GRAMATICA: A general 3D shape grammar inter- preter targeting the mass customization of housing. In: Digital physicality: Proceedings of the 30th eCAADe conference, Prague, Czech Republic. 2012. Vol. 1. p. 489-96.
 [26] CorreiaRC.DESIGNA-ashapegrammarinterpreter[Ph.D.thesis].TULisbon: Instituto Superior Técnico; 2013.
-[27] GeroJS,LouisSJ,KunduS.Evolutionarylearningofnovelgrammarsfordesign improvement. AI EDAM 1994;8(2):83–94. http://dx.doi.org/10.1017/S08900 6040000069X.
+[27] GeroJS,LouisSJ,KunduS.Evolutionarylearningofnovelgrammarsfordesign improvement. AI EDAM 1994;8(2):83–94. http://dx.doi.org/10.1017/S089006040000069X.
 [28] Shea K, Cagan J. Innovative dome design: Applying geodesic patterns with shape annealing. AI EDAM 1997;11:379–94.
 [29] RosenmanMA,GeroJS.Evolvingdesignsbygeneratingusefulcomplexgene structures. In: Bentley PJ, editor. Evolutionary design by computers. San Francisco, CA: Morgan Kaufmann; 1999. p. 345–64.
 [30] GroblerF,AksamijaA,KimH,KrishnamurtiR,YueK,HickersonC.Ontologies and shape grammars: Communication between knowledge-based and gener- ative Systems. In: Gero JS, Goel AK, editors. Design computing and cognition ’08. Netherlands: Springer; 2008. p. 23–40.
-[31] GranadeiroV,DuarteJP,CorreiaJR,LealVMS.Buildingenvelopeshapedesign in early stages of the design process: Integrating architectural design systems and energy simulation. Autom Constr 2013;32:196–209. http://dx.doi.org/1 0.1016/j.autcon.2012.12.003.
-[32] MandićM,TepavčevićB.Analysisofshapegrammarapplicationasatoolfor urban design. Environ Plann B: Plann Des 2015;42(4):675–87. http://dx.doi. org/10.1068/b130084p.
+[31] GranadeiroV,DuarteJP,CorreiaJR,LealVMS.Buildingenvelopeshapedesign in early stages of the design process: Integrating architectural design systems and energy simulation. Autom Constr 2013;32:196–209. http://dx.doi.org/10.1016/j.autcon.2012.12.003.
+[32] MandićM,TepavčevićB.Analysisofshapegrammarapplicationasatoolfor urban design. Environ Plann B: Plann Des 2015;42(4):675–87. http://dx.doi.org/10.1068/b130084p.
 [33] Vitins BJ, Axhausen K. Shape grammars overview and assessment for trans- port and urban design: Review, terminology, assessment, and application. J Transp Land Use 2016;9(1):. http://dx.doi.org/10.5198/jtlu.2016.620.
--->
 
 
-<!-- 
 * [@Ozdemir:2014tm] Standart ve Parametrik Biçim Grameri Örneklerinin Değerlendirilmesi **MUTLAKA BAK TÜRKİYEDEN ÖRNEKLER**
-* [@Knight:1999uf] HISTORY OF APPLICATIONS IN ARCHITECTURE AND THE ARTS 
+* [@Knight:1999uf] HISTORY OF APPLICATIONS IN ARCHITECTURE AND THE ARTS
 * [@Tepavcevic:2012bl] Shape ten procedural modeling e kadar herşey
 * [@Sonmez:2018jx]
 * Yenileri ve Türkiye'den örneklerinde eklenmesi lazım
@@ -138,9 +67,11 @@ Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:20
 
 ### Split Grameri
 
-Wonka vd. [-@Wonka:2003bn] mimari modelleri oluşturmak için özel bir set grameri olan parametrik split gramer yöntemini geliştirmişlerdir. Yazarlar yapıların yatayda ve düşeyde sürekliliğe sahip olan yapı elemanlarından oluştuğunu ve buna benzer bir etkiyi split grameri kontrol ederek elde edilebileceğini belirtmişlerdir. İsmini bölümleme işleminden alan ve iki üretim kuralı olan bu yöntem  basit geometrilerden oluşan üç boyutlu bir kütlenin önce yüzeylere ve yapısal elemanlarına kadar bölümlenip ardından bölümlenen her biçim önceden tanımlanan geometri ve malzemeler ile yer değiştirmesine dayanmaktadır (Şekil \ref{splitGrammar}). Bölümlenme işlemi sonlandırıcı tanımlı biçimlere ulaşana kadar devam etmektedir ve muhtemel düzeni önceden tanımlı-sabit olduğundan dolayı kararlıdır. 
+Wonka vd. [-@Wonka:2003bn] mimari modelleri oluşturmak için özel bir set grameri[^1]olan parametrik split gramer yöntemini geliştirmişlerdir. Yazarlar yapıların yatayda ve düşeyde sürekliliğe sahip olan yapı elemanlarından oluştuğunu ve buna benzer bir etkiyi split grameri kontrol ederek elde edilebileceğini belirtmişlerdir. İsmini bölümleme işleminden alan ve iki üretim kuralı olan bu yöntem  basit geometrilerden oluşan üç boyutlu bir kütlenin önce yüzeylere ve yapısal elemanlarına kadar bölümlenip ardından bölümlenen her biçim önceden tanımlanan geometri ve malzemeler ile yer değiştirmesine dayanmaktadır (Şekil \ref{splitGrammar}). Bölümlenme işlemi sonlandırıcı tanımlı biçimlere ulaşana kadar devam etmektedir ve muhtemel düzeni önceden tanımlı-sabit olduğundan dolayı kararlıdır.
 
-Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzerinden işleyen, biçim gramerlerinin basitleştirilmiş halidir [@Stiny:1982cn; @Lienhard:2017jv]. Etiketli bir biçim set gramerinin en küçük (atomik) öğesidir ve alt biçimler barındırmaz. Etiketler sembol olarak kullanılarak üretim kurallarının metinsel olarak yazımını ve bilgisayarda algoritma olarak işlenmesine olanak vermektedir. İdeal olarak, bir biçim grameri uygulaması: görsel bilgi işlemeyi desteklemeli, saklı şekillere (emergence) izin vermeli, önceden tanımlanmış parçalara dayanmamalı ve parametrik olmalıdır [@Gips:1999ut]. Set gramerleri biçim gramerlerinin bilgisayar üzerinde işlenmesini kısıtlayan ilk üç özelliğini barındırmamaktadır. Literatürde biçim grameri uygulaması olarak adlandırılan bir çok yazılım ve yazılım denemesi aslında set gramerini temel alarak çalışmaktadır. 
+[^1]: [@Stiny:1982cn]
+
+Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzerinden işleyen, biçim gramerlerinin basitleştirilmiş halidir [@Stiny:1982cn; @Lienhard:2017jv]. Etiketli bir biçim set gramerinin en küçük (atomik) öğesidir ve alt biçimler barındırmaz. Etiketler sembol olarak kullanılarak üretim kurallarının metinsel olarak yazımını ve bilgisayarda algoritma olarak işlenmesine olanak vermektedir. İdeal olarak, bir biçim grameri uygulaması: görsel bilgi işlemeyi desteklemeli, saklı şekillere izin vermeli (emergence), önceden tanımlanmış parçalara dayanmamalı ve parametrik olmalıdır [@Gips:1999ut]. Set gramerleri biçim gramerlerinin bilgisayar üzerinde işlenmesini kısıtlayan ilk üç özelliğini barındırmamaktadır. Literatürde biçim grameri uygulaması olarak adlandırılan bir çok yazılım ve yazılım denemesi aslında set gramerini temel alarak çalışmaktadır.
 
 ![Basit bir Split Gramer kuralı ve üretim süreci [@Sonmez:2018jx]. \label{splitGrammar}](source/figures/splitGrammar.jpg){width=50%}
 
@@ -153,7 +84,7 @@ Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzer
 
 ### CGA Biçim Grameri
 
-Split gramerler Müller vd. [-@Muller:2006fy] tarafından geliştirilerek CGA gramerleri olarak adlandırılmıştır. Geliştirilen bu yöntemde katı kütle modelleme sistemi ve farklı olarak tanımlanmış birçok modelleme kuralının yanında cephe üretimi zor olan karmaşık kütleler içinde eklentiler bulunmaktadır. <!-- Bununla beraber çatı üretimi ve yönlenmiş kütleler için cephe üretimini de olanaklı hale getirmiştir. --> CGA gramer yöntemi çokgen ile belirlenmiş bir parsel hattını yükseltip katlara bölünmüş bir hacim oluşturarak işleme başlamaktadır. Katların cepheleri biçim kuralları kullanılarak duvar, kapı, pencere gibi bölümlere bölünmektedir. Koşullu ya da tahmini kurallar, biçim parametreleri, rastgele numara üretimi bu yöntem içerisinde çeşitlilik oluşturmak için kullanılmaktadır. CGA bir biçim grameri olması ile beraber aynı zamanda bir programlama dilidir. Örnek bir CGA biçim kuralı aşağıdaki gibi yazılmaktadır. 
+Split gramerler Müller vd. [-@Muller:2006fy] tarafından geliştirilerek CGA gramerleri olarak adlandırılmıştır. Geliştirilen bu yöntemde katı kütle modelleme sistemi ve farklı olarak tanımlanmış birçok modelleme kuralının yanında cephe üretimi zor olan karmaşık kütleler içinde eklentiler bulunmaktadır. <!-- Bununla beraber çatı üretimi ve yönlenmiş kütleler için cephe üretimini de olanaklı hale getirmiştir. --> CGA gramer yöntemi çokgen ile belirlenmiş bir parsel hattını yükseltip katlara bölünmüş bir hacim oluşturarak işleme başlamaktadır. Katların cepheleri biçim kuralları kullanılarak duvar, kapı, pencere gibi bölümlere bölünmektedir. Koşullu ya da tahmini kurallar, biçim parametreleri, rastgele numara üretimi bu yöntem içerisinde çeşitlilik oluşturmak için kullanılmaktadır. CGA bir biçim grameri olması ile beraber aynı zamanda bir programlama dilidir. Örnek bir CGA biçim kuralı aşağıdaki gibi yazılmaktadır.
 
 ```CGA
 başlangıçŞekli -->
@@ -168,7 +99,7 @@ CGA gramerlerinin tanımlanmasının ardından yordamsal modellemenin kolaylaşt
 - Rome Reborn 2.0: A Case Study of Virtual City Reconstruction Using Procedural Modeling Techniques [@Dylla:2010tm]
 - Urban Topography of Magnesia on the Maeander [@Saldana:2015wj].
 
-<!-- 
+<!--
 
 [@Zhu:2017vm]
 
@@ -323,14 +254,14 @@ Table: Spesifik tasarım alanı yorumlayıcı yazılım listesi [@Eloy:2018hh].
 
 
 
-Page 44 [@Gu:2012cg] 
+Page 44 [@Gu:2012cg]
 **Computational Design Methods and Technologies**
 Importantly, shapes in shape grammars are treated as nonatomic and ambiguous. They do not have definite parts and can be freely decomposed and recomposed by the user of a grammar, as a design is being generated. Shape ambiguity in shape grammars goes hand in hand with another singular property of shape grammars – shape emergence. An emergent shape is a shape that is not predefined in a grammar, but one that arises through rule applications. Further, emergent shapes can not only be generated by rule applications, they can also be recognized and used in subsequent rule applications.
 
 Page 65 [@Terzidis:2006ud]
 shape grammars contribute rationality, consistency, and traceability where finite production rules are applied. Shape grammars can be associated with linguistic patterns and therefore illustrate meaningful statements that may in turn produce languages of design. However, as shape grammars are based on a clearly defined set of rules leaving no place for ambiguity, they have been used extensively for the generation of patterns, diagrams, and floor layouts.
 
-Semboller yerine biçimleri kullandığından dolayı süreç içinde muğlaklık söz konusu olmaktadır. 
+Semboller yerine biçimleri kullandığından dolayı süreç içinde muğlaklık söz konusu olmaktadır.
 
  Shape grammars were invented over twenty-five years ago by Stiny and Gips. They were one of the earliest algorithmic systems for creating and understanding designs directly through computations with shapes, rather than indirectly through computations with text or symbols. Over the years, shape grammars have been explored through applications addressing a variety of design problems. The history of these applications in architecture and the arts is sketched in this paper. The roles of shape grammar applications in education and practice are outlined. New and ongoing issues concerning shape grammars in education and practice are discussed. [http://www.mit.edu/%7Etknight/IJDC/frameset_abstract.htm](http://www.mit.edu/~tknight/IJDC/frameset_abstract.htm)
 
@@ -370,40 +301,94 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 
 -->
 
-## Ortahisar’ın Genel Karakteri
+## Çalışma Alanının Seçimi
 
-Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.
+Ekonomik, sosyal, teknolojik, kültürel değişimler ve yanlış planlama kararları sonucunda Trabzon kenti tarihi kent dokusunda tahribatlara ve kimlik kaybetme tehlikesine maruz kalmıştır. Kentin bir çok bölgesinde, kentsel sit alanları da dahil olmak üzere, bu tahribat ve kayıplar yaşanmakta ve geleneksel konut mirasına ait ürünler gün geçtikçe azalmaktadır.
 
-![Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.](source/figures/vaziyetplanitescilli.pdf){width=100%}
+Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir.
 
-<!-- 
+## Çalışma Alanına İlişkin Bilgiler <!-- Ortahisar’ın Genel Karakteri -->
 
-Zağnos ve Tabakhane vadileri arasında kalan plato üzerine kurulu olan Ortahisar, Trabzon kentinin en eski yerleşimi olarak surlar tarafından çevrilmiş şekilde 
+<!--Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.-->
 
-"Orta - İç Kale" yerleşkesi
+![Trabzon'un 1223 öncesi ve sonrasına göre bilinen özellikleri haritası [@Bryer:2011ul]. ](source/figures/TrabzonMap.png){width=100%}
 
-Kentin mimar yapı kültürü M.Ö. 7. yy.a kadar dayanmaktadır. 
+Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir [@Uspenski:2003ta].
 
+Zağnos ve Tabakhane vadileri arasında kalan Ortahisar, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayananmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir [@Tuluk:2010ud]. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geneleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.
 
+* Askeri Mimari
+	* Kent surları
+* Dini Mimari
+	* Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
+	* Musa Paşa Cami
+	* Ortasaray Mescidi - Saraçzade Medresesi
+	* Şirin Hatun Mescidi
+* Endüstriyel Mimari
+	* Tabakhane Köprüsü
+	* Zağnos Köprüsü
+* Su Mimarisi
+	* Çifte Hamam
+	* Çarıkçı-Zade Hacı İsmail Çeşmesi
+	* Çeşme (Ortahisar Cami güneyinde)
+* Kamusal Mimari
+	* Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
+	* Trabzon Kültür Merkezi (Eski Hükümet Konağı)
+	* Gazipaşa İlkokulu
 
+Listelenmiş yapılardan kent surlarının yapım tarihi net olarak bilinmemekle beraber 257 yılından önce mevcut olduğu kaynaklarda belirtilmiştir [@Bryer:2011ul]. Surlardan sonra bölgedeki en eski yapı olan ve Ortahisar Cami olarak adlandırılan Panaghia Chrysokephalos Kilisesi 914 yılında inşa ettirilmiştir [@Miller:2007uq]. Bölgedeki diğer anıtsal yapıların inşa tarihleri 13. ve 16. yüzyıl, sivil mimarlık örneklerinin inşa tarihlerinin ise 19. yüzyıl sonları ve 20. yüzyılın ilk çeyreği olduğu bilinmektedir [@Aysu:1977wt; @Kuloglu:1994uy; @Tuluk:2010ud]. Mevcut yapıların korunması ve yeni yapıların sınırlandırılması amacıyla bölge 1985 yılında 2 Nolu Ortahisar Kentsel Sit Alanı olarak tescillenmiştir.
 
+![Ortahisar'ın konumu [@Var:2015vx].](source/figures/ortahisar.jpg){width=100%}
 
-![TrabzonMap](source/figures/TrabzonMap.png){width=100%}
+1938 yılında *Jacques H. Lambert* tarafından hazırlanan Trabzonun ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için Ortahisar'ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002 yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda yıkımlara ve büyük tahribata sebep olmuştur.
 
+### Ortahisar Konutlarının Özellikleri
+<!-- [@Sesli:1996wh; @Iskender:1987vd][@Kuloglu:1994uy] 11. sayfa. Trabzon geleneksel kent konutu özellikleri -->
+
+Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan tarihleriyle ağırlıklı olarak Osmanlı dönemine ait yapılardır. Yapım malzemesi ve teknolojisinin imkan verdiği koşullar ile ahşap-kagir yapılar 2-2,5 kat, taş yığma yapılar 3-3,5 kat olarak inşa edilmiştirler. Belli bir geometrik düzeni olmayan parseller içinde olan geleneksel konut dokusu;
+
+* Surlara yakın veya üzerinde, veya bir duvarı ya da terası surların bir parçası olarak
+* Kuzey güney aksında bitişerek gelişmiş ve vadilere yönelmiş
+* Yoldan yüksek duvarlarla soyutlandırılan bahçe-avlu karışımı bir alandan geçilerek oluşturulmuş konut grubu
+* Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş konut grubu
+şeklinde bir araya gelmişlerdir [@Birlik:1999ux]. <!-- Liste paraphrase edilmeli -->
+
+Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur.
+
+![Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri [@Ozen:2009wo].](source/figures/SofaliPlanlar.jpg){width=100%}
+
+![Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri [@Kuloglu:1994uy].](source/figures/disSofaliPlanlar.jpg){width=100%}
+
+<!--
+Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş olduğu, fakat zaman içinde bu duvarların eski özgün karakterini kaybettiklerinden ve derz yüzeyleri büyüdüğünden sonradan sıva ile
+kaplandığı görülmektedir. Döşeme ve tavanı ahşap olan bu binaların aynı
+zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken bir diğer noktadır.
+
+[@Birlik:1999ux]
 -->
 
-### Konum
+Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer [-@Fallmerayer:2011vq] Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;
 
-### Tarihi ve Karakteri
+* Cephe;
+	* Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
+	* Cephede köşe noktalarda düşey, kat aralarında yatay bantlar kullanılmıştır,
+	* Cephede açık ve kapalı çıkmalar görülmektedir, bu çıkmalar iç mekanda bulunan oda veya sofa genişliğindedir,
+	* Cepheler sokağa paraleldir,
+	* Beşik çatı ve ağırlıkla kırma çatı tipi hakimdir,
+	* Zemin katlar su basman seviyesinde yükseltilerek bodrum katların aydınlatılması için pencereler kullanılmaktadır,
+* Giriş;
+	* Genellikle cephenin simetri ekseninde, diğer durumlarda yapının köşesine yakın bulunurlar,
+	* Basamaklar ve hemen üzerindeki çıkmalar ile vurgulanmışlardır,
+* Pencereler;
+	* Dikdörtgen formda ve düşey hatlıdırlar,
+	* Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
+
+![Geleneksel konut cephesi örnekleri [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
+
+Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir [@Kuloglu:1994uy]. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
 
 ## Alan Çalışması
 
-Alan rölöveleri iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
+Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
 
-<!-- 
-
-### Sosyal ve Kültürel Yaşam
-
-### Coğrafya ve İklim
-
--->
+![Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.](source/figures/vaziyetplanitescilli.pdf){width=100%}

@@ -4,7 +4,7 @@
   $else$
   \usepackage{lmodern}
   $endif$
-  
+
   % Overwrite \begin{figure}[htbp] with \begin{figure}[H]
   \usepackage{float}
   \let\origfigure=\figure
@@ -19,17 +19,17 @@
   }
 
 
-  
+
   % fix for pandoc 1.14
   \providecommand{\tightlist}{%
     \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-  
+
   % TP: hack to truncate list of figures/tables.
   % \usepackage{truncate}
   % \usepackage{caption}
   \usepackage{tocloft}
   % TP: end hack
-  
+
   $if(linestretch)$
   \usepackage{setspace}
   \setstretch{$linestretch$}
@@ -156,7 +156,7 @@
     \usepackage[$lang$]{babel}
   \fi
   $endif$
-  
+
   $if(title)$
   \title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
   $endif$
@@ -167,7 +167,7 @@
   $for(header-includes)$
   $header-includes$
   $endfor$
-  
+
   \begin{document}
   $if(title)$
   \maketitle
@@ -177,10 +177,10 @@
   $abstract$
   \end{abstract}
   $endif$
-  
+
   $for(include-before)$
   $include-before$
-  
+
   $endfor$
   $if(toc)$
   {
@@ -196,7 +196,7 @@
   \listoffigures
   $endif$
   $body$
-  
+
   $if(natbib)$
   $if(biblio-files)$
   $if(biblio-title)$
@@ -207,16 +207,15 @@
   $endif$
   $endif$
   \bibliography{$biblio-files$}
-  
+
   $endif$
   $endif$
   $if(biblatex)$
   \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
-  
+
   $endif$
   $for(include-after)$
   $include-after$
-  
+
   $endfor$
   \end{document}
-  
