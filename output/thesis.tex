@@ -101,10 +101,10 @@
 \fancypagestyle{main}{              % Başlıklar
     \fancyhf{}
     \fancyhead[C]{\thepage}
-    \setlength{\headheight}{15pt} 
+    \setlength{\headheight}{15pt}
     \renewcommand{\headrulewidth}{0.0pt}
     \pagenumbering{arabic}
-    \setcounter{page}{1}        
+    \setcounter{page}{1}
 }
 \pagestyle{plain}{                  % Ön Sayfalar
     \pagenumbering{Roman}
@@ -217,8 +217,8 @@
 % Set figure legends and captions to be smaller sized sans serif font
 \usepackage[singlelinecheck=false, format=hang, justification=justified, font=normalsize, labelsep=period]{caption}
 \usepackage{siunitx}
-\captionsetup[figure]{name=Şekil}
 \captionsetup[table]{name=Tablo}
+\captionsetup[figure]{name=Şekil}
 % \newlength{\mylen}
 
 \addtolength{\cftfignumwidth}{30pt}% More space
@@ -257,7 +257,7 @@
 \setstretch{1.44}
 
 
-% Sayfa yapısı 
+% Sayfa yapısı
 \usepackage[top=3cm,bottom=2.5cm,left=3cm,right=2.5cm]{geometry}
 % \usepackage{showframe}
 
@@ -302,25 +302,25 @@
     % Delete the following line
     % to remove the UCL header logo
     \ThisULCornerWallPaper{1.0}{style/univ_logo.eps}
-        
+
         \vspace*{2.5cm}
-        
+
         \huge
-        This is the title of the thesis
-        
+        GELENEKSEL TRABZON EVLERİ ÖRNEĞİNDE GRAMER TABANLI TASARIM ALTLIĞI YAZILIMI ÜRETİMİ
+
         \vspace{1.5cm}
-        
+
         \Large
-        Firstname Surname
+        Çağlar AYDIN
 
         \vspace{1.5cm}
 
         \normalsize
         A thesis presented for the degree of\\
         Doctor of Philosophy
-        
+
         \vfill
-        
+
         \normalsize
         Supervised by:\\
         Professor Louis Fage\\
@@ -331,7 +331,7 @@
         % Uncomment the following line
         % to add a centered university logo
         % \includegraphics[width=0.4\textwidth]{style/univ_logo.eps}
-        
+
         \normalsize
         University College London, UK\\
         January 2015
@@ -562,21 +562,15 @@ Araştırma da iki kademeli bir süreç işlenecektir;
     \item
       Yapı taban alanı
     \item
-      Yapı hacmi
+      Kat sayısı ve yüksekslikleri
     \item
-      Kat sayısı
+      Cephe karakteri
     \item
-      Yapı kademelenmesi
+      Cephe çıkmaları
     \item
-      Çatı tipi ve özellikleri
+      Pencere genişlikleri ve yükseklikleri
     \item
-      Cephe karakteri ve elemanları
-    \item
-      Çıkma tipi
-    \item
-      Parsel kullanımı
-    \item
-      Bahçe içi yerleşim
+      Çatı formu ve eğimi
     \end{itemize}
   \item
     Sentez çalışması: Çıkarılan veriler gruplar halinde tablolara
@@ -607,285 +601,15 @@ geliştirilecektir.
 
 \thispagestyle{empty}
 
-\hypertarget{kompuxfctasyonel-tasarux131m-ve-algoritmalarux131n-tarihi}{%
-\section{Kompütasyonel Tasarım ve Algoritmaların
-Tarihi}\label{kompuxfctasyonel-tasarux131m-ve-algoritmalarux131n-tarihi}}
-
-\begin{quote}
-When God calculates and exercises his thought, the world is created.
-\emph{Leibniz}
-\end{quote}
-
-\textbf{Kompütasyon Nedir?}
-
-Latince \emph{computare} kökünden gelen kompütasyon (computation)
-kelimesi aritmetik hesaplama yapma metodu/işlemi/süreci olarak
-tanımlanmaktadır. Kökü oluşturan \emph{com} beraber/ile anlamına
-gelirken, \emph{putare} hesap etmek/hesap görmek, çözmek ya da birşey
-hakkında anlaşmaya varmak anlamlarına gelmektedir (). Fakat genellikle
-dijitalleştirme, bilgisayara işleme-kaydetmek, otomasyon anlamlarına
-gelen kompütarize etmek (computerization) ile karıştırılmaktadır.
-Kompütasyon bilinmeyeni veya net olmayanı tanımlanmış süreçler üzerinden
-matematiksel veya mantıksal yöntemler ile araştırarak çözmeye
-çalışmaktadır (Terzidis, 2006). Bu matematiksel veya mantıksal yöntem
-grupları algoritmaları oluşturmaktadır.
-
-\textbf{Algoritma Nedir?}
-
-Günümüzde algoritmalar artık her yerde karşımıza çıkmakta ve insanın
-günlük yaşamını kolaylaştırmak için geliştirilmektedir. Makinelerin
-icadından önce algoritmalar matematiksel ve mantıksal problemlerin
-çözülmesi veya anlaşılması için kullanılmaktaydılar. Makinelerin,
-özellikle bilgisayarların, hayatımıza girmesi ile beraber algoritmalar
-makineler ile anlaşabilmemize yarayan vazgeçilmez bir dil haline
-geldiler. Başlangıçta hesaplama yapabilmek için geliştirilen
-algoritmalar günümüzde yapay zeka olarak karşımızı çıkmaktadırlar.
-
-Algoritma, sınırlı sayıda adımda bir sorunun cevabını veya bir problemin
-çözümünü üreten sistematik işlem/yöntem olarak tanımlanmaktadır. Kelime
-arapça kökenli olup 9. yüzyılda yaşamış İranlı matematikçi
-El-Harezmī'nin aritmetik ile ilgili olan ``Hint Rakamlarıyla Hesaplama
-Üzerine'' eserinin latince çevirisi \emph{Algoritmi de numero
-Indorum}'dan türemiştir (2006). Başka kaynaklarda ise kelimenin
-El-Harezmī`nin isminin latinceye çevirisi olan \emph{Algorismus'dan}
-geldiği belirtilmektedir ().
-
-\textbf{Algoritmaların ilk kullanımı}
-
-Tarihte bilinen ilk algoritma muhtemelen Babil Metodu`dur. Bir sayının
-karekökünün bulunması amacı ile kullanılmıştır. Babilliler bu
-algoritmanın matematiksel yöntemini açıklamak yerine örnekler göstererek
-tanımlamıştırlar. Bu yöntemin tanımlanması İskenderiyeli Heron
-tarafından yapılmıştır (Heath, 2013). Bu yüzden Heron Metodu olarakta
-adlandırılmaktadır. Ancak yazılı olarak bilinen ilk algoritma
-\emph{Euclid} tarafından MÖ. 300'lü yıllarda tanımlanmıştır. Öklid
-algoritması olarak adlandırılan yöntem iki sayının en büyük ortak
-bölenini bulmak için kullanılmaktadır.
-
-\textbf{Algoritmaların makinelerde kullanımı ve ilk programlama}
-
-İnsanlar işleri kolaylaştırabilmek veya hızlandırabilmek için tarih
-boyunca yeni keşiflerde bulunmuşlardır. Bu keşifler algoritmaların
-çalıştığı makineler olarak karşımıza çıkmaktadır. Buharlı makinelerin
-icadından yaklaşık bir asır sonra Fransız Joseph Marie Jacquard
-1800'lerin başında delikli kart dizisi ile çalışan programlanabilir ilk
-makineyi üretmiştir (Şekil \ref{JacquardLoom}). Dokuma işlerini
-hızlandırmak için ürettiği makine karmaşık desenli halıları renkli
-ipliklerin takılı olduğu iğnelerin kartlar üzerindeki boşluklardan geçip
-geçmemesini kontrol ederek üretim yapıyordu. Bu ikili (binary) sistem
-bir anlamda yazılımların ve numerik kontrollü makinelerin başlangıcı
-olmuştur (Llach, 2015).
-
-\begin{figure}
-\centering
-\includegraphics{http://www.pvcloom.com/wp-content/uploads/2012/04/PSM_V39_D325_Carpet_loom_with_jacquard_attachment.jpg}
-\caption{Jacquard Loom diye adlandırılan ilk programlanabilir makine.
-\label{JacquardLoom}}
-\end{figure}
-
-Delikli kartlar ile programlama özelliği Charles Babbage tarafından
-1837'de tasarlanan ilk bilgisayar olarak adlandırılan Analitik Makine
-ile kullanıcı arasındaki iletişimi sağladı. Ada Lovelace bu bilgisayar
-üzerinde Charles Babbage`ın algoritmalarını altlık olarak kullanarak ilk
-bilgisayar programını 1843 yılında yazdı. İlk bilgisayar programı olarak
-adlandırılmasının sebebi Ada Lovelace tarafından ``backing'' olarak
-adlandırılan çeşitli parametrelere bağlı bir dizi döngülerin ve
-koşulların kullanılmasıdır\footnote{Luigi Federico Menabrea, Sketch of
-  the Analytical Engine invented by Charles Babbage, translated and
-  appended with additional notes by Augusta Ada, Countess of Lovelace.
-  Richard \& JohnTaylor (London), 1843. Kitap \emph{Analitik Makine}'nin
-  çizimleri ve notları ile beraber \emph{Ada Lovelace} tarafından
-  yazılan notları ve programı kapsamaktadır.} (Frazer, 2016). Yaklaşık
-bir asır sonra, 1936 yılında Alan Turing günümüzde kullandığımız dijital
-bilgisayarların atası Turing Makinesi'ni icat etti. Turing, genel amaçlı
-bir bilgisayar modeli olarak düşünülebilen Turing Makinesi ile algoritma
-ve hesaplama kavramlarını araştıran teorik bilgisayar bilimlerinin
-geliştirilmesinde oldukça etkili oldu (Cooper ve Leeuwen, 2013).
-
-\textbf{Bilgisayarların gelişmesi ve savaş döneminin etkilerinin
-mimarlığa yansımaları}
-
-İkinci dünya savaşı sırasında ve sonrasında büyük ölçekli askeri
-faaliyetlerin sınırlı kaynak ile planlanması otomasyon ve programlama
-konularını yükselen trendler haline getirdi (Dantzig, 1998). Bu trendler
-ile gelişen yöneylem araştırması (operations research), istatistiksel
-analiz ve matematiksel optimizasyon gibi teknikler bilim adamları
-tarafından benzer problemlerin çözüme ulaşması için sivil hayatta
-şirketlere, sanayiye ve devlet kuruluşlarına aktarıldı (Hillier ve
-Lieberman, 2006). Bu dönemde ortaya çıkan sibernetik, bilişsel bilim ve
-yapay zeka disiplinleri ile beraber tasarım eylemi bilişsel, algısal ve
-davranışsal temellere bağlı olarak yeniden şekillendirilmeye başlandı
-(Upitis, 2008). Savaş sonrası bilimsel optimist ortamda, Eylül 1962'de
-John Christopher Jones ve Denis Thornley tarafından Imperial College
-London`da düzenlenen Tasarım Yöntemleri Konferansı tasarıma rasyonel ve
-açık süreçler olarak bakılmasını başlattı ve tasarım yöntemlerini
-akademik anlamda bir konu veya araştırma alanı olarak tanımladı (Cross,
-1993). Konferans katılımcılarından matematikçi Gordon Pask tasarımın
-algoritmalar ve hesaplanabilir süreçler ile açıkça ifade edilebileceğini
-savunan ilk bilim insanlarındandı (Pask, 1963). Ardı sıra gelen benzer
-konferanslar ile beraber Tasarım Yöntemleri Hareketi başta Bruce Archer,
-John Christopher Jones, Christopher Alexander ve Horst Rittel`in ve
-diğer bilim insanlarının tasarım yöntemleri üzerine çalışmalarından
-doğdu (Langrish, 2016).
-
-\textbf{İlk CAD yazılımları}
-
-1960'ların başında Massachusetts Teknoloji Enstitüsü'nde de (MIT)
-bilgisayarları tasarım sürecine eklemleyebilmek için deneysel çalışmalar
-sürüyordu. Marvin Minsky (1974) ve ekibi özellikle insan-bilgisayar
-etkileşimi kapsamında görsel algı ve eskiz çalışmaları üzerine
-çalışıyordu. Modern CAD programlarının atası olarak nitelendirilen
-Sketchpad programı Ivan Sutherland tarafından 1963 yılında doktora tezi
-çalışmasının ürünü olarak geliştirildi (Şekil \ref{Sketchpad}). Yazılım
-sonuç ürünün oluşturulmasında kullanılan geometrilerin arasındaki
-ilişkileri Sutherland'in atomic constraints diye adlandırdığı kısıtlar
-kullanarak organize ediyordu. Değiştirilebilir kısıt tanımlamaları ile
-beraber çizilen geometriler parametrik nesneler olarak sistem üzerinde
-oluşturuluyordu. Geometriler bir ışık kalemi vasıtasıyla geometriyi
-tanımlayan noktaların ekran üzerinden sisteme kaydedilmesiyle
-bilgisayara aktarılıyordu (Sutherland, 1963). Grafik arayüzünün tam
-anlamıyla kullanıldığı ve insan bilgisayar ilişkisinin sibernetik açıdan
-ayrı bir boyuta taşındığı ilk program oldu.
-
-1965 yılında Harvard Üniversitesi'nde kurulan Bilgisayar Grafikleri ve
-Mekansal Analiz Laboratuvarı kartografik ve mimari bilgisayar
-uygulamaları üzerine çalışıyordu. Bu uygulamaların ilk örneklerinden
-\emph{GRASP} adlı yazılım Eric Teicholz tarafından Sutherland`in grafik
-arayüz altyapısı kullanılarak geliştirildi. Mekan planlama üzerine
-geliştirilen bu uygulama rastlantısal form yapım süreçleri ve yapı,
-güneş ve işlevsel organizasyon arasındaki karşılıklı ilişkileri temel
-alan kısıtları kullanan bir üretken sistem olarak çalışmaktaydı (Howard,
-1998). Bu iki program haricinde ilerleyen süreçte birçok programlar
-geliştirildi. Sketchpad`in ortaya koyduğu parametriklik,
-ilişkilendirilebilirlik, kural tabanlı sistemler oluşturmak
-kompütasyonel yöntemleri tanımlamada temel oluşturmuştur. Ayrıca maddi
-bir nesne olarak görülen mimarlık algısını yıkarak birbiriyle bağlantılı
-ve beraber çalışan bir dizi sistemden oluşan bir sistem algısı yarattı
-(2011).
-
-\begin{figure}
-\centering
-\includegraphics{https://gajitz.com/wp-content/uploads/2009/09/sketchpad.jpg}
-\caption{Ivan Sutherland tarafından yazılan Sketchpad programı.
-\label{Sketchpad}}
-\end{figure}
-
-Parametrik tasarım veya parametrik mimarlık terimleri bilgisayarın
-mimarlık alanında kullanımından daha önce İtalyan mimar Luigi Moretti
-tarafından 1940-42 arasında yaptığı çalışmalarla test edildi.
-\emph{Architetture Parametrica} diye adlandırdığı çalışmalarında
-bilgisayar kullanmadan mimari tasarım ile parametrik eşitliklerin
-ilişkilerini araştırıyordu. Stadyum örneği üzerinden geliştirdiği
-parametrik model izleme açısı, beton maliyeti vb. 19 değişkenin
-birbiriyle ilişkisinin stadyum formunu nasıl şekillendirdiğini 1960'da
-Onikinci Milan Trienali'nde Parametrik Mimari sergisinde sergiledi
-(Moretti vd., 2002). 1960-65 arasında tasarladığı Watergate Complex
-bilgisayarların önemli ölçüde kullanıldığı ilk inşaat işi olarak
-bilinmektedir (Livingston, 2002).
-
-\begin{figure}
-\centering
-\includegraphics{source/figures/stadium_N.jpg}
-\caption{1960'da Onikinci Milan Trienali'nin Parametrik Mimari
-sergisinde sergilenen Luigi Moretti'nin Stadyum N modeli. Stadyum,
-ondokuz parametreden oluşan bir parametrik modelden türemiştir (Moretti
-vd., 2002). \label{StadiumN}}
-\end{figure}
-
-\textbf{Üretken Tasarım Sistemleri}
-
-1930'larda birçok filozof ve matematikçi, özellikle Alan Turing, Kurt
-Gödel, Alonzo Church gibi isimler bilgisayar biliminin gelişmesini ve
-kompütasyonun günümüzde ne anlamda olduğunu ve sınırlarını belirlediler
-(Copeland vd., 2013). Devam eden yıllarda kompütasyon üzerine yapılan
-çalışmaları mantıksal ve biyolojik olarak iki dalda gruplamak mümkündür.
-Mantıksal dalda gelişen kompütasyonel çalışmalar matematik ve mantık
-dallarından gelen soyut çalışmalar üzerinden gelişirken, biyolojik dalda
-gelişenler ise biyoloji ve doğadan temellerini almaktadır (Tablo
-\ref{KompütasyonTarihi}). Günümüzdeki çalışmalarda artık bu iki dalda
-net ayrımlara gitmek pekte mümkün olmamaktadır (Knight, 2012).
-
-\begin{longtable}[]{@{}lll@{}}
-\caption{Kompütasyonun ilk 50 yıllık kısa tarihi (Knight, 2012).
-\label{KompütasyonTarihi}}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.36\columnwidth}\raggedright
-\textbf{Mantıksal​}\strut
-\end{minipage} & \begin{minipage}[b]{0.45\columnwidth}\raggedright
-\textbf{Biyolojiden esinlenen}\strut
-\end{minipage}\tabularnewline
-\midrule
-\endfirsthead
-\toprule
-\begin{minipage}[b]{0.10\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.36\columnwidth}\raggedright
-\textbf{Mantıksal​}\strut
-\end{minipage} & \begin{minipage}[b]{0.45\columnwidth}\raggedright
-\textbf{Biyolojiden esinlenen}\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.10\columnwidth}\raggedright
-1940'lar\strut
-\end{minipage} & \begin{minipage}[t]{0.36\columnwidth}\raggedright
-Üretim Sistemleri (Post)\strut
-\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-Sinir Ağları\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.10\columnwidth}\raggedright
-1950'ler\strut
-\end{minipage} & \begin{minipage}[t]{0.36\columnwidth}\raggedright
-Üretken Gramerler (Chomsky)\strut
-\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-Cellular Automata, Paralel Kompütasyon\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.10\columnwidth}\raggedright
-1960'lar\strut
-\end{minipage} & \begin{minipage}[t]{0.36\columnwidth}\raggedright
-Pattern Gramerleri (Fu)\strut
-\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-Evrimsel Kompütasyon\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.10\columnwidth}\raggedright
-1970'ler\strut
-\end{minipage} & \begin{minipage}[t]{0.36\columnwidth}\raggedright
-Biçim Gramerleri (Stiny ve Gips)\strut
-\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
----\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.10\columnwidth}\raggedright
-1980'ler\strut
-\end{minipage} & \begin{minipage}[t]{0.36\columnwidth}\raggedright
----\strut
-\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-Artificial Life, Self Organizing Systems\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
-
-\newpage
-
-Mantık tabanlı gelişmeler 1940'larda \emph{Emil Post}`un üretim
-sistemleri üzerine çalışmaları ile başladı. Üretim sistemleri soyut
-mantıksal dilleri tanımlamak ve anlamak için kullanıldı. 1950'lerin
-sonunda \emph{Chomsky} bu çalışmayı geliştirdi ve üretken gramerleri
-kullanarak gündelik iletişimimizi sağlayan dillere uyguladı. 1960'ların
-sonuna gelindiğinde ise ilk defa semboller kullanarak model üretimi ve
-iki boyutlu desenlerin üretimi için Desen (\emph{Pattern}) Gramerleri
-çalışması \emph{King Sun Fu} tarafından tanıtıldı. 1972 yılında
-kurallarını direk olarak biçimler üzerinden tanımlayan, tasarımları
-analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem
-olan Biçim Gramerleri \emph{George Stiny} ve \emph{James Gips} (1972)
-tarafından tanıtıldı.
-
 \hypertarget{biuxe7im-gramerleri}{%
 \section{Biçim Gramerleri}\label{biuxe7im-gramerleri}}
 
-Biçim gramerleri kompütasyon teorisi ve görsel-mekansal düşünme yöntemi
-olarak iki farklı düzlemde açıklanabilir.
+Biçim gramerleri 1972 yılında \emph{George Stiny} ve \emph{James Gips}
+(1972) tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye
+yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri
+kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon
+teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde
+açıklanmaktadır (Tepavcevic ve Stojakovic, 2012).
 
 Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak
 biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer
@@ -915,8 +639,8 @@ Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik
 olarakta tanımlanabilmektedir. Görsel tasarım gramerleri olarakta
 adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan
 ayrıştırma-tanımlamalar yerine belirli bir zamanda pratik bir anlamı
-olan ayrıştırmalardan-tanımlamalardan bakabilme
-düşüncesidir-\textbf{yöntemidir} (Özkar ve Stiny, 2009).
+olan ayrıştırmalardan-tanımlamalardan bakabilme düşüncesidir (Özkar ve
+Stiny, 2009).
 
 Tanıtımından sonra \emph{Gips} (1975) doktora tezinde biçim
 gramerlerinin bilgisayar uygulamalarını geliştirdi, \emph{Stiny} (1975)
@@ -1032,10 +756,10 @@ kompozisyonları öğretebilmek için kullanmmıştır.
 Bu gramer yapısının örneklerine baktığımızda Çolakoğlu (2001) 18. ve 19.
 yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel ``Hayat''
 evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların
-üretimini sağladı. Duarte (Duarte, 2005) 1977 ve 1996 yılları arasında
-Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden
-Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım
-mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de
+üretimini sağladı. Duarte (2005) 1977 ve 1996 yılları arasında Siza
+tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın
+da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına
+yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de
 \emph{Zaouiat Lakhdar} bölgesi için geliştirilen yerel konut ve kentsel
 form üreten gramerler, \emph{rabo-de-bacalhau} bina tipolojisindeki
 evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid
@@ -1045,18 +769,18 @@ gramerlere örnek oluşturmaktadır (Duarte ve Rocha, 2006; Duarte vd.,
 \hypertarget{split-grameri}{%
 \subsection{Split Grameri}\label{split-grameri}}
 
-Wonka vd. (2003) mimari modelleri oluşturmak için özel bir set grameri
-olan parametrik split gramer yöntemini geliştirmişlerdir. Yazarlar
-yapıların yatayda ve düşeyde sürekliliğe sahip olan yapı elemanlarından
-oluştuğunu ve buna benzer bir etkiyi split grameri kontrol ederek elde
-edilebileceğini belirtmişlerdir. İsmini bölümleme işleminden alan ve iki
-üretim kuralı olan bu yöntem basit geometrilerden oluşan üç boyutlu bir
-kütlenin önce yüzeylere ve yapısal elemanlarına kadar bölümlenip
-ardından bölümlenen her biçim önceden tanımlanan geometri ve malzemeler
-ile yer değiştirmesine dayanmaktadır (Şekil \ref{splitGrammar}).
-Bölümlenme işlemi sonlandırıcı tanımlı biçimlere ulaşana kadar devam
-etmektedir ve muhtemel düzeni önceden tanımlı-sabit olduğundan dolayı
-kararlıdır.
+Wonka vd. (2003) mimari modelleri oluşturmak için özel bir set
+grameri\footnote{(Stiny, 1982)}olan parametrik split gramer yöntemini
+geliştirmişlerdir. Yazarlar yapıların yatayda ve düşeyde sürekliliğe
+sahip olan yapı elemanlarından oluştuğunu ve buna benzer bir etkiyi
+split grameri kontrol ederek elde edilebileceğini belirtmişlerdir.
+İsmini bölümleme işleminden alan ve iki üretim kuralı olan bu yöntem
+basit geometrilerden oluşan üç boyutlu bir kütlenin önce yüzeylere ve
+yapısal elemanlarına kadar bölümlenip ardından bölümlenen her biçim
+önceden tanımlanan geometri ve malzemeler ile yer değiştirmesine
+dayanmaktadır (Şekil \ref{splitGrammar}). Bölümlenme işlemi sonlandırıcı
+tanımlı biçimlere ulaşana kadar devam etmektedir ve muhtemel düzeni
+önceden tanımlı-sabit olduğundan dolayı kararlıdır.
 
 Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler
 üzerinden işleyen, biçim gramerlerinin basitleştirilmiş halidir (Stiny,
@@ -1065,7 +789,7 @@ Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler
 kullanılarak üretim kurallarının metinsel olarak yazımını ve
 bilgisayarda algoritma olarak işlenmesine olanak vermektedir. İdeal
 olarak, bir biçim grameri uygulaması: görsel bilgi işlemeyi
-desteklemeli, saklı şekillere (emergence) izin vermeli, önceden
+desteklemeli, saklı şekillere izin vermeli (emergence), önceden
 tanımlanmış parçalara dayanmamalı ve parametrik olmalıdır (Gips, 1999).
 Set gramerleri biçim gramerlerinin bilgisayar üzerinde işlenmesini
 kısıtlayan ilk üç özelliğini barındırmamaktadır. Literatürde biçim
@@ -1131,49 +855,350 @@ projesi kod yazılarak gerçekleştirildi. Bunlardan bazıları;
   Urban Topography of Magnesia on the Maeander (Saldaña, 2015).
 \end{itemize}
 
-(Zhu, 2017)
+\hypertarget{uxe7alux131ux15fma-alanux131nux131n-seuxe7imi}{%
+\section{Çalışma Alanının
+Seçimi}\label{uxe7alux131ux15fma-alanux131nux131n-seuxe7imi}}
 
-(Jesus vd., ) Related work kısmı
+Ekonomik, sosyal, teknolojik, kültürel değişimler ve yanlış planlama
+kararları sonucunda Trabzon kenti tarihi kent dokusunda tahribatlara ve
+kimlik kaybetme tehlikesine maruz kalmıştır. Kentin bir çok bölgesinde,
+kentsel sit alanları da dahil olmak üzere, bu tahribat ve kayıplar
+yaşanmakta ve geleneksel konut mirasına ait ürünler gün geçtikçe
+azalmaktadır.
 
-\hypertarget{ortahisarux131n-genel-karakteri}{%
-\section{Ortahisar'ın Genel
-Karakteri}\label{ortahisarux131n-genel-karakteri}}
+Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik
+örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin
+biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak
+seçilmiştir.
 
-Zağnos ve Tabakhane vadileri arasında kalan plato üzerine kurulu olan
-Ortahisar, Trabzon kentinin en eski yerleşimi olarak surlar tarafından
-çevrilmiş şekilde
-
-``Orta - İç Kale'' yerleşkesi
-
-Kentin mimar yapı kültürü M.Ö. 7. yy.a kadar dayanmaktadır.
+\hypertarget{uxe7alux131ux15fma-alanux131na-iliux15fkin-bilgiler}{%
+\section{Çalışma Alanına İlişkin Bilgiler
+}\label{uxe7alux131ux15fma-alanux131na-iliux15fkin-bilgiler}}
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth,height=\textheight]{source/figures/TrabzonMap.png}
-\caption{TrabzonMap}
+\caption{Trabzon'un 1223 öncesi ve sonrasına göre bilinen özellikleri
+haritası (Bryer ve Winfield, 1985).}
 \end{figure}
 
-\hypertarget{konum-ve-ulaux15fux131m}{%
-\subsection{Konum ve Ulaşım}\label{konum-ve-ulaux15fux131m}}
+Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve
+Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti
+olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli
+merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler
+ile çevrili kent coğrafi olarak korunaklı bir bölgede
+konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve
+savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan
+güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar
+ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir (Uspenski,
+2003).
 
-\hypertarget{tarihi-ve-karakteri}{%
-\subsection{Tarihi ve Karakteri}\label{tarihi-ve-karakteri}}
+Zağnos ve Tabakhane vadileri arasında kalan Ortahisar, Trabzon kentinin
+tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü
+M.Ö. 7. yüzyıla kadar dayananmaktadır ve tarih boyunca kentin idari,
+dini ve yaşam merkezi olarak hizmet etmiştir (Tuluk ve Düzenli, 2010).
+Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geneleneksel
+sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır.
+Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki
+önemli yapılar aşağıdaki listede sıralanmıştır.
+
+\begin{itemize}
+\tightlist
+\item
+  Askeri Mimari
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Kent surları
+  \end{itemize}
+\item
+  Dini Mimari
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
+  \item
+    Musa Paşa Cami
+  \item
+    Ortasaray Mescidi - Saraçzade Medresesi
+  \item
+    Şirin Hatun Mescidi
+  \end{itemize}
+\item
+  Endüstriyel Mimari
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Tabakhane Köprüsü
+  \item
+    Zağnos Köprüsü
+  \end{itemize}
+\item
+  Su Mimarisi
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Çifte Hamam
+  \item
+    Çarıkçı-Zade Hacı İsmail Çeşmesi
+  \item
+    Çeşme (Ortahisar Cami güneyinde)
+  \end{itemize}
+\item
+  Kamusal Mimari
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
+  \item
+    Trabzon Kültür Merkezi (Eski Hükümet Konağı)
+  \item
+    Gazipaşa İlkokulu
+  \end{itemize}
+\end{itemize}
+
+Listelenmiş yapılardan kent surlarının yapım tarihi net olarak
+bilinmemekle beraber 257 yılından önce mevcut olduğu kaynaklarda
+belirtilmiştir (Bryer ve Winfield, 1985). Surlardan sonra bölgedeki en
+eski yapı olan ve Ortahisar Cami olarak adlandırılan Panaghia
+Chrysokephalos Kilisesi 914 yılında inşa ettirilmiştir (Miller, 2007).
+Bölgedeki diğer anıtsal yapıların inşa tarihleri 13. ve 16. yüzyıl,
+sivil mimarlık örneklerinin inşa tarihlerinin ise 19. yüzyıl sonları ve
+20. yüzyılın ilk çeyreği olduğu bilinmektedir (Aysu, 1977; Kuloğlu,
+1994; Tuluk ve Düzenli, 2010). Mevcut yapıların korunması ve yeni
+yapıların sınırlandırılması amacıyla bölge 1985 yılında 2 Nolu Ortahisar
+Kentsel Sit Alanı olarak tescillenmiştir.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/ortahisar.jpg}
+\caption{Ortahisar'ın konumu (Var, 2015).}
+\end{figure}
+
+1938 yılında \emph{Jacques H. Lambert} tarafından hazırlanan Trabzonun
+ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu
+gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan
+ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması
+hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için
+Ortahisar'ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002
+yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye
+ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda
+yıkımlara ve büyük tahribata sebep olmuştur.
+
+\hypertarget{ortahisar-konutlarux131nux131n-uxf6zellikleri}{%
+\subsection{Ortahisar Konutlarının
+Özellikleri}\label{ortahisar-konutlarux131nux131n-uxf6zellikleri}}
+
+Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine
+dayanan tarihleriyle ağırlıklı olarak Osmanlı dönemine ait yapılardır.
+Yapım malzemesi ve teknolojisinin imkan verdiği koşullar ile ahşap-kagir
+yapılar 2-2,5 kat, taş yığma yapılar 3-3,5 kat olarak inşa
+edilmiştirler. Belli bir geometrik düzeni olmayan parseller içinde olan
+geleneksel konut dokusu;
+
+\begin{itemize}
+\tightlist
+\item
+  Surlara yakın veya üzerinde, veya bir duvarı ya da terası surların bir
+  parçası olarak
+\item
+  Kuzey güney aksında bitişerek gelişmiş ve vadilere yönelmiş
+\item
+  Yoldan yüksek duvarlarla soyutlandırılan bahçe-avlu karışımı bir
+  alandan geçilerek oluşturulmuş konut grubu
+\item
+  Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki
+  kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş
+  konut grubu şeklinde bir araya gelmişlerdir (Birlik, 1999). 
+\end{itemize}
+
+Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç
+sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması
+örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde
+çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık
+ve kapalı olma durumları söz konusudur.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/SofaliPlanlar.jpg}
+\caption{Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve
+Resul Özerk evleri (Özen vd., 2009).}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/disSofaliPlanlar.jpg}
+\caption{Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih
+Türkmen evleri (Kuloğlu, 1994).}
+\end{figure}
+
+Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine
+göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer
+(2011) Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı
+döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta
+ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir.
+Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet
+sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve
+Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında
+ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak
+genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak
+ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer
+özellikleri;
+
+\begin{itemize}
+\tightlist
+\item
+  Cephe;
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
+  \item
+    Cephede köşe noktalarda düşey, kat aralarında yatay bantlar
+    kullanılmıştır,
+  \item
+    Cephede açık ve kapalı çıkmalar görülmektedir, bu çıkmalar iç
+    mekanda bulunan oda veya sofa genişliğindedir,
+  \item
+    Cepheler sokağa paraleldir,
+  \item
+    Beşik çatı ve ağırlıkla kırma çatı tipi hakimdir,
+  \item
+    Zemin katlar su basman seviyesinde yükseltilerek bodrum katların
+    aydınlatılması için pencereler kullanılmaktadır,
+  \end{itemize}
+\item
+  Giriş;
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Genellikle cephenin simetri ekseninde, diğer durumlarda yapının
+    köşesine yakın bulunurlar,
+  \item
+    Basamaklar ve hemen üzerindeki çıkmalar ile vurgulanmışlardır,
+  \end{itemize}
+\item
+  Pencereler;
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Dikdörtgen formda ve düşey hatlıdırlar,
+  \item
+    Sokak cephesinde diğer cephelere göre daha çok pencere
+    bulunmaktadır.
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/KonutCepheleri.jpg}
+\caption{Geleneksel konut cephesi örnekleri (Özen vd., 2009).}
+\end{figure}
+
+Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa
+edilmişlerdir (Kuloğlu, 1994). Osmanlı dönemi sonrası yapılan bu yapılar
+hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin
+sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
+
+\hypertarget{verilerin-toplanmasux131}{%
+\section{Verilerin Toplanması}\label{verilerin-toplanmasux131}}
+
+Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek
+oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon
+Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında
+Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin
+sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar
+Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25
+tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak
+silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin
+rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen
+geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır.
+Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile
+yürütülmüştür.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/vaziyetplanitescilli.pdf}
+\caption{Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli
+yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine
+ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.}
+\end{figure}
 
 \hypertarget{bulgular-ve-irdelemeler}{%
 \chapter{BULGULAR VE İRDELEMELER}\label{bulgular-ve-irdelemeler}}
 
 \thispagestyle{empty}
 
+Bu bölümde elde edilen rölöveler üzerinden yapılan analizler ve bunların
+CGA kodunun oluşturulmasındaki kullanımı anlatılmaktadır. CGA gramerinin
+oluşturulmasında sırasıyla;
+
+\begin{itemize}
+\tightlist
+\item
+  Taban alanları
+\item
+  Kat sayıları ve yükseklikleri
+\item
+  Cephe karakteri
+\item
+  Cephe çıkmaları (cumbalar)
+\item
+  Cephe elemanları
+\item
+  Pencere oranları
+\item
+  Çatı formu
+\end{itemize}
+
+analiz edilerek incelenmiştir. Bu analizlere ek olarak yapıların
+kütlesel formları gruplanarak analiz edilmiştir. Ardından bu formları ve
+türevlerini oluşturabilecek biçim grameri kuralları tanımlanmıştır. Bu
+kurallar CGA gramerine entegre edilerek kaba kütle üretimi sağlanmaya
+çalışılmıştır.
+
+Oluşturulan kütleler kat sayıları ve yükseklik oranlarına göre
+dilimlenerek katlar oluşturulmaktadır. Cephe karakteri analizi sonucunda
+ise oluşan katların panel parçalarına ayrılması sağlanmaktadır. Ardından
+cephe elemanları ve pencereler oranlarına göre panel içinde dilimlenerek
+yerleri belli edilmektedir.
+
 \hypertarget{ortahisarux131n-mimari-dil-analizi-ve-biuxe7im-grameri}{%
 \section{Ortahisar'ın Mimari Dil Analizi ve Biçim
 Grameri}\label{ortahisarux131n-mimari-dil-analizi-ve-biuxe7im-grameri}}
 
-\hypertarget{yapux131-taban-alanux131-analizi}{%
-\subsection{Yapı Taban Alanı
-Analizi}\label{yapux131-taban-alanux131-analizi}}
+Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan
+oluşmaktadır. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve
+analiz-sentez aşaması sonucunda elde edilen veriler ile
+parametreleştirilmektedir. CGA gramerinin başlangıcı bir parsel veya
+bina oturum alanının tanımlanması ile gerçekleşmektedir. Gramerin
+basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile
+açıklanmıştır.
 
-Seçilen Ortahisar evlerinin taban alanları, derinlikleri, genişlikleri
-incelendiğinde
+\hypertarget{yapux131-taban-alanux131}{%
+\subsection{Yapı Taban Alanı}\label{yapux131-taban-alanux131}}
+
+Ortahisar geleneksel evleri sokağa göre paralel konumlanmaktadır.
+Yapıların giriş ve cumbasının bulunduğu cephe sokağa doğru bakmaktadır.
+Kural 1 ve 2 başlangıç için verilen oturum alanını ve sokağın yönünü
+belirler.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/K1-K2.pdf}
+\caption{Oturum alanı ve sokak yönünün tanımlanmasını gösteren kurallar.
+\label{K1K2}}
+\end{figure}
+
+Seçilen Ortahisar evlerinin taban alanları incelendiğinde;
 
 \begin{itemize}
 \tightlist
@@ -1190,7 +1215,9 @@ incelendiğinde
   değeri 1,513
 \end{itemize}
 
-oldukları bulunmuştur.
+oldukları bulunmuştur. Bulunan değerler CGA gramerine girdi olarak
+verilen taban alanlarının seçimi için kullanılmaktadır. Bu kısıtlar
+dışında olan girdilerde model oluşumu gerçekleşmemektir.
 
 \begin{longtable}[]{@{}rrrrrrr@{}}
 \caption{Seçilmiş Ortahisar evlerinin oturum alanları, ortalama derinlik
@@ -1226,8 +1253,6 @@ m\textsuperscript{2} & 1.639,41 m\textsuperscript{2}\tabularnewline
 m\textsuperscript{2} & 131,28 m\textsuperscript{2}\tabularnewline
 \textbf{118} & \textbf{1} & 9,208 m & 14,904 m & 0,618 & 137,30
 m\textsuperscript{2} & 177,17 m\textsuperscript{2}\tabularnewline
-\textbf{127} & \textbf{12} & 9,706 m & 11,437 m & 0,849 & 87,50
-m\textsuperscript{2} & 318,80 m\textsuperscript{2}\tabularnewline
 \textbf{127} & \textbf{28} & 8,473 m & 9,799 m & 0,865 & 83,43
 m\textsuperscript{2} & 205,86 m\textsuperscript{2}\tabularnewline
 \textbf{128} & \textbf{7} & 8,473 m & 10,102 m & 0,839 & 92,20
@@ -1243,16 +1268,50 @@ m\textsuperscript{2} & 879,21 m\textsuperscript{2}\tabularnewline
 \bottomrule
 \end{longtable}
 
+\hypertarget{form-analizi}{%
+\subsection{Form Analizi}\label{form-analizi}}
+
+Bölgedeki geleneksel konutlar kat sayısına göre kütlesel oluşumu
+açısından incelendiğinde 5 farklı gruba ayrılmaktadır.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/kutlegrameri.pdf}
+\caption{Ortahisar evlerinin kat sayısına göre kütle oluşumlarının
+analizi. \label{katgruplama}}
+\end{figure}
+
+\newpage
+
 \hypertarget{yapux131-kat-sayux131sux131-ve-yuxfckseklikleri-analizi}{%
 \subsection{Yapı Kat Sayısı ve Yükseklikleri
 Analizi}\label{yapux131-kat-sayux131sux131-ve-yuxfckseklikleri-analizi}}
 
+Geleneksel konutlar kat sayısına göre incelendiğinde aşağıdaki tablodaki
+gibi beş gruba ayrılmaktadırlar.
+
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth,height=\textheight]{source/figures/katgruplandirma.pdf}
-\caption{Ortahisar evlerinin kat sayısına göre gruplandırılması.
+\caption{Kat sayısına göre gruplandırılmış Ortahisar evleri.
 \label{katgruplama}}
 \end{figure}
+
+katlarına göre \%20'si iki katlı, \%6,67'i çatı katı olan iki katlı,
+\%26,66'sı üç katlı, \%33,33'ü çatı katı olan üç katlı ve \%13,33'u dört
+katlı olan yapılar bulunmaktadır. Yapılar bodrum, zemin, birinci, ikinci
+ve çatı katlarından oluşmaktadır. Tablo \ref{katbulunmayuzde}
+incelendiğinde dört katlı yapılarda çatı katı oluşumu görülmemektedir.
+Üç katlı ve çatı katı bulunan yapıların \%80'inde bodrum katı bulunurken
+\%20'sinde bodrum kat yerine ikinci kat bulunmaktadır. Üç katlı
+yapıların yarısında bodrum kat bulunurken diğer yarısında bodrum kat
+yerine ikinci kat bulunmaktadır.
+
+Tablo \ref{katoranlari} incelendiğinde yapıların bodrum kat zemin kat
+yüksekliklerine göre daha kısa olduğu, birinci ve ikinci kat
+yüksekliklerinin ise yakın değerler aldığı görülmektedir. Çatı katı
+yükseklikleri yapıların 2/3'ünde zemin kata yakın değerler alırken geri
+kalanında zemin kattan daha kısa olarak bulunmaktadır.
 
 \begin{longtable}[]{@{}rrrrrrr@{}}
 \caption{Kat yükseklikleri tablosu.}\tabularnewline
@@ -1295,15 +1354,13 @@ m\tabularnewline
 \textbf{110} & \textbf{23} & 1,752 m & 3,112 m & 3,189 m &
 &\tabularnewline
 \textbf{110} & \textbf{43} & & 4,305 m & 4,147 m & &\tabularnewline
-\textbf{127} & \textbf{12} & 1,086 m & 3,288 m & 3,635 m &
-&\tabularnewline
 \textbf{888} & \textbf{7} & & 4,682 m & 3,828 m & &\tabularnewline
 \bottomrule
 \end{longtable}
 
 \begin{longtable}[]{@{}lrrrrrrr@{}}
-\caption{Kat sayısına göre gruplandırılmış kat oranları
-tablosu.}\tabularnewline
+\caption{Kat sayısına göre gruplandırılmış kat oranları tablosu.
+\label{katoranlari}}\tabularnewline
 \toprule
 \begin{minipage}[b]{0.02\columnwidth}\raggedright
 \strut
@@ -1670,23 +1727,6 @@ tablosu.}\tabularnewline
 \begin{minipage}[t]{0.02\columnwidth}\raggedright
 \strut
 \end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedleft
-\textbf{127}\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedleft
-\textbf{12}\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
-3,288 m\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
-0,330\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
-1,105\strut
-\end{minipage} & \begin{minipage}[t]{0.14\columnwidth}\raggedleft
-\strut
-\end{minipage} & \begin{minipage}[t]{0.12\columnwidth}\raggedleft
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.02\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedleft
 \textbf{888}\strut
 \end{minipage} & \begin{minipage}[t]{0.04\columnwidth}\raggedleft
 \textbf{7}\strut
@@ -1704,6 +1744,29 @@ tablosu.}\tabularnewline
 \bottomrule
 \end{longtable}
 
+\begin{longtable}[]{@{}rrrrrr@{}}
+\caption{Kat sayısına göre gruplandırılmış yapılarda katların bulunma
+yüzdeleri tablosu. \label{katbulunmayuzde}}\tabularnewline
+\toprule
+\textbf{Kat Sayısı} & \textbf{Bodrum Kat} & \textbf{Zemin Kat} &
+\textbf{Birinci Kat} & \textbf{İkinci Kat} & \textbf{Çatı
+Katı}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\textbf{Kat Sayısı} & \textbf{Bodrum Kat} & \textbf{Zemin Kat} &
+\textbf{Birinci Kat} & \textbf{İkinci Kat} & \textbf{Çatı
+Katı}\tabularnewline
+\midrule
+\endhead
+\textbf{4} & 100 & 100 & 100 & 100 & 0\tabularnewline
+\textbf{3,5} & 80 & 100 & 100 & 20 & 100\tabularnewline
+\textbf{3} & 50 & 100 & 100 & 50 & 0\tabularnewline
+\textbf{2,5} & 0 & 100 & 100 & 0 & 100\tabularnewline
+\textbf{2} & 33 & 100 & 100 & 0 & 0\tabularnewline
+\bottomrule
+\end{longtable}
+
 \newpage
 
 \hypertarget{cephe-analizi}{%
@@ -1718,6 +1781,14 @@ tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri.
 \end{figure}
 
 \newpage
+
+Yapılar cephelerine göre gruplandığında 100 m\textsuperscript{2}
+üzerinde olanlar üç parçalı cepheye, 100 m\textsuperscript{2} altında
+olan yapıların 75\%'i üç parçalı ve geri kalanı tek parçalı cepheye
+sahiptirler. Üç parçalı cephelerde kenar parçalarının genişlikleri bir
+kaç santimetre farklarla birbirlerinden farklılaşmaktadır. Bu cephe
+parçalarının orta cephe parçasına göre oranı yapılarda 0,9 ile 1,165
+arasında değişmektedir.
 
 \begin{longtable}[]{@{}lrrrrrrr@{}}
 \caption{Ortahisar evlerinin cephe parçalarının genişlik oranları
@@ -1835,6 +1906,17 @@ Kat} & \textbf{İkinci Kat} & \textbf{Çatı Katı}\tabularnewline
 \subsection{Cephe Çıkmaları Analizi
 (Cumba)}\label{cephe-uxe7ux131kmalarux131-analizi-cumba}}
 
+Genel olarak yapıların \%43,75'inde cumba bulunmaktadır. Üç parçalı
+cephe karakteri gösteren yapılarda cumbası olan orta parça genişliği en
+az 2,99 metredir. Çatı katı cumbaları bir alt katında bulunan cumbanın
+derinlik ve genişlik uzunluklarını almaktadırlar. Ayrıca bodrum katı
+olan yapılarda giriş sahanlığı birinci katta bulunan cumba mesafesi
+kadar dışarı çıkmaktadır. 110 ada 131 parsel ve 118 ada 1 parselde
+bulunan yapıların ikinci katları arka cepheleri harici diğer cephelerde
+dışarı çıkma yapmaktadır. Bu yapıların ikinci katlarında bulunan
+cumbalar bir alt kat cumbaya göre hem derinlik hemde genişlik olarak
+ikinci kattaki çıkma mesafesi kadar büyümektedir.
+
 \begin{longtable}[]{@{}rrrrrr@{}}
 \caption{Cumbaların derinlik ölçüleri tablosu.}\tabularnewline
 \toprule
@@ -1851,7 +1933,7 @@ Kat} & \textbf{İkinci Kat} & \textbf{Çatı Katı}\tabularnewline
 \textbf{128} & \textbf{10} & & 1,460 m & 1,460 m &\tabularnewline
 \textbf{110} & \textbf{16} & & & &\tabularnewline
 \textbf{110} & \textbf{39} & 1,840 m & 1,840 m & &\tabularnewline
-\textbf{110} & \textbf{41} & & 1,780 m & 1,780 m &\tabularnewline
+\textbf{110} & \textbf{41} & & 1,780 m & & 1,780 m\tabularnewline
 \textbf{110} & \textbf{131} & & 3,220 m & 3,450 m & 3,450
 m\tabularnewline
 \textbf{129} & \textbf{26} & & & &\tabularnewline
@@ -1859,19 +1941,33 @@ m\tabularnewline
 \textbf{114} & \textbf{30} & & & &\tabularnewline
 \textbf{128} & \textbf{7} & & & &\tabularnewline
 \textbf{888} & \textbf{8} & & & &\tabularnewline
-\textbf{127} & \textbf{28} & & 1,210 m & 1,210 m &\tabularnewline
+\textbf{127} & \textbf{28} & & 1,210 m & & 1,210 m\tabularnewline
 \textbf{110} & \textbf{23} & & 1,250 m & &\tabularnewline
 \textbf{110} & \textbf{43} & & & &\tabularnewline
-\textbf{127} & \textbf{12} & & & &\tabularnewline
 \textbf{888} & \textbf{7} & & & &\tabularnewline
 \bottomrule
 \end{longtable}
 
-\newpage
+\hypertarget{cephe-elemanlarux131-analizi}{%
+\subsection{Cephe Elemanları
+Analizi}\label{cephe-elemanlarux131-analizi}}
+
+Yapılarda bulunan kornişlerin ve köşe taşlarının ebatlarının analizleri
+eklenecektir.
 
 \hypertarget{pencere-geniux15flikleri-ve-yuxfckseklikleri-analizi}{%
 \subsection{Pencere Genişlikleri ve Yükseklikleri
 Analizi}\label{pencere-geniux15flikleri-ve-yuxfckseklikleri-analizi}}
+
+Yapıların \%81,25 inde cephe parçalarında iki veya daha fazla pencere
+bulunurken geri kalanında tek pencere bulunmaktadır. Cephe parçalarında
+iki veya daha fazla pencere bulunan yapılarda pencere yüksekliğinin
+genişliğine oranı 1,493 ile 1,881 arasında değişmektedir. Cephe
+parçasında tek pencere bulunan yapılarda bu oran 0,854 ile 1,050
+arasındadır. Pencere yüksekliklerinin zemin kat yüksekliğine göre
+oranlarına bakıldığında ise 1,439 - 2,378 değer aralığı bulunmaktadır.
+110 ada 44 parseldeki yapının zemin katı diğer yapılara göre farklılık
+gösterdiğinden bu değer aralığı dışında tutulmuştur.
 
 \begin{longtable}[]{@{}rrrrrr@{}}
 \caption{Pencere yüksekliklerinin genişliklerine göre oranları
@@ -1975,57 +2071,48 @@ m\tabularnewline
 \bottomrule
 \end{longtable}
 
-\newpage
-
 \hypertarget{uxe7atux131-formu-ve-eux11fimi-analizi}{%
 \subsection{Çatı Formu ve Eğimi
 Analizi}\label{uxe7atux131-formu-ve-eux11fimi-analizi}}
 
-\begin{longtable}[]{@{}rrlr@{}}
+Ortahisar evlerinin çatı eğimleri 17° ile 34° arasında değişmektedir.
+Çatı katı olmayan yapılar \%77.7'si kırma çatıya \%11,1'i beşik çatı ve
+geri kalanı kırma ve beşik melez bir çatıya sahiptir. Çatı katı olan
+yapılarda alt kat çatısı eşit oranlarda kırma, beşik ve melez çatıya
+sahiptir. Çatı katı olan yapıların çatı katı \%16,6'sı kırma, \%66,6
+beşik ve \%16,6'sı melez çatıya sahiptir. CityEngine üzerinde CGA kodu
+ile melez çatı oluşturulması mümkün olmamaktadır.
+
+\begin{longtable}[]{@{}rrrll@{}}
 \caption{Ortahisar evlerinin çatı formu ve eğimi
 tablosu.}\tabularnewline
 \toprule
-\textbf{Ada} & \textbf{Parsel} & \textbf{Çatı Formu} & \textbf{Çatı
-Eğimi}\tabularnewline
+\textbf{Ada} & \textbf{Parsel} & \textbf{Çatı Eğimi} & \textbf{Alt Kat}
+& \textbf{Çatı Kat}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\textbf{Ada} & \textbf{Parsel} & \textbf{Çatı Formu} & \textbf{Çatı
-Eğimi}\tabularnewline
+\textbf{Ada} & \textbf{Parsel} & \textbf{Çatı Eğimi} & \textbf{Alt Kat}
+& \textbf{Çatı Kat}\tabularnewline
 \midrule
 \endhead
-\textbf{118} & \textbf{1} & Kırma & 20°\tabularnewline
-\textbf{128} & \textbf{10} & Beşik & 20°\tabularnewline
-\textbf{110} & \textbf{16} & Kırma + Beşik & 23°\tabularnewline
-\textbf{110} & \textbf{39} & Beşik + Kırma & 18°\tabularnewline
-\textbf{110} & \textbf{41} & Kırma + Beşik & 18°\tabularnewline
-\textbf{110} & \textbf{131} & Beşik + Kırma & 18°\tabularnewline
-\textbf{129} & \textbf{26} & Beşik + Kırma & 19°\tabularnewline
-\textbf{110} & \textbf{44} & Kırma & 18°\tabularnewline
-\textbf{114} & \textbf{30} & Kırma & 17°\tabularnewline
-\textbf{128} & \textbf{7} & Kırma & 20°\tabularnewline
-\textbf{888} & \textbf{8} & Kırma & 18°\tabularnewline
-\textbf{127} & \textbf{28} & Beşik & 34°\tabularnewline
-\textbf{110} & \textbf{23} & Kırma & 28°\tabularnewline
-\textbf{110} & \textbf{43} & Kırma x Beşik & 30°\tabularnewline
-\textbf{127} & \textbf{12} & Kırma & 17°\tabularnewline
-\textbf{888} & \textbf{7} & Kırma & 18°\tabularnewline
+\textbf{118} & \textbf{1} & 20° & Kırma &\tabularnewline
+\textbf{128} & \textbf{10} & 20° & Beşik &\tabularnewline
+\textbf{110} & \textbf{16} & 23° & Beşik+Kırma & Kırma\tabularnewline
+\textbf{110} & \textbf{39} & 18° & Kırma & Beşik\tabularnewline
+\textbf{110} & \textbf{41} & 18° & Beşik & Beşik + Kırma\tabularnewline
+\textbf{110} & \textbf{131} & 18° & Kırma & Beşik\tabularnewline
+\textbf{129} & \textbf{26} & 19° & Beşik+Kırma & Beşik\tabularnewline
+\textbf{110} & \textbf{44} & 18° & Kırma &\tabularnewline
+\textbf{114} & \textbf{30} & 17° & Kırma &\tabularnewline
+\textbf{128} & \textbf{7} & 20° & Kırma &\tabularnewline
+\textbf{888} & \textbf{8} & 18° & Kırma &\tabularnewline
+\textbf{127} & \textbf{28} & 34° & Beşik & Beşik\tabularnewline
+\textbf{110} & \textbf{23} & 28° & Kırma &\tabularnewline
+\textbf{110} & \textbf{43} & 30° & Beşik+Kırma &\tabularnewline
+\textbf{888} & \textbf{7} & 18° & Kırma &\tabularnewline
 \bottomrule
 \end{longtable}
-
-\newpage
-
-\hypertarget{form-analizi}{%
-\subsection{Form Analizi}\label{form-analizi}}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\textwidth,height=\textheight]{source/figures/kutlegrameri.pdf}
-\caption{Ortahisar evlerinin kat sayısına göre kütle oluşumlarının
-analizi. \label{katgruplama}}
-\end{figure}
-
-\newpage
 
 \hypertarget{biuxe7im-grameri}{%
 \subsection{Biçim Grameri}\label{biuxe7im-grameri}}
@@ -2037,488 +2124,20 @@ analizi. \label{katgruplama}}
 \label{bicimgrameri}}
 \end{figure}
 
+\hypertarget{cga-biuxe7im-gramerinin-oluux15fturulmasux131}{%
+\section{CGA Biçim Gramerinin
+Oluşturulması}\label{cga-biuxe7im-gramerinin-oluux15fturulmasux131}}
+
+CGA gramer kodu CityEngine yazılımında yazılmaya başlanmıştır ve büyük
+oranda tamamlanmıştır.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth,height=\textheight]{source/figures/OrtahisarCGA.png}
+\caption{CityEngine üzerinde CGA kodu ile üreliten modeller.}
+\end{figure}
+
 \newpage
-
-\hypertarget{yazux131lux131m}{%
-\section{Yazılım}\label{yazux131lux131m}}
-
-\begin{verbatim}
-/**
- * File:    Ortahisar.cga
- * Created: 22 Nov 2017 08:56:51 GMT
- * Author:  caglaraydin
- */
-
-version "2018.1"
-
-####################################################
-# Control Attributes
-#
-
-
-@Group("Bina",2)
-@Order(1) @Range("2 katli","2.5 katli","3 katli","3.5 katli","4 katli")
-attr BinaKatSayisi  = 25%: "2 katli" 6.25%: "2.5 katli" 25%: "3 katli" 31.25%: "3.5 katli" else: "4 katli"
-@Order(2) @Range( "1 Bay", "3 Bay")
-attr CepheTipi =
-    case geometry.area > 100.23 : "3 Bay" # 100m2 üzeri hepsi 3 Bay li
-    else : # 100m2 altında 4 tane 3 Bay li var
-        75%: "3 Bay" else: "1 Bay"
-
-
-##################################################
-# -----------------------------------------------------------------
-# Kat yükseklikleri
-# -----------------------------------------------------------------
-
-# TODO: Kat yüksekliklerinin birbirine oranları dikkate alınarak tekrardan gözden geçirilmesi gerekiyor.
-@Group("Kat Yükseklikleri", 3)
-@Order(1)
-# Bodrum kat yüksekliği tanımlaması,
-attr basementHeight         =
-# Zemin kata göre oranı ele alınarak
-    case binaKat(0) : 50% : groundFloorHeight*rand(0.330, 0.563) else : 0
-    case binaKat(2) : 50% : groundFloorHeight*rand(0.599, 0.836) else : 0
-    case binaKat(3) : 80% : groundFloorHeight*rand(0.463, 0.875) else : 0
-    case binaKat(4) : groundFloorHeight*rand(0.603, 0.635)
-
-    #case binaKat(0) : 50% : rand(1.086, 1.752) else : 0
-    #case binaKat(2) : 50% : rand(2.431, 2.946) else : 0
-    #case binaKat(3) : 80% : rand(1.823, 3.242) else : 0
-    #case binaKat(4) : rand(2.369, 2.441)
-    else : 0
-
-@Order(2)
-# Zemin kat yüksekliği tanımlanması
-attr groundFloorHeight      =
-    case binaKat(0) : rand(3.112, 4.682)
-    case binaKat(2) : rand(3.524, 4.663)
-    case binaKat(3) : rand(2.766, 4.180)
-    case binaKat(4) : rand(3.733, 4.046)
-    else : 2.897
-
-@Order(3)
-# Birinci kat yüksekliği
-attr firstFloorHeight       =
-# Zemin kata göre oranı ele alınarak
-    case binaKat(0) : groundFloorHeight*rand(0.818, 1.105)
-    case binaKat(2) : groundFloorHeight*rand(0.923, 0.962)
-    case binaKat(3) : groundFloorHeight*rand(0.937, 1.167)
-    case binaKat(4) : groundFloorHeight*rand(0.802, 0.889)
-
-    #case binaKat(0) : rand(3.189, 4.147)
-    #case binaKat(2) : rand(2.933, 4.047)
-    #case binaKat(3) : rand(3.226, 4.093)
-    #case binaKat(4) : rand(3.247, 3.318)
-    else : 3.840
-
-@Order(4)
-# İkinci kat yüksekliği
-attr secondFloorHeight      =
-# Zemin kata göre oranı ele alınarak
-    case binaKat(2) && basementHeight == 0 : groundFloorHeight*1.087
-    case binaKat(3) && basementHeight == 0 : groundFloorHeight*1.210
-    case binaKat(4) : groundFloorHeight*rand(0.801, 1.007)
-
-    #case binaKat(2) && basementHeight == 0 : rand(2.913, 4.364)
-    #case binaKat(3) && basementHeight == 0 : 3.348
-    #case binaKat(4) : rand(3.239, 3.760)
-    else : 0
-
-@Order(5)
-# Çatı katı yüksekliği
-attr atticFloorHeight       =
-# Zemin kata göre oranı ele alınarak
-    case binaKat(1) : groundFloorHeight*0.991
-    case binaKat(3) : groundFloorHeight*rand(0.575, 0.946)
-
-    #case binaKat(1) : 2.871
-    #case binaKat(3) : rand(2.334, 3.325    )
-    else : 0
-
-attr CepheKati = ""
-
-
-
-##################################################
-# -----------------------------------------------------------------
-# Cephe parçaları oranı
-# -----------------------------------------------------------------
-@Group("Cephe Oranları", 4)
-
-# TODO: Oranlar tekrardan gözden geçirilecek.
-const bayRatio                  = rand(0.909,1.165)
-
-const kornisYukseklik       = 0.1
-const quoinWidth                = rand(0.1, 0.5)
-
-
-##################################################
-# -----------------------------------------------------------------
-# Kapı
-# -----------------------------------------------------------------
-
-
-
-##################################################
-# -----------------------------------------------------------------
-# Pencere
-# -----------------------------------------------------------------
-@Group("Pencere Oranları", 6)
-# TODO: Çatı katı pencere yüksekliğinin ayrıca Çatı Katı Yüksekliğine göre ayarlanması gerekiyor.
-attr penYuk                         = groundFloorHeight/rand(1.439, 1.861)
-#attr penYukCati                = atticFloorHeight/rand(1.362, 1.953)
-attr penGen                     = 81.25% : penYuk*rand(0.532, 0.670) else: penYuk*rand(0.952, 1.171)
-attr denizlikYuk                = rand(0.402, 1.101)
-attr denizlikYukCati        =   rand(denizlikYuk, 1.016)
-
-
-##################################################
-# -----------------------------------------------------------------
-# Cumba
-# -----------------------------------------------------------------
-@Group("Cumba Oranları", 7)
-attr cumba                          = 43.75% : true else : false
-attr cumbaCikma             = rand(1.21, 3.45)
-
-# Genişleyen üst kat cumbası 12.5% oranı ile 3 Bay olan evlerde
-attr cumbaIkinciKatOran         =
-    case secondFloorHeight == 0 || CepheTipi == "1 Bay" :
-        1
-    else :
-        12.5% : rand(1.061, 1.098)
-        else : 1
-
-
-##################################################
-# -----------------------------------------------------------------
-# Çatı
-# -----------------------------------------------------------------
-@Group("Çatı Oranları", 8)
-attr catiEgimi                  =
-    case binaKat(0) : rand(17, 30)
-    case binaKat(2) : rand(17, 20)
-    case binaKat(3) : rand(18, 23)
-    case binaKat(4) : 20
-    else : 34
-
-##################################################
-# -----------------------------------------------------------------
-# Giriş sahanlığı ve merdiven
-# -----------------------------------------------------------------
-
-attr derinlik   = 0
-attr genislik   = 0
-
-
-
-
-##################################################
-####################################################
-# Helpers
-#
-
-binaKat(tip) =
-    case BinaKatSayisi == "2 katli"     : 0 == tip
-    case BinaKatSayisi == "2.5 katli"   : 1 == tip
-    case BinaKatSayisi == "3 katli"     : 2 == tip
-    case BinaKatSayisi == "3.5 katli"   : 3 == tip
-    case BinaKatSayisi == "4 katli"     : 4 == tip
-    else                                                        : false
-
-####################################################
-# Building Construction Constants
-#
-
-
-###################################################
-###################################################
-##
-##  RULES
-##
-##
-
-@StartRule
-Lot -->
-    # Bounding box'ı objeye göre ayarlama, parselin kenarlarını doğru ölçmek için gerekli.
-    alignScopeToGeometry(yUp, world.lowest, longest)
-    Parcel
-    #print("Pencere Yuksekligi: " + penYuk)
-    #print("Pencere Genisligi: " + penGen)
-    #print("En-Boy Orani" + penGen/penYuk)
-
-
-
-Parcel-->
-    case (geometry.area > 50.38 && geometry.area < 315.67)
-        # Parselin kısa kenarı 4.888 den aşağı genişlikte 9.799'dan aşağı olamaz
-        && (scope.sx > 4.888 && scope.sz > 4.888)
-        # Parselin uzun kenarı 17.021'den yukarı olamaz
-        && (scope.sx < 17.021 && scope.sz < 17.021)
-        # Parselin derinliğinin genişliğine oranının kontrolü
-        && 0.346 < scope.sz/scope.sx &&     scope.sz/scope.sx <1.513 :
-        BodrumKat ZeminKat BirinciKat IkinciKat
-        #extrude(basementHeight + groundFloorHeight +  firstFloorHeight + secondFloorHeight ) #+ atticFloorHeight)
-        #comp(f){front: Cephe | back: Cephe | side: Cephe | top : alignScopeToGeometry(yUp, any, longest) Cati("rastlantisal")}
-    # TODO: Çatı katı ve çatı yeniden değerlendirilmesi gerekiyor. Oluşturulma oranı tekrardan gözden geçirilecek.
-    else : NIL
-
-
-
-# -----------------------------------------------------------------
-# Katlar
-# -----------------------------------------------------------------
-
-
-BodrumKat -->
-    extrude(basementHeight)
-    set(CepheKati, "Bodrum")
-    Cephe
-
-
-ZeminKat -->
-    t(0, basementHeight, 0)
-    extrude(groundFloorHeight)
-    set(CepheKati, "Zemin")
-    Cephe
-
-
-BirinciKat -->
-    case secondFloorHeight == 0 :
-        t(0, basementHeight+groundFloorHeight, 0)
-        extrude(firstFloorHeight)
-        set(CepheKati, "Birinci")
-        Cephe
-        #comp(f){top : alignScopeToGeometry(yUp, any, longest) Cati("rastlantisal")}
-    else :
-        t(0, basementHeight+groundFloorHeight, 0)
-        extrude(firstFloorHeight)
-        set(CepheKati, "Birinci")
-        Cephe
-
-
-IkinciKat -->
-    t(0, basementHeight+groundFloorHeight+firstFloorHeight, 0)
-    s( 'cumbaIkinciKatOran, 1, 'cumbaIkinciKatOran)
-    center(x)
-    extrude(world.up, secondFloorHeight)
-    set(CepheKati, "Ikinci")
-    Cephe
-    comp(f){top : set(CepheKati, "Cati") alignScopeToGeometry(yUp, any, longest) Cati("rastlantisal") | bottom : Tile("Duvar") }
-
-
-
-
-# -----------------------------------------------------------------
-# Cephe
-# -----------------------------------------------------------------
-
-
-Cephe -->
-    comp(f){ front : CepheOn | left : CepheYan | right : CepheYan| back : CepheArka }
-
-
-
-
-
-CepheOn -->
-    case CepheTipi == "3 Bay" :
-        case CepheKati == "Zemin" :
-            split(x){~bayRatio : Tile("BaySol") | ~1 : Tile("Giris") | ~bayRatio : Tile("BaySag")}
-
-        case CepheKati == "Birinci" :
-            split(x){~bayRatio : Tile("BaySol") | ~1 : Cumba | ~bayRatio : Tile("BaySag")}
-
-        case CepheKati == "Ikinci" :
-            split(x){~bayRatio : Tile("BaySol") | ~cumbaIkinciKatOran : Cumba | ~bayRatio : Tile("BaySag")}
-
-        case CepheKati == "Bodrum" :
-            Tile("Duvar")
-
-        else:
-            Tile("Duvar")
-
-
-
-
-    case CepheTipi == "1 Bay" :
-        case CepheKati == "Zemin" :
-            split(x){~bayRatio : Tile("BaySol") | ~1 : Tile("Giris") }
-
-        case CepheKati == "Bodrum" :
-            Tile("Duvar")
-
-        else:
-            Tile("Bay")
-
-
-
-    else :
-        Tile("Bay")
-
-
-
-
-
-
-
-CepheYan -->
-    case CepheKati == "Bodrum" :
-        Tile("Duvar")
-    else :
-        Tile("CepheYan")
-
-
-
-
-
-
-CepheArka-->
-    case CepheTipi == "3 Bay" :
-        case CepheKati == "Bodrum" :
-            Tile("Duvar")
-        case CepheKati == "Birinci" && secondFloorHeight == 0 :
-            split(x){~bayRatio : Tile("BaySol") | ~1 : Tile("Balkon") | ~bayRatio : Tile("BaySag")}
-        else :
-            split(x){~bayRatio : Tile("BaySol") | ~1 : Tile("Bay") | ~bayRatio : Tile("BaySag")}
-    else :
-        Tile("Bay")
-
-
-
-
-
-
-
-
-Tile(tiletype)-->
-
-    case tiletype == "Bay" :
-        split(y){ kornisYukseklik : Tile("Cornice") |  ~1 : split(x){ quoinWidth : Tile("Quoin") | ~1 : Tile("Panel")| quoinWidth : Tile("Quoin")} }
-
-    case tiletype == "BaySol" :
-        split(y){ kornisYukseklik : Tile("Cornice") |  ~1 : split(x){ quoinWidth : Tile("Quoin") | ~1 : Tile("Panel")} }
-
-    case tiletype == "BaySag" :
-        split(y){ kornisYukseklik : Tile("Cornice") |  ~1 : split(x){ ~1 : Tile("Panel") | quoinWidth : Tile("Quoin")} }
-
-    case tiletype == "Balkon" :
-        split(y){ kornisYukseklik : Cumba | ~1 : Tile("Giris") }
-
-    case tiletype == "CepheYan" :
-    # TODO Yüzdelere göre sağır oluşu, daimi  pencere oluşu, küçük pencereler olması oluşturulmalı
-        Tile("Bay")
-
-
-
-    case tiletype == "Panel" :
-        case CepheKati == "Cati" :
-            split(y){ denizlikYukCati : Tile("Duvar") | ~1 : Tile("PencereHatti") | rand(0.168) : Tile("Duvar") }
-        else :
-            split(y){ denizlikYuk : Tile("Duvar") | penYuk : Tile("PencereHatti") | ~1 : Tile("Duvar") }
-
-    case tiletype == "PencereHatti" :
-        split(x){ ~0.63 : Tile("Duvar") | {penGen : Pencere  | ~0.63 : Tile("Duvar")}* }
-        #split(x){ ~1 : Tile("Duvar") | penGen : Pencere | ~1 : Tile("Duvar") | penGen : Pencere | ~1 : Tile("Duvar") }
-
-
-
-
-    case tiletype == "Duvar" :
-        color("#33CC33")
-
-    case tiletype == "Quoin" :
-        color("#33CC33")
-
-    case tiletype == "Cornice" :
-        color("#33CC33")
-
-    case tiletype == "Giris" :
-        color("#000000")
-
-    else :
-        NIL
-
-
-# -----------------------------------------------------------------
-# Pencere
-# -----------------------------------------------------------------
-
-Pencere -->
-    color("#000000")
-    #primitiveCube(scope.sx, scope.sy, 0.1)
-
-
-# -----------------------------------------------------------------
-# Cumba
-# -----------------------------------------------------------------
-
-
-# TODO Ikinci kat cumba disari tasma orani entegre edilmesi lazim
-
-Cumba -->
-    case scope.sx > 2.99  && cumba == true :
-    # TODO: Kat tipine (1. veya 2. kata) göre cumbaların çıkma mesafesi ayarlanacak. Üst katta genişleyen cumba
-        primitiveCube(scope.sx, scope.sy, cumbaCikma) t(0,0, (cumbaCikma/2))
-        comp(f){front: Tile("Bay") | back : NIL  | side: Tile("Bay") | bottom: Tile("Duvar") | top : NIL}
-    else : Tile("Bay")
-
-
-
-# -----------------------------------------------------------------
-# Sahanlık
-# -----------------------------------------------------------------
-Sahanlik -->
-    case cumba == true :
-        primitiveCube(scope.sx, scope.sy, cumbaCikma) t(0,0, (cumbaCikma/2)) color("#33CC33")
-    else : Tile("Duvar")
-
-
-
-# -----------------------------------------------------------------
-# Çatı
-# -----------------------------------------------------------------
-
-Cati(type)-->
-    case type == "kirma" :
-        roofHip(catiEgimi, 0.1) Cati("roof")
-
-    case type == "besik" :
-        roofGable(catiEgimi) color("#000fff")
-
-    case type == "sundurma" :
-        roofShed(catiEgimi) color("#000fff")
-
-    case type == "kirma+besik" :
-        case atticFloorHeight > 0 :
-            # İkinci kat cumbası ile aynı genişlikte
-            [ split(x){~bayRatio : NIL | ~cumbaIkinciKatOran : Cati("attic") | ~bayRatio : NIL } ]
-            roofHip(catiEgimi/2, 0.1)
-            split(x){~bayRatio : Cati("roof") | ~cumbaIkinciKatOran : NIL | ~bayRatio : Cati("roof")}
-        else :
-            Cati("kirma")
-
-    case type == "rastlantisal" :
-        case binaKat(3) || binaKat(1) :
-            Cati("kirma+besik")
-        else :
-            Cati("kirma")
-
-    case type == "attic" :
-        # Cumba var ise çatı arası cumba çıkması kadar öne doğru büyüyecek
-        case scope.sx > 2.99 && cumba == true && CepheTipi == "3 Bay" :
-            primitiveCube(scope.sx, atticFloorHeight, scope.sz + cumbaCikma) t(0, 0, cumbaCikma/2)
-            comp(f){top : Cati("besik") | side : Tile("Bay")}
-        else :
-            primitiveCube(scope.sx, atticFloorHeight, scope.sz)
-            comp(f){top : Cati("besik") | side : Tile("Bay")}
-
-    case type == "roof" :
-        color("#000FFF")
-
-    else :
-        Cati("kirma")
-\end{verbatim}
 
 \hypertarget{sonuuxe7lar-ve-uxf6neriler}{%
 \chapter{SONUÇLAR VE ÖNERİLER}\label{sonuuxe7lar-ve-uxf6neriler}}
@@ -2535,10 +2154,23 @@ Aksoy, Z.V., 2001. Klasik Osmanli Dönemi Sinan Camilerinin Biçim Grameri
 Açisindan İrdelenmesi, İstanbul Teknik Üniversitesi; İstanbul Teknik
 Üniversitesi.
 
+\leavevmode\hypertarget{ref-Aysu:1977wt}{}%
+Aysu, M.E., 1977. Eski kent mekanlarinin düzenlenme ilkeleri, İstanbul
+Devlet Mühendislik ve Mimarlik Akademisi; İstanbul Devlet Mühendislik ve
+Mimarlik Akademisi.
+
 \leavevmode\hypertarget{ref-Benros:2014bx}{}%
 Benrós, D., Hanna, S. ve Duarte, J.P., 2014. A Generic Shape Grammar for
 the Palladian Villa, Malagueira House, and Prairie House, Design
-Computing and Cognition '12, Springer Netherlands, 321--340, Dordrecht.
+Computing and Cognition '14, Springer Netherlands, 321--340, Dordrecht.
+
+\leavevmode\hypertarget{ref-Birlik:1999ux}{}%
+Birlik, S., 1999. Tarihi çevrede tasarim: Ortahisar'da bir deneme,
+Karadeniz Teknik Üniversitesi; Karadeniz Teknik Üniversitesi, Trabzon.
+
+\leavevmode\hypertarget{ref-Bryer:2011ul}{}%
+Bryer, A. ve Winfield, D., 1985. The Byzantine Monuments and Topography
+of the Pontos, Dumbarton Oaks Publications Ofice, 1.
 
 \leavevmode\hypertarget{ref-Buelinckx:1993io}{}%
 Buelinckx, H., 1993. Wren's language of City church designs: a formal
@@ -2549,18 +2181,6 @@ Design, 20, 6, 645--676.
 Chiou, S.-C. ve Krishnamurti, R., 1995. The grammar of Taiwanese
 traditional vernacular dwellings, Environment and Planning B: Planning
 and Design, 22, 6, 689--720.
-
-\leavevmode\hypertarget{ref-Cooper:2013iu}{}%
-Cooper, S.B. ve Leeuwen, J. van, 2013. Alan Turing: His Work and Impact,
-Elsevier.
-
-\leavevmode\hypertarget{ref-Copeland:2013vk}{}%
-Copeland, B.J., Posy, C. ve Shagrir, O., 2013. Computability: Gödel,
-Turing, Church, and beyond, MIT Press.
-
-\leavevmode\hypertarget{ref-Cross:1993jv}{}%
-Cross, N., 1993. A History of Design Methodology, Design Methodology and
-Relationships with Science, Springer, Dordrecht, 15--27, Dordrecht.
 
 \leavevmode\hypertarget{ref-Cagdas:1996fe}{}%
 Çağdaş, G., 1996. A shape grammar model for designing row-houses, Design
@@ -2574,10 +2194,6 @@ Houses, SAGE PublicationsSage UK: London, England, 23, 4, 443--464.
 Çolakoğlu, M.B., 2001. Design by grammar : algorithmic design in an
 architectural context, Massachusetts Institute of Technology;
 Massachusetts Institute of Technology.
-
-\leavevmode\hypertarget{ref-Dantzig:1998tv}{}%
-Dantzig, G.B., 1998. Linear Programming and Extensions, Princeton
-University Press, Princeton, N.J.
 
 \leavevmode\hypertarget{ref-Downing:1981dx}{}%
 Downing, F. ve Flemming, U., 1981. The Bungalows of Buffalo, Environment
@@ -2616,6 +2232,10 @@ Eloy, S. ve Duarte, J.P., 2014. Inferring a shape grammar: Translating
 designer's knowledge, Artificial Intelligence for Engineering Design,
 Analysis and Manufacturing, Cambridge University Press, 28, 2, 153--168.
 
+\leavevmode\hypertarget{ref-Fallmerayer:2011vq}{}%
+Fallmerayer, J.P., 2011. Trabzon İmparatorluğunun Tarihi, Türk Tarih
+Kurumu Yayinlari.
+
 \leavevmode\hypertarget{ref-Flemming:1981hm}{}%
 Flemming, U., 1981. The secret of the Casa Giuliani Frigerio,
 Environment and Planning B: Planning and Design, 8, 1, 87--96.
@@ -2629,10 +2249,6 @@ PublicationsSage UK: London, England, 14, 3, 323--350.
 Flemming, U., 1990. Syntactic Structures in Architecture, The Electronic
 Design Studio, 31--47, Cambridge, Mass.
 
-\leavevmode\hypertarget{ref-Frazer:2016bs}{}%
-Frazer, J., 2016. Parametric Computation: History and Future,
-Architectural Design, Wiley-Blackwell, 86, 2, 18--23.
-
 \leavevmode\hypertarget{ref-Gips:1975jg}{}%
 Gips, J., 1975. Shape Grammars and their Uses, Birkhäuser Basel, Basel.
 
@@ -2644,22 +2260,6 @@ Cambridge, MA, 56.
 \leavevmode\hypertarget{ref-Hanson:1986ty}{}%
 Hanson, N.L.R. ve Radford, A.D., 1986. On Modelling the Work of the
 Architect Glenn Murcutt.
-
-\leavevmode\hypertarget{ref-heath2013history}{}%
-Heath, T.L., 2013. A History of Greek Mathematics, Cambridge University
-Press.
-
-\leavevmode\hypertarget{ref-Hillier:2006tg}{}%
-Hillier, F. ve Lieberman, G., 2006. Introduction to Operations Research,
-McGraw-Hill Higher Education.
-
-\leavevmode\hypertarget{ref-Howard:1998wf}{}%
-Howard, R., 1998. Computing in Construction, Butterworth-Heinemann.
-
-\leavevmode\hypertarget{ref-Jesus:fi}{}%
-Jesus, D., Coelho, A. ve Sousa, A.A., Layered shape grammars for
-procedural modelling of buildings, The Visual Computer, Springer Berlin
-Heidelberg, 32, 6-8, 933--943.
 
 \leavevmode\hypertarget{ref-Kirsch:1986bi}{}%
 Kirsch, J.L. ve Kirsch, R.A., 1986. The structure of paintings: formal
@@ -2717,9 +2317,10 @@ Koning, H. ve Eizenberg, J., 1981. The language of the prairie: Frank
 Lloyd Wright's prairie houses, Environment and Planning B: Planning and
 Design, 8, 3, 295--323.
 
-\leavevmode\hypertarget{ref-Langrish:2016tm}{}%
-Langrish, J.Z., 2016. The Design Methods Movement: From Optimism to
-Darwinism, Design Research Society.
+\leavevmode\hypertarget{ref-Kuloglu:1994uy}{}%
+Kuloğlu, N., 1994. KONUTTAKİ İŞLEVSEL DEĞİŞİMİN TARİHİ ÇEVRELERİN
+KORUNMASINDA OLUŞTURDUĞU GÜÇLÜKLER VE ÇÖZÜM ÖNERİLERİ: ORTAHİSAR ÖRNEK
+ÇALIŞMASI, Karadeniz Teknik Üniversitesi; Karadeniz Teknik Üniversitesi.
 
 \leavevmode\hypertarget{ref-Lienhard:2017jv}{}%
 Lienhard, S., 2017. Visualization, Adaptation, and Transformation of
@@ -2730,20 +2331,9 @@ Lipp, M., Wonka, P. ve Wimmer, M., 2008. Interactive visual editing of
 grammars for procedural architecture, ACM Transactions on Graphics, ACM,
 27, 3, 1.
 
-\leavevmode\hypertarget{ref-Livingston:2002wf}{}%
-Livingston, M., 2002. Watergate: The name that branded more than a
-building, Washington Business Journal.
-
-\leavevmode\hypertarget{ref-Llach:2015ev}{}%
-Llach, D.C., 2015. Software Comes to Matter: Toward a Material History
-of Computational Design, Design Issues, 31, 3, 41--54.
-
-\leavevmode\hypertarget{ref-Minsky:1974ut}{}%
-Minsky, M., 1974. A Framework for Representing Knowledge, Cambridge.
-
-\leavevmode\hypertarget{ref-Moretti:2002ve}{}%
-Moretti, L., Bucci, F. ve Mulazzani, M., 2002. Luigi Moretti, Princeton
-Architectural Press.
+\leavevmode\hypertarget{ref-Miller:2007uq}{}%
+Miller, W., 2007. Son Trabzon İmparatorluğu, Heyamola Yayinlari,
+İstanbul.
 
 \leavevmode\hypertarget{ref-Muller:2005uf}{}%
 Müller, P., Vereenooghe, T., Ulmer, A. ve Van Gool, L., 2005. Automatic
@@ -2767,13 +2357,15 @@ Müller, P., Zeng, G., Wonka, P. ve Van Gool, L., 2007. Image-based
 procedural modeling of facades, ACM Transactions on Graphics, 26, 99,
 85--10.
 
+\leavevmode\hypertarget{ref-Ozen:2009wo}{}%
+Özen, H., Tuluk, Ö.İ., Engin, H.E., Düzenli, H.İ., Sümerkan, M.R.,
+Tutkun, M., Üstün, F. ve Keleş, S., 2009. Trabzon Kent İçi Kültür
+Varliklari Envanteri, T. C. Trabzon Valiliği İl Kültür Ve Turizm
+Müdürlüğü Yayinlari, Trabzon.
+
 \leavevmode\hypertarget{ref-Ozkar:2009ga}{}%
 Özkar, M. ve Stiny, G., 2009. Shape grammars, ACM SIGGRAPH 2009 Courses,
 ACM Press, 1--176, New York, New York, USA.
-
-\leavevmode\hypertarget{ref-Pask:1963vc}{}%
-Pask, G., 1963. The conception of a shape and the evolution of a design,
-Conference on Design Methods, Pergamon Press, 153--167, Oxford.
 
 \leavevmode\hypertarget{ref-Rollo:1995bz}{}%
 Rollo, J., 1995. Triangle and T-square: the windows of Frank Lloyd
@@ -2850,40 +2442,25 @@ Stouffs, R. ve Tunçer, B., 2015. Typological Descriptions as Generative
 Guides for Historical Architecture, Nexus Network Journal, Springer
 Basel, 17, 3, 785--805.
 
-\leavevmode\hypertarget{ref-Sutherland:1963tw}{}%
-Sutherland, I.E., 1963. Sketchpad, a man-machine graphical communication
-system, Cambridge.
+\leavevmode\hypertarget{ref-Tepavcevic:2012bl}{}%
+Tepavcevic, B. ve Stojakovic, V., 2012. Shape grammar in contemporary
+architectural theory and design, Facta universitatis - series:
+Architecture and Civil Engineering, 10, 2, 169--178.
 
-\leavevmode\hypertarget{ref-Terzidis:2006ud}{}%
-Terzidis, K., 2006. Algorithmic Architecture, Routledge.
+\leavevmode\hypertarget{ref-Tuluk:2010ud}{}%
+Tuluk, Ö.İ. ve Düzenli, H.İ., 2010. Trabzon kent mirasi:
+yer-yapi-hafiza.
 
-\leavevmode\hypertarget{ref-Upitis:2008wi}{}%
-Upitis, A., 2008. Nature normative : the Design Methods Movement,
-1944-1967, Massachusetts Institute of Technology; Massachusetts
-Institute of Technology.
+\leavevmode\hypertarget{ref-Uspenski:2003ta}{}%
+Uspenski, F.I., 2003. Trabzon Tarihi, Ofset Matbaacilik, Trabzon.
+
+\leavevmode\hypertarget{ref-Var:2015vx}{}%
+Var, E.B., 2015. Kentsel Yenileme Ve Sosyal Sürdürülebilirlik:~trabzon
+Ortahisar Örneği, İstanbul Teknik Üniversitesi; İstanbul Teknik
+Üniversitesi.
 
 \leavevmode\hypertarget{ref-Wonka:2003bn}{}%
 Wonka, P., Wimmer, M., Sillion, F. ve Ribarsky, W., 2003. Instant
 architecture, ACM Transactions on Graphics, ACM, 22, 3, 669--677.
-
-\leavevmode\hypertarget{ref-Zhu:2017vm}{}%
-Zhu, W., 2017. 3D modeling of city building and lifecycle simulation,
-Compiègne; Compiègne.
-
-\leavevmode\hypertarget{ref-Brittanica:2006tb}{}%
-2006. Algorithm.
-
-\leavevmode\hypertarget{ref-Menges:2011tm}{}%
-2011. Computational Design Thinking: Computation Design Thinking, Wiley;
-Wiley.
-
-\leavevmode\hypertarget{ref-Anonymous:rwSizyaB}{}%
-computation.
-
-\leavevmode\hypertarget{ref-Anonymous:15wfbqHt}{}%
-Algorithm.
-
-\leavevmode\hypertarget{ref-Anonymous:RePk8dlh}{}%
-Algorithm.
 
 \end{document}

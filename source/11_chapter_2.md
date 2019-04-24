@@ -387,7 +387,7 @@ Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre
 
 Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir [@Kuloglu:1994uy]. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
 
-## Alan Çalışması
+## Verilerin Toplanması
 
 Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
 
