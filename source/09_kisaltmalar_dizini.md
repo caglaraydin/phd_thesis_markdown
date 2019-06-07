@@ -1,6 +1,6 @@
 # KISALTMALAR DİZİNİ {.unnumbered}
 
 \begin{tabbing}
-\textbf{API}~~~~~~~~~~~~ \= \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface \\  
+\textbf{CGA}~~~~~~~~~~~~ \= \textbf{C}omputer \textbf{G}enerated \textbf{A}rchitecture \\  
 \textbf{JSON} \> \textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation \\  
 \end{tabbing}

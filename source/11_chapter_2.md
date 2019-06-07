@@ -6,11 +6,11 @@
 
 Biçim gramerleri 1972 yılında *George Stiny* ve *James Gips* [-@Stiny:1972tt] tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanmaktadır [@Tepavcevic:2012bl].
 
-Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar [@Knight:2012ue]. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil \ref{shapegrammarrule}). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü (magnitude) gösteren ağırlıklara (weight) sahip olabilirler [@Stiny:1980it]. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.
+Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar [@Knight:2012ue]. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil \ref{shapegrammarrule}). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü gösteren ağırlıklara sahip olabilirler [@Stiny:1980it]. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.
 
 ![Örnek biçim grameri kuralı [@Stiny:2006tq]. \label{shapegrammarrule}](source/figures/shape_grammar_rule.pdf){width=100%}
 
-Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarakta tanımlanabilmektedir. Görsel tasarım gramerleri olarakta adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan ayrıştırma-tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan ayrıştırmalardan-tanımlamalardan bakabilme düşüncesidir [@Ozkar:2009ga].
+Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarak da tanımlanabilmektedir. Görsel tasarım gramerleri olarak da adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan tanımlamalardan bakabilme düşüncesidir [@Ozkar:2009ga].
 
 Tanıtımından sonra *Gips* [-@Gips:1975jg] doktora tezinde biçim gramerlerinin bilgisayar uygulamalarını geliştirdi, *Stiny* [-@Stiny:1975fj] ise matematiksel temelleri üzerine yoğunlaştı. *Stiny* [-@Stiny:1976im] tezinin ardından yazdığı *Two exercises in formal composition* adlı makalede biçim gramerlerinin kullanımını iki örnek üzerinden açıkladı ve bu örnekler daha sonra yapılan çalışmalara temel oluşturdu. Bu örneklerden ilki biçim gramerlerinin üretken bir sistem olarak yeni tasarım dili veya tarzı oluşturmak için özgün hali ile nasıl kullanılabildiğini açıklarken ikinci örnek ise mevcut bir tasarım dilinin veya tarzının biçim gramerleri kullanılarak analizinin nasıl yapılabildiğini göstermektedir. Ayrıca hem analitik hem de sentetik kullanıldığı örneklere de rastlamak mümkündür [@Knight:1999uf].
 
@@ -53,7 +53,6 @@ Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:20
 [31] GranadeiroV,DuarteJP,CorreiaJR,LealVMS.Buildingenvelopeshapedesign in early stages of the design process: Integrating architectural design systems and energy simulation. Autom Constr 2013;32:196–209. http://dx.doi.org/10.1016/j.autcon.2012.12.003.
 [32] MandićM,TepavčevićB.Analysisofshapegrammarapplicationasatoolfor urban design. Environ Plann B: Plann Des 2015;42(4):675–87. http://dx.doi.org/10.1068/b130084p.
 [33] Vitins BJ, Axhausen K. Shape grammars overview and assessment for trans- port and urban design: Review, terminology, assessment, and application. J Transp Land Use 2016;9(1):. http://dx.doi.org/10.5198/jtlu.2016.620.
-
 
 * [@Ozdemir:2014tm] Standart ve Parametrik Biçim Grameri Örneklerinin Değerlendirilmesi **MUTLAKA BAK TÜRKİYEDEN ÖRNEKLER**
 * [@Knight:1999uf] HISTORY OF APPLICATIONS IN ARCHITECTURE AND THE ARTS
@@ -303,47 +302,62 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 
 ## Çalışma Alanının Seçimi
 
+Kentsel gelişim sürecinde kent kimliği hayati bir öneme sahiptir. Küreselleşmenin de etkisiyle şehirler gelişim ve dönüşüm süreçlerinde özgün kimliklerini kaybetme problemiyle karşılaşmaktadır. Bu gelişim ve dönüşüm süreçleri düzgün işletilemediğinde kent okunabilirliğini, kentliler kent hafızasını ve algısını kaybetmektedir. Bu durum kentin tarihi ve kültürel mirasını korumayı güçleştirmektedir.
+
 Ekonomik, sosyal, teknolojik, kültürel değişimler ve yanlış planlama kararları sonucunda Trabzon kenti tarihi kent dokusunda tahribatlara ve kimlik kaybetme tehlikesine maruz kalmıştır. Kentin bir çok bölgesinde, kentsel sit alanları da dahil olmak üzere, bu tahribat ve kayıplar yaşanmakta ve geleneksel konut mirasına ait ürünler gün geçtikçe azalmaktadır.
 
-Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir.
+Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir. Çalışma bu bölgedeki geleneksel konut karakterine ait bilgileri yordamsal modelleme yöntemi için gerekli CGA grameri ile kayıt altına almayı ve bölgede yapılması planlanan yeni yapılar için tasarım altlığı oluşturmayı hedeflemektedir.
 
 ## Çalışma Alanına İlişkin Bilgiler <!-- Ortahisar’ın Genel Karakteri -->
 
 <!--Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.-->
 
-![Trabzon'un 1223 öncesi ve sonrasına göre bilinen özellikleri haritası [@Bryer:2011ul]. ](source/figures/TrabzonMap.png){width=100%}
+![Trabzon'un konum haritası. ](source/figures/TrabzonTurkiye.png){width=100%}
 
 Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir [@Uspenski:2003ta].
 
-Zağnos ve Tabakhane vadileri arasında kalan Ortahisar, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayananmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir [@Tuluk:2010ud]. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geneleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.
+![Ortahisar bölgesinin kentin 1223 yılı öncesi ve 1869 yılına kadar olan tarihlerde konumunu gösteren harita [@Bryer:2011ul]. ](source/figures/TrabzonMap.png){width=100%}
 
-* Askeri Mimari
-	* Kent surları
-* Dini Mimari
-	* Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
-	* Musa Paşa Cami
-	* Ortasaray Mescidi - Saraçzade Medresesi
-	* Şirin Hatun Mescidi
-* Endüstriyel Mimari
-	* Tabakhane Köprüsü
-	* Zağnos Köprüsü
-* Su Mimarisi
-	* Çifte Hamam
-	* Çarıkçı-Zade Hacı İsmail Çeşmesi
-	* Çeşme (Ortahisar Cami güneyinde)
-* Kamusal Mimari
-	* Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
-	* Trabzon Kültür Merkezi (Eski Hükümet Konağı)
-	* Gazipaşa İlkokulu
+Çalışma alanı olarak seçilen Ortahisar, Zağnos ve Tabakhane vadileri arasında kalan, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayanmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir [@Tuluk:2010ud]. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.
+
+\newpage
+
+- Askeri Mimari
+    - Kent surları
+- Dini Mimari
+	- Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
+	- Musa Paşa Cami
+	- Ortasaray Mescidi - Saraçzade Medresesi
+	- Şirin Hatun Mescidi
+- Endüstriyel Mimari
+	- Tabakhane Köprüsü
+	- Zağnos Köprüsü
+- Su Mimarisi
+	- Çifte Hamam
+	- Çarıkçı-Zade Hacı İsmail Çeşmesi
+	- Çeşme (Ortahisar Cami güneyinde)
+- Kamusal Mimari
+	- Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
+	- Trabzon Kültür Müdürlüğü (Eski Hükümet Konağı)
+	- Gazi Paşa İlköğretim Okulu
+
+![Ortahisar dini mimari örnekleri. Solda Ortahisar Cami ve sağda yıkılmış Şirin Hatun Mescidi [@Ozen:2009wo].](source/figures/DiniMimari.png){width=100%}
+
+![Ortahisar endüstriyel mimari örnekleri. Solda Tabakhane Köprüsü ve sağda Zağnos Paşa Köprüsü. Kaynak: www.eskiturkiye.net](source/figures/EndustriyelMimari.png){width=100%}
+
+![Ortahisar su mimarisi örnekleri. Solda yıkılmış Çifte Hamam ve sağda Ortahisar Cami güneyindeki çeşme [@Ozen:2009wo].](source/figures/SuMimarisi.png){width=100%}
+
+![Ortahisar kamusal mimari örnekleri. Solda Hüseyin Kazaz Kültür Merkezi ve sağda Trabzon Kültür Müdürlüğü binası [@Ozen:2009wo].](source/figures/KamusalMimari.png){width=100%}
 
 Listelenmiş yapılardan kent surlarının yapım tarihi net olarak bilinmemekle beraber 257 yılından önce mevcut olduğu kaynaklarda belirtilmiştir [@Bryer:2011ul]. Surlardan sonra bölgedeki en eski yapı olan ve Ortahisar Cami olarak adlandırılan Panaghia Chrysokephalos Kilisesi 914 yılında inşa ettirilmiştir [@Miller:2007uq]. Bölgedeki diğer anıtsal yapıların inşa tarihleri 13. ve 16. yüzyıl, sivil mimarlık örneklerinin inşa tarihlerinin ise 19. yüzyıl sonları ve 20. yüzyılın ilk çeyreği olduğu bilinmektedir [@Aysu:1977wt; @Kuloglu:1994uy; @Tuluk:2010ud]. Mevcut yapıların korunması ve yeni yapıların sınırlandırılması amacıyla bölge 1985 yılında 2 Nolu Ortahisar Kentsel Sit Alanı olarak tescillenmiştir.
 
-![Ortahisar'ın konumu [@Var:2015vx].](source/figures/ortahisar.jpg){width=100%}
+![Ortahisar'ın yeni kent merkezine göre konumunu gösteren harita [@Var:2015vx].](source/figures/ortahisar.jpg){width=100%}
+
+![Ortahisar uydu fotoğrafı.](source/figures/OrtahisarUyduIzli.jpg){width=100%}
 
 1938 yılında *Jacques H. Lambert* tarafından hazırlanan Trabzonun ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için Ortahisar'ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002 yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda yıkımlara ve büyük tahribata sebep olmuştur.
 
 ### Ortahisar Konutlarının Özellikleri
-<!-- [@Sesli:1996wh; @Iskender:1987vd][@Kuloglu:1994uy] 11. sayfa. Trabzon geleneksel kent konutu özellikleri -->
 
 Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan tarihleriyle ağırlıklı olarak Osmanlı dönemine ait yapılardır. Yapım malzemesi ve teknolojisinin imkan verdiği koşullar ile ahşap-kagir yapılar 2-2,5 kat, taş yığma yapılar 3-3,5 kat olarak inşa edilmiştirler. Belli bir geometrik düzeni olmayan parseller içinde olan geleneksel konut dokusu;
 
@@ -351,9 +365,11 @@ Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan 
 * Kuzey güney aksında bitişerek gelişmiş ve vadilere yönelmiş
 * Yoldan yüksek duvarlarla soyutlandırılan bahçe-avlu karışımı bir alandan geçilerek oluşturulmuş konut grubu
 * Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş konut grubu
-şeklinde bir araya gelmişlerdir [@Birlik:1999ux]. <!-- Liste paraphrase edilmeli -->
+şeklinde bir araya gelmişlerdir. <!-- Liste paraphrase edilmeli -->
 
-Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur.
+<!-- TODO: BURAYA FOTOĞRAF EKLENMELİ KONUT ÖZELLİKLERİ İLE İLGİLİ-->
+
+Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur [@Birlik:1999ux].
 
 ![Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri [@Ozen:2009wo].](source/figures/SofaliPlanlar.jpg){width=100%}
 
@@ -383,12 +399,14 @@ Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre
 	* Dikdörtgen formda ve düşey hatlıdırlar,
 	* Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
 
-![Geleneksel konut cephesi örnekleri [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
+![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
 
 Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir [@Kuloglu:1994uy]. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
 
 ## Verilerin Toplanması
-
+<!-- Toplam 73 tescilli yapı var çalışma alanında-->
 Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
 
 ![Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.](source/figures/vaziyetplanitescilli.pdf){width=100%}
+
+\newpage

@@ -21,7 +21,7 @@ Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan olu�
 
 <!-- GRAMER İLE İLGİLİ GENEL NOTLAR BU KISIMA EKLENECEKTİR-->
 
-***Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturubilmek olduğu için cephelerdeki düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.***
+***Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturabilmek olduğu için cephelerdeki düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.***
 
 ***Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırılan yükseklik değerleri arasında bir korelasyon bulunamadığından yükseklikler zemin kat yüksekliği sabit alınarak orantılanmıştır. Karşılaştırma tabloları ekler bölümünde yer almaktadır.***
 
@@ -461,7 +461,7 @@ Table: Kat sayısına göre gruplandırılmış yapıların çatı formu ve eği
 
 CGA gramer kodu CityEngine yazılımında yazılmaya başlanmıştır ve büyük oranda tamamlanmıştır.  
 
-![CityEngine üzerinde CGA kodu ile üreliten modeller.](source/figures/OrtahisarCGA.png){width=100%}
+![CityEngine üzerinde CGA kodu ile üretilen modeller.](source/figures/OrtahisarCGA.png){width=100%}
 -->
 
 \newpage
