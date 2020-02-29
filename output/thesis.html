@@ -180,13 +180,17 @@
                 <li><a href="#bulgular-ve-irdelemeler"><span class="toc-section-number">3</span> BULGULAR VE İRDELEMELER</a><ul>
                 <li><a href="#ortahisarın-mimari-dil-analizi-ve-biçim-grameri"><span class="toc-section-number">3.1</span> Ortahisar’ın Mimari Dil Analizi ve Biçim Grameri</a><ul>
                 <li><a href="#yapı-taban-alanı"><span class="toc-section-number">3.1.1</span> Yapı Taban Alanı</a></li>
-                <li><a href="#yapı-kat-sayısı-ve-yükseklikleri-analizi"><span class="toc-section-number">3.1.2</span> Yapı Kat Sayısı ve Yükseklikleri Analizi</a></li>
-                <li><a href="#cephe-tipi-analizi"><span class="toc-section-number">3.1.3</span> Cephe Tipi Analizi</a></li>
-                <li><a href="#cephe-çıkmaları-analizi"><span class="toc-section-number">3.1.4</span> Cephe Çıkmaları Analizi</a></li>
-                <li><a href="#çatı-katı-oluşumu"><span class="toc-section-number">3.1.5</span> Çatı Katı Oluşumu</a></li>
+                <li><a href="#yapı-kat-sayısı-ve-yükseklikleri"><span class="toc-section-number">3.1.2</span> Yapı Kat Sayısı ve Yükseklikleri</a></li>
+                <li><a href="#cephe-tipi"><span class="toc-section-number">3.1.3</span> Cephe Tipi</a></li>
+                <li><a href="#cephe-çıkmaları"><span class="toc-section-number">3.1.4</span> Cephe Çıkmaları</a></li>
+                <li><a href="#çatı-katı"><span class="toc-section-number">3.1.5</span> Çatı Katı</a></li>
                 <li><a href="#cephe-panelleri"><span class="toc-section-number">3.1.6</span> Cephe Panelleri</a></li>
-                <li><a href="#cephe-elemanları-analizi"><span class="toc-section-number">3.1.7</span> Cephe Elemanları Analizi</a></li>
-                <li><a href="#çatı-formu-ve-eğimi-analizi"><span class="toc-section-number">3.1.8</span> Çatı Formu ve Eğimi Analizi</a></li>
+                <li><a href="#cephe-elemanları"><span class="toc-section-number">3.1.7</span> Cephe Elemanları</a></li>
+                <li><a href="#çatı-formu-ve-eğimi"><span class="toc-section-number">3.1.8</span> Çatı Formu ve Eğimi</a></li>
+                </ul></li>
+                <li><a href="#üretim-süreci"><span class="toc-section-number">3.2</span> Üretim Süreci</a><ul>
+                <li><a href="#cga-grameri"><span class="toc-section-number">3.2.1</span> CGA Grameri</a></li>
+                <li><a href="#örnek-çalışma"><span class="toc-section-number">3.2.2</span> Örnek Çalışma</a></li>
                 </ul></li>
                 </ul></li>
                 <li><a href="#sonuçlar-ve-öneriler"><span class="toc-section-number">4</span> SONUÇLAR VE ÖNERİLER</a></li>
@@ -222,69 +226,70 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis gravida, 
 <h1 id="genel-bilgiler"><span class="header-section-number">1</span> GENEL BİLGİLER</h1>
 
 <h2 id="giriş"><span class="header-section-number">1.1</span> Giriş</h2>
+<p>Çalışmanın konusu yordamsal modelleme yöntemi ile geleneksel Trabzon Ortahisar konutlarının üç boyutlu modellerinin parametrik olarak üretilebilmesidir. Üretimin sağlanabilmesi için gramer tabanlı kural gruplarının oluşturulması gerekmektedir. <!-- Bu bağlamda kuralların oluşturulabilmesi için Trabzon Ortahisar konutlarının özellikleri ve rölöveleri incelenerek konutlar hakkında detaylı bilgi birikimi elde edilmiştir. Mevcut konutlar ve genel olarak geleneksel Ortahisar konutları üzerinden yapılan inceleme sonucunda genel karakteristikler ve bu karakteristikler ile ilişkili mevcut yapılardan elde edilen oranlar kuralların oluşturulmasında kullanılmıştır. -->Yordamsal modellemede kural grupları diye nitelenen ifade üç boyutlu modelleri oluşturan bilgisayar kodlarıdır. Kullanıcının modeli kendisinin oluşturduğu geleneksel modelleme yazılımlarından farklı olarak yordamsal modellemede bir yapının veya yapı türünün semantik tanımlamasının programlama dillerini kullanarak bilgisayara tanıtılması ile modeller üretilmektedir. Bu sadece teknik yönden değil kuramsal olarak da farklılıklar ortaya koymaktadır. Seçilen modelleme yöntemi sadece maliyet ve estetik çıktısını değil; bilginin nasıl seçildiği, işlendiği ve nelerin bilgi olarak değerlendirildiği gibi hususları da etkilemektedir <span class="citation" data-cites="Saldana:2015el">(Saldaña, 2015)</span>.</p>
 <p>Yordamsal modelleme kural tabanlı otomatik veya yarı otomatik içerik üretmeye yönelik bir yöntem olup çeşitli alanlarda doku, bitki, arazi, nehir, bina, kent, yol ağları gibi modellerin oluşturulmasında kullanılmaktadır. <!-- İçerisinde L-sistemler (Lindenmayer sistemleri), fraktallar, biçim gramerleri ve üretken sistemler gibi birden fazla tekniği barındıran bir ana başlık niteliğindedir. --> 30 yıldan fazla bir süredir üzerine aktif araştırma yapılan konu, çok çeşitli varyasyonları üretebilme potansiyeli ve içerik üretiminde insan gücü etkileşimini azaltması ile mimarlık, oyun ve film endüstrisi sanal ortamlarında cazip bir yöntem olarak görülmektedir <span class="citation" data-cites="Schinko:2015gn">(Schinko vd., 2015)</span>.</p>
-<p>Yordamsal modeller bir binanın, tasarım stilinin veya kültürel bir dönemin tasarım ve yapım bilgilerini kodlamak için kullanılabilmektedirler. En önemli avantajlarından birisi tek bir yapının rekonstrüksiyonunu detaylı bir şekilde yapabilmesinin yanında, aynı tasarım ve yapım kurallarını paylaşan çok sayıda benzer modeller üretebilmesidir. Yordamsal modellerin üretiminde Lindenmayer sistemi, fraktal, split gramer, biçim grameri gibi birçok üretken sistem kullanılmaktadır. Yordamsal modelleme ile bina modellerinin oluşturulmasında özellikle yordamsal cephe üretimi kullanılmaktadır ve üretim iki boyutlu parsel hattının girdi olarak sisteme tanıtılması ile başlamaktadır.</p>
-<p>Yordamsal modelleme tekniğinin bir diğer avantajı ise modellenen bina veya obje hakkında uzman bilgisine sahip olunmasını sağlamaktadır. Mimaride kullanılan yapı tiplerine ait sınıflandırma şemalarının ve tablolarının kod içine aktarımı gerekmektedir. Bu da günümüz kentlerinde o veya bu şekilde kaybettiğimiz geleneksel yapıların kurallarının elde edilip, kayıt altına alınmasını sağlamaktadır. Koruma anlamında sunduğu olanağın yanında geleneksel doku içinde tasarım yaparken temel olarak alınacak verileri de sağlamış olmaktadır. Kuşkusuz ki bu yöntem klasik yöntemlere göre geleneksel yapı karakteri üzerine daha fazla bilgi sunmaktadır. Bu anlamda gün geçtikçe sayıları azalan Trabzon geleneksel konutları örnek çalışma alanı olarak incelenecektir.</p>
-<p>Yordamsal modeller semantik bir yapıya sahiptirler ve bu özellikleri ile simülasyon ve planlama için geleneksel modellere göre daha uygundurlar. Günümüz kentsel yenileme ve kentsel canlandırma projelerinde kullanımları da birçok varyasyona ve analiz olanağına kısa sürede imkân sağlamaktadır. Aynı şekilde tekil birimler içinde çeşitli öneriler sunması bu önerilerin yeni tasarım yorumları için altlık oluşturmaktadır. Bu doğrultuda çalışmada <strong>Trabzon geleneksel konutlarının CGA</strong> (Computer Generated Architecture) <strong>gramerlerinin oluşturulması ve parametrik olarak üretilmesi amaçlanmaktadır</strong>.</p>
-<p>Trabzon kent içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturacaktır. <strong>Çalışmanın ilk bölümünde analiz-sentez yöntemi kullanılacak</strong> ve ikinci aşama için gerekli olan CGA biçim gramerleri hazırlanmış olacaktır. <strong>İkinci bölümde CGA biçim gramerleri üzerinden kodlama yapılacaktır</strong>. Bunun için mimarların aktif olarak kullandığı ve tanıdığı Rhinoceros programı üzerinde çalışan Grasshopper platform olarak seçilmiştir. Grasshopper için yazılmış birçok eklenti bulunmaktadır ve model üzerinde interaktif olarak analiz yapma olanağı sunmaktadır. Bunun yanında gelişmeye açık bir platform olması da tercih sebebidir. Bu kapsamda Grasshopper üzerinde C# programlama dili üzerinden geliştirilecek kodlar ile Trabzon evlerinin kurallarını içeren bir eklenti geliştirilecektir.</p>
-<p><strong>Çalışmanın konusu</strong> yordamsal modelleme çalışması ile geleneksel Trabzon konutlarının üç boyutlu modellerinin oluşturulması için gerekli kural gruplarının oluşturulmasıdır. Yordamsal modellemede kural grupları diye nitelenen ifade üç boyutlu modelleri oluşturan bilgisayar kodlarıdır. Kullanıcının modeli kendisinin oluşturduğu geleneksel modelleme yazılımlarından farklı olarak yordamsal modellemede bir yapının veya yapı türünün semantik tanımlamasının programlama dillerini kullanarak bilgisayara tanıtılması ile modeller üretilmektedir. Bu sadece teknik yönden değil kuramsal olarak da farklılıklar ortaya koymaktadır. Seçilen modelleme yöntemi sadece maliyet ve estetik çıktısını değil; bilginin nasıl seçildiği, işlendiği ve nelerin bilgi olarak değerlendirildiği gibi hususları da etkilemektedir <span class="citation" data-cites="Saldana:2015el">(Saldaña, 2015)</span>.</p>
+<p>Yordamsal modeller bir binanın tasarım stilini veya kültürel bir dönemin tasarım ve yapım bilgilerini kodlamak için kullanılabilmektedirler. En önemli avantajlarından birisi tekil bir yapının detaylı şekilde rekonstrüksiyonunu yapabilmesidir. Bunun yanında aynı tasarım ve yapım kurallarını paylaşan çok sayıda benzer modelleri üretebilmektedir. Yordamsal modellerin üretiminde Lindenmayer sistemi, fraktal, split gramer, biçim grameri gibi birçok üretken sistem kullanılmaktadır. Yordamsal modelleme ile bina modellerinin oluşturulmasında özellikle yordamsal cephe üretimi kullanılmaktadır. Model üretimi iki boyutlu parsel hattının girdi olarak sisteme tanıtılması ile başlamaktadır.</p>
+<p>Yordamsal modelleme tekniğinin bir diğer avantajı ise modellenen bina veya obje hakkında uzman düzeyde bilgiye sahip olunmasını sağlamaktadır. Mimaride kullanılan yapı tiplerine ait sınıflandırma şemalarının ve tablolarının kod içine aktarımı gerekmektedir. Bu da günümüz kentlerinde o veya bu şekilde kaybettiğimiz geleneksel yapıların kurallarının elde edilip, kayıt altına alınmasını sağlamaktadır. Koruma anlamında sunduğu olanağın yanında geleneksel doku içinde tasarım yaparken temel olarak alınacak verileri de sağlamış olmaktadır. Kuşkusuz ki bu yöntem klasik yöntemlere göre geleneksel yapı karakteri üzerine daha fazla bilgi sunmaktadır.</p>
+<p>Yordamsal modeller semantik bir yapıya sahiptirler ve bu özellikleri ile simülasyon ve planlama için geleneksel modellere göre daha uygundurlar. Günümüz kentsel yenileme ve kentsel canlandırma projelerinde kullanımları da birçok varyasyona ve analiz olanağına kısa sürede imkân sağlamaktadır. Aynı şekilde tekil birimler içinde çeşitli öneriler sunması bu önerilerin yeni tasarım yorumları için altlık oluşturmaktadır.</p>
+<p>Bu bağlamda gün geçtikçe sayıları azalan Trabzon Ortahisar geleneksel konutları örnek çalışma alanı olarak incelenecektir. Ortahisar Mahallesi Trabzon’un tarihi kent çekirdeğinin biçimlendiği bölgeyi ihtiva etmektedir. Kentin geleneksel mimari karakterini barındıran bölge kent kimliği ve kültürel mirası açısından önem arz etmektedir.</p>
+<p>Bu çalışma Trabzon Ortahisar geleneksel konutlarının CGA (Computer Generated Architecture) gramerinin oluşturulması ve parametrik olarak üretilmesini amaçlamaktadır. Trabzon kenti içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturmaktadır. Bu veriler üzerinden çalışmanın ilk bölümü için analiz-sentez yöntemi kullanılacaktır. İkinci aşama için biçim gramerleri hazırlanacaktır. Hazırlanan biçim gramerleri üzerinden CGA biçim grameri olarak bilgisayar ortamında kodlanacaktır.</p>
+<!-- Bunun için mimarların aktif olarak kullandığı ve tanıdığı Rhinoceros programı üzerinde çalışan Grasshopper platform olarak seçilmiştir. Grasshopper için yazılmış birçok eklenti bulunmaktadır ve model üzerinde interaktif olarak analiz yapma olanağı sunmaktadır. Bunun yanında gelişmeye açık bir platform olması da tercih sebebidir. Bu kapsamda Grasshopper üzerinde C\# programlama dili üzerinden geliştirilecek kodlar ile Trabzon evlerinin kurallarını içeren bir eklenti geliştirilecektir. -->
 <h2 id="amaç-ve-kapsam"><span class="header-section-number">1.2</span> Amaç ve Kapsam</h2>
-<p>Önerilen çalışma yordamsal modelleme yöntemi kullanılarak geleneksel Trabzon konutlarının CGA gramerlerinin oluşturulmasını ve parametrik olarak üretilmesini amaçlamaktadır.</p>
+<p>Önerilen çalışma yordamsal modelleme yöntemi kullanılarak geleneksel Trabzon Ortahisar konutlarının CGA grameri kodlamasını ve parametrik olarak üretilmesini amaçlamaktadır.</p>
 <p>Hedefler;</p>
 <!--Kütlesel cephe ve plan üretiminin beraber yapılacağı bütünleşik bir yöntem geliştirmek.-->
 <!--Geliştirilecek yöntem ile kütlesel cephe özelliklerinin yanında plan şeması da oluşturularak iç mekanların kullanım amacına, mekanların birbirleriyle olan orantılarına, aydınlanma ve sirkülasyon gibi özelliklerine ait bilgiler sağlamak.-->
+<!--Rhinoceros üzerinde çalışan Grasshopper için geleneksel Trabzon evlerini parametrik olarak üretecek bir eklenti geliştirmek.-->
 <ol type="1">
-<li><p>Rhinoceros üzerinde çalışan Grasshopper için geleneksel Trabzon evlerini parametrik olarak üretecek bir eklenti geliştirmek.</p>
-<!--Geliştirilecek eklenti ile tahrip olmuş geleneksel Trabzon evleri için tahrip olmadan önceki haline dair muhtemel karakteristik özellikleri üretilebilmek.--></li>
-<li><p>Tarihi dokuda yeni yapılacak binalar için geleneksel dokuya ait referans bilgi sağlamak. Üretilecek modellerin varyasyonlarını yeni tasarımlar için altlık olarak sunmak.</p></li>
+<li><p>Tarihi dokuda yeni yapılacak binalar için geleneksel dokuya ait referans bilgi sağlamak.</p></li>
+<li><p>Üretilecek modellerin varyasyonlarını yeni tasarımlar için altlık olarak sunmak.</p></li>
+<li><p>Trabzon Ortahisar evlerine ait kütle ve cephelerin oluşumunu tanımlayan biçim gramerini oluşturmak.</p></li>
 </ol>
-<p>Proje kapsamında geleneksel Trabzon kent içi evlerinin yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Bu doğrultuda Grasshopper programı üzerinde çalışan C# programlama dili ile yazılmış modelleri üretecek bir eklenti geliştirmek ve üretilecek modellerde cepheleri çözümleyebilmeyi kapsamaktadır.</p>
+<p>Bu çalışma kapsamında geleneksel Trabzon Ortahisar evlerinin yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Çalışma kütle ve cephe bazında olup, modeller için plan üretimi yapılmayacaktır. Elde edilen veriler dahilinde yeterli sayıda plan rölövesine ulaşılamadığı için plan üretimi bu çalışma kapsamı dışında tutulmuştur.</p>
 <h2 id="çalışmanın-yöntemi"><span class="header-section-number">1.3</span> Çalışmanın Yöntemi</h2>
-<p>Araştırma da iki kademeli bir süreç işlenecektir;</p>
+<p>Çalışmada iki kademeli bir süreç işlenmektedir;</p>
 <ol type="1">
-<li><p>Birinci Bölüm</p>
-Çalışmanın ilk bölümünde analiz-sentez yöntemi kullanılacak ve ikinci aşama için gerekli olan CGA (Computer Generated Architecture) biçim grameri verileri hazırlanmış olacaktır.
+<li><p>Biçim gramerinin oluşturulması</p>
+<p>Çalışmanın ilk bölümünde analiz-sentez yöntemi kullanılacak ve ikinci aşama için gerekli olan biçim grameri verileri hazırlanmış olacaktır.</p>
 <ol type="1">
-<li><p>Trabzon geleneksel evlerine ait verilerin toplanması: Çalışma için gerekli olan Trabzon geleneksel evlerine ait veriler akademik ve profesyonel çalışmalardan toplanacaktır. Temel Kaynaklar;</p>
+<li><p>Trabzon Ortahisar geleneksel konutlarına ait verilerin toplanması: Çalışma için gerekli olan Trabzon geleneksel evlerine ait veriler akademik ve profesyonel çalışmalardan toplanmıştır. Temel Kaynaklar;</p>
 <ul>
 <li>Trabzon Kültür ve Tabiat Varlıklarını Koruma Bölge Kurulu Müdürlüğü Arşivi</li>
 <li>KTÜ Mimarlık Bölümü Doğu Karadeniz Arşivi</li>
 <li>Trabzon geleneksel evleri üzerine yapılmış akademik çalışmalar</li>
-<li>Trabzon geleneksel evleri üzerine rölöve çalışması yapmış ofis arşivleri</li>
+<li>İstanbul Büyükşehir Belediyesi BİMTAŞ A.Ş. Rölöve çalışmaları <!--Trabzon geleneksel evleri üzerine rölöve çalışması yapmış ofis arşivleri--></li>
 </ul></li>
-<li><p>Analiz çalışması: Evlere ait veriler toplandıktan sonra aşağıda belirtilen özelliklere göre analizleri yapılacaktır.</p>
+<li><p>Analiz çalışması: Evlere ait veriler toplandıktan sonra aşağıdaki listede belirtilen özelliklere göre analizleri yapılmıştır.</p>
 <ul>
-<li><p>Yapı taban alanı</p>
-<!--Yapı hacmi, Plan tipi--></li>
-<li><p>Kat sayısı ve yüksekslikleri</p></li>
-<li><p>Cephe karakteri</p></li>
-<li><p>Cephe çıkmaları</p></li>
-<li><p>Pencere genişlikleri ve yükseklikleri</p></li>
+<li>Yapı taban alanı <!--Yapı hacmi, Plan tipi--></li>
+<li>Kat sayısı ve yükseklikleri</li>
+<li>Cephe karakteri</li>
+<li>Cephe çıkmaları</li>
+<li>Cephe elemanları</li>
 <li><p>Çatı formu ve eğimi</p>
 <!-- Parsel kullanımı, Bahçe içi yerleşim --></li>
 </ul></li>
-<li><p>Sentez çalışması: Çıkarılan veriler gruplar halinde tablolara dökülerek kural oluşturmak için gerekli sayısal özellikler organize edilecektir. Bu sayısal veriler eklenti oluştururken izlenecek veri akış şemasının oluşturulmasında kullanılacaktır.</p></li>
+<li><p>Sentez çalışması: Çıkarılan veriler analiz edilen başlıklara göre tablolara dökülerek kural oluşturmak için gerekli sayısal özellikler organize edilmiştir. Bununla beraber kütle ve cephelere ait biçim grameri kuralları hazırlanmıştır.</p></li>
 </ol></li>
-<li><p>İkinci Bölüm</p>
-<p>İkinci bölümde CGA biçim gramerleri üzerinden kodlama yapılacaktır. Bunun için mimarların aktif olarak kullandığı ve tanıdığı Rhinoceros programı üzerinde çalışan Grasshopper platform olarak seçilmiştir. Grasshopper için yazılmış birçok eklenti bulunmaktadır ve model üzerinde interaktif olarak analiz yapma imkanı sunmaktadır. Bunun yanında gelişmeye açık bir platform olması da tercih sebebidir.</p></li>
+<li><p>CGA gramer kodunun oluşturulması</p>
+<p>İkinci bölümde Ortahisar evleri için hazırlanan biçim grameri kuralları üzerinden CGA grameri kodlaması yapılmıştır. Üretilen kod ESRI firmasına ait CityEngine yazılımı üzerinde çalıştırılmaktadır.</p></li>
 </ol>
-<p>Scripting</p>
-<p>Rhinoceros üzerinde veya Grasshopper üzerinde çalışacak eklenti için öncelikle veri akış şeması ve pseudocode hazırlanacaktır ve C# programlama dili kullanılarak Microsoft Visual Studio’da eklenti geliştirilecektir.</p>
-<!--**Alternatif yöntemler**-->
-<!--Bilgisayar yazılımcısı yardımı-->
-<!--C\# programlama dili kullanılırken karşılaşılabilecek olumsuzluklarda bir bilgisayar yazılımcısına başvurulacaktır.-->
-<!--Esri City Engine-->
-<!--Programlama dili kullanılarak istenilen sonuca ulaşılamaması durumunda Esri firmasına ait City Engine yazılımında CGA kod kurallarını yazarak geleneksel yapılara ait cephe çözümlemeleri oluşturulacaktır.-->
-<!--Çalışma Alanı: Trabzon geleneksel kent içi konutları hakkında yeterli hazır bilgiye ulaşılamaması durumunda. Saka (Saka, 1996) tarafından hazırlanmış tez üzerinden Akçaabat geleneksel konutları çalışma alanı olarak tercih edilebilir.-->
+<figure>
+<embed src="source/figures/TezSurec.pdf" style="width:100.0%" /><figcaption>Çalışmada izlenen süreç döngüsü. </figcaption>
+</figure>
+<!-- TODO: Süreç grafiği ile ilgili bir paragraf yazılması gerekiyor. -->
+<p>Çalışmada izlenen süreç şekil ’de görsel olarak aktarılmıştır. Sürecin birinci aşaması biçim gramerlerinin oluşturulması ile sonlanmaktadır. İkinci aşamada ise CGA kodu oluşturulmaktadır. Şekilde model üretimi evresinden tekrar verilerin toplanması evresine doğru bir döngü oluşmaktadır. Bu döngü üretilen modellerde eksiklik yaşanması durumunda tekrardan yeni verilerin eklenerek süreç sonucu üretilecek modellerin geliştirilmesi için bulunmaktadır.</p>
+<p>Verilerin toplanması ve verilerin analizi bir sonraki bölümde ele alınmıştır. Biçim gramerleri, split grameri ve CGA grameri, Ortahisar bölgesine ait genel bilgiler ve geleneksel Ortahisar konutlarının özellikleri çalışmanın bir sonraki bölümünde sunulmuştur.</p>
+
 <h1 id="yapilan-çalişmalar"><span class="header-section-number">2</span> YAPILAN ÇALIŞMALAR</h1>
 
 <h2 id="biçim-gramerleri"><span class="header-section-number">2.1</span> Biçim Gramerleri</h2>
 <p>Biçim gramerleri 1972 yılında <em>George Stiny</em> ve <em>James Gips</em> <span class="citation" data-cites="Stiny:1972tt">(1972)</span> tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanmaktadır <span class="citation" data-cites="Tepavcevic:2012bl">(Tepavcevic ve Stojakovic, 2012)</span>.</p>
-<p>Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar <span class="citation" data-cites="Knight:2012ue">(Knight, 2012)</span>. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil ). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü (magnitude) gösteren ağırlıklara (weight) sahip olabilirler <span class="citation" data-cites="Stiny:1980it">(Stiny, 1980)</span>. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.</p>
+<p>Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar <span class="citation" data-cites="Knight:2012ue">(Knight, 2012)</span>. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil ). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü gösteren ağırlıklara sahip olabilirler <span class="citation" data-cites="Stiny:1980it">(Stiny, 1980)</span>. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.</p>
 <figure>
 <embed src="source/figures/shape_grammar_rule.pdf" style="width:100.0%" /><figcaption>Örnek biçim grameri kuralı <span class="citation" data-cites="Stiny:2006tq">(Stiny, 2006)</span>. </figcaption>
 </figure>
-<p>Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarakta tanımlanabilmektedir. Görsel tasarım gramerleri olarakta adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan ayrıştırma-tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan ayrıştırmalardan-tanımlamalardan bakabilme düşüncesidir <span class="citation" data-cites="Ozkar:2009ga">(Özkar ve Stiny, 2009)</span>.</p>
+<p>Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarak da tanımlanabilmektedir. Görsel tasarım gramerleri olarak da adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan tanımlamalardan bakabilme düşüncesidir <span class="citation" data-cites="Ozkar:2009ga">(Özkar ve Stiny, 2009)</span>.</p>
 <p>Tanıtımından sonra <em>Gips</em> <span class="citation" data-cites="Gips:1975jg">(1975)</span> doktora tezinde biçim gramerlerinin bilgisayar uygulamalarını geliştirdi, <em>Stiny</em> <span class="citation" data-cites="Stiny:1975fj">(1975)</span> ise matematiksel temelleri üzerine yoğunlaştı. <em>Stiny</em> <span class="citation" data-cites="Stiny:1976im">(1976)</span> tezinin ardından yazdığı <em>Two exercises in formal composition</em> adlı makalede biçim gramerlerinin kullanımını iki örnek üzerinden açıkladı ve bu örnekler daha sonra yapılan çalışmalara temel oluşturdu. Bu örneklerden ilki biçim gramerlerinin üretken bir sistem olarak yeni tasarım dili veya tarzı oluşturmak için özgün hali ile nasıl kullanılabildiğini açıklarken ikinci örnek ise mevcut bir tasarım dilinin veya tarzının biçim gramerleri kullanılarak analizinin nasıl yapılabildiğini göstermektedir. Ayrıca hem analitik hem de sentetik kullanıldığı örneklere de rastlamak mümkündür <span class="citation" data-cites="Knight:1999uf">(Knight, 1999)</span>.</p>
 <h3 id="analiz-aracı-olarak-kullanımı-analiz-gramerleri"><span class="header-section-number">2.1.1</span> Analiz Aracı Olarak Kullanımı (Analiz Gramerleri)</h3>
 <p>Biçim gramerlerinin ilk kez analiz aracı olarak kullanımı <em>Stiny</em> <span class="citation" data-cites="Stiny:1977im">(1977)</span> tarafından Çin buz ışını pencere tasarımları üzerine yaptığı çalışmada ortaya konuldu. Bu çalışma ayrıca biçim gramerlerinin parametrik tasarım ile entegre edilerek parametrik biçim gramerlerinin tanımlandığı çalışma oldu. Beş adet kuraldan oluşan gramer Çin buz ışını ızgaraların bir araya gelme düzenini açıklamayı, örnek ızgaralar oluşturmayı ve sayısız yeni ızgara düzenleri oluşturmayı başardı. Ertesi yıl <em>Stiny</em> ve <em>Mitchell</em> <span class="citation" data-cites="Stiny:1978cl">(1978)</span> biçim gramerlerini <em>Pallodio</em> stili üzerinden test ederek ilk kez bir mimari üslubun analizinde kullandılar. “Palladio Grameri” kurallarını <em>Andrea Palladio</em> tarafından 1570 yılında yazılmış <em>Quattro Libri dell’Architettura</em>’da bulunan villa planı örneklerini inceleyerek tanımladılar. Parametrik biçim gramerlerini kullanarak villaların zemin kat planlarını önerdikleri sekiz aşamalı bir süreç ile oluşturdular.</p>
@@ -312,7 +317,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis gravida, 
 [32] MandićM,TepavčevićB.Analysisofshapegrammarapplicationasatoolfor urban design. Environ Plann B: Plann Des 2015;42(4):675–87. http://dx.doi.org/10.1068/b130084p.
 [33] Vitins BJ, Axhausen K. Shape grammars overview and assessment for trans- port and urban design: Review, terminology, assessment, and application. J Transp Land Use 2016;9(1):. http://dx.doi.org/10.5198/jtlu.2016.620.
 
-
 * [@Ozdemir:2014tm] Standart ve Parametrik Biçim Grameri Örneklerinin Değerlendirilmesi **MUTLAKA BAK TÜRKİYEDEN ÖRNEKLER**
 * [@Knight:1999uf] HISTORY OF APPLICATIONS IN ARCHITECTURE AND THE ARTS
 * [@Tepavcevic:2012bl] Shape ten procedural modeling e kadar herşey
@@ -324,13 +328,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis gravida, 
 -->
 <h3 id="split-grameri"><span class="header-section-number">2.1.4</span> Split Grameri</h3>
 <p>Wonka vd. <span class="citation" data-cites="Wonka:2003bn">(2003)</span> mimari modelleri oluşturmak için özel bir set grameri<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>olan parametrik split gramer yöntemini geliştirmişlerdir. Yazarlar yapıların yatayda ve düşeyde sürekliliğe sahip olan yapı elemanlarından oluştuğunu ve buna benzer bir etkiyi split grameri kontrol ederek elde edilebileceğini belirtmişlerdir. İsmini bölümleme işleminden alan ve iki üretim kuralı olan bu yöntem basit geometrilerden oluşan üç boyutlu bir kütlenin önce yüzeylere ve yapısal elemanlarına kadar bölümlenip ardından bölümlenen her biçim önceden tanımlanan geometri ve malzemeler ile yer değiştirmesine dayanmaktadır (Şekil ). Bölümlenme işlemi sonlandırıcı tanımlı biçimlere ulaşana kadar devam etmektedir ve muhtemel düzeni önceden tanımlı-sabit olduğundan dolayı kararlıdır.</p>
+<!-- Kütle grafiği alınacak. Haegler, S., Müller, P. and Van Gool, L., 2009. Procedural Modeling for Digital Cultural Heritage, EURASIP Journal on Image and Video Processing, 2009, 1–11. -->
+<figure>
+<embed src="source/figures/splitGrammar.pdf" style="width:100.0%" /><figcaption>Basit bir Split Gramer kuralı ve üretim süreci. </figcaption>
+</figure>
 <p>Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzerinden işleyen, biçim gramerlerinin basitleştirilmiş halidir <span class="citation" data-cites="Stiny:1982cn Lienhard:2017jv">(Stiny, 1982; Lienhard, 2017)</span>. Etiketli bir biçim set gramerinin en küçük (atomik) öğesidir ve alt biçimler barındırmaz. Etiketler sembol olarak kullanılarak üretim kurallarının metinsel olarak yazımını ve bilgisayarda algoritma olarak işlenmesine olanak vermektedir. İdeal olarak, bir biçim grameri uygulaması: görsel bilgi işlemeyi desteklemeli, saklı şekillere izin vermeli (emergence), önceden tanımlanmış parçalara dayanmamalı ve parametrik olmalıdır <span class="citation" data-cites="Gips:1999ut">(Gips, 1999)</span>. Set gramerleri biçim gramerlerinin bilgisayar üzerinde işlenmesini kısıtlayan ilk üç özelliğini barındırmamaktadır. Literatürde biçim grameri uygulaması olarak adlandırılan bir çok yazılım ve yazılım denemesi aslında set gramerini temel alarak çalışmaktadır.</p>
-<figure>
-<img src="source/figures/splitGrammar.jpg" alt="Basit bir Split Gramer kuralı ve üretim süreci (Sönmez, 2018). " style="width:50.0%" /><figcaption>Basit bir Split Gramer kuralı ve üretim süreci <span class="citation" data-cites="Sonmez:2018jx">(Sönmez, 2018)</span>. </figcaption>
-</figure>
-<figure>
-<img src="source/figures/splitGrammar2.jpg" alt="Bir cephenin katman detay gösterimi (Sönmez, 2018)." style="width:50.0%" /><figcaption>Bir cephenin katman detay gösterimi <span class="citation" data-cites="Sonmez:2018jx">(Sönmez, 2018)</span>.</figcaption>
-</figure>
 <!--Bir model içerisinde her katı farklı bir tarz ile modellemeyi mümkün kılmaktadır. Buna örnek olarak zeminde ticari, üst katlarda konut işlevi olan binalar gösterilebilir.-->
 <!-- [@Huang:2009ig] -->
 <h3 id="cga-biçim-grameri"><span class="header-section-number">2.1.5</span> CGA Biçim Grameri</h3>
@@ -389,8 +391,6 @@ Tutenel vd. (Tutenel vd., 2009) Martin’in uyguladığı genişleyerek oluşan 
 ##### Lindenmayer Sistemi
 
 ##### Fraktallar
-
-
 
 \chapter*{Türkiye'den Örnekler}
 
@@ -497,8 +497,6 @@ Table: Spesifik tasarım alanı yorumlayıcı yazılım listesi [@Eloy:2018hh].
 
 [@Knight:2001ca]
 
-
-
 Page 44 [@Gu:2012cg]
 **Computational Design Methods and Technologies**
 Importantly, shapes in shape grammars are treated as nonatomic and ambiguous. They do not have definite parts and can be freely decomposed and recomposed by the user of a grammar, as a design is being generated. Shape ambiguity in shape grammars goes hand in hand with another singular property of shape grammars – shape emergence. An emergent shape is a shape that is not predefined in a grammar, but one that arises through rule applications. Further, emergent shapes can not only be generated by rule applications, they can also be recognized and used in subsequent rule applications.
@@ -546,15 +544,19 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 
 -->
 <h2 id="çalışma-alanının-seçimi"><span class="header-section-number">2.2</span> Çalışma Alanının Seçimi</h2>
+<p>Kentsel gelişim sürecinde kent kimliği hayati bir öneme sahiptir. Küreselleşmenin de etkisiyle şehirler gelişim ve dönüşüm süreçlerinde özgün kimliklerini kaybetme problemiyle karşılaşmaktadır. Bu gelişim ve dönüşüm süreçleri düzgün işletilemediğinde kent okunabilirliğini, kentliler kent hafızasını ve algısını kaybetmektedir. Bu durum kentin tarihi ve kültürel mirasını korumayı güçleştirmektedir.</p>
 <p>Ekonomik, sosyal, teknolojik, kültürel değişimler ve yanlış planlama kararları sonucunda Trabzon kenti tarihi kent dokusunda tahribatlara ve kimlik kaybetme tehlikesine maruz kalmıştır. Kentin bir çok bölgesinde, kentsel sit alanları da dahil olmak üzere, bu tahribat ve kayıplar yaşanmakta ve geleneksel konut mirasına ait ürünler gün geçtikçe azalmaktadır.</p>
-<p>Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir.</p>
+<p>Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir. Çalışma bu bölgedeki geleneksel konut karakterine ait bilgileri yordamsal modelleme yöntemi için gerekli CGA grameri ile kayıt altına almayı ve bölgede yapılması planlanan yeni yapılar için tasarım altlığı oluşturmayı hedeflemektedir.</p>
 <h2 id="çalışma-alanına-ilişkin-bilgiler"><span class="header-section-number">2.3</span> Çalışma Alanına İlişkin Bilgiler <!-- Ortahisar’ın Genel Karakteri --></h2>
 <!--Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.-->
 <figure>
-<img src="source/figures/TrabzonMap.png" alt="Trabzon’un 1223 öncesi ve sonrasına göre bilinen özellikleri haritası (Bryer ve Winfield, 1985)." style="width:100.0%" /><figcaption>Trabzon’un 1223 öncesi ve sonrasına göre bilinen özellikleri haritası <span class="citation" data-cites="Bryer:2011ul">(Bryer ve Winfield, 1985)</span>.</figcaption>
+<img src="source/figures/TrabzonTurkiye.png" alt="Trabzon’un konum haritası." style="width:100.0%" /><figcaption>Trabzon’un konum haritası.</figcaption>
 </figure>
 <p>Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir <span class="citation" data-cites="Uspenski:2003ta">(Uspenski, 2003)</span>.</p>
-<p>Zağnos ve Tabakhane vadileri arasında kalan Ortahisar, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayananmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir <span class="citation" data-cites="Tuluk:2010ud">(Tuluk ve Düzenli, 2010)</span>. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geneleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.</p>
+<figure>
+<img src="source/figures/TrabzonMap.png" alt="Ortahisar bölgesinin kentin 1223 yılı öncesi ve 1869 yılına kadar olan tarihlerde konumunu gösteren harita (Bryer ve Winfield, 1985)." style="width:100.0%" /><figcaption>Ortahisar bölgesinin kentin 1223 yılı öncesi ve 1869 yılına kadar olan tarihlerde konumunu gösteren harita <span class="citation" data-cites="Bryer:2011ul">(Bryer ve Winfield, 1985)</span>.</figcaption>
+</figure>
+<p>Çalışma alanı olarak seçilen Ortahisar, Zağnos ve Tabakhane vadileri arasında kalan, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayanmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir <span class="citation" data-cites="Tuluk:2010ud">(Tuluk ve Düzenli, 2010)</span>. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.</p>
 <ul>
 <li>Askeri Mimari
 <ul>
@@ -581,25 +583,40 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 <li>Kamusal Mimari
 <ul>
 <li>Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)</li>
-<li>Trabzon Kültür Merkezi (Eski Hükümet Konağı)</li>
-<li>Gazipaşa İlkokulu</li>
+<li>Trabzon Kültür Müdürlüğü (Eski Hükümet Konağı)</li>
+<li>Gazi Paşa İlköğretim Okulu</li>
 </ul></li>
 </ul>
+<figure>
+<img src="source/figures/DiniMimari.png" alt="Ortahisar dini mimari örnekleri. Solda Ortahisar Cami ve sağda yıkılmış Şirin Hatun Mescidi (Özen vd., 2009)." style="width:100.0%" /><figcaption>Ortahisar dini mimari örnekleri. Solda Ortahisar Cami ve sağda yıkılmış Şirin Hatun Mescidi <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
+</figure>
+<figure>
+<img src="source/figures/EndustriyelMimari.png" alt="Ortahisar endüstriyel mimari örnekleri. Solda Tabakhane Köprüsü ve sağda Zağnos Paşa Köprüsü. Kaynak: www.eskiturkiye.net" style="width:100.0%" /><figcaption>Ortahisar endüstriyel mimari örnekleri. Solda Tabakhane Köprüsü ve sağda Zağnos Paşa Köprüsü. Kaynak: www.eskiturkiye.net</figcaption>
+</figure>
+<figure>
+<img src="source/figures/SuMimarisi.png" alt="Ortahisar su mimarisi örnekleri. Solda yıkılmış Çifte Hamam ve sağda Ortahisar Cami güneyindeki çeşme (Özen vd., 2009)." style="width:100.0%" /><figcaption>Ortahisar su mimarisi örnekleri. Solda yıkılmış Çifte Hamam ve sağda Ortahisar Cami güneyindeki çeşme <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
+</figure>
+<figure>
+<img src="source/figures/KamusalMimari.png" alt="Ortahisar kamusal mimari örnekleri. Solda Hüseyin Kazaz Kültür Merkezi ve sağda Trabzon Kültür Müdürlüğü binası (Özen vd., 2009)." style="width:100.0%" /><figcaption>Ortahisar kamusal mimari örnekleri. Solda Hüseyin Kazaz Kültür Merkezi ve sağda Trabzon Kültür Müdürlüğü binası <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
+</figure>
 <p>Listelenmiş yapılardan kent surlarının yapım tarihi net olarak bilinmemekle beraber 257 yılından önce mevcut olduğu kaynaklarda belirtilmiştir <span class="citation" data-cites="Bryer:2011ul">(Bryer ve Winfield, 1985)</span>. Surlardan sonra bölgedeki en eski yapı olan ve Ortahisar Cami olarak adlandırılan Panaghia Chrysokephalos Kilisesi 914 yılında inşa ettirilmiştir <span class="citation" data-cites="Miller:2007uq">(Miller, 2007)</span>. Bölgedeki diğer anıtsal yapıların inşa tarihleri 13. ve 16. yüzyıl, sivil mimarlık örneklerinin inşa tarihlerinin ise 19. yüzyıl sonları ve 20. yüzyılın ilk çeyreği olduğu bilinmektedir <span class="citation" data-cites="Aysu:1977wt Kuloglu:1994uy Tuluk:2010ud">(Aysu, 1977; Kuloğlu, 1994; Tuluk ve Düzenli, 2010)</span>. Mevcut yapıların korunması ve yeni yapıların sınırlandırılması amacıyla bölge 1985 yılında 2 Nolu Ortahisar Kentsel Sit Alanı olarak tescillenmiştir.</p>
 <figure>
-<img src="source/figures/ortahisar.jpg" alt="Ortahisar’ın konumu (Var, 2015)." style="width:100.0%" /><figcaption>Ortahisar’ın konumu <span class="citation" data-cites="Var:2015vx">(Var, 2015)</span>.</figcaption>
+<img src="source/figures/ortahisar.jpg" alt="Ortahisar’ın yeni kent merkezine göre konumunu gösteren harita (Var, 2015)." style="width:100.0%" /><figcaption>Ortahisar’ın yeni kent merkezine göre konumunu gösteren harita <span class="citation" data-cites="Var:2015vx">(Var, 2015)</span>.</figcaption>
+</figure>
+<figure>
+<img src="source/figures/OrtahisarUyduIzli.jpg" alt="Ortahisar uydu fotoğrafı." style="width:100.0%" /><figcaption>Ortahisar uydu fotoğrafı.</figcaption>
 </figure>
 <p>1938 yılında <em>Jacques H. Lambert</em> tarafından hazırlanan Trabzonun ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için Ortahisar’ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002 yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda yıkımlara ve büyük tahribata sebep olmuştur.</p>
 <h3 id="ortahisar-konutlarının-özellikleri"><span class="header-section-number">2.3.1</span> Ortahisar Konutlarının Özellikleri</h3>
-<!-- [@Sesli:1996wh; @Iskender:1987vd][@Kuloglu:1994uy] 11. sayfa. Trabzon geleneksel kent konutu özellikleri -->
 <p>Ortahisar’da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan tarihleriyle ağırlıklı olarak Osmanlı dönemine ait yapılardır. Yapım malzemesi ve teknolojisinin imkan verdiği koşullar ile ahşap-kagir yapılar 2-2,5 kat, taş yığma yapılar 3-3,5 kat olarak inşa edilmiştirler. Belli bir geometrik düzeni olmayan parseller içinde olan geleneksel konut dokusu;</p>
 <ul>
 <li>Surlara yakın veya üzerinde, veya bir duvarı ya da terası surların bir parçası olarak</li>
 <li>Kuzey güney aksında bitişerek gelişmiş ve vadilere yönelmiş</li>
 <li>Yoldan yüksek duvarlarla soyutlandırılan bahçe-avlu karışımı bir alandan geçilerek oluşturulmuş konut grubu</li>
-<li>Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş konut grubu şeklinde bir araya gelmişlerdir <span class="citation" data-cites="Birlik:1999ux">(Birlik, 1999)</span>. <!-- Liste paraphrase edilmeli --></li>
+<li>Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş konut grubu şeklinde bir araya gelmişlerdir. <!-- Liste paraphrase edilmeli --></li>
 </ul>
-<p>Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur.</p>
+<!-- TODO: BURAYA FOTOĞRAF EKLENMELİ KONUT ÖZELLİKLERİ İLE İLGİLİ-->
+<p>Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur <span class="citation" data-cites="Birlik:1999ux">(Birlik, 1999)</span>.</p>
 <figure>
 <img src="source/figures/SofaliPlanlar.jpg" alt="Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri (Özen vd., 2009)." style="width:100.0%" /><figcaption>Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
 </figure>
@@ -607,10 +624,7 @@ Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Gr
 <img src="source/figures/disSofaliPlanlar.jpg" alt="Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri (Kuloğlu, 1994)." style="width:100.0%" /><figcaption>Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri <span class="citation" data-cites="Kuloglu:1994uy">(Kuloğlu, 1994)</span>.</figcaption>
 </figure>
 <!--
-Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş olduğu, fakat zaman içinde bu duvarların eski özgün karakterini kaybettiklerinden ve derz yüzeyleri büyüdüğünden sonradan sıva ile
-kaplandığı görülmektedir. Döşeme ve tavanı ahşap olan bu binaların aynı
-zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken bir diğer noktadır.
-
+Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş
 [@Birlik:1999ux]
 -->
 <p>Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer <span class="citation" data-cites="Fallmerayer:2011vq">(2011)</span> Ortahisar konutları için Bizans’a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;</p>
@@ -636,17 +650,34 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </ul></li>
 </ul>
 <figure>
-<img src="source/figures/KonutCepheleri.jpg" alt="Geleneksel konut cephesi örnekleri (Özen vd., 2009)." style="width:100.0%" /><figcaption>Geleneksel konut cephesi örnekleri <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
+<img src="source/figures/KonutCepheleri.jpg" alt="Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi (Özen vd., 2009)." style="width:100.0%" /><figcaption>Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi <span class="citation" data-cites="Ozen:2009wo">(Özen vd., 2009)</span>.</figcaption>
 </figure>
 <p>Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir <span class="citation" data-cites="Kuloglu:1994uy">(Kuloğlu, 1994)</span>. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.</p>
 <h2 id="verilerin-toplanması"><span class="header-section-number">2.4</span> Verilerin Toplanması</h2>
-<p>Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar’da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.</p>
+<!-- Toplam 73 tescilli yapı var çalışma alanında-->
+<p>Ortahisar geleneksel konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır.</p>
+<p>Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil ’te gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.</p>
 <figure>
-<embed src="source/figures/vaziyetplanitescilli.pdf" style="width:100.0%" /><figcaption>Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.</figcaption>
+<embed src="source/figures/vaziyetplanitescilli.pdf" style="width:100.0%" /><figcaption>Ortahisar bölgesi tescilli yapılarını gösteren vaziyet planı. </figcaption>
 </figure>
+<p>Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar’da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Sokak silüetlerinden bazı yapıların sadece tek cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır.</p>
+<figure>
+<embed src="source/figures/Corpus.pdf" style="width:100.0%" /><figcaption>Grameri oluşturan yapı tiplerinin örneklem kümesi. </figcaption>
+</figure>
+<p>Çalışma kapsamında incelenen 15 adet yapı 19. yüzyılın ikinci yarısı ve 20. yüzyılın ilk çeyreği arasındaki dönemde yapılmıştırlar. Bunlar arasından 118 ada 1 parsel ve 128 ada 10 parselde bulunan konutlar yakın tarihte betonarme olarak yeniden inşa edilmiş yapılardır.</p>
+<p>Örneklem kümesindeki yapılar şekil ’te yapı tipine göre sınıflandırılarak gösterilmiştir. Yapılar ilk olarak cephe tipine göre bir parçalı ve üç parçalı cepheye sahip olarak ikiye ayrılmaktadır. Yapıların bir parçalı ve üç parçalı cepheye göre sınıflandırılması ön ve arka cephelerindeki pencere dizilimi ve kapalı veya açık çıkmasına bağlı olarak gerçekleşmektedir. Ardından yapılar kat sayısına, çıkma tipine, giriş katlarına göre şekil içerisinde gruplandırılmıştır. Açık tonda taramalar yapıların giriş katlarını ifade etmektedir.</p>
+<p>Yapılara ait rölöve çizimleri ve künye bilgileri her bir yapı için oluşturulan yapı bilgi formlarında düzenlenmiştirler. 110 ada 16 parselde bulunan yapıya ait örnek yapı bilgi formu şekil ’da gösterilmiştir. Yapı bilgi formları ekler kısmında bulunmaktadır.</p>
+<figure>
+<embed src="source/figures/BilgiFormlari/110-16.pdf" style="width:100.0%" /><figcaption>Yapı bilgi formu örneği. </figcaption>
+</figure>
+<p>Düzenlenen rölöve verileri içerisinden gerekli ölçüler her eleman için dış hizaları temel alınarak ölçülmüştür. Örneğin pencere ve kapılar söveleri ile beraber tek bir ünite şeklinde ölçülerek hesaplara dahil edilmiştirler. 110 ada 16 parsel ve 39 parsel ait yapıların ön cephelerinin ölçülendirilmiş halleri şekil ’de gösterilmiştir. Elde edilen verilerin incelenmesinin ardından geleneksel konutlar hakkında ortaya çıkan önemli bilgiler bir sonraki bölümde ele alınarak vurgulanmıştır.</p>
+<figure>
+<embed src="source/figures/RoloveOranlar.pdf" style="width:90.0%" /><figcaption>110 ada 16 ve 39 parsellerdeki yapılara ait rölövelerin ölçülendirilmiş gösterimleri. </figcaption>
+</figure>
+
 <h1 id="bulgular-ve-irdelemeler"><span class="header-section-number">3</span> BULGULAR VE İRDELEMELER</h1>
 
-<p>Bu bölümde elde edilen rölöveler üzerinden yapılan analizler ve bunların CGA kodunun oluşturulmasındaki kullanımı anlatılmaktadır. CGA gramerinin oluşturulmasında sırasıyla;</p>
+<p>Bu bölümde elde edilen rölöveler üzerinden yapılan analizler ve bunların CGA kodunun oluşturulmasındaki kullanımı anlatılmaktadır. CGA gramerinin oluşturulmasında sırasıyla binaların;</p>
 <ul>
 <li>Taban alanları</li>
 <li>Kat sayıları ve yükseklikleri</li>
@@ -658,10 +689,10 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 <p>analiz edilerek incelenmiştir. Bu analizlere ek olarak yapıların kütlesel formları gruplanarak analiz edilmiştir. Ardından bu formları ve türevlerini oluşturabilecek biçim grameri kuralları tanımlanmıştır. Bu kurallar CGA gramerine entegre edilerek kaba kütle üretimi sağlanmaya çalışılmıştır.</p>
 <p>Oluşturulan kütleler kat sayıları ve yükseklik oranlarına göre dilimlenerek katlar oluşturulmaktadır. Cephe karakteri analizi sonucunda ise oluşan katların panel parçalarına ayrılması sağlanmaktadır. Ardından cephe elemanları ve pencereler oranlarına göre panel içinde dilimlenerek yerleri belli edilmektedir.</p>
 <h2 id="ortahisarın-mimari-dil-analizi-ve-biçim-grameri"><span class="header-section-number">3.1</span> Ortahisar’ın Mimari Dil Analizi ve Biçim Grameri</h2>
-<p>Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan oluşmaktadır. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve analiz-sentez aşaması sonucunda elde edilen veriler ile parametreleştirilmektedir. CGA gramerinin başlangıcı bir parsel veya bina oturum alanının tanımlanması ile gerçekleşmektedir. Gramerin basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile açıklanmıştır.</p>
+<p>Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan oluşmaktadır. CGA gramerinin başlangıcı bir parsel veya bina oturum alanının tanımlanması ile gerçekleşmektedir. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve analiz-sentez aşaması sonucunda elde edilen veriler ile parametreleştirilmektedir. Gramerin basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile açıklanmıştır.</p>
 <!-- GRAMER İLE İLGİLİ GENEL NOTLAR BU KISIMA EKLENECEKTİR-->
-<p><strong><em>Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturubilmek olduğu için cephelerdeki düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.</em></strong></p>
-<p><strong><em>Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırılan yükseklik değerleri arasında bir korelasyon bulunamadığından yükseklikler zemin kat yüksekliği sabit alınarak orantılanmıştır. Karşılaştırma tabloları ekler bölümünde yer almaktadır.</em></strong></p>
+<p>Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturabilmek olduğu için cephelerdeki bir kural tanımlamayan düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.</p>
+<p>Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırılan yükseklik değerleri arasında bir korelasyon bulunamadığından yükseklikler zemin kat yüksekliği sabit alınarak orantılanmıştır. Karşılaştırma tabloları ekler bölümünde yer almaktadır.</p>
 <h3 id="yapı-taban-alanı"><span class="header-section-number">3.1.1</span> Yapı Taban Alanı</h3>
 <p>Ortahisar geleneksel evleri sokağa göre paralel konumlanmaktadır. Yapıların giriş ve kapalı çıkmasının bulunduğu cephe sokağa doğru bakmaktadır. Kural 1 ve 2 başlangıç için verilen oturum alanını ve sokağın yönünü belirler (Şekil ). Kural 1 herhangi bir alanın bir noktasında oturum alanını konumlandırmak için kullanabileceğinden alan planlamasını mümkün kılmaktadır.</p>
 <figure>
@@ -827,7 +858,7 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </tr>
 </tbody>
 </table>
-<h3 id="yapı-kat-sayısı-ve-yükseklikleri-analizi"><span class="header-section-number">3.1.2</span> Yapı Kat Sayısı ve Yükseklikleri Analizi</h3>
+<h3 id="yapı-kat-sayısı-ve-yükseklikleri"><span class="header-section-number">3.1.2</span> Yapı Kat Sayısı ve Yükseklikleri</h3>
 <p>Seçilmiş geleneksel konutlar kat sayısına göre iki katlı, çatı katı olan iki katlı, üç katlı, çatı katı olan üç katlı ve dört katlı yapılar olarak beş gruba ayrılmaktadırlar. Çatı katları yarım kat olarak hesap edilerek şekil ’de gösterilmiştir. Analiz edilen yapıların katlarına göre yüzdelerine bakıldığında %13,34’ü iki katlı, %6,67’sı çatı katı olan iki katlı, %33,34’sı üç katlı, %33,34’ü çatı katı olan üç katlı, %13,34’ü dört katlı yapılardır. Bu oranlar gramer içerisinde eğer kat sayısı tercihi yapılmaz ise oluşturulacak yapıların oluşturulma oranlarını belirtmektedir.</p>
 <figure>
 <embed src="source/figures/katgruplandirma.pdf" style="width:100.0%" /><figcaption>Kat sayısına göre gruplandırılmış Ortahisar evleri. </figcaption>
@@ -889,12 +920,15 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </tr>
 </tbody>
 </table>
-<p>Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı katlarının oluşumu K3’ten K9’a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil ). Bütün Ortahisar geleneksel konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir.</p>
+<p>Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı katlarının oluşumu K3’ten K9’a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil ). Bütün Ortahisar geleneksel konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir (Şekil ).</p>
 <figure>
 <embed src="source/figures/K3-K8.pdf" style="width:100.0%" /><figcaption>Kat oluşumlarını gösteren gramer kuralları. </figcaption>
 </figure>
+<figure>
+<img src="source/figures/110-131.jpg" alt="110 ada 131 parselde bulunan yapıya ait görsel. " style="width:100.0%" /><figcaption>110 ada 131 parselde bulunan yapıya ait görsel. </figcaption>
+</figure>
 <!-- CITY ENGINE Kurallarına bakarak yazı genişletilebilir -->
-<p>K3 kuralındaki hg yükseklik değeri yapı tipine göre en küçük ve en büyük yükseklikler arasından bir değer almaktadır. Örneğin iki katlı bir yapı tipi tablo ’e bakılarak en küçük 4.305 ile en büyük 4.682 arasından bir değer verilerek zemin kat üretilmektedir. Diğer kurallardaki yükseklik parametreleri tablodaki yapı tipine karşılık gelen en küçük ve en büyük oranlar arasından bir değer ile çarpılarak elde edilmektedir. Tablo  incelendiğinde yapıların bodrum kat zemin kat yüksekliklerine göre daha kısa olduğu, birinci ve ikinci kat yüksekliklerinin ise yakın değerler aldığı görülmektedir. Yapılara ait gerçek kat yükseklikleri tablo ’te gösterilmiştir. <strong><em>Çatı katı üç parçalı cepheye sahip yapılarda görüldüğü ve kapalı çıkmalara göre biçimlendiği için cephe çıkmaları kurallarından sonra gerçekleşmektedir.</em></strong></p>
+<p>K3 kuralındaki hg yükseklik değeri yapı tipine göre en küçük ve en büyük yükseklikler arasından bir değer almaktadır. Örneğin iki katlı bir yapı tipi tablo ’e bakılarak en küçük 4.305 ile en büyük 4.682 arasından bir değer verilerek zemin kat üretilmektedir. Diğer kurallardaki yükseklik parametreleri tablodaki yapı tipine karşılık gelen en küçük ve en büyük oranlar arasından bir değer ile çarpılarak elde edilmektedir. Tablo  incelendiğinde yapıların bodrum kat yüksekliklerinin zemin kat yüksekliklerine göre daha az olduğu, birinci ve ikinci kat yüksekliklerinin ise yakın değerler aldığı görülmektedir. Yapılara ait gerçek kat yükseklikleri tablo ’te gösterilmiştir. Çatı katı üç parçalı cepheye sahip yapılarda görüldüğü ve kapalı çıkmalara göre biçimlendiği için cephe çıkmaları kurallarından sonra gerçekleşmektedir.</p>
 <table>
 <caption>Kat sayısına göre gruplandırılmış kat oranları tablosu. </caption>
 <colgroup>
@@ -1273,16 +1307,17 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </tr>
 </tbody>
 </table>
-<h3 id="cephe-tipi-analizi"><span class="header-section-number">3.1.3</span> Cephe Tipi Analizi</h3>
+<h3 id="cephe-tipi"><span class="header-section-number">3.1.3</span> Cephe Tipi</h3>
 <!-- TODO: Yan cephe tipleri açıklanmalı. Cephe Panelleri kısmında da açıklanabilir.-->
-<p>İncelenen Ortahisar geleneksel dokusu üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil ). <strong><em>Tek parçalı cepheye sahip yapılar şekil ’da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir.</em></strong> Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil ’te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10 kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise bodrum kat cephesinin bölümlenmesini göstermektedir.</p>
+<p>İncelenen Ortahisar geleneksel dokusu üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil ). Tek parçalı cepheye sahip yapılar şekil ’da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir. Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil ’te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10 kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise bodrum kat cephesinin bölümlenmesini göstermektedir.</p>
 <figure>
 <embed src="source/figures/K9-K12.pdf" style="width:100.0%" /><figcaption>Üç parçalı cephe tipi oluşumunu gösteren gramer kuralları. </figcaption>
 </figure>
+<p>Cephe tipini belirleyen bir başka koşul ise yapıların taban alanından gelmektedir. İncelenen yapıların taban alanı 100 m<sup>2</sup> üzerinde olanlar üç parçalı cepheye, 100 m<sup>2</sup> altında olan yapıların 75%’i üç parçalı ve geri kalanı tek parçalı cepheye sahip oldukları belirlenmiştir. Üç parçalı cephelerde sağ ve sol parçaların genişlikleri bir kaç santimetre farklarla birbirlerinden farklılaşmaktadır. Bu farklılaşma gramer içerisinde göz ardı edilmiştir. Sağ ve sol cephe parçalarının orta cephe parçasına göre oranı yapılarda 0,909 ile 1,165 arasında değişmektedir (Tablo ). Bu küçük ölçü farklarına rağmen bütün yapılar cephe merkezinden geçen zahiri aksa göre simetriktirler.</p>
+
 <figure>
-<embed src="source/figures/cephegruplandirma.pdf" style="width:85.0%" /><figcaption>Ortahisar evlerinin cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. </figcaption>
+<embed src="source/figures/cephegruplandirma.pdf" style="width:90.0%" /><figcaption>Ortahisar evlerinin cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. </figcaption>
 </figure>
-<p>Cephe tipini belirleyen bir başka koşul ise yapıların taban alanından gelmektedir. İncelenen yapıların taban alanı 100 m<sup>2</sup> üzerinde olanlar üç parçalı cepheye, 100 m<sup>2</sup> altında olan yapıların 75%’i üç parçalı ve geri kalanı tek parçalı cepheye sahip oldukları belirlenmiştir. Üç parçalı cephelerde sağ ve sol parçaların genişlikleri bir kaç santimetre farklarla birbirlerinden farklılaşmaktadır. Sağ ve sol cephe parçalarının orta cephe parçasına göre oranı yapılarda 0,909 ile 1,165 arasında değişmektedir (Tablo ). Bu küçük ölçü farklarına rağmen bütün yapılar cephe merkezinden geçen zahiri aksa göre simetriktirler.</p>
 <table>
 <caption>Ortahisar evlerinin cephe parçalarının genişlik oranları analizi tablosu. </caption>
 <thead>
@@ -1470,14 +1505,18 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </tr>
 </tbody>
 </table>
-<h3 id="cephe-çıkmaları-analizi"><span class="header-section-number">3.1.4</span> Cephe Çıkmaları Analizi</h3>
+<h3 id="cephe-çıkmaları"><span class="header-section-number">3.1.4</span> Cephe Çıkmaları</h3>
 <p>İncelenen geleneksel dokuda açık ve kapalı çıkmalara rastlanmaktadır. Kapalı çıkmalar sokak yönünde ve ön cephede bulunmaktayken, açık çıkmalar arka cephede bulunmaktadır. Açık çıkmalar sadece kapalı çıkması ve çatı katı bulunan üç katlı (110 ada 39, 41 ve 131 parseller ile tanımlı) yapılarda görülmektedir. Bu yapılarda rastlanan açık çıkma derinliğinin kapalı çıkma derinliğine oranı %60’tır. 110 ada 39 parselde bulunan yapının ön cephesinin zemin katında birinci katındaki kapalı çıkması gibi bir çıkma bulunmaktadır, ancak bir rüzgarlık gibi işlevlenen bu eleman ön kısmı açık bulunduğundan dolayı bir kapalı çıkma olarak değerlendirilmemiştir.</p>
+
+<figure>
+<img src="source/figures/110-39.jpg" alt="110 ada 131 parseldeki (solda) yapıdaki kapalı çıkma ve 110 ada 39 parseldeki (sağda) yapıdaki arka cephesinde bulunan açık çıkma. " style="width:100.0%" /><figcaption>110 ada 131 parseldeki (solda) yapıdaki kapalı çıkma ve 110 ada 39 parseldeki (sağda) yapıdaki arka cephesinde bulunan açık çıkma. </figcaption>
+</figure>
 <p>Tek parçalı cepheye sahip yapılarda açık veya kapalı çıkmaya rastlanmamaktadır. Genel olarak yapıların %43,75’inde, sadece üç parçalı cepheye sahip olanların %58,33’ünde kapalı çıkma bulunmaktadır. Üç parçalı cephe karakteri gösteren yapılarda kapalı çıkması olan orta parça genişliği en az 2,99 metredir. Kapalı çıkmaların genişliğinin derinliğine oranı 2,107 ve 2,696 değişmekteyken, bir yapı bu oranın çok altında 1,270 değeri alırken bir yapı da çok üstünde kalarak 3,247 oranını almaktadır (Tablo ). Çatı katı kapalı çıkmaları bir alt katında bulunan kapalı çıkmanın derinlik ve genişlik uzunluklarını almaktadırlar. Ayrıca bodrum katı olan yapılarda giriş sahanlığı birinci katta bulunan kapalı çıkma mesafesi kadar dışarı çıkmaktadır. K8 kuralında açıklanan 110 ada 131 parsel ve 118 ada 1 parselde bulunan yapıların ikinci katları arka cepheleri harici diğer cephelerde dışarı çıkma yapmaktadır. Bu yapıların ikinci katlarında bulunan kapalı çıkmalar bir alt kat kapalı çıkmasına göre hem derinlik hemde genişlik olarak ikinci kattaki çıkma mesafesi kadar büyümektedir.</p>
 <figure>
 <embed src="source/figures/K13-K17.pdf" style="width:100.0%" /><figcaption>Cephe çıkmalarının oluşumlarını gösteren gramer kuralları. </figcaption>
 </figure>
 <!-- TODO: Vectorworkste K18'in hangisi olacağına karar verilmesi Gerekiyor -->
-<p>Şekil ’daki kurallar sokak yönünü gösteren üçgen sembol tarafında kapalı çıkma ve arka cephede açık çıkma oluşumunu tanımlamaktadır. <strong><em>Kapalı çıkmaları tanımlayan kurallar bir yapı için katlar arası ilişkili olarak kurallarda tanımlı katların tamamına uygulanmaktadır veya hiç birine uygulanmaktadır.</em></strong> K13, K14 ve K15 kuralları ya hep beraber uygulanmaktadır veya hep beraber uygulanmamaktadır. K13 birinci kat, K14 kuralı üzerine tam kat gelmeyen birinci kat veya ikinci kat, K15 kuralı ise bodrum kat kapalı çıkmalarının oluşumunu göstermektedir. K17 kuralı üzerine tam kat gelmeyen katların arka cephesindeki açık çıkmayı göstermektedir. K16 kuralı ise sadece 128 ada 10 parselde bulunan yapıda görülen, birinci ve ikinci katta oluşan kapalı çıkmaya ek olarak birinci katta ön cephenin yan parçalarının ilave olarak kapalı çıkmanın %41,31’i kadar öne çıkmasını tanımlamaktadır.</p>
+<p>Şekil ’deki kurallar sokak yönünü gösteren üçgen sembol tarafında kapalı çıkma ve arka cephede açık çıkma oluşumunu tanımlamaktadır. Kapalı çıkmaları tanımlayan kurallar bir yapı için katlar arası ilişkili olarak kurallarda tanımlı katların tamamına uygulanmaktadır veya hiç birine uygulanmaktadır. K13, K14 ve K15 kuralları ya hep beraber ardı sıra uygulanmaktadır veya hiçbiri uygulanmamaktadır. K13 birinci kat, K14 kuralı üzerine tam kat gelmeyen birinci kat veya ikinci kat, K15 kuralı ise bodrum kat kapalı çıkmalarının oluşumunu göstermektedir. K17 kuralı üzerine tam kat gelmeyen katların arka cephesindeki açık çıkmayı göstermektedir. K16 kuralı ise sadece 128 ada 10 parselde bulunan yapıda görülen, birinci ve ikinci katta oluşan kapalı çıkmaya ek olarak birinci katta ön cephenin yan parçalarının ilave olarak kapalı çıkmanın %41,31’i kadar öne çıkmasını tanımlamaktadır.</p>
 <!-- TODO: K16 city engine eklenmeli -->
 <table>
 <caption>Kapalı çıkmaların derinlik ölçüleri ve genişlik-derinlik oranı tablosu. </caption>
@@ -1513,15 +1552,6 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 </tr>
 <tr class="odd">
 <td style="text-align: right;"><strong>110</strong></td>
-<td style="text-align: right;"><strong>16</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><strong>110</strong></td>
 <td style="text-align: right;"><strong>39</strong></td>
 <td style="text-align: right;"></td>
 <td style="text-align: right;">1,840 m</td>
@@ -1529,7 +1559,7 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 <td style="text-align: right;"></td>
 <td style="text-align: right;">2,696</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: right;"><strong>110</strong></td>
 <td style="text-align: right;"><strong>41</strong></td>
 <td style="text-align: right;"></td>
@@ -1538,7 +1568,7 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 <td style="text-align: right;">1,780 m</td>
 <td style="text-align: right;">2,107</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: right;"><strong>110</strong></td>
 <td style="text-align: right;"><strong>131</strong></td>
 <td style="text-align: right;"></td>
@@ -1546,51 +1576,6 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 <td style="text-align: right;">3,450 m</td>
 <td style="text-align: right;">3,450 m</td>
 <td style="text-align: right;">1,270</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"><strong>129</strong></td>
-<td style="text-align: right;"><strong>26</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><strong>110</strong></td>
-<td style="text-align: right;"><strong>44</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"><strong>114</strong></td>
-<td style="text-align: right;"><strong>30</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: right;"><strong>128</strong></td>
-<td style="text-align: right;"><strong>7</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"><strong>888</strong></td>
-<td style="text-align: right;"><strong>8</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;"><strong>127</strong></td>
@@ -1610,32 +1595,15 @@ zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken
 <td style="text-align: right;"></td>
 <td style="text-align: right;">2,570</td>
 </tr>
-<tr class="even">
-<td style="text-align: right;"><strong>110</strong></td>
-<td style="text-align: right;"><strong>43</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;"><strong>888</strong></td>
-<td style="text-align: right;"><strong>7</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
 </tbody>
 </table>
-<h3 id="çatı-katı-oluşumu"><span class="header-section-number">3.1.5</span> Çatı Katı Oluşumu</h3>
-<p>Çatı katları sadece üç parçalı cepheye sahip yapılarda bulunmaktadır. Şekil ’te görüleceği üzere üç parçalı cepheye sahip yapıların yarısında çatı katı oluşumu gözlemlenmektedir. Çatı katı yükseklikleri yapıların 2/3’ünde zemin kata yakın değerler alırken geri kalanında zemin kattan daha kısa olarak bulunmaktadır (Tablo ). Çatı katının cephedeki genişliği bir alt katın cephesinin orta parçasının genişliğine eşit olmaktadır.</p>
+
+<h3 id="çatı-katı"><span class="header-section-number">3.1.5</span> Çatı Katı</h3>
+<p>Çatı katları sadece üç parçalı cepheye sahip yapılarda bulunmaktadır. Şekil ’da görüleceği üzere üç parçalı cepheye sahip yapıların yarısında çatı katı oluşumu gözlemlenmektedir. Çatı katı yükseklikleri yapıların 2/3’ünde zemin kata yakın değerler alırken geri kalanında zemin kattan daha kısa olarak bulunmaktadır (Tablo ). Çatı katının cephedeki genişliği bir alt katın cephesinin orta parçasının genişliğine eşit olmaktadır.</p>
 <figure>
 <embed src="source/figures/K18-K23.pdf" style="width:100.0%" /><figcaption>Çatı katı oluşumlarını gösteren gramer kuralları. </figcaption>
 </figure>
-<p>K18 ve K19 kuralları üzerine tam kat gelmeyen katlar üzerinde çatı katı oluşumu için gerekli bölümlenmeyi tanımlamaktadırlar. K20 kuralı üzerine tam kat gelmeyen üç parçalı cephe tipine sahip kütle üzerine orta parça oranı genişliğinde ve tablo ’teki zemin kat yüksekliğine oranına göre çatı katının eklenmesini göstermektedir. K21 kuralı aynı oluşumu kapalı çıkması bulunan alt kat üzerinde tanımlamaktadır. K22 kuralı 110 ada 131 parseldeki ve K23 kuralı ise 110 ada 41 parseldeki çatı katının yan cephelere doğru genişlemesini göstermektedir.</p>
+<p>K18 ve K19 kuralları üzerine tam kat gelmeyen katlar üzerinde çatı katı oluşumu için gerekli bölümlenmeyi tanımlamaktadırlar. K20 kuralı üzerine tam kat gelmeyen üç parçalı cephe tipine sahip kütle üzerine orta parça oranı genişliğinde ve tablo ’teki zemin kat yüksekliğine oranına göre çatı katının eklenmesini göstermektedir. K21 kuralı aynı oluşumu kapalı çıkması bulunan alt kat üzerinde tanımlamaktadır. K22 kuralı 110 ada 131 parseldeki ve K23 kuralı ise 110 ada 41 parseldeki çatı katının yan cephelere doğru genişlemesini göstermektedir (Şekil ).</p>
 <!-- TODO: YANLARA DOĞRU OLAN ÇATI GENİŞLEMESİNİN ORANLAR İLE TANIMLANMASI GEREKİYOR-->
 <!--
 ### Form Analizi
@@ -1646,7 +1614,7 @@ Bölgedeki geleneksel konutlar kat sayısına göre kütlesel oluşumu açısın
 -->
 <!-- TODO: Vectorworksten güncel halinin alınması gerekiyor. Vectorworkste Bodrum kattada oluşan kapalı çıkma kısımları eklenmelidir. Giriş katı ve çatı katını belli eden gri tonlama eklenmeli.-->
 <h3 id="cephe-panelleri"><span class="header-section-number">3.1.6</span> Cephe Panelleri</h3>
-<p>Yapıların kat oluşumları ve cephe bölümlenmeleri tamamlandıktan sonra cephe yüzeylerinin cephe panelleri ile işlenmesi başlamaktadır. İncelenen yapılar doğrultusunda tek parçalı ve üç parçalı cepheye sahip yapılara ait panel yerleşimleri şekil  ve ’da tanımlanmıştır.</p>
+<p>Yapıların kat oluşumları ve cephe bölümlenmeleri tamamlandıktan sonra cephe yüzeylerinin cephe panelleri ile işlenmesi başlamaktadır. İncelenen yapılar doğrultusunda tek parçalı ve üç parçalı cepheye sahip yapılara ait panel yerleşimleri şekil  ve ’de tanımlanmıştır.</p>
 <figure>
 <embed src="source/figures/K24-K27.pdf" style="width:100.0%" /><figcaption>Tek parçalı cepheye sahip yapılardaki panel oluşumlarını gösteren gramer kuralları. </figcaption>
 </figure>
@@ -1661,13 +1629,14 @@ AKSİ Gramerde belirtilmediği durumlarda ya tek düze yada sağır cepheler mev
 129-26 3 parçalı yan cepheye sahiptir
 888-8 2 parçalı cepheye sahiptir
  -->
-<p>Yapıların cephe karakteri ağırlıklı olarak ön ve arka cephelerde tanımlanmasından ve yan cephe yüzeylerinde bulunan düzensizliklerden dolayı yan cepheler ön ve arka cepheler ile dil birliği sağlayacak şekilde, incelenen yapılar göz önünde bulundurularak oluşturulmuştur. Bu bağlamda aksi bir kural belirtilmediği takdirde K43 ve K44 kuralları yan cephelerin oluşumunu tanımlamaktadır.</p>
-<h3 id="cephe-elemanları-analizi"><span class="header-section-number">3.1.7</span> Cephe Elemanları Analizi</h3>
+<p>Yapıların cephe karakteri ağırlıklı olarak ön ve arka cephelerde tanımlanmasından ve yan cephe yüzeylerinde bulunan düzensizliklerden dolayı yan cepheler ön ve arka cepheler ile dil birliği sağlayacak şekilde, incelenen yapılar göz önünde bulundurularak oluşturulmuştur. Bu bağlamda aksi bir kural belirtilmediği takdirde K41’den K45’e kadar olan kurallar yan cephelerin oluşumunu tanımlamaktadır.</p>
+<h3 id="cephe-elemanları"><span class="header-section-number">3.1.7</span> Cephe Elemanları</h3>
 <p>Yapı katlarının cephelerini tanımlayan cephe panelleri cephe elemanlarından oluşmaktadırlar. Cephe elemanları kat silmesi, düşey bant, pencere ve kapı olarak sıralanmaktadırlar. Kat silmesi bütün panellerde bulunurken diğer cephe elemanları panel içinde bulunup bulunmamasına göre şekil ’de gösterildiği gibi panelleri çeşitlendirmektedirler.</p>
 <figure>
 <embed src="source/figures/KPaneller.pdf" style="width:100.0%" /><figcaption>Cephe panellerinin yatay ve düşey bantların oluşumunu gösteren gramer kuralları. </figcaption>
 </figure>
-<p>Geleneksel Ortahisar evlerinin cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo ’de gösterilmiştir. <strong><em>Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir.</em></strong> Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. <strong><em>Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir</em></strong> ve 0,105m ile 0,571m arasında değişmektedir.</p>
+
+<p>Geleneksel Ortahisar evlerinin cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo ’de gösterilmiştir. Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir. Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir ve 0,105m ile 0,571m arasında değişmektedir.</p>
 <table style="width:100%;">
 <caption>Kat silmeleri ve düşey bant ölçülerinin tablosu. </caption>
 <colgroup>
@@ -1831,7 +1800,7 @@ AKSİ Gramerde belirtilmediği durumlarda ya tek düze yada sağır cepheler mev
 <!--
 ### Pencere Genişlikleri ve Yükseklikleri Analizi
 -->
-<p>İncelenen yapıların cephe panellerinde panel ve pencere büyüklüğüne bağlı olarak farklı sayıda pencere bulunmaktadır. Yapılar pencerelerin yüzey büyüklüğüne göre cephe panellerinde tek pencere ve birden fazla pencere bulunan olarak iki grupta ayrıştırılabilirler. Yapıların %19,75’inde cephe panellerinde tek pencere bulunmaktadır ve bu yapılar üç parçalı cepheye sahiptirler. Geriye kalan %81,75’inde iki veya daha fazla pencere bulunmaktadır. Tablo ’de üç parçalı cepheye sahip yapıların kenar parçalarında bulunan pencere sayıları gösterilirken tablo ’da üç parçalı cepheye sahip yapıların orta kısmı ve tek parçalı cepheye sahip yapıların cephelerindeki pencere sayıları gösterilmiştir.</p>
+<p>İncelenen yapıların cephe panellerinde panel ve pencere büyüklüğüne bağlı olarak farklı sayıda pencere bulunmaktadır. Yapılar pencerelerin yüzey büyüklüğüne göre cephe panellerinde tek pencere ve birden fazla pencere bulunan olarak iki grupta ayrıştırılabilirler. Yapıların %19,75’inde cephe panellerinde tek pencere bulunmaktadır ve bu yapılar üç parçalı cepheye sahiptirler. Geriye kalan %80,25’inde iki veya daha fazla pencere bulunmaktadır. Tablo ’de üç parçalı cepheye sahip yapıların kenar parçalarında bulunan pencere sayıları gösterilirken tablo ’da üç parçalı cepheye sahip yapıların orta kısmı ve tek parçalı cepheye sahip yapıların cephelerindeki pencere sayıları gösterilmiştir.</p>
 <table>
 <caption>Üç parçalı cepheye sahip yapıların kenar cephe parçalarındaki pencere sayılarının tablosu. </caption>
 <thead>
@@ -2134,7 +2103,7 @@ AKSİ Gramerde belirtilmediği durumlarda ya tek düze yada sağır cepheler mev
 </tr>
 </tbody>
 </table>
-<p>Şekil ’deki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde “•” simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen “*&quot; simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde “e” ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.</p>
+<p>Şekil ’teki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde “•” simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen “*&quot; simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde “e” ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.</p>
 <figure>
 <embed src="source/figures/KPaneller2.pdf" style="width:100.0%" /><figcaption>Cephe panellerinde kapı ve pencere yerleşimini gösteren gramer kuralları. </figcaption>
 </figure>
@@ -2413,7 +2382,7 @@ AKSİ Gramerde belirtilmediği durumlarda ya tek düze yada sağır cepheler mev
 <figure>
 <embed src="source/figures/KPaneller3.pdf" style="width:100.0%" /><figcaption>Cephe panellerinde kapı ve pencere detaylarının oluşumunu gösteren gramer kuralları. </figcaption>
 </figure>
-<p>Şekil ’de tanımlı kurallar paneller içerisinde bulunan pencere ve kapı detaylarının oluşumunu göstermektedir. Pencere ve kapıların kendileri ve diğer cephe elemanları ile aralarında bulunan duvar kısımlarının ve pencere denizlik kısımlarının yerleşimini belirtmektedir. Bu bölmelerin bir araya gelirken kullandıkları oranlar tablo ’de gösterilmiştir. Daha doğru modeller üretebilmek için bulunan değerlerin yoğunlaştığı aralıkların gruplanması sonucunda değerler aşağıdaki gibi olmaktadır;</p>
+<p>Şekil ’te tanımlı kurallar paneller içerisinde bulunan pencere ve kapı detaylarının oluşumunu göstermektedir. Pencere ve kapıların kendileri ve diğer cephe elemanları ile aralarında bulunan duvar kısımlarının ve pencere denizlik kısımlarının yerleşimini belirtmektedir. Bu bölmelerin bir araya gelirken kullandıkları oranlar tablo ’de gösterilmiştir. Daha doğru modeller üretebilmek için bulunan değerlerin yoğunlaştığı aralıkların gruplanması sonucunda değerler aşağıdaki gibi olmaktadır;</p>
 <ul>
 <li>Kat yüksekliğinin denizlik yüksekliğine oranı yapıların %66,67’sinde 5,068 ile 7,511, %20’sinde 3,675 ile 4,077 arasında değerler alırken geri kalan iki yapı için en 2,665 ve 11,406 uç değerlerini almaktadır.</li>
 <li>Pencere genişliğinin duvar genişliğine oranı yapıların %60’ında 0,208 ile 0,369, %13,33’ünde 0.058 ile 0.074 aralıklarındadır ve geri kalan bir yapıda 0,567 uç değerini almaktadır.</li>
@@ -2566,7 +2535,7 @@ Table: Pencere denizlik yüksekliklerinin tablosu. \label{PDenizlik}
 | **110** |     **43** |       0,571 m |         0,783 m |                |               |
 | **888** |      **7** |       1,757 m |         0,804 m |                |               |
 -->
-<h3 id="çatı-formu-ve-eğimi-analizi"><span class="header-section-number">3.1.8</span> Çatı Formu ve Eğimi Analizi</h3>
+<h3 id="çatı-formu-ve-eğimi"><span class="header-section-number">3.1.8</span> Çatı Formu ve Eğimi</h3>
 <p>İncelenen Ortahisar yapılarında kırma, beşik ve ikisinin birleşimi olan melez çatılara rastlanmaktadır. Melez çatılar genellikle kapalı çıkma üzerinde üçgen alınlık oluşturan kırma çatılardır. Çatı katı üzerine gelen çatılar beşik çatı olarak şekillenmektedir. Eğerki çatı katı yan cephelere doğru genişliyorsa bu parçaların üzeri kırma veya beşik çatı ile örtülmektedir. Sadece 110 ada 16 parseldeki yapının çatı katı kırma çatı ve çatı katı altında kalan katı örten çatı melez çatı ile örtülmektedir. Tablo ’de yapıların çatı eğimlerine bakıldığında %80’i %17 ile %23 arasında geri kalanı %28 ile %34 arasındadır. Üç katlı yapıların tamamı kırma çatı ile örtülmüştürlerdir.</p>
 <!--
 Ortahisar evlerinin çatı eğimleri 17° ile 34° arasında değişmektedir. Çatı katı olmayan yapılar %77.7'si kırma çatıya %11,1'i beşik çatı ve geri kalanı kırma ve beşik melez bir çatıya sahiptir. Çatı katı olan yapılarda alt kat çatısı eşit oranlarda kırma, beşik ve melez çatıya sahiptir. Çatı katı olan yapıların çatı katı %16,6'sı kırma, %66,6 beşik ve %16,6'sı melez çatıya sahiptir.
@@ -2746,9 +2715,116 @@ Ortahisar evlerinin çatı eğimleri 17° ile 34° arasında değişmektedir. Ç
 </tr>
 </tbody>
 </table>
-<p>Şekil ’de çatı oluşumu ile ilgili kurallar tanımlanmıştır. K72’den K76’ya kadar olan kurallar çatı katı altında kalan katı ve çatı katı olmayan yapılarda bulunan en üst katı örten çatıların oluşumunu tanımlamaktadırlar. K74 kuralı 127 ada 28 parselde bulunan yapıdaki beşik çatıyı, K75 kuralı ise 110 ada 16 parselde bulunan yapıdaki melez çatıyı tanımlamaktadırlar. K76 ve K77 kuralları çatı katı bulunmayan ancak kapalı çıkmaya sahip yapılardaki kapalı çıkma üzerindeki çatı oluşumunu belirtmektedirler. K78, K79, K80 ve K81 kuralları çatı katı üzerindeki çatı oluşumunu tanımlamaktadır. CityEngine üzerinde CGA kodu ile melez çatı oluşturulamadığından dolayı bu tür çatılar CGA kodu içerisinde bulunmamaktadır.</p>
+<p>Şekil ’te çatı oluşumu ile ilgili kurallar tanımlanmıştır. K72’den K76’ya kadar olan kurallar çatı katı altında kalan katı ve çatı katı olmayan yapılarda bulunan en üst katı örten çatıların oluşumunu tanımlamaktadırlar. K74 kuralı 127 ada 28 parselde bulunan yapıdaki beşik çatıyı, K75 kuralı ise 110 ada 16 parselde bulunan yapıdaki melez çatıyı tanımlamaktadırlar. K76 ve K77 kuralları çatı katı bulunmayan ancak kapalı çıkmaya sahip yapılardaki kapalı çıkma üzerindeki çatı oluşumunu belirtmektedirler. K78, K79, K80 ve K81 kuralları çatı katı üzerindeki çatı oluşumunu tanımlamaktadır. CityEngine üzerinde CGA kodu ile melez çatı oluşturulamadığından dolayı bu tür çatılar CGA kodu içerisinde bulunmamaktadır.</p>
 <figure>
 <embed src="source/figures/KCati.pdf" style="width:100.0%" /><figcaption>Çatı oluşumunu gösteren gramer kuralları. </figcaption>
+</figure>
+<h2 id="üretim-süreci"><span class="header-section-number">3.2</span> Üretim Süreci</h2>
+<p>Geleneksel Ortahisar konutlarının üretim süreci girdi olarak verilen bina oturum alanınından sonra kat sayısının belirlenmesi ile başlamaktadır. Bir önceki bölümde tanımlanan kural grupları ve onları destekleyen tablolardaki değerler dikkate alınarak süreç ilerlemektedir. Geleneksel Ortahisar konutlarının temelini oluşturan formların üretimi biçim grameri kuralları ile kodlanmış ve detaylandırılmıştır.</p>
+<p>Biçim grameri kurallarını kullanarak geleneksel Ortahisar konutlarına ait taslak modelleri 8 adımda oluşturabilmek mümkündür.</p>
+<figure>
+<embed src="source/figures/kutleTurevleri.pdf" style="width:100.0%" /><figcaption>Gramer kuralları ile üretilebilen kaba kütle türevleri. </figcaption>
+</figure>
+<ul>
+<li>Kat sayısının seçimi</li>
+<li>Cephe tipinin seçimi</li>
+<li>Kapalı çıkmanın seçimi</li>
+<li>Çatı katının seçimi</li>
+<li>Açık çıkmanın seçimi</li>
+<li>Panellerin seçimi</li>
+<li>Cephe elemanlarının seçimi</li>
+<li>Çatı formu ve eğiminin seçimi</li>
+</ul>
+<p>İlk beş adıma ait kural grupları kaba kütlenin oluşumunu sağlamaktadır. Kat sayısının seçimi adımından sonra panellerin seçimi adımına kadar olan kural grupları farklı kombinasyonlar halinde uygulandığında çeşitli kaba kütleler elde edilebilmektedir. Bu kural setleri ile oluşturulabilen kaba kütleler şekil ’da gösterilmiş en koyu yatay hat altında kalan kısımda bulunan kaba kütlelerdir.</p>
+<p>Son üç adıma ait kural grupları elde edilen bir kaba kütlenin detaylanması ve sonlandırılmasını sağlamaktadır. Bu adımlara ait kural gruplarının önceki kısımda üretilmiş bir kaba kütleye farklı kombinasyonlarının uygulanması ile elde edilebilen çeşitli taslak modelleri şekil ’de gösterilmiştir.</p>
+<figure>
+<embed src="source/figures/seciliTurevleri.pdf" style="width:100.0%" /><figcaption>Bir kaba kütlenin gramer kuralları ile üretilen türevleri. </figcaption>
+</figure>
+<h3 id="cga-grameri"><span class="header-section-number">3.2.1</span> CGA Grameri</h3>
+<p>Üretim sürecinde bahsedilen kaba kütlenin oluşumu ve detaylanması süreçleri bilgisayar ortamına CGA grameri ile tanımlanarak otomatik hale getirilmiştirler. Gramer yazılırken kurallar ve değişkenler-sabitler olmak üzere iki parça halinde ele alınmıştır. Değişkenler üç grupta toplanarak sıralanmıştır.</p>
+<ul>
+<li>Bina tipi
+<ul>
+<li>Bina kat sayısı</li>
+<li>Cephe tipi</li>
+<li>Kapalı çıkma (cumba)</li>
+<li>Açık çıkma (balkon)</li>
+</ul></li>
+<li>Kat yükseklikleri
+<ul>
+<li>Bodrum kat yüksekliği</li>
+<li>Zemin kat yüksekliği</li>
+<li>Birinci kat yüksekliği</li>
+<li>İkinci kat yüksekliği</li>
+<li>Çatı kat yüksekliği</li>
+</ul></li>
+<li>Cephe elemanları
+<ul>
+<li>Çatı eğimi</li>
+<li>Cephe parçalarının oranı</li>
+<li>Denizlik yüksekliği</li>
+<li>Denizlik yüksekliği (çatı katı için)</li>
+<li>Düşey bant genişliği</li>
+<li>Yatay bant yüksekliği (kat silmesi)</li>
+<li>Pencereler arası boşluk</li>
+<li>Kapı genişliği</li>
+<li>Pencere genişliği</li>
+<li>Pencere yüksekliği</li>
+<li>Yan cephelerin sağırlığı</li>
+<li>Arka cephenin sağırlılığı</li>
+</ul></li>
+</ul>
+<p>Bina tipi ile ilgili kat sayısı, cephe tipi, kapalı çıkma ve kapalı çıkmanın cephe genişliğine göre oranları, ikinci kat kapalı çıkmasının birinci kat çıkmasına oranı gibi değişkenler aşağıdaki örnek CGA gramer kodunda içerisinde tanımlanmıştır.</p>
+<pre class="cga"><code>@Group(&quot;Bina Tipi&quot;,2)
+
+@Order(1) @Range(&quot;2 katli&quot;,&quot;2.5 katli&quot;,&quot;3 katli&quot;,&quot;3.5 katli&quot;,&quot;4 katli&quot;)
+attr BinaKatSayisi  =   25%: &quot;2 katli&quot; 6.25%: &quot;2.5 katli&quot;
+                        25%: &quot;3 katli&quot; 31.25%: &quot;3.5 katli&quot;
+                        else: &quot;4 katli&quot;
+
+@Order(2) @Range( &quot;1 Parca&quot;, &quot;3 Parca&quot;)
+attr CepheTipi =
+    case geometry.area &gt; 100.23 : &quot;3 Parca&quot;
+    else :
+        75%: &quot;3 Parca&quot; else: &quot;1 Parca&quot;
+        
+@Order(3) @Range(&quot;Cumbalı&quot;, &quot;Cumbasız&quot;)
+attr cumba = 43.75% : true else : false
+attr cumbaCikma = 0
+attr cumbaGenislikDerinlikOran  =   71.42% : rand(2.107, 2.696)
+                                    14.29% : 1.27  
+                                    else : 3.247
+attr cumbaIkinciKatOran         =
+    case ikinciKatYukseklik == 0 || CepheTipi == &quot;1 Bay&quot; :
+        1
+    else :
+        12.5% : rand(1.061, 1.098)
+        else : 1</code></pre>
+<p>Sabitler ve değişkenler yukarıdaki gibi tanımlanırken verilen oturum alanının belirlenen değerlere uygun olup olmadığının test edildiği ve uygunluğu sonucunda kat oluşumlarını başlatan kurallar aşağıdaki örnek gramer kodunda gösterilmiştir.</p>
+
+<pre class="cga"><code>Lot --&gt;
+    alignScopeToGeometry(yUp, world.lowest, longest)
+    Oturum
+
+Oturum --&gt;
+    case (geometry.area &gt; 50.38 &amp;&amp; geometry.area &lt; 315.67)
+        &amp;&amp; (scope.sx &gt; 4.888 &amp;&amp; scope.sz &gt; 4.888)
+        &amp;&amp; (scope.sx &lt; 17.021 &amp;&amp; scope.sz &lt; 17.021)
+        &amp;&amp; 0.346 &lt; scope.sz/scope.sx &amp;&amp; scope.sz/scope.sx &lt;1.513 :
+        BodrumKat ZeminKat BirinciKat IkinciKat
+    else : NIL</code></pre>
+<p>Oturum kuralı kendinden sonra BodrumKat, ZeminKat, BirinciKat ve IkinciKat kurallarını çalıştırmaktadır. Katlar önce değişkenlerde birbirleri ile ilişkisine göre tanımlı oranlar ile yükseltilip sonrasında cephe bölümlenmesi için gerekli kurallar çağrılmaktadır. Kaba kütleler ardı sıra gelen kurallar ile detaylanarak sonuç ürün olan tasarım altlığı modellerini oluşturmaktadır.</p>
+<h3 id="örnek-çalışma"><span class="header-section-number">3.2.2</span> Örnek Çalışma</h3>
+<p>Ortahisar bölgesindeki 112 numaralı adanın güney kısmında İl Kültür Müdürlüğü binası önünde bulunan altı parsel üzerindeki son dönem yapıları geleneksel dokuyu yansıtmamaktadır (Şekil ). Bu yapılar 3ds Max yazılımı üzerinde hazırlanmış Ortahisar bölgesine ait modelde kaldırılarak yerlerine CGA grameri ile CityEngine yazılımında üretilen taslak modeller yerleştirilmiştir. Bölgenin güncel durumuna ait model şekil ’de gösterilmiştir. Hazırlanan gramer ile üretilen taslak modeller ile yeni görünümü ise şekil ’da gösterilmiştir. İki görsel karşılaştırıldığında gramer ile üretilen taslak modeller mevcut yapılı çevre ile ölçü ve oran bakımından daha uyumlu olduğu gözlemlenmektedir.</p>
+<figure>
+<img src="source/figures/1Original.jpg" alt="Ortahisar’da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların model görünümü. " style="width:100.0%" /><figcaption>Ortahisar’da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların model görünümü. </figcaption>
+</figure>
+<figure>
+<img src="source/figures/1Enhanced.jpg" alt="Ortahisar’da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların yerine üretilmiş tasarım altlıkları görünümü. " style="width:100.0%" /><figcaption>Ortahisar’da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların yerine üretilmiş tasarım altlıkları görünümü. </figcaption>
+</figure>
+<p>Taslak modeller üretilirken parseller cadde üzerinde bulunduklarından dolayı bodrum kat oluşturulması kısıtlanmıştır. Üretim esnasında bu kısıtların (parametrelerin) uygulanabilmesi ve düzenlenebilmesi için CityEngine ekranında parametreler bir panelde toplanmıştır (Şekil ). Bu panel içerisinde üretilecek veya üretilmiş tasarım altlığı modellerinin değiştirilebilen parametreleri bir önceki bölümde açıklanmıştır.</p>
+<figure>
+<img src="source/figures/CGAPanel.png" alt="CityEngine yazılımı üzerinde üretilen modeller ve seçili modele ait bilgilerin bulunduğu panelin görünüşü. " style="width:100.0%" /><figcaption>CityEngine yazılımı üzerinde üretilen modeller ve seçili modele ait bilgilerin bulunduğu panelin görünüşü. </figcaption>
 </figure>
 <!-- 
 ### Biçim Grameri
@@ -2759,31 +2835,63 @@ Ortahisar evlerinin çatı eğimleri 17° ile 34° arasında değişmektedir. Ç
 
 CGA gramer kodu CityEngine yazılımında yazılmaya başlanmıştır ve büyük oranda tamamlanmıştır.  
 
-![CityEngine üzerinde CGA kodu ile üreliten modeller.](source/figures/OrtahisarCGA.png){width=100%}
+![CityEngine üzerinde CGA kodu ile üretilen modeller.](source/figures/OrtahisarCGA.png){width=100%}
 -->
 
 <h1 id="sonuçlar-ve-öneriler"><span class="header-section-number">4</span> SONUÇLAR VE ÖNERİLER</h1>
 
-<p>Çalışmanın anlamı, sonunda ne elde edildiği, kimin bundan faydalanacağı, kime referans-kaynak olacak, kimin işine yarar. Kimler kullanabilir, nasıl bir beceri seti gerektirir.</p>
+<p>Çalışmanın amacı geleneksel Ortahisar konutlarının CGA gramerlerinin kodlanmasını ve parametrik olarak üretilmesidir. Çalışmada sunulan parametrik biçim grameri Ortahisar konut tipinin tipolojik analizinin yanında sentezi içinde bir tasarım aracı olarak kullanılabilmektedir. Üretilen gramer geleneksel Ortahisar konutlarının kütle ve cephe karakteri ilişkilerini ve oluşumlarını kural şemaları ile açıklamaktadır. Bu analiz grameri taban alanının genişlik-derinlik ilişkisini, kat sayısı ve katlar arası yükseklik ilişkileri, cephe tipi, kapalı ve açık çıkmalar, yatay ve düşey bantlar, pencere ve kapılar ve çatı gibi öğeleri barındırmakta ve birbirleriye olan kompozisyonu ele almaktadır. Bu öğeler üzerinden yapılan incelemede;</p>
 <ul>
-<li>Belediyeler de kullanılabilir</li>
-<li>Eğitim amaçlı kullanılabilir</li>
+<li>cephe elemanları ve kat yükseklikleri karşılaştırıldığında aralarında bir korelasyon bulunmadığı,</li>
+<li>taban alanının derinliğinin genişliğine oranı 0,346 ile 1,513 arasında bulunduğu,</li>
+<li>taban alanı büyüklüğünün cephe karakterini etkilediği ve 100m<sup>2</sup> üzerinde taban alanı bulunan yapıların üç parçalı cepheye sahip olduğu,</li>
+<li>zemin ve birinci kat bütün yapılarda bulunup Ortahisar evleri için çekirdek birimi oluşturduğu,</li>
+<li>çatı katı sadece üç parçalı cepheye sahip yapılarda bulunduğu ve kapalı çıkmaya göre biçimlendiği,</li>
+<li>kapalı çıkmaların sokak yönünde açık çıkmaların ise arka cephede bulunduğu, açık çıkmaların sadece kapalı çıkmaya ve çatı katına sahip yapılarda bulunduğu,</li>
+<li>açık çıkmaların derinliğinin kapalı çıkmaların derinliğine oranının %60 olduğu,</li>
+<li>çatı katının cephedeki genişliğinin bir alt katın cephesinin orta parçasının genişliğine eşit olduğu gözlemlenmiştir.</li>
 </ul>
-<p>Alternatif üretmek yerine bilgilerin değerlendirilmesi daha önemli.</p>
-<ul>
-<li>Database kurup değerler girilip iyileştirme yapılabilir.</li>
-<li>Planlar bu model sistemine eklenebilir.</li>
-<li>Mahalle-kentsel dönüşüm ölçeği için kullanılabilir. Bunun için yapıların birbiriyle olan ilişkileri (konumlanma, yönlenme, vb.) analiz edilip sisteme entegre edilmeli.</li>
-<li>Dokular ve ince detaylar içerisine eklenerek edilerek VR sistemler ile beraber tanıtımları yapılabilir.</li>
-<li>Kent kütüphanesinde veri-bilgi kümesi olarak üç boyutlu gösterimler ile sunulabilir.</li>
-<li>İnternet ortamında yapay alanlar oluşturulup genel karakter hakkında bilgi verilebilir. <!-- 
+<p>Bu gramer diğer biçim gramerleri gibi tasarım bilgisini biçim kuralları ile ifade etmektedir. Bir biçim organizasyonunun bir başkasından nasıl türetileceğini açıklamaktadır. Bu sayede geleneksel Ortahisar konutlarının kütlesel tasarım sürecini izah etmektedir. Tasarım elemanlarının ve onların bir araya geliş kurgularının sentaktik ve biçimsel bilgileri bir set grameri olan CGA grameri ile parametrik olarak tanımlanmıştır. Bu parametreler CityEngine ekranında bir panelde düzenlenerek, kısıtların tercihler çerçevesinde değiştirebilmesine olanak verilmiştir (Şekil ).</p>
+<p>Hazırlanan gramer geleneksel Ortahisar evlerinin cephe ve cephe elemanları organizasyonu hakkında bilgi sunmaktadır. İncelenen yapılardan elde edilen bu bilgiler ışığında CGA grameri ile üretilen ve Ortahisar tipolojisini yansıtan üç boyutlu modeller yeni tasarımlar için altlık olarak kullanılabilir (Şekil  ve ).</p>
+<p>Özellikle Ortahisar bölgesinin geleneksel dokusunu korumak amacıyla bu bölgede yapılacak yeni yapılar için ilgili belediye tarafından alternatif tasarım altlıkların üretileceği bir araç olarak işleyecektir. Bu bölgede tasarım yapacak tasarım ofisleri ve mimarlar için gerekli oran ve kompozisyon bilgilerini sunan bir kaynak görevi görecektir. Gramerin sağladığı tasarım diline ait kompozisyonsal yönleri, geleneksel Ortahisar konutları üzerine çalışacak öğrencilerin keşfetmesinde yardımcı olacaktır. Bütün biçim gramerleri gibi tasarımların geliştirilmesinde ve elde edilen bilgilerin gelecek tasarımlara aktarılmasına yardımcı olacaktır. CityEngine üzerinde gramerin kullanımı için gerekli beceri seti bir oturum alanı çizilmesi ve alternatif üret tuşuna basılmasından ibaret olup, herkes tarafından kullanılabilecek düzeydedir.</p>
+<p>CGA grameri içinde tanımlı kurallar üç boyutlu cephe karakteristikleri üzerine uygulanmıştır. İncelenen ve rölövelerine ulaşılamayan geleneksel Ortahisar evlerinin cephe özelliklerine ek olarak plan şemaları içinde kural gruplarının oluşturulması yeni çalışmalarda hedeflenebilir. Bu sayede iç mekanların kullanım amacına, mekanların birbirleriyle olan orantılarına, aydınlanma ve sirkülasyon gibi özelliklerine ait bilgilerde gramer içine dahil edilebilir.</p>
+<p>CGA grameri aynı anda bir çok model üretimine olanak sağladığından dolayı mahalle veya kentsel dönüşüm ölçekleri içinde alternatif üretmesi açısından kullanılabilir. Bu imkanı sağlaması için gramer içerisine yapıların birbirleriyle olan konumlanma, yönlenme vb. ilişkileri analiz edilip entegre edilmesi gerekmektedir. Ayrıca pencere-kapı söveleri, malzeme dokuları, ince detaylar vb. özellikler CGA gramerine dahil edilip tahrip olmuş geleneksel Ortahisar konutlarının tahrip olmadan önceki haline dair muhtemel karakteristik özelliklerini üretebilmek mümkün olacaktır.</p>
+<!--
+
+Page 116
+the ability to generate many versions of the model underscored that it was to be viewed and treated as a research tool and not as an instance of ‘scientific truth’. The goal of the model was to give spatial presence to a range of possibilities, much as I argue the interaction of ritual and landscape must have taken shape within a range of configurations and not as a pre-designed, static diagram. Procedural modeling provided a framework for the incorporation of alternatives and the reasoning behind them. [@Saldana:2015wj]
+
+Page 8
+In the present case, the grammar generates a portfolio of simple house designs that follow the typological and cultural continuity of the vernacular architecture of Sarajevo. Here, the grammar serves as a creative design instrument. It does not generate the designs but rather reinterprets them in contemporary terms. Each design in the portfolio can further be transformed according to functional, structural, and aesthetic properties.The grammar-based design method provides an apparatus for the continuing transformation of an existing type leading to the generation of a new type. [@Colakoglu:2005kc]
+
+Geleneksel Trabzon Ortahisar konutları
+
+- Çalışmanın amacı
+  - Önerilen çalışma yordamsal modelleme yöntemi kullanılarak geleneksel Trabzon konutlarının CGA gramerinin kodlanmasını ve parametrik olarak üretilmesini amaçlamaktadır.
+- Çalışmanın anlamı
+- sonunda ne elde edildiği
+- kimin bundan faydalanacağı, kime referans-kaynak olacak, kimin işine yarar. Kimler kullanabilir, nasıl bir beceri seti gerektirir.
+- Belediyeler de kullanılabilir
+- Eğitim amaçlı kullanılabilir
+
+Alternatif üretmek yerine bilgilerin değerlendirilmesi daha önemli.
+
+- Database kurup değerler girilip iyileştirme yapılabilir.
+- Planlar bu model sistemine eklenebilir.
+- Mahalle-kentsel dönüşüm ölçeği için kullanılabilir. Bunun için yapıların birbiriyle olan ilişkileri (konumlanma, yönlenme, vb.) analiz edilip sisteme entegre edilmeli.
+- Dokular ve ince detaylar içerisine eklenerek edilerek VR sistemler ile beraber tanıtımları yapılabilir.
+- Kent kütüphanesinde veri-bilgi kümesi olarak üç boyutlu gösterimler ile sunulabilir.
+- İnternet ortamında yapay alanlar oluşturulup genel karakter hakkında bilgi verilebilir.
+- Geliştirilecek CGA kodu ile beraber tahrip olmuş geleneksel Ortahisar konutlarının tahrip olmadan önceki haline dair muhtemel karakteristik özellikleri üretilebilmek. PENCERE SÖVELERİNİN EKLENMESİ LAZIM
+
+-->
+<!-- 
 Do not edit this page.
 
 References are automatically generated from the BibTex file (References.bib)
 
 ...which you should create using your reference manager.
---></li>
-</ul>
+-->
 
 
 <div id="refs" class="references">
@@ -2936,9 +3044,6 @@ References are automatically generated from the BibTex file (References.bib)
 </div>
 <div id="ref-Schinko:2015gn">
 <p>Schinko, C., Krispel, U., Ullrich, T. ve Fellner, D., 2015. BUILT BY ALGORITHMS STATE OF THE ART REPORT ON PROCEDURAL MODELING, ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XL-5/W4, 469–479.</p>
-</div>
-<div id="ref-Sonmez:2018jx">
-<p>Sönmez, N.O., 2018. A review of the use of examples for automating architectural design tasks, Computer-Aided Design, 96, 13–30.</p>
 </div>
 <div id="ref-Stiny:1975fj">
 <p>Stiny, G., 1975. Pictorial and Formal Aspects of Shape and Shape Grammars, Birkhäuser Basel, Basel.</p>

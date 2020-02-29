@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" default-locale="tr-TR">
-  <!-- This style was edited with the Visual CSL Editor (http://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>KTÜ Fen Bilimleri Enstitüsü - Yazar</title>
     <title-short>KTÜ FBE - Yazar</title-short>
-    <id>http://www.zotero.org/styles/ktu-fen-bilimleri-enstitusu-yazar</id>
-    <link rel="self" href="http://www.zotero.org/styles/ktu-fen-bilimleri-enstitusu-yazar"/>
+    <id>
+      http://www.zotero.org/styles/ktu-fen-bilimleri-enstitusu-yazar
+    </id>
+    <link rel="self" href="http://www.zotero.org/style/ktu-fen-bilimleri-enstitusu-yazar"/>
     <author>
       <email>caglaraydin@ktu.edu.tr</email>
       <name>Çağlar Aydın</name>
     </author>
-    <updated>2018-01-08T12:13:01+00:00</updated>
+    <updated>2019-09-15T10:26:16+00:00</updated>
   </info>
   <citation et-al-min="3" et-al-use-first="1">
     <layout delimiter="; " prefix="(" suffix=")">
@@ -37,8 +38,15 @@
       </names>
       <date date-parts="year" form="text" variable="issued" prefix=" " suffix="."/>
       <text variable="title" prefix=" "/>
-      <text variable="container-title" prefix=", "/>
-      <text variable="publisher" text-decoration="underline" prefix=", "/>
+      <choose>
+        <if type="article-journal article-magazine article-newspaper" match="any">
+          <text variable="container-title" text-decoration="underline" prefix=", "/>
+        </if>
+        <else>
+          <text variable="container-title" prefix=","/>
+        </else>
+      </choose>
+      <text variable="publisher" text-decoration="none" prefix=", "/>
       <text variable="volume" prefix=", "/>
       <text variable="issue" prefix=", "/>
       <text variable="page" prefix=", "/>

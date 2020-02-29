@@ -25,14 +25,19 @@ help:
 	@echo 'get local templates with: pandoc -D latex/html/etc	  				  '
 	@echo 'or generic ones from: https://github.com/jgm/pandoc-templates		  '
 
+appendix:
+	pandoc "$(APPENDIXDIR)"/*.md \
+	-o "$(APPENDIXDIR)"/appendix.tex
+
 pdf:
+	make appendix & \
 	pandoc "$(INPUTDIR)"/*.md \
-	-A "$(APPENDIXDIR)"/*.md \
+	-A "$(APPENDIXDIR)"/appendix.tex \
 	-o "$(OUTPUTDIR)/thesis.pdf" \
 	-H "$(STYLEDIR)/preamble.tex" \
 	--template="$(STYLEDIR)/template.tex" \
 	--bibliography="$(BIBFILE)" 2>pandoc.log \
-	--csl="$(STYLEDIR)/apa.csl" \
+	--csl="$(STYLEDIR)/ktu-fen-bilimleri-enstitusu-yazar.csl" \
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \

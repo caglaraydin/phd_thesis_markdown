@@ -2,7 +2,7 @@
 
 \thispagestyle{empty}
 
-Bu bölümde elde edilen rölöveler üzerinden yapılan analizler ve bunların CGA kodunun oluşturulmasındaki kullanımı anlatılmaktadır. CGA gramerinin oluşturulmasında sırasıyla;
+Bu bölümde elde edilen rölöveler üzerinden yapılan analizler ve bunların CGA kodunun oluşturulmasındaki kullanımı anlatılmaktadır. CGA gramerinin oluşturulmasında sırasıyla binaların;
 
 - Taban alanları
 - Kat sayıları ve yükseklikleri
@@ -17,13 +17,13 @@ Oluşturulan kütleler kat sayıları ve yükseklik oranlarına göre dilimlener
 
 ## Ortahisar’ın Mimari Dil Analizi ve Biçim Grameri
 
-Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan oluşmaktadır. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve analiz-sentez aşaması sonucunda elde edilen veriler ile parametreleştirilmektedir. CGA gramerinin başlangıcı bir parsel veya bina oturum alanının tanımlanması ile gerçekleşmektedir. Gramerin basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile açıklanmıştır.
+Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan oluşmaktadır. CGA gramerinin başlangıcı bir parsel veya bina oturum alanının tanımlanması ile gerçekleşmektedir. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve analiz-sentez aşaması sonucunda elde edilen veriler ile parametreleştirilmektedir. Gramerin basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile açıklanmıştır.
 
 <!-- GRAMER İLE İLGİLİ GENEL NOTLAR BU KISIMA EKLENECEKTİR-->
 
-***Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturabilmek olduğu için cephelerdeki düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.***
+Çalışmanın amacı geleneksel konutların oranlarını üretebilen tasarım altlığı oluşturabilmek olduğu için cephelerdeki bir kural tanımlamayan düzensizlikler göz ardı edilmiştir. Amaç birebir varolan yapıları üretmek değil onların oranlarını gösteren modeller üretebilmektir.
 
-***Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırılan yükseklik değerleri arasında bir korelasyon bulunamadığından yükseklikler zemin kat yüksekliği sabit alınarak orantılanmıştır. Karşılaştırma tabloları ekler bölümünde yer almaktadır.***
+Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırılan yükseklik değerleri arasında bir korelasyon bulunamadığından yükseklikler zemin kat yüksekliği sabit alınarak orantılanmıştır.
 
 ### Yapı Taban Alanı
 
@@ -62,7 +62,7 @@ Table: Seçilmiş Ortahisar evlerinin oturum alanları, ortalama derinlik ve ort
 | **888** |      **7** |          15,746 m |          12,945 m |           1,216 |     199,34 m^2^ |      603,81 m^2^ |
 | **888** |      **8** |          14,998 m |          17,021 m |           0,881 |     315,67 m^2^ |      879,21 m^2^ |
 
-### Yapı Kat Sayısı ve Yükseklikleri Analizi
+### Yapı Kat Sayısı ve Yükseklikleri
 
 Seçilmiş geleneksel konutlar kat sayısına göre iki katlı, çatı katı olan iki katlı, üç katlı, çatı katı olan üç katlı ve dört katlı yapılar olarak beş gruba ayrılmaktadırlar. Çatı katları yarım kat olarak hesap edilerek şekil \ref{katgruplama}'de gösterilmiştir. Analiz edilen yapıların katlarına göre yüzdelerine bakıldığında %13,34'ü iki katlı, %6,67'sı çatı katı olan iki katlı, %33,34'sı üç katlı, %33,34'ü çatı katı olan üç katlı, %13,34'ü dört katlı yapılardır. Bu oranlar gramer içerisinde eğer kat sayısı tercihi yapılmaz ise oluşturulacak yapıların oluşturulma oranlarını belirtmektedir.
 
@@ -82,12 +82,14 @@ Table: Kat sayısına göre gruplandırılmış yapılarda katların bulunma yü
 |        **2,5** |              0 |           100 |             100 |              0 |           100 |
 |          **2** |              0 |           100 |             100 |              0 |             0 |
 
-Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı  katlarının oluşumu K3'ten K9'a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil \ref{K3K7}). Bütün Ortahisar geleneksel konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir.
+Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı  katlarının oluşumu K3'ten K9'a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil \ref{K3K7}). Bütün Ortahisar geleneksel konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir (Şekil \ref{110131}).
 
 ![Kat oluşumlarını gösteren gramer kuralları. \label{K3K7}](source/figures/K3-K8.pdf){width=100%}
 
+![110 ada 131 parselde bulunan yapıya ait görsel. \label{110131}](source/figures/110-131.jpg){width=100%}
+
 <!-- CITY ENGINE Kurallarına bakarak yazı genişletilebilir -->
-K3 kuralındaki hg yükseklik değeri yapı tipine göre en küçük ve en büyük yükseklikler arasından bir değer almaktadır. Örneğin iki katlı bir yapı tipi tablo \ref{katoranlari}'e bakılarak en küçük 4.305 ile en büyük 4.682 arasından bir değer verilerek zemin kat üretilmektedir. Diğer kurallardaki yükseklik parametreleri tablodaki yapı tipine karşılık gelen en küçük ve en büyük oranlar arasından bir değer ile çarpılarak elde edilmektedir. Tablo \ref{katoranlari} incelendiğinde yapıların bodrum kat zemin kat yüksekliklerine göre daha kısa olduğu, birinci ve ikinci kat yüksekliklerinin ise yakın değerler aldığı görülmektedir. Yapılara ait gerçek kat yükseklikleri tablo \ref{katyukseklikleri}'te gösterilmiştir. ***Çatı katı üç parçalı cepheye sahip yapılarda görüldüğü ve kapalı çıkmalara göre biçimlendiği için cephe çıkmaları kurallarından sonra gerçekleşmektedir.***
+K3 kuralındaki hg yükseklik değeri yapı tipine göre en küçük ve en büyük yükseklikler arasından bir değer almaktadır. Örneğin iki katlı bir yapı tipi tablo \ref{katoranlari}'e bakılarak en küçük 4.305 ile en büyük 4.682 arasından bir değer verilerek zemin kat üretilmektedir. Diğer kurallardaki yükseklik parametreleri tablodaki yapı tipine karşılık gelen en küçük ve en büyük oranlar arasından bir değer ile çarpılarak elde edilmektedir. Tablo \ref{katoranlari} incelendiğinde yapıların bodrum kat yüksekliklerinin zemin kat yüksekliklerine göre daha az olduğu, birinci ve ikinci kat yüksekliklerinin ise yakın değerler aldığı görülmektedir. Yapılara ait gerçek kat yükseklikleri tablo \ref{katyukseklikleri}'te gösterilmiştir. Çatı katı üç parçalı cepheye sahip yapılarda görüldüğü ve kapalı çıkmalara göre biçimlendiği için cephe çıkmaları kurallarından sonra gerçekleşmektedir.
 
 Table: Kat sayısına göre gruplandırılmış kat oranları tablosu. \label{katoranlari}
 
@@ -134,17 +136,19 @@ Table: Kat yükseklikleri tablosu. \label{katyukseklikleri}
 | **110** |     **43** |                |       4,305 m |         4,147 m |                |               |
 | **888** |      **7** |                |       4,682 m |         3,828 m |                |               |
 
-### Cephe Tipi Analizi
+### Cephe Tipi
 
 <!-- TODO: Yan cephe tipleri açıklanmalı. Cephe Panelleri kısmında da açıklanabilir.-->
 
-İncelenen Ortahisar geleneksel dokusu üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil \ref{cephegruplama}). ***Tek parçalı cepheye sahip yapılar şekil \ref{K24K27}'da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir.*** Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil \ref{K9K12}'te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10  kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise  bodrum kat cephesinin bölümlenmesini göstermektedir.
+İncelenen Ortahisar geleneksel dokusu üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil \ref{cephegruplama}). Tek parçalı cepheye sahip yapılar şekil \ref{K24K27}'da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir. Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil \ref{K9K12}'te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10  kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise  bodrum kat cephesinin bölümlenmesini göstermektedir.
 
 ![Üç parçalı cephe tipi oluşumunu gösteren gramer kuralları. \label{K9K12}](source/figures/K9-K12.pdf){width=100%}
 
-![Ortahisar evlerinin cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. \label{cephegruplama}](source/figures/cephegruplandirma.pdf){width=85%}
+Cephe tipini belirleyen bir başka koşul ise yapıların taban alanından gelmektedir. İncelenen yapıların taban alanı 100 m^2^ üzerinde olanlar üç parçalı cepheye, 100 m^2^ altında olan yapıların 75%'i üç parçalı ve geri kalanı tek parçalı cepheye sahip oldukları belirlenmiştir. Üç parçalı cephelerde sağ ve sol parçaların genişlikleri bir kaç santimetre farklarla birbirlerinden farklılaşmaktadır. Bu farklılaşma gramer içerisinde göz ardı edilmiştir. Sağ ve sol cephe parçalarının orta cephe parçasına göre oranı yapılarda 0,909 ile 1,165 arasında değişmektedir (Tablo \ref{genislikoranlari}). Bu küçük ölçü farklarına rağmen bütün yapılar cephe merkezinden geçen zahiri aksa göre simetriktirler.
 
-Cephe tipini belirleyen bir başka koşul ise yapıların taban alanından gelmektedir. İncelenen yapıların taban alanı 100 m^2^ üzerinde olanlar üç parçalı cepheye, 100 m^2^ altında olan yapıların 75%'i üç parçalı ve geri kalanı tek parçalı cepheye sahip oldukları belirlenmiştir. Üç parçalı cephelerde sağ ve sol parçaların genişlikleri bir kaç santimetre farklarla birbirlerinden farklılaşmaktadır. Sağ ve sol cephe parçalarının orta cephe parçasına göre oranı yapılarda 0,909 ile 1,165 arasında değişmektedir (Tablo \ref{genislikoranlari}). Bu küçük ölçü farklarına rağmen bütün yapılar cephe merkezinden geçen zahiri aksa göre simetriktirler.
+\newpage
+
+![Ortahisar evlerinin cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. \label{cephegruplama}](source/figures/cephegruplandirma.pdf){width=90%}
 
 Table: Ortahisar evlerinin cephe parçalarının genişlik oranları analizi tablosu. \label{genislikoranlari}
 
@@ -168,9 +172,13 @@ Table: Ortahisar evlerinin cephe parçalarının genişlik oranları analizi tab
 |           | **114** |     **30** |     8,850 m |              |             |                |                |
 |           | **128** |      **7** |     9,930 m |              |             |                |                |
 
-### Cephe Çıkmaları Analizi
+### Cephe Çıkmaları
 
 İncelenen geleneksel dokuda açık ve kapalı çıkmalara rastlanmaktadır. Kapalı çıkmalar sokak yönünde ve ön cephede bulunmaktayken, açık çıkmalar arka cephede bulunmaktadır. Açık çıkmalar sadece kapalı çıkması ve çatı katı bulunan üç katlı (110 ada 39, 41 ve 131 parseller ile tanımlı) yapılarda görülmektedir. Bu yapılarda rastlanan açık çıkma derinliğinin kapalı çıkma derinliğine oranı %60'tır. 110 ada 39 parselde bulunan yapının ön cephesinin zemin katında birinci katındaki kapalı çıkması gibi bir çıkma bulunmaktadır, ancak bir rüzgarlık gibi işlevlenen bu eleman ön kısmı açık bulunduğundan dolayı bir kapalı çıkma olarak değerlendirilmemiştir.
+
+\newpage
+
+![110 ada 131 parseldeki (solda) yapıdaki kapalı çıkma ve 110 ada 39 parseldeki  (sağda) yapıdaki arka cephesinde bulunan açık çıkma. \label{11039}](source/figures/110-39.jpg){width=100%}
 
 Tek parçalı cepheye sahip yapılarda açık veya kapalı çıkmaya rastlanmamaktadır. Genel olarak yapıların %43,75'inde, sadece üç parçalı cepheye sahip olanların %58,33'ünde kapalı çıkma bulunmaktadır. Üç parçalı cephe karakteri gösteren yapılarda kapalı çıkması olan orta parça genişliği en az 2,99 metredir. Kapalı çıkmaların genişliğinin derinliğine oranı 2,107 ve 2,696 değişmekteyken, bir yapı bu oranın çok altında 1,270 değeri alırken bir yapı da çok üstünde kalarak 3,247 oranını almaktadır (Tablo \ref{CumbaOran}). Çatı katı kapalı çıkmaları bir alt katında bulunan kapalı çıkmanın derinlik ve genişlik uzunluklarını almaktadırlar. Ayrıca bodrum katı olan yapılarda giriş sahanlığı birinci katta bulunan kapalı çıkma mesafesi kadar dışarı çıkmaktadır. K8 kuralında açıklanan 110 ada 131 parsel ve 118 ada 1 parselde bulunan yapıların ikinci katları arka cepheleri harici diğer cephelerde dışarı çıkma yapmaktadır. Bu yapıların ikinci katlarında bulunan kapalı çıkmalar bir alt kat kapalı çıkmasına göre hem derinlik hemde genişlik olarak ikinci kattaki çıkma mesafesi kadar büyümektedir.
 
@@ -178,7 +186,7 @@ Tek parçalı cepheye sahip yapılarda açık veya kapalı çıkmaya rastlanmama
 
 <!-- TODO: Vectorworkste K18'in hangisi olacağına karar verilmesi Gerekiyor -->
 
-Şekil \ref{K13K17}'daki kurallar sokak yönünü gösteren üçgen sembol tarafında kapalı çıkma ve arka cephede açık çıkma oluşumunu tanımlamaktadır. ***Kapalı çıkmaları tanımlayan kurallar bir yapı için katlar arası ilişkili olarak kurallarda tanımlı katların tamamına uygulanmaktadır veya hiç birine uygulanmaktadır.*** K13, K14 ve K15 kuralları ya hep beraber uygulanmaktadır veya hep beraber uygulanmamaktadır. K13 birinci kat, K14 kuralı üzerine tam kat gelmeyen birinci kat veya ikinci kat, K15 kuralı ise bodrum kat kapalı çıkmalarının oluşumunu göstermektedir. K17 kuralı üzerine tam kat gelmeyen katların arka cephesindeki açık çıkmayı göstermektedir. K16 kuralı ise sadece 128 ada 10 parselde bulunan yapıda görülen, birinci ve ikinci katta oluşan kapalı çıkmaya ek olarak birinci katta ön cephenin yan parçalarının ilave olarak kapalı çıkmanın %41,31'i kadar öne çıkmasını tanımlamaktadır.
+Şekil \ref{K13K17}'deki kurallar sokak yönünü gösteren üçgen sembol tarafında kapalı çıkma ve arka cephede açık çıkma oluşumunu tanımlamaktadır. Kapalı çıkmaları tanımlayan kurallar bir yapı için katlar arası ilişkili olarak kurallarda tanımlı katların tamamına uygulanmaktadır veya hiç birine uygulanmaktadır. K13, K14 ve K15 kuralları ya hep beraber ardı sıra uygulanmaktadır veya hiçbiri uygulanmamaktadır. K13 birinci kat, K14 kuralı üzerine tam kat gelmeyen birinci kat veya ikinci kat, K15 kuralı ise bodrum kat kapalı çıkmalarının oluşumunu göstermektedir. K17 kuralı üzerine tam kat gelmeyen katların arka cephesindeki açık çıkmayı göstermektedir. K16 kuralı ise sadece 128 ada 10 parselde bulunan yapıda görülen, birinci ve ikinci katta oluşan kapalı çıkmaya ek olarak birinci katta ön cephenin yan parçalarının ilave olarak kapalı çıkmanın %41,31'i kadar öne çıkmasını tanımlamaktadır.
 
 <!-- TODO: K16 city engine eklenmeli -->
 
@@ -188,27 +196,21 @@ Table: Kapalı çıkmaların derinlik ölçüleri ve genişlik-derinlik oranı t
 | ------: | ---------: | ------------: | --------------: | -------------: | ------------: | --------------------: |
 | **118** |      **1** |               |         1,900 m |        2,300 m |               |                 2,358 |
 | **128** |     **10** |               |         1,460 m |        1,460 m |               |                 3,247 |
-| **110** |     **16** |               |                 |                |               |                       |
 | **110** |     **39** |               |         1,840 m |                |               |                 2,696 |
 | **110** |     **41** |               |         1,780 m |                |       1,780 m |                 2,107 |
 | **110** |    **131** |               |         3,220 m |        3,450 m |       3,450 m |                 1,270 |
-| **129** |     **26** |               |                 |                |               |                       |
-| **110** |     **44** |               |                 |                |               |                       |
-| **114** |     **30** |               |                 |                |               |                       |
-| **128** |      **7** |               |                 |                |               |                       |
-| **888** |      **8** |               |                 |                |               |                       |
 | **127** |     **28** |               |         1,210 m |                |       1,210 m |                 2,392 |
 | **110** |     **23** |               |         1,250 m |                |               |                 2,570 |
-| **110** |     **43** |               |                 |                |               |                       |
-| **888** |      **7** |               |                 |                |               |                       |
 
-### Çatı Katı Oluşumu
+\newpage
 
-Çatı katları sadece üç parçalı cepheye sahip yapılarda bulunmaktadır. Şekil \ref{cephegruplama}'te görüleceği üzere üç parçalı cepheye sahip yapıların yarısında çatı katı oluşumu gözlemlenmektedir. Çatı katı yükseklikleri yapıların 2/3'ünde zemin kata yakın değerler alırken geri kalanında zemin kattan daha kısa olarak bulunmaktadır (Tablo \ref{katyukseklikleri}). Çatı katının cephedeki genişliği bir alt katın cephesinin orta parçasının genişliğine eşit olmaktadır.
+### Çatı Katı
+
+Çatı katları sadece üç parçalı cepheye sahip yapılarda bulunmaktadır. Şekil \ref{cephegruplama}'da görüleceği üzere üç parçalı cepheye sahip yapıların yarısında çatı katı oluşumu gözlemlenmektedir. Çatı katı yükseklikleri yapıların 2/3'ünde zemin kata yakın değerler alırken geri kalanında zemin kattan daha kısa olarak bulunmaktadır (Tablo \ref{katyukseklikleri}). Çatı katının cephedeki genişliği bir alt katın cephesinin orta parçasının genişliğine eşit olmaktadır.
 
 ![Çatı katı oluşumlarını gösteren gramer kuralları. \label{K18K23}](source/figures/K18-K23.pdf){width=100%}
 
-K18 ve K19 kuralları üzerine tam kat gelmeyen katlar üzerinde çatı katı oluşumu için gerekli bölümlenmeyi tanımlamaktadırlar. K20 kuralı üzerine tam kat gelmeyen üç parçalı cephe tipine sahip kütle üzerine orta parça oranı genişliğinde ve tablo \ref{katoranlari}'teki zemin kat yüksekliğine oranına göre çatı katının eklenmesini göstermektedir. K21 kuralı aynı oluşumu kapalı çıkması bulunan alt kat üzerinde tanımlamaktadır. K22 kuralı 110 ada 131 parseldeki ve K23 kuralı ise 110 ada 41 parseldeki çatı katının yan cephelere doğru genişlemesini göstermektedir.
+K18 ve K19 kuralları üzerine tam kat gelmeyen katlar üzerinde çatı katı oluşumu için gerekli bölümlenmeyi tanımlamaktadırlar. K20 kuralı üzerine tam kat gelmeyen üç parçalı cephe tipine sahip kütle üzerine orta parça oranı genişliğinde ve tablo \ref{katoranlari}'teki zemin kat yüksekliğine oranına göre çatı katının eklenmesini göstermektedir. K21 kuralı aynı oluşumu kapalı çıkması bulunan alt kat üzerinde tanımlamaktadır. K22 kuralı 110 ada 131 parseldeki ve K23 kuralı ise 110 ada 41 parseldeki çatı katının yan cephelere doğru genişlemesini göstermektedir (Şekil \ref{110131}).
 
 <!-- TODO: YANLARA DOĞRU OLAN ÇATI GENİŞLEMESİNİN ORANLAR İLE TANIMLANMASI GEREKİYOR-->
 
@@ -223,7 +225,7 @@ Bölgedeki geleneksel konutlar kat sayısına göre kütlesel oluşumu açısın
 
 ### Cephe Panelleri
 
-Yapıların kat oluşumları ve cephe bölümlenmeleri tamamlandıktan sonra cephe yüzeylerinin cephe panelleri ile işlenmesi başlamaktadır. İncelenen yapılar doğrultusunda tek parçalı ve üç parçalı cepheye sahip yapılara ait panel yerleşimleri şekil \ref{K24K27} ve \ref{K28K44}'da tanımlanmıştır.
+Yapıların kat oluşumları ve cephe bölümlenmeleri tamamlandıktan sonra cephe yüzeylerinin cephe panelleri ile işlenmesi başlamaktadır. İncelenen yapılar doğrultusunda tek parçalı ve üç parçalı cepheye sahip yapılara ait panel yerleşimleri şekil \ref{K24K27} ve \ref{K28K44}'de tanımlanmıştır.
 
 ![Tek parçalı cepheye sahip yapılardaki panel oluşumlarını gösteren gramer kuralları. \label{K24K27}](source/figures/K24-K27.pdf){width=100%}
 
@@ -241,15 +243,17 @@ AKSİ Gramerde belirtilmediği durumlarda ya tek düze yada sağır cepheler mev
 888-8 2 parçalı cepheye sahiptir
  -->
 
-Yapıların cephe karakteri ağırlıklı olarak ön ve arka cephelerde tanımlanmasından ve yan cephe yüzeylerinde bulunan düzensizliklerden dolayı yan cepheler ön ve arka cepheler ile dil birliği sağlayacak şekilde, incelenen yapılar göz önünde bulundurularak oluşturulmuştur. Bu bağlamda aksi bir kural belirtilmediği takdirde K43 ve K44 kuralları yan cephelerin oluşumunu tanımlamaktadır.
+Yapıların cephe karakteri ağırlıklı olarak ön ve arka cephelerde tanımlanmasından ve yan cephe yüzeylerinde bulunan düzensizliklerden dolayı yan cepheler ön ve arka cepheler ile dil birliği sağlayacak şekilde, incelenen yapılar göz önünde bulundurularak oluşturulmuştur. Bu bağlamda aksi bir kural belirtilmediği takdirde K41'den K45'e kadar olan kurallar yan cephelerin oluşumunu tanımlamaktadır.
 
-### Cephe Elemanları Analizi
+### Cephe Elemanları
 
 Yapı katlarının cephelerini tanımlayan cephe panelleri cephe elemanlarından oluşmaktadırlar. Cephe elemanları kat silmesi, düşey bant, pencere ve kapı olarak sıralanmaktadırlar. Kat silmesi bütün panellerde bulunurken diğer cephe elemanları panel içinde bulunup bulunmamasına göre şekil \ref{KPaneller}'de gösterildiği gibi panelleri çeşitlendirmektedirler.
 
 ![Cephe panellerinin yatay ve düşey bantların oluşumunu gösteren gramer kuralları. \label{KPaneller}](source/figures/KPaneller.pdf){width=100%}
 
-Geleneksel Ortahisar evlerinin cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo \ref{silmebantolcu}'de gösterilmiştir. ***Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir.*** Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. ***Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir*** ve 0,105m ile 0,571m arasında değişmektedir.
+\newpage
+
+Geleneksel Ortahisar evlerinin cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo \ref{silmebantolcu}'de gösterilmiştir. Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir. Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir ve 0,105m ile 0,571m arasında değişmektedir.
 
 Table: Kat silmeleri ve düşey bant ölçülerinin tablosu. \label{silmebantolcu}
 
@@ -275,7 +279,7 @@ Table: Kat silmeleri ve düşey bant ölçülerinin tablosu. \label{silmebantolc
 ### Pencere Genişlikleri ve Yükseklikleri Analizi
 -->
 
-İncelenen yapıların cephe panellerinde panel ve pencere büyüklüğüne bağlı olarak farklı sayıda pencere bulunmaktadır. Yapılar pencerelerin yüzey büyüklüğüne göre cephe panellerinde tek pencere ve birden fazla pencere bulunan olarak iki grupta ayrıştırılabilirler. Yapıların %19,75'inde cephe panellerinde tek pencere bulunmaktadır ve bu yapılar üç parçalı cepheye sahiptirler. Geriye kalan %81,75'inde iki veya daha fazla pencere bulunmaktadır. Tablo \ref{PKenar}'de üç parçalı cepheye sahip yapıların kenar parçalarında bulunan pencere sayıları gösterilirken tablo \ref{POrta}'da üç parçalı cepheye sahip yapıların orta kısmı ve tek parçalı cepheye sahip yapıların cephelerindeki pencere sayıları gösterilmiştir.
+İncelenen yapıların cephe panellerinde panel ve pencere büyüklüğüne bağlı olarak farklı sayıda pencere bulunmaktadır. Yapılar pencerelerin yüzey büyüklüğüne göre cephe panellerinde tek pencere ve birden fazla pencere bulunan olarak iki grupta ayrıştırılabilirler. Yapıların %19,75'inde cephe panellerinde tek pencere bulunmaktadır ve bu yapılar üç parçalı cepheye sahiptirler. Geriye kalan %80,25'inde iki veya daha fazla pencere bulunmaktadır. Tablo \ref{PKenar}'de üç parçalı cepheye sahip yapıların kenar parçalarında bulunan pencere sayıları gösterilirken tablo \ref{POrta}'da üç parçalı cepheye sahip yapıların orta kısmı ve tek parçalı cepheye sahip yapıların cephelerindeki pencere sayıları gösterilmiştir.
 
 Table: Üç parçalı cepheye sahip yapıların kenar cephe parçalarındaki pencere sayılarının tablosu. \label{PKenar}
 
@@ -317,7 +321,7 @@ Table: Üç parçalı cepheye sahip yapıların orta cephe parçalarındaki ve t
 |               | **114** |     **30** |             6 |               6 |                |               |
 |               | **128** |      **7** |             4 |               4 |                |               |
 
-Şekil \ref{KPaneller2}'deki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde "•" simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen "*" simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde "e" ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.
+Şekil \ref{KPaneller2}'teki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde "•" simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen "*" simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde "e" ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.
 
 ![Cephe panellerinde kapı ve pencere yerleşimini gösteren gramer kuralları. \label{KPaneller2}](source/figures/KPaneller2.pdf){width=100%}
 
@@ -367,7 +371,7 @@ Table: Pencere yüksekliklerinin genişliklerine göre oranları tablosu. \label
 
 ![Cephe panellerinde kapı ve pencere detaylarının oluşumunu gösteren gramer kuralları. \label{KPaneller3}](source/figures/KPaneller3.pdf){width=100%}
 
-Şekil \ref{KPaneller3}'de tanımlı kurallar paneller içerisinde bulunan pencere ve kapı detaylarının oluşumunu göstermektedir. Pencere ve kapıların kendileri ve diğer cephe elemanları ile aralarında bulunan duvar kısımlarının ve pencere denizlik kısımlarının yerleşimini belirtmektedir. Bu bölmelerin bir araya gelirken kullandıkları oranlar tablo \ref{PKDOran}'de gösterilmiştir. Daha doğru modeller üretebilmek için bulunan değerlerin yoğunlaştığı aralıkların gruplanması sonucunda değerler aşağıdaki gibi olmaktadır;
+Şekil \ref{KPaneller3}'te tanımlı kurallar paneller içerisinde bulunan pencere ve kapı detaylarının oluşumunu göstermektedir. Pencere ve kapıların kendileri ve diğer cephe elemanları ile aralarında bulunan duvar kısımlarının ve pencere denizlik kısımlarının yerleşimini belirtmektedir. Bu bölmelerin bir araya gelirken kullandıkları oranlar tablo \ref{PKDOran}'de gösterilmiştir. Daha doğru modeller üretebilmek için bulunan değerlerin yoğunlaştığı aralıkların gruplanması sonucunda değerler aşağıdaki gibi olmaktadır;
 
 - Kat yüksekliğinin denizlik yüksekliğine oranı yapıların %66,67'sinde 5,068 ile 7,511, %20'sinde 3,675 ile 4,077 arasında değerler alırken geri kalan iki yapı için en 2,665 ve 11,406 uç değerlerini almaktadır.
 - Pencere genişliğinin duvar genişliğine oranı yapıların %60'ında 0,208 ile 0,369, %13,33'ünde 0.058 ile 0.074 aralıklarındadır ve geri kalan bir yapıda 0,567 uç değerini almaktadır.
@@ -415,7 +419,7 @@ Table: Pencere denizlik yüksekliklerinin tablosu. \label{PDenizlik}
 | **888** |      **7** |       1,757 m |         0,804 m |                |               |
 -->
 
-### Çatı Formu ve Eğimi Analizi
+### Çatı Formu ve Eğimi
 
 İncelenen Ortahisar yapılarında kırma, beşik ve ikisinin birleşimi olan melez çatılara rastlanmaktadır. Melez çatılar genellikle kapalı çıkma üzerinde üçgen alınlık oluşturan kırma çatılardır. Çatı katı üzerine gelen çatılar beşik çatı olarak şekillenmektedir. Eğerki çatı katı yan cephelere doğru genişliyorsa bu parçaların üzeri kırma veya beşik çatı ile örtülmektedir. Sadece 110 ada 16 parseldeki yapının çatı katı kırma çatı ve çatı katı altında kalan katı örten çatı melez çatı ile örtülmektedir. Tablo \ref{Cati}'de yapıların çatı eğimlerine bakıldığında %80'i %17 ile %23 arasında geri kalanı %28 ile %34 arasındadır. Üç katlı yapıların tamamı kırma çatı ile örtülmüştürlerdir.
 
@@ -448,9 +452,154 @@ Table: Kat sayısına göre gruplandırılmış yapıların çatı formu ve eği
 |         |     110 |         43 | Beşik + Kırma |               |            30° |
 |         |     888 |          7 | Kırma         |               |            18° |
 
-Şekil \ref{KCati}'de çatı oluşumu ile ilgili kurallar tanımlanmıştır. K72'den K76'ya kadar olan kurallar çatı katı altında kalan katı ve çatı katı olmayan yapılarda bulunan en üst katı örten çatıların oluşumunu tanımlamaktadırlar. K74 kuralı 127 ada 28 parselde bulunan yapıdaki beşik çatıyı, K75 kuralı ise 110 ada 16 parselde bulunan yapıdaki melez çatıyı tanımlamaktadırlar. K76 ve K77 kuralları çatı katı bulunmayan ancak kapalı çıkmaya sahip yapılardaki kapalı çıkma üzerindeki çatı oluşumunu belirtmektedirler. K78, K79, K80 ve K81 kuralları çatı katı üzerindeki çatı oluşumunu tanımlamaktadır. CityEngine üzerinde CGA kodu ile melez çatı oluşturulamadığından dolayı bu tür çatılar CGA kodu içerisinde bulunmamaktadır.
+Şekil \ref{KCati}'te çatı oluşumu ile ilgili kurallar tanımlanmıştır. K72'den K76'ya kadar olan kurallar çatı katı altında kalan katı ve çatı katı olmayan yapılarda bulunan en üst katı örten çatıların oluşumunu tanımlamaktadırlar. K74 kuralı 127 ada 28 parselde bulunan yapıdaki beşik çatıyı, K75 kuralı ise 110 ada 16 parselde bulunan yapıdaki melez çatıyı tanımlamaktadırlar. K76 ve K77 kuralları çatı katı bulunmayan ancak kapalı çıkmaya sahip yapılardaki kapalı çıkma üzerindeki çatı oluşumunu belirtmektedirler. K78, K79, K80 ve K81 kuralları çatı katı üzerindeki çatı oluşumunu tanımlamaktadır. CityEngine üzerinde CGA kodu ile melez çatı oluşturulamadığından dolayı bu tür çatılar CGA kodu içerisinde bulunmamaktadır.
 
 ![Çatı oluşumunu gösteren gramer kuralları. \label{KCati}](source/figures/KCati.pdf){width=100%}
+
+## Üretim Süreci
+
+Geleneksel Ortahisar konutlarının üretim süreci girdi olarak verilen bina oturum alanınından sonra kat sayısının belirlenmesi ile başlamaktadır. Bir önceki bölümde tanımlanan kural grupları ve onları destekleyen tablolardaki değerler dikkate alınarak süreç ilerlemektedir. Geleneksel Ortahisar konutlarının temelini oluşturan formların üretimi biçim grameri kuralları ile kodlanmış ve detaylandırılmıştır.
+
+Biçim grameri kurallarını kullanarak geleneksel Ortahisar konutlarına ait taslak modelleri 8 adımda oluşturabilmek mümkündür.
+
+![Gramer kuralları ile üretilebilen kaba kütle türevleri. \label{kutleTurev}](source/figures/kutleTurevleri.pdf){width=100%}
+
+- Kat sayısının seçimi
+- Cephe tipinin seçimi
+- Kapalı çıkmanın seçimi
+- Çatı katının seçimi
+- Açık çıkmanın seçimi
+- Panellerin seçimi
+- Cephe elemanlarının seçimi
+- Çatı formu ve eğiminin seçimi
+
+İlk beş adıma ait kural grupları kaba kütlenin oluşumunu sağlamaktadır. Kat sayısının seçimi adımından sonra panellerin seçimi adımına kadar olan kural grupları farklı kombinasyonlar halinde uygulandığında çeşitli kaba kütleler elde edilebilmektedir. Bu kural setleri ile oluşturulabilen kaba kütleler şekil \ref{kutleTurev}'da gösterilmiş en koyu yatay hat altında kalan kısımda bulunan kaba kütlelerdir.
+
+Son üç adıma ait kural grupları elde edilen bir kaba kütlenin detaylanması ve sonlandırılmasını sağlamaktadır. Bu adımlara ait kural gruplarının önceki kısımda üretilmiş bir kaba kütleye farklı kombinasyonlarının uygulanması ile elde edilebilen çeşitli taslak modelleri şekil \ref{seciliTurev}'de gösterilmiştir.
+
+![Bir kaba kütlenin gramer kuralları ile üretilen türevleri. \label{seciliTurev}](source/figures/seciliTurevleri.pdf){width=100%}
+
+### CGA Grameri
+
+Üretim sürecinde bahsedilen kaba kütlenin oluşumu ve detaylanması süreçleri bilgisayar ortamına CGA grameri ile tanımlanarak otomatik hale getirilmiştirler. Gramer yazılırken kurallar ve değişkenler-sabitler olmak üzere iki parça halinde ele alınmıştır. Değişkenler beş grupta toplanarak sıralanmıştır.
+
+- Bina tipi
+  - Bina kat sayısı
+  - Cephe tipi
+  - Kapalı çıkma (cumba)
+  - Açık çıkma (balkon)
+- Kat yükseklikleri oranları
+  - Bodrum kat yüksekliği oranı
+  - Birinci kat yüksekliği oranı
+  - İkinci kat yüksekliği oranı
+  - Çatı kat yüksekliği oranı
+- Cephe elemanları oranları
+  - Cephe parçalarının oranı
+  - Cumba genişliğinin derinliğine oranı
+  - İkinci kat cumbasının alanının birinci kat cumbasının alanına oranı
+  - Denizlik yüksekliği oranı
+  - Pencereler arası duvarın pencere genişliğine oranı
+  - Kapı genişliğinin pencere genişliğine oranı
+  - Pencere genişliğinin yüksekliğine oranı
+  - Pencere yüksekliğinin zemin kat yüksekliğine oranı
+- Kat yükseklikleri
+  - Bodrum kat yüksekliği
+  - Zemin kat yüksekliği
+  - Birinci kat yüksekliği
+  - İkinci kat yüksekliği
+  - Çatı kat yüksekliği
+- Cephe elemanları
+  - Çatı eğimi
+  - Denizlik yüksekliği
+  - Düşey bant genişliği
+  - Pencereler arası duvar genişliği
+  - Kapı genişliği
+  - Yatay bant (kat silmesi) yüksekliği
+  - Pencere genişliği
+  - Pencere yüksekliği
+
+Bina tipi ile ilgili kat sayısı, cephe tipi, kapalı çıkma ve kapalı çıkmanın cephe genişliğine göre oranları, ikinci kat kapalı çıkmasının birinci kat çıkmasına oranı gibi değişkenler aşağıdaki örnek CGA gramer kodunda içerisinde tanımlanmıştır.
+
+```CGA
+@Group("Bina Tipi",2)
+
+@Order(1) @Range("2 katli","2.5 katli","3 katli","3.5 katli","4 katli")
+attr BinaKatSayisi	=   25%: "2 katli" 6.25%: "2.5 katli"
+					    25%: "3 katli" 31.25%: "3.5 katli"
+                        else: "4 katli"
+
+@Order(2) @Range( "1 Parca", "3 Parca")
+attr CepheTipi =
+	case geometry.area > 100.23 : "3 Parca"
+	else :
+		75%: "3 Parca" else: "1 Parca"
+		
+@Order(3) @Range("Cumbalı", "Cumbasız")
+attr cumba = 43.75% : true else : false
+attr cumbaGenislikDerinlikOran	=   71.42% : rand(2.107, 2.696)
+                                    14.29% : 1.27  
+                                    else : 3.247
+attr cumbaIkinciKatOran			=
+	case ikinciKatYukseklik == 0 || CepheTipi == "1 Bay" :
+		1
+	else :
+		12.5% : rand(1.061, 1.098)
+		else : 1
+```
+
+Sabitler ve değişkenler yukarıdaki gibi tanımlanırken verilen oturum alanının belirlenen değerlere uygun olup olmadığının test edildiği ve uygunluğu sonucunda kat oluşumlarını başlatan kurallar aşağıdaki örnek gramer kodunda gösterilmiştir.
+
+```CGA
+Lot -->
+    alignScopeToGeometry(yUp, world.lowest, longest)
+    Oturum
+
+Oturum -->
+    case (geometry.area > 50.38 && geometry.area < 315.67)
+        && (scope.sx > 4.888 && scope.sz > 4.888)
+        && (scope.sx < 17.021 && scope.sz < 17.021)
+        && 0.346 < scope.sz/scope.sx && scope.sz/scope.sx <1.513 :
+        BodrumKat ZeminKat BirinciKat IkinciKat
+    else : NIL
+```
+
+Oturum kuralı kendinden sonra BodrumKat, ZeminKat, BirinciKat ve IkinciKat kurallarını çalıştırmaktadır. Katlar önce değişkenlerde birbirleri ile ilişkisine göre tanımlı oranlar ile yükseltilip sonrasında cephe bölümlenmesi için gerekli kurallar çağrılmaktadır. Kaba kütleler ardı sıra gelen kurallar ile detaylanarak sonuç ürün olan tasarım altlığı modellerini oluşturmaktadır.
+
+### Örnek Çalışma
+
+Bu bölümde iki ayrı çalışma ile gramerin taslak model üretimi test edilerek gösterilmiştir. İlk çalışma Ortahisar bölgesindeki 112 numaralı adanın güney kısmında İl Kültür Müdürlüğü binası önünde bulunan altı parsel üzerindeki sıra yapılar üzerinde yapılmıştır. Bu parseller üzerindeki son dönem yapıları geleneksel dokuyu yansıtmamaktadır (Şekil \ref{ortahisartescilli}). Bu yapılar 3ds Max yazılımı üzerinde hazırlanmış Ortahisar bölgesine ait modelde kaldırılarak yerlerine CGA grameri ile CityEngine yazılımında üretilen taslak modeller yerleştirilmiştir. Bölgenin güncel durumuna ait model şekil \ref{Eskimodel}'de gösterilmiştir. Hazırlanan gramer ile üretilen taslak modeller ile yeni görünümü ise şekil \ref{Yenimodel}, \ref{Yenimodel2} ve \ref{Yenimodel3}'de gösterilmiştir. Güncel duruma ait model ve üretilen taslak modellerin bulunduğu görseller karşılatırıldığında gramer ile üretilen taslak modeller mevcut yapılı çevre ile ölçü ve oran bakımından daha uyumlu olduğu gözlemlenmektedir.
+
+![Ortahisar'da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların model görünümü. \label{Eskimodel}](source/figures/Render/Original.jpg){width=100%}
+
+![Ortahisar'da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların yerine üretilmiş ilk tasarım altlıkları görünümü. \label{Yenimodel}](source/figures/Render/Grup2-1.jpg){width=100%}
+
+![Ortahisar'da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların yerine üretilmiş ikinci tasarım altlıkları görünümü. \label{Yenimodel2}](source/figures/Render/Grup1-1.jpg){width=100%}
+
+![Ortahisar'da Trabzon Kültür Müdürlüğü binası önünde kalan yapıların yerine üretilmiş üçüncü tasarım altlıkları görünümü. \label{Yenimodel3}](source/figures/Render/Grup3-1.jpg){width=100%}
+
+Şekil \ref{Yenimodel}'da üretilen taslak modeller gramer tarafından otomatik olarak üretilmiştir. Herhangi bir parametre tercihi yapılmayan bu modellerin sağdan üçüncü ve dördüncüsünde bodrum kat oluşmuştur. Sokak üzerindeki diğer yapılarda bodrum kat bulunmadığından şekil \ref{Yenimodel2}'de bütün parsellere ait parametrelerde bodrum kat yüksekliği 0 değeri girilerek bodrum kat oluşumu engellenmiştir. Şekil \ref{Yenimodel3}'de sokak hattındaki tarihi yapılarda cumba bulunmadığından tercih olarak cumba oluşumu parametre değiştirilerek iptal edilmiştir.
+
+Üretim esnasında bu kısıtların (parametrelerin) uygulanabilmesi ve düzenlenebilmesi için CityEngine ekranında parametreler bir panelde toplanmıştır (Şekil \ref{CGAPanel}). Bu panel içerisinde üretilecek veya üretilmiş tasarım altlığı modellerinin değiştirilebilen parametreleri bir önceki bölümde açıklanmıştır. Şekil \ref{CGAPanelDetay}'te panel içerisinde bulunan bina tipi kategorisi altında listelenmiş bina kat sayısı, cephe tipi, cumba ve balkon parametreleri için açılan alt menülerde seçilebilecek kısıtlar görünmektedir. Kullanıcının bu alt menülerde bulunan kısıtlardan bir tercihde bulunması ile taslak model otomatik olarak yenilenmektedir. Panel içerisinde gözüken beş kategori altında toplanmış parametreler tasarımcı için oluşturulan modelin ölçülerini, oranlarını ve diğer özelliklerini sunmaktadır.
+
+![CityEngine yazılımı üzerinde üretilen modeller ve seçili modele ait bilgilerin bulunduğu panelin görünümü. \label{CGAPanel}](source/figures/CGAPanel.png){width=100%}
+
+![Modele ait bilgilerin bulunduğu panelde bina tipi kategorisinde alt menülerin görünümü. \label{CGAPanelDetay}](source/figures/CGAPanelDetay.png){width=100%}
+
+İkinci çalışmada tekil yapı olarak bulunan 110 ada 130 parseldeki bina yerine taslak modeller üretilmiştir. Alanın mevcut durumunun üç boyutlu model hali şekil \ref{Tek0}'te görülmektedir. Bu çalışmada çevre binalara olabildiğince benzerlik gösteren bir taslak model oluşturulmaya çalışılmıştır. Parsel için ilk taslak model üretimi yapıldığında üç katlı ve tek parçalı cephe düzeninde bir öneri gramer tarafından oluşturulmuştur (Şekil \ref{Tek1}). 
+
+![110 ada 130 parseldeki ve çevresindeki yapıların mevcut halinin görünümü. \label{Tek0}](source/figures/Render/Tek0.jpg){width=100%}
+
+![110 ada 130 parseldeki yapı yerine üretilen ilk tasarım altlığı görünümü. \label{Tek1}](source/figures/Render/Tek1.jpg){width=100%}
+
+Şekil \ref{Tek1}'te sol tarafta gözüken binalar 110 ada içerisinde bulunan 41, 39 ve 131 parsel numaralı binalardır. Bu binaların üç katlı ve çatı katı bulunduğu, üç parçalı cephe karakterine sahip olduğu, ön cephelerinde cumba ve arka cephelerinde balkon olduğu gözlemlenmektedir. Bu binalarda bulunan özellikler panel içerisindeki parametreler değiştirilerek işlenmiştir. İşlenen kısıtlar panelde kalın ve daha koyu olarak yazılmaktadır. Bu kısıtlar ile üretilen taslak model ve modele ait bilgilerin bulunduğu panel şekil \ref{Tek2}'da gösterilmiştir.
+
+![110 ada 130 parseldeki yapı yerine üretilen ikinci tasarım altlığı görünümü. \label{Tek2}](source/figures/Render/Tek2.jpg){width=100%}
+
+\newpage
+
+Üretilen ikinci tasarım altlığı çevre binalara karakter bakımından oldukça benzerdir. Dikkatli incelendiğinde pencere yüksekliklerinin diğer binalara göre daha az olduğu, pencere genişliklerinin daha fazla olduğu ve denizlik yüksekliklerinin alçakta kaldığı gözlemlenmektedir. Pencere yüksekliğini arttırabilmek için panel içerisinde cephe elemanları oranları grubu içerisindeki pencere yükseklik oranının değiştirilmesi gerekmektedir. Oranı değiştirmek için ilgili kısma tıklandığında kaydırgaç çubuğu çıkmakta ve bu çubuk üzerinde yapılan sayısal değişiklik gramer içinde tanımlı değer aralığında gerçekleşmektedir. Oranları gösteren diğer parametreler için de aynı durum söz konusudur. Şekil \ref{Tek3}'de oluşan üçüncü tasarım altlığı ve panel içinde değiştirilen parametreler gösterilmiştir.
+
+![110 ada 130 parseldeki yapı yerine üretilen üçüncü tasarım altlığı görünümü. \label{Tek3}](source/figures/Render/Tek3.jpg){width=100%}
 
 <!-- 
 ### Biçim Grameri

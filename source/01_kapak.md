@@ -14,7 +14,7 @@ and add the centred logo
         \vspace*{2.5cm}
 
         \huge
-        GELENEKSEL TRABZON EVLERİ ÖRNEĞİNDE GRAMER TABANLI TASARIM ALTLIĞI YAZILIMI ÜRETİMİ
+        GELENEKSEL TRABZON EVLERİ ÖRNEĞİNDE GRAMER TABANLI TASARIM ALTLIĞI ÜRETİMİ
 
         \vspace{1.5cm}
 

@@ -3,14 +3,20 @@
 
 % \def\contentsname{\empty}
 % \setcounter{tocdepth}{6}
-\usepackage[dotinlabels]{titletoc}
-% \contentsmargin{2em}
-\titlecontents{chapter}[0em]{\singlespace}{\makebox[4em][l]{\thecontentslabel.\quad\enspace}}{}{\titlerule*[0.75pc]{.}\contentspage}
 
 % Sections
-\dottedcontents{section}[4pc]{\singlespace}{4pc}{0.75pc}% %
-\dottedcontents{subsection}[4pc]{\singlespace}{4pc}{0.75pc}% %
-\dottedcontents{subsubsection}[4em]{\singlespace}{4em}{0.75pc}% %
+\cftsetindents{chapter}{0pc}{4pc}
+\cftsetindents{section}{0pc}{4pc}
+\cftsetindents{subsection}{0pc}{4pc}
+\cftsetindents{subsubsection}{0pc}{4pc}
+\cftsetindents{figure}{0pc}{60pt}
+\cftsetindents{table}{0pc}{60pt}
+
+% Chapter kısmının ayarları
+\setlength{\cftbeforechapskip}{0pt} % Chapter lar arasındaki dikey boşluğu kaldırmak için.
+\renewcommand{\cftchapfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftsecdotsep}}
 
 % Dizinlere Sayfa No yazısı eklemek için
 \addtocontents{toc}{~\hfill\textbf{\underline{Sayfa No}}\par}
@@ -30,6 +36,9 @@
 \setlength{\cftbeforelottitleskip}{-8mm}
 \renewcommand{\listtablename}{\hfill\normalfont\normalsize\textbf{TABLOLAR DİZİNİ}\hfill}
 \setlength{\cftafterlottitleskip}{28pt}
+
+% Ara boşluklardaki noktalar arası mesafeyi ayarlamak için
+\renewcommand{\cftdotsep}{1}
 
 % SAYFA NUMARALARI
 \usepackage{fancyhdr}
@@ -156,8 +165,6 @@
 \captionsetup[figure]{name=Şekil}
 % \newlength{\mylen}
 
-\addtolength{\cftfignumwidth}{30pt}% More space
-\addtolength{\cfttabnumwidth}{30pt}% More space
 \DeclareCaptionListFormat{figprefix}{#1\figurename~#2}
 \DeclareCaptionListFormat{tabprefix}{#1\tablename~#2}
 \captionsetup[figure]{listformat=figprefix}

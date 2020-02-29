@@ -4,7 +4,7 @@
 
 ## Biçim Gramerleri
 
-Biçim gramerleri 1972 yılında *George Stiny* ve *James Gips* [-@Stiny:1972tt] tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanmaktadır [@Tepavcevic:2012bl].
+Biçim gramerleri 1972 yılında George Stiny ve James Gips [-@Stiny:1972tt] tarafından tanıtıldı. Tasarımları analiz etmeye ve üretmeye yarayan tasarım amaçlı ilk algoritmik sistem olan biçim gramerleri kurallarını direk biçimler üzerinden tanımlamaktadır. Kompütasyon teorisi ve görsel-mekansal düşünme yöntemi olarak iki farklı düzlemde açıklanmaktadır [@Tepavcevic:2012bl].
 
 Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi kullanması ve görsel olarak çalışan bir sistem olması diğer üretken sistemlerden temelde ayrışmasını sağlar [@Knight:2012ue]. Kompütasyon sürecini tamamen görsel olarak üretim kuralları üzerinden gerçekleştirmeyi sağlayan biçim gramerleri bir başlangıç biçimi ve kural dizilerinden oluşmaktadır (Şekil \ref{shapegrammarrule}). Biçimler iki boyutlu nokta, çizgi, düzlem olabileceği gibi üç boyutlu hacimler veya bunların kombinasyonları şeklinde de olabilirler. Biçimler ayrıca ek bilgi gösteren etiketlere ve bazı özelliklerinin büyüklüğünü gösteren ağırlıklara sahip olabilirler [@Stiny:1980it]. Kurallar ise aralarındaki ok ile ayrılan bir çift biçimden oluşmaktadır. Kuralların sol kısmında başlangıç biçimi, sağ kısmında ise kural uygulandıktan sonra dönüşeceği biçim tanımlanmaktadır. Halihazırdaki biçimin herhangi bir parçası tanımlı kurallardan birinin sol kısmında belirtilmiş biçimsel şartı sağladığında sağ kısmında tanımlı biçim ile değiştirilerek biçim geliştirilir.
 
@@ -12,19 +12,19 @@ Yazı ve sembollere bağlı bir kompütasyon süreci yerine direk olarak biçimi
 
 Biçim gramerleri görsel-mekansal düşünmeyi temsil eden bir biçimcilik olarak da tanımlanabilmektedir. Görsel tasarım gramerleri olarak da adlandırabileceğimiz biçim gramerleri dünyaya öğrenilen veya dayatılan tanımlamalar yerine belirli bir zamanda pratik bir anlamı olan tanımlamalardan bakabilme düşüncesidir [@Ozkar:2009ga].
 
-Tanıtımından sonra *Gips* [-@Gips:1975jg] doktora tezinde biçim gramerlerinin bilgisayar uygulamalarını geliştirdi, *Stiny* [-@Stiny:1975fj] ise matematiksel temelleri üzerine yoğunlaştı. *Stiny* [-@Stiny:1976im] tezinin ardından yazdığı *Two exercises in formal composition* adlı makalede biçim gramerlerinin kullanımını iki örnek üzerinden açıkladı ve bu örnekler daha sonra yapılan çalışmalara temel oluşturdu. Bu örneklerden ilki biçim gramerlerinin üretken bir sistem olarak yeni tasarım dili veya tarzı oluşturmak için özgün hali ile nasıl kullanılabildiğini açıklarken ikinci örnek ise mevcut bir tasarım dilinin veya tarzının biçim gramerleri kullanılarak analizinin nasıl yapılabildiğini göstermektedir. Ayrıca hem analitik hem de sentetik kullanıldığı örneklere de rastlamak mümkündür [@Knight:1999uf].
+Tanıtımından sonra Gips [-@Gips:1975jg] doktora tezinde biçim gramerlerinin bilgisayar uygulamalarını geliştirdi, Stiny [-@Stiny:1975fj] ise matematiksel temelleri üzerine yoğunlaştı. Stiny [-@Stiny:1976im] tezinin ardından yazdığı *Two exercises in formal composition* adlı makalede biçim gramerlerinin kullanımını iki örnek üzerinden açıkladı ve bu örnekler daha sonra yapılan çalışmalara temel oluşturdu. Bu örneklerden ilki biçim gramerlerinin üretken bir sistem olarak yeni tasarım dili veya tarzı oluşturmak için özgün hali ile nasıl kullanılabildiğini açıklarken ikinci örnek ise mevcut bir tasarım dilinin veya tarzının biçim gramerleri kullanılarak analizinin nasıl yapılabildiğini göstermektedir. Ayrıca hem analitik hem de sentetik kullanıldığı örneklere de rastlamak mümkündür [@Knight:1999uf].
 
 ### Analiz Aracı Olarak Kullanımı (Analiz Gramerleri)
 
-Biçim gramerlerinin ilk kez analiz aracı olarak kullanımı *Stiny* [-@Stiny:1977im] tarafından Çin buz ışını pencere tasarımları üzerine yaptığı çalışmada ortaya konuldu. Bu çalışma ayrıca biçim gramerlerinin parametrik tasarım ile entegre edilerek parametrik biçim gramerlerinin tanımlandığı çalışma oldu. Beş adet kuraldan oluşan gramer Çin buz ışını ızgaraların bir araya gelme düzenini açıklamayı, örnek ızgaralar oluşturmayı ve sayısız yeni ızgara düzenleri oluşturmayı başardı. Ertesi yıl *Stiny* ve *Mitchell* [-@Stiny:1978cl] biçim gramerlerini *Pallodio* stili üzerinden test ederek ilk kez bir mimari üslubun analizinde kullandılar. "Palladio Grameri" kurallarını *Andrea Palladio* tarafından 1570 yılında yazılmış *Quattro Libri dell'Architettura*'da bulunan villa planı örneklerini inceleyerek tanımladılar. Parametrik biçim gramerlerini kullanarak villaların zemin kat planlarını önerdikleri sekiz aşamalı bir süreç ile oluşturdular.
+Biçim gramerlerinin ilk kez analiz aracı olarak kullanımı Stiny [-@Stiny:1977im] tarafından Çin buz ışını pencere tasarımları üzerine yaptığı çalışmada ortaya konuldu. Bu çalışma ayrıca biçim gramerlerinin parametrik tasarım ile entegre edilerek parametrik biçim gramerlerinin tanımlandığı çalışma oldu. Beş adet kuraldan oluşan gramer Çin buz ışını ızgaraların bir araya gelme düzenini açıklamayı, örnek ızgaralar oluşturmayı ve sayısız yeni ızgara düzenleri oluşturmayı başardı. Ertesi yıl Stiny ve Mitchell [-@Stiny:1978cl] biçim gramerlerini Pallodio stili üzerinden test ederek ilk kez bir mimari üslubun analizinde kullandılar. "Palladio Grameri" kurallarını Andrea Palladio tarafından 1570 yılında yazılmış *Quattro Libri dell'Architettura*'da bulunan villa planı örneklerini inceleyerek tanımladılar. Parametrik biçim gramerlerini kullanarak villaların zemin kat planlarını önerdikleri sekiz aşamalı bir süreç ile oluşturdular.
 
 Bu çalışmanın ardından gelen yirmi yıllık bir dönemde biçim gramerleri neredeyse tamamen bir analiz aracı olarak mimarların tarzını, yöresel mimariyi, sanat stillerini vb. açıklamada kullanıldı.
 
-Bu çalışmalar arasında *Giuseppe Terragni*, *Frank Lloyd Wright*, *Glenn Murcutt*, *Christopher Wren* gibi mimarların tarzları analiz edildi [@Flemming:1981hm; @Koning:1981bd; @Hanson:1986ty; @Buelinckx:1993io].
+Bu çalışmalar arasında Giuseppe Terragni, Frank Lloyd Wright, Glenn Murcutt, Christopher Wren gibi mimarların tarzları analiz edildi [@Flemming:1981hm; @Koning:1981bd; @Hanson:1986ty; @Buelinckx:1993io].
 
 Yöresel mimari analizlerine bakıldığında Japon çay odaları, Buffalo'nun bungalovları, Queen Anne evleri, geleneksel Tayvan evleri, geleneksel Türk evleri, sıra evler, klasik Osmanlı dönemi camileri ve Mughul bahçelerinin peyzaj mimarisi çalışmaları bulunmaktadır [@Knight:1981gp; @Downing:1981dx; @Flemming:1987js; @Chiou:1995gj; @Cagdas:1996ft; @Cagdas:1996fe; @Aksoy:2001wz; @Stiny:1980dya].
 
-Sanat stillerinin analizini yapan çalışmalarda *Richard Diebenkorn*, *Georges Vantongerloo* ve *Fritz Glarner*'ın tabloları, *Hepplewhite* tarzı sandalyelerin arkalıklarının tasarımı, *Frank Lloyd Wright*'ın pencere tasarımları ve antik Yunan çömleklerinin süsleme tasarımları incelenmiştir [@Kirsch:1986bi; @Knight:1989ec; @Knight:1980cl; @Rollo:1995bz; @Knight:1986wu]. *Wright*'ın mimari tarzı için hazırlanan gramer ilk üç boyutlu mimari gramer çalışması olması açısından önemlidir.
+Sanat stillerinin analizini yapan çalışmalarda Richard Diebenkorn, Georges Vantongerloo ve Fritz Glarner'ın tabloları, Hepplewhite tarzı sandalyelerin arkalıklarının tasarımı, Frank Lloyd Wright'ın pencere tasarımları ve antik Yunan çömleklerinin süsleme tasarımları incelenmiştir [@Kirsch:1986bi; @Knight:1989ec; @Knight:1980cl; @Rollo:1995bz; @Knight:1986wu]. Wright'ın mimari tarzı için hazırlanan gramer ilk üç boyutlu mimari gramer çalışması olması açısından önemlidir.
 
 Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villaları, Malagueira konutları ve Prairie konutlarını oluşturdukları tek gramer, Osmanlı camilerinin ontolojisini kullanan tipolojik tanımlama (description) gramerleri ve tipolojik tanımlama gramerleri için genel gösterim önerisi göze çarpmaktadır [@Benros:2014bx; @Stouffs:2015if; @Stouffs:2016ip].
 
@@ -32,15 +32,15 @@ Sonraki dönem çalışmalarında Benros vd. üç ayrı tarz olan Pallodio villa
 
 ### Tasarım Aracı Olarak Kullanımı (Özgün Gramerler)
 
-Biçim gramerlerinin analiz aracı olarak kullanımı yukarıdaki örneklere bakıldığında önemli ölçüde etkin olduğunu göstermektedir. Buna karşı başlangıçtan itibaren tamamen yeni tasarım dilleri oluşturma konusunda şaşırtıcı bir şekilde sınırlı sayıda örneğe rastlanmaktadır. Bu anlamda ilk çalışma *Stiny* ve *Gips* [-@Stiny:1972tt] tarafından tablolar üzerine yapılan biçim gramerleri oldu. *Stiny* ve *Gips*'in tezleri ve beraber yazdıkları *Algorithmic Aesthetics* kitabı da yine aynı konu üzerinde biçim grameri formalizmini örnekliyordu [@Knight:1999uf].
+Biçim gramerlerinin analiz aracı olarak kullanımı yukarıdaki örneklere bakıldığında önemli ölçüde etkin olduğunu göstermektedir. Buna karşı başlangıçtan itibaren tamamen yeni tasarım dilleri oluşturma konusunda şaşırtıcı bir şekilde sınırlı sayıda örneğe rastlanmaktadır. Bu anlamda ilk çalışma Stiny ve Gips [-@Stiny:1972tt] tarafından tablolar üzerine yapılan biçim gramerleri oldu. Stiny ve Gips'in tezleri ve beraber yazdıkları *Algorithmic Aesthetics* kitabı da yine aynı konu üzerinde biçim grameri formalizmini örnekliyordu [@Knight:1999uf].
 
-Bu çalışmalar haricinde *Stiny*'nin [-@Stiny:1976im] iki boyutlu formal kompozisyonlar ve ilk üç boyutlu biçim grameri çalışması olan Froebel'in yapı blokları üzerine çalışmaları örnek oluşturmaktadır [@Stiny:1980kq]. Froebel yapı blokları üzerine olan çalışma özgün gramerleri kullanarak sıfırdan yeni bir tasarım dili oluşturmak için izlenecek işleyişi tanımlamaktadır. Yeni tasarım dilini oluşturmak için önerilen işleyişte biçim sözlüğü, mekansal ilişkiler, biçim kuralları, başlangıç biçimi ve biçim gramerlerinin aşamalı olarak oluşturulması gerekmektedir. Bu alanda mimarlık ve diğer dallarda çeşitli çalışmalar kısıtlı sayıda gerçekleştirildi [@Knight:1989ex; @Knight:1992tp; @Knight:1993jka; @Knight:1994hx].
+Bu çalışmalar haricinde Stiny'nin [-@Stiny:1976im] iki boyutlu formal kompozisyonlar ve ilk üç boyutlu biçim grameri çalışması olan Froebel'in yapı blokları üzerine çalışmaları örnek oluşturmaktadır [@Stiny:1980kq]. Froebel yapı blokları üzerine olan çalışma özgün gramerleri kullanarak sıfırdan yeni bir tasarım dili oluşturmak için izlenecek işleyişi tanımlamaktadır. Yeni tasarım dilini oluşturmak için önerilen işleyişte biçim sözlüğü, mekansal ilişkiler, biçim kuralları, başlangıç biçimi ve biçim gramerlerinin aşamalı olarak oluşturulması gerekmektedir. Bu alanda mimarlık ve diğer dallarda çeşitli çalışmalar kısıtlı sayıda gerçekleştirildi [@Knight:1989ex; @Knight:1992tp; @Knight:1993jka; @Knight:1994hx].
 
 ### Analiz Sonucu Tasarım Aracı Olarak Kullanımı (Hibrid Gramerler)
 
 Özgün gramelerin tamamen baştan oluşturulması teori üzerinde olmaktadır [@Knight:1999uf]. Uygulamada ise yeni tasarım dilleri eski ve güncel dillerin değiştirilmesi, geliştirilmesi veya birleştirmesi gibi işlemler ile oluşturulur. Knight [-@Knight:1981ky] önerdiği mevcut tasarım dilleri üzerinden yeni tasarım dilleri üretme yönteminde ilk önce mevcut dil için bir gramer çıkartılarak analiz edilir, çıkarılan gramerin kuralları dönüştürülür ve dönüştürülen kurallar yeni bir gramerin ve dilin temeli haline gelir. Knight bu yöntemin bilinen dillerin tarihsel evrimini başarılı bir şekilde tanımlamak ve yeni tasarımlar geliştirmek için kullanabileceğini belirtmektedir. Bu nedenle bu yöntem hem analitik hem sentetiktir. Knight *Transformations in Design* adlı kitabında bu yöntemi kullanarak Frank Lloyd Wright'ın çalışmalarında, De Stijl resminde ve antik Yunan süsleme tasarımlarında stilistik değişimleri analiz etmek için uygulamaktadır [@Knight:1999uf]. Flemming [-@Flemming:1990tn] Knight'ın yöntemine benzer bir yöntemi bilgisayar üzerinde mimari kompozisyonları öğretebilmek için kullanmmıştır.
 
-Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de *Zaouiat Lakhdar* bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
+Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de Zaouiat Lakhdar bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
 
 <!--
 [@Sonmez:2018jx] Eklenmeyen referans listesi.
@@ -70,14 +70,13 @@ Wonka vd. [-@Wonka:2003bn] mimari modelleri oluşturmak için özel bir set gram
 
 [^1]: [@Stiny:1982cn]
 
+<!-- Kütle grafiği alınacak. Haegler, S., Müller, P. and Van Gool, L., 2009. Procedural Modeling for Digital Cultural Heritage, EURASIP Journal on Image and Video Processing, 2009, 1–11. -->
+
+![Basit bir Split Gramer kuralı ve üretim süreci. \label{splitGrammar}](source/figures/splitGrammar.pdf){width=100%}
+
 Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzerinden işleyen, biçim gramerlerinin basitleştirilmiş halidir [@Stiny:1982cn; @Lienhard:2017jv]. Etiketli bir biçim set gramerinin en küçük (atomik) öğesidir ve alt biçimler barındırmaz. Etiketler sembol olarak kullanılarak üretim kurallarının metinsel olarak yazımını ve bilgisayarda algoritma olarak işlenmesine olanak vermektedir. İdeal olarak, bir biçim grameri uygulaması: görsel bilgi işlemeyi desteklemeli, saklı şekillere izin vermeli (emergence), önceden tanımlanmış parçalara dayanmamalı ve parametrik olmalıdır [@Gips:1999ut]. Set gramerleri biçim gramerlerinin bilgisayar üzerinde işlenmesini kısıtlayan ilk üç özelliğini barındırmamaktadır. Literatürde biçim grameri uygulaması olarak adlandırılan bir çok yazılım ve yazılım denemesi aslında set gramerini temel alarak çalışmaktadır.
 
-![Basit bir Split Gramer kuralı ve üretim süreci [@Sonmez:2018jx]. \label{splitGrammar}](source/figures/splitGrammar.jpg){width=50%}
-
-![Bir cephenin katman detay gösterimi [@Sonmez:2018jx].](source/figures/splitGrammar2.jpg){width=50%}
-
 <!--Bir model içerisinde her katı farklı bir tarz ile modellemeyi mümkün kılmaktadır. Buna örnek olarak zeminde ticari, üst katlarda konut işlevi olan binalar gösterilebilir.-->
-
 
 <!-- [@Huang:2009ig] -->
 
@@ -87,8 +86,8 @@ Split gramerler Müller vd. [-@Muller:2006fy] tarafından geliştirilerek CGA gr
 
 ```CGA
 başlangıçŞekli -->
-					koşul1: sonuçŞekil0 ... sonuçŞekilM ...
-					koşulN: ...
+                    koşul1: sonuçŞekil0 ... sonuçŞekilM ...
+                    koşulN: ...
 ```
 
 CGA gramerlerinin tanımlanmasının ardından yordamsal modellemenin kolaylaştırılması ve daha iyi kullanılabilmesi için devamlı gelişmeler gözlendi. Özellikle cephe modelleri oluşturmak için Müller vd. [-@Muller:2007gu] binaların cephe fotoğrafları üzerinden tekrar eden karoların tanımlanması ile gramer kurallarınının bilgisayar tarafından otomatik çıkarılması için bir yöntem geliştirdi. Lipp vd. [-@Lipp:2008hv] CGA kurallarını kod yazarak oluşturmak yerine yaptıkları yazılım sayesinde üç boyutlu model üzerinden etkileşim ile kodları görsel olarak düzenlemeyi başardılar. Ancak bu gelişmelere rağmen birçok yordamsal modelleme projesi kod yazılarak gerçekleştirildi. Bunlardan bazıları;
@@ -143,8 +142,6 @@ Tutenel vd. (Tutenel vd., 2009) Martin’in uyguladığı genişleyerek oluşan 
 ##### Lindenmayer Sistemi
 
 ##### Fraktallar
-
-
 
 \chapter*{Türkiye'den Örnekler}
 
@@ -251,8 +248,6 @@ Table: Spesifik tasarım alanı yorumlayıcı yazılım listesi [@Eloy:2018hh].
 
 [@Knight:2001ca]
 
-
-
 Page 44 [@Gu:2012cg]
 **Computational Design Methods and Technologies**
 Importantly, shapes in shape grammars are treated as nonatomic and ambiguous. They do not have definite parts and can be freely decomposed and recomposed by the user of a grammar, as a design is being generated. Shape ambiguity in shape grammars goes hand in hand with another singular property of shape grammars – shape emergence. An emergent shape is a shape that is not predefined in a grammar, but one that arises through rule applications. Further, emergent shapes can not only be generated by rule applications, they can also be recognized and used in subsequent rule applications.
@@ -312,15 +307,13 @@ Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri b
 
 <!--Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.-->
 
-![Trabzon'un konum haritası. ](source/figures/TrabzonTurkiye.png){width=100%}
+![Türkiye'de Trabzon'un konum haritası. ](source/figures/TrabzonTurkiye.png){width=100%}
 
 Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir [@Uspenski:2003ta].
 
 ![Ortahisar bölgesinin kentin 1223 yılı öncesi ve 1869 yılına kadar olan tarihlerde konumunu gösteren harita [@Bryer:2011ul]. ](source/figures/TrabzonMap.png){width=100%}
 
 Çalışma alanı olarak seçilen Ortahisar, Zağnos ve Tabakhane vadileri arasında kalan, Trabzon kentinin tarihi çekirdeğinin bulunduğu yerleşim bölgesidir. Mimari yapı kültürü M.Ö. 7. yüzyıla kadar dayanmaktadır ve tarih boyunca kentin idari, dini ve yaşam merkezi olarak hizmet etmiştir [@Tuluk:2010ud]. Tarihi surlar ile çevrelenmiş bölge, farklı dönemlere ait geleneksel sivil mimari örneklerinin yanında anıtsal yapıları da barındırmaktadır. Günümüze ulaşmış Ortahisar sınırları içinde kalan sivil mimari dışındaki önemli yapılar aşağıdaki listede sıralanmıştır.
-
-\newpage
 
 - Askeri Mimari
     - Kent surları
@@ -353,9 +346,9 @@ Listelenmiş yapılardan kent surlarının yapım tarihi net olarak bilinmemekle
 
 ![Ortahisar'ın yeni kent merkezine göre konumunu gösteren harita [@Var:2015vx].](source/figures/ortahisar.jpg){width=100%}
 
-![Ortahisar uydu fotoğrafı.](source/figures/OrtahisarUyduIzli.jpg){width=100%}
+![Ortahisar uydu fotoğrafı. Trabzon Büyükşehir Belediyesi arşivlerinden alınmıştır.](source/figures/OrtahisarUyduIzli.jpg){width=100%}
 
-1938 yılında *Jacques H. Lambert* tarafından hazırlanan Trabzonun ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için Ortahisar'ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002 yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda yıkımlara ve büyük tahribata sebep olmuştur.
+1938 yılında Jacques H. Lambert tarafından hazırlanan Trabzonun ilk imar planı Ortahisar bölgesinin mevcut yapıları ile beraber olduğu gibi korunmasını önermiştir. 1968 yılında açılan yarışma ile başlayan ikinci planlama çalışmalarında da kentin eski yerleşkelerinin korunması hedeflenmiştir. Bu çalışmalarda şehrin genişleyebilmesi için Ortahisar'ın güney kısmından teğet geçmesi önerilen Tanjant Yolu 2002 yılında surlar üzerinden ve tarihi kent merkezini ortasından ikiye ayıracak şekilde uygulamaya konulmuştur. Bu değişiklik bölge dokusunda yıkımlara ve büyük tahribata sebep olmuştur.
 
 ### Ortahisar Konutlarının Özellikleri
 
@@ -376,14 +369,13 @@ Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç s
 ![Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri [@Kuloglu:1994uy].](source/figures/disSofaliPlanlar.jpg){width=100%}
 
 <!--
-Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş olduğu, fakat zaman içinde bu duvarların eski özgün karakterini kaybettiklerinden ve derz yüzeyleri büyüdüğünden sonradan sıva ile
-kaplandığı görülmektedir. Döşeme ve tavanı ahşap olan bu binaların aynı
-zamanda alaturka kiremit kaplı çatılara da sahip olduğu belirtilmesi gereken bir diğer noktadır.
-
+Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş
 [@Birlik:1999ux]
 -->
 
 Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer [-@Fallmerayer:2011vq] Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;
+
+![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
 
 * Cephe;
 	* Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
@@ -399,14 +391,35 @@ Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre
 	* Dikdörtgen formda ve düşey hatlıdırlar,
 	* Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
 
-![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
+![Geleneksel konut cephesi örnekleri. Solda 110 ada 23 parseldeki bina sağda 110 ada 41 parseldeki bina. Trabzon Büyükşehir Belediyesi arşivelerinden alınmıştır.](source/figures/KonutCepheleri2.jpg){width=100%}
 
 Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir [@Kuloglu:1994uy]. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
 
+![Geleneksel konut cephesi örnekleri. Solda 128 ada 7 parseldeki bina sağda 129 ada 26 parseldeki bina. Trabzon Büyükşehir Belediyesi arşivelerinden alınmıştır.](source/figures/KonutCepheleri3.jpg){width=100%}
+
 ## Verilerin Toplanması
 <!-- Toplam 73 tescilli yapı var çalışma alanında-->
-Ortahisar geleneksek konutlarına ait rölöveler iki arşivden derlenerek oluşturulmuştur. Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Ayrıca Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler ile bir araya getirilerek 25 tescilli yapıya ait rölöveler derlenmiştir. Yapıların bir kısmının sokak silüetlerinden ön cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır. Çalışma 15 adet yapıya ait rölöveler üzerinden elde edilen veriler ile yürütülmüştür.
 
-![Ortahisar bölgesi vaziyet planı. Plan üzerinde sadece tescilli yapılar gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir. Ölçek 1/1500.](source/figures/vaziyetplanitescilli.pdf){width=100%}
+Ortahisar geleneksel konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır. 
+
+Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil \ref{ortahisartescilli}'te gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.
+
+![Ortahisar bölgesi tescilli yapılarını gösteren vaziyet planı. \label{ortahisartescilli}](source/figures/vaziyetplanitescilli.pdf){width=100%}
+
+Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Sokak silüetlerinden bazı yapıların sadece tek cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır.
+
+![Grameri oluşturan yapı tiplerinin örneklem kümesi. \label{orneklemkumesi}](source/figures/Corpus.pdf){width=100%}
+
+Çalışma kapsamında incelenen 15 adet yapı 19. yüzyılın ikinci yarısı ve 20. yüzyılın ilk çeyreği arasındaki dönemde yapılmıştırlar. Bunlar arasından 118 ada 1 parsel ve 128 ada 10 parselde bulunan konutlar yakın tarihte betonarme olarak yeniden inşa edilmiş yapılardır.
+
+Örneklem kümesindeki yapılar şekil \ref{orneklemkumesi}'te yapı tipine göre sınıflandırılarak gösterilmiştir. Yapılar ilk olarak cephe tipine göre bir parçalı ve üç parçalı cepheye sahip olarak ikiye ayrılmaktadır. Yapıların bir parçalı ve üç parçalı cepheye göre sınıflandırılması ön ve arka cephelerindeki pencere dizilimi ve kapalı veya açık çıkmasına bağlı olarak gerçekleşmektedir. Ardından yapılar kat sayısına, çıkma tipine, giriş katlarına göre şekil içerisinde gruplandırılmıştır. Açık tonda taramalar yapıların giriş katlarını ifade etmektedir.
+
+Yapılara ait rölöve çizimleri ve künye bilgileri her bir yapı için oluşturulan yapı bilgi formlarında düzenlenmiştirler. 110 ada 16 parselde bulunan yapıya ait örnek yapı bilgi formu şekil \ref{yapibilgiformu}'da gösterilmiştir. Yapı bilgi formları ekler kısmında bulunmaktadır.
+
+![Yapı bilgi formu örneği. \label{yapibilgiformu}](source/figures/BilgiFormlari/110-16.pdf){width=100%}
+
+Düzenlenen rölöve verileri içerisinden gerekli ölçüler her eleman için dış hizaları temel alınarak ölçülmüştür. Örneğin pencere ve kapılar söveleri ile beraber tek bir ünite şeklinde ölçülerek hesaplara dahil edilmiştirler. 110 ada 16 parsel ve 39 parsele ait yapıların ön cephelerinin ölçülendirilmiş halleri şekil \ref{roloveoran}'de gösterilmiştir. Elde edilen verilerin incelenmesinin ardından geleneksel konutlar hakkında ortaya çıkan önemli bilgiler bir sonraki bölümde ele alınarak vurgulanmıştır.
+
+![110 ada 16 ve 39 parsellerdeki yapılara ait rölövelerin ölçülendirilmiş gösterimleri. \label{roloveoran}](source/figures/RoloveOranlar.pdf){width=90%}
 
 \newpage

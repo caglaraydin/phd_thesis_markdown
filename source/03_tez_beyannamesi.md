@@ -1,9 +1,8 @@
 <!-- This page is for an official declaration. -->
-# TEZ BEYANNAMESİ {.unnumbered}
+# TEZ ETİK BEYANNAMESİ {.unnumbered}
 
-\vspace*{\fill}
-\noindent
-\textit{
-I, AUTHORNAME confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
-}
-\vspace*{\fill}
+Doktora Tezi olarak sunduğum “Geleneksel Trabzon Evleri Örneğinde Gramer Tabanlı Tasarım Altlığı Üretimi” başlıklı bu çalışmayı baştan sona kadar danışmanım Doç. Dr. Serbülent VURAL’ın sorumluluğunda tamamladığımı, verileri/örnekleri kendim topladığımı, deneyleri/analizleri ilgili laboratuvarlarda yaptığımı/yaptırdığımı, başka kaynaklardan aldığım bilgileri metinde ve kaynakçada eksiksiz olarak gösterdiğimi, çalışma sürecinde bilimsel araştırma ve etik kurallara uygun olarak davrandığımı ve aksinin ortaya çıkması durumunda her türlü yasal sonucu kabul ettiğimi beyan ederim. .../.../2020
+
+\null\hfill Çağlar AYDIN
+
+\clearpage
