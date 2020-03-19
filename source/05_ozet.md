@@ -34,7 +34,7 @@ Mimarlık Anabilim Dalı
 
 Danışman: Doç. Dr. Serbülent VURAL
 
-2020, … (Sayfa)
+2020, 68 Sayfa
 \end{singlespace}
 
 \end{center}

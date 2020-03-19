@@ -30,6 +30,16 @@
   \usepackage{tocloft}
   % TP: end hack
 
+  % fix for pandoc 2.8 cslreferences KAYNAKÇA ayarı
+  $if(csl-refs)$
+  \newlength{\cslhangindent}
+  \setlength{\cslhangindent}{17mm}
+  \newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+  $endif$
+
   $if(linestretch)$
   \usepackage{setspace}
   \setstretch{$linestretch$}

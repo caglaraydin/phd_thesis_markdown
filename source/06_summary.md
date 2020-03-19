@@ -33,7 +33,7 @@ Architectural Graduate Program
 
 Supervisor: Assoc. Prof. Dr. Serbülent VURAL
 
-2020, … (Pages)
+2020, 68 Pages
 \end{singlespace}
 
 \end{center}

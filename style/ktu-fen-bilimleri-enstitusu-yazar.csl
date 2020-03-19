@@ -42,6 +42,9 @@
         <if type="article-journal article-magazine article-newspaper" match="any">
           <text variable="container-title" text-decoration="underline" prefix=", "/>
         </if>
+        <else-if type="thesis" match="any">
+          <text variable="genre" prefix=", "/>
+        </else-if>
         <else>
           <text variable="container-title" prefix=","/>
         </else>

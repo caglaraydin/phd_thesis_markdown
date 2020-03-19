@@ -22,7 +22,7 @@ Bu çalışmanın ardından gelen yirmi yıllık bir dönemde biçim gramerleri 
 
 Bu çalışmalar arasında Giuseppe Terragni, Frank Lloyd Wright, Glenn Murcutt, Christopher Wren gibi mimarların tarzları analiz edildi [@Flemming:1981hm; @Koning:1981bd; @Hanson:1986ty; @Buelinckx:1993io].
 
-Yöresel mimari analizlerine bakıldığında Japon çay odaları, Buffalo'nun bungalovları, Queen Anne evleri, geleneksel Tayvan evleri, geleneksel Türk evleri, sıra evler, klasik Osmanlı dönemi camileri ve Mughul bahçelerinin peyzaj mimarisi çalışmaları bulunmaktadır [@Knight:1981gp; @Downing:1981dx; @Flemming:1987js; @Chiou:1995gj; @Cagdas:1996ft; @Cagdas:1996fe; @Aksoy:2001wz; @Stiny:1980dya].
+Yöresel mimari analizlerine bakıldığında Japon çay odaları, Buffalo'nun bungalovları, Queen Anne evleri, geleneksel Tayvan evleri, geleneksel Türk evleri, sıra evler, klasik Osmanlı dönemi camileri ve Mughul bahçelerinin peyzaj mimarisi çalışmaları bulunmaktadır [@Knight:1981gp; @Downing:1981dx; @Flemming:1987js; @Chiou:1995gj; @Cagdas:1996ft; @Cagdas:1996fe; @Aksoy:2001wz; @Stiny:1980dy].
 
 Sanat stillerinin analizini yapan çalışmalarda Richard Diebenkorn, Georges Vantongerloo ve Fritz Glarner'ın tabloları, Hepplewhite tarzı sandalyelerin arkalıklarının tasarımı, Frank Lloyd Wright'ın pencere tasarımları ve antik Yunan çömleklerinin süsleme tasarımları incelenmiştir [@Kirsch:1986bi; @Knight:1989ec; @Knight:1980cl; @Rollo:1995bz; @Knight:1986wu]. Wright'ın mimari tarzı için hazırlanan gramer ilk üç boyutlu mimari gramer çalışması olması açısından önemlidir.
 
@@ -38,7 +38,7 @@ Bu çalışmalar haricinde Stiny'nin [-@Stiny:1976im] iki boyutlu formal kompozi
 
 ### Analiz Sonucu Tasarım Aracı Olarak Kullanımı (Hibrid Gramerler)
 
-Özgün gramelerin tamamen baştan oluşturulması teori üzerinde olmaktadır [@Knight:1999uf]. Uygulamada ise yeni tasarım dilleri eski ve güncel dillerin değiştirilmesi, geliştirilmesi veya birleştirmesi gibi işlemler ile oluşturulur. Knight [-@Knight:1981ky] önerdiği mevcut tasarım dilleri üzerinden yeni tasarım dilleri üretme yönteminde ilk önce mevcut dil için bir gramer çıkartılarak analiz edilir, çıkarılan gramerin kuralları dönüştürülür ve dönüştürülen kurallar yeni bir gramerin ve dilin temeli haline gelir. Knight bu yöntemin bilinen dillerin tarihsel evrimini başarılı bir şekilde tanımlamak ve yeni tasarımlar geliştirmek için kullanabileceğini belirtmektedir. Bu nedenle bu yöntem hem analitik hem sentetiktir. Knight *Transformations in Design* adlı kitabında bu yöntemi kullanarak Frank Lloyd Wright'ın çalışmalarında, De Stijl resminde ve antik Yunan süsleme tasarımlarında stilistik değişimleri analiz etmek için uygulamaktadır [@Knight:1999uf]. Flemming [-@Flemming:1990tn] Knight'ın yöntemine benzer bir yöntemi bilgisayar üzerinde mimari kompozisyonları öğretebilmek için kullanmmıştır.
+Özgün gramerlerin tamamen baştan oluşturulması teori üzerinde olmaktadır [@Knight:1999uf]. Uygulamada ise yeni tasarım dilleri eski ve güncel dillerin değiştirilmesi, geliştirilmesi veya birleştirmesi gibi işlemler ile oluşturulur. Knight [-@Knight:1981ky] önerdiği mevcut tasarım dilleri üzerinden yeni tasarım dilleri üretme yönteminde ilk önce mevcut dil için bir gramer çıkartılarak analiz edilir, çıkarılan gramerin kuralları dönüştürülür ve dönüştürülen kurallar yeni bir gramerin ve dilin temeli haline gelir. Knight bu yöntemin bilinen dillerin tarihsel evrimini başarılı bir şekilde tanımlamak ve yeni tasarımlar geliştirmek için kullanabileceğini belirtmektedir. Bu nedenle bu yöntem hem analitik hem sentetiktir. Knight *Transformations in Design* adlı kitabında bu yöntemi kullanarak Frank Lloyd Wright'ın çalışmalarında, De Stijl resminde ve antik Yunan süsleme tasarımlarında stilistik değişimleri analiz etmek için uygulamaktadır [@Knight:1999uf]. Flemming [-@Flemming:1990tn] Knight'ın yöntemine benzer bir yöntemi bilgisayar üzerinde mimari kompozisyonları öğretebilmek için kullanmmıştır.
 
 Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de Zaouiat Lakhdar bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
 
@@ -95,7 +95,7 @@ CGA gramerlerinin tanımlanmasının ardından yordamsal modellemenin kolaylaşt
 - Reconstruction of Puuc Buildings [@Muller:2006hz]
 - Reconstruction of Ancient Pompeii [@Muller:2005uf]
 - Rome Reborn 2.0: A Case Study of Virtual City Reconstruction Using Procedural Modeling Techniques [@Dylla:2010tm]
-- Urban Topography of Magnesia on the Maeander [@Saldana:2015wj].
+- Urban Topography of Magnesia on the Maeander [@Saldana:2015wb].
 
 <!--
 
@@ -402,7 +402,7 @@ Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa 
 
 Ortahisar geleneksel konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır. 
 
-Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil \ref{ortahisartescilli}'te gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.
+Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil \ref{ortahisartescilli}'da gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.
 
 ![Ortahisar bölgesi tescilli yapılarını gösteren vaziyet planı. \label{ortahisartescilli}](source/figures/vaziyetplanitescilli.pdf){width=100%}
 
@@ -412,13 +412,13 @@ Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi
 
 Çalışma kapsamında incelenen 15 adet yapı 19. yüzyılın ikinci yarısı ve 20. yüzyılın ilk çeyreği arasındaki dönemde yapılmıştırlar. Bunlar arasından 118 ada 1 parsel ve 128 ada 10 parselde bulunan konutlar yakın tarihte betonarme olarak yeniden inşa edilmiş yapılardır.
 
-Örneklem kümesindeki yapılar şekil \ref{orneklemkumesi}'te yapı tipine göre sınıflandırılarak gösterilmiştir. Yapılar ilk olarak cephe tipine göre bir parçalı ve üç parçalı cepheye sahip olarak ikiye ayrılmaktadır. Yapıların bir parçalı ve üç parçalı cepheye göre sınıflandırılması ön ve arka cephelerindeki pencere dizilimi ve kapalı veya açık çıkmasına bağlı olarak gerçekleşmektedir. Ardından yapılar kat sayısına, çıkma tipine, giriş katlarına göre şekil içerisinde gruplandırılmıştır. Açık tonda taramalar yapıların giriş katlarını ifade etmektedir.
+Örneklem kümesindeki yapılar şekil \ref{orneklemkumesi}'de yapı tipine göre sınıflandırılarak gösterilmiştir. Yapılar ilk olarak cephe tipine göre bir parçalı ve üç parçalı cepheye sahip olarak ikiye ayrılmaktadır. Yapıların bir parçalı ve üç parçalı cepheye göre sınıflandırılması ön ve arka cephelerindeki pencere dizilimi ve kapalı veya açık çıkmasına bağlı olarak gerçekleşmektedir. Ardından yapılar kat sayısına, çıkma tipine, giriş katlarına göre şekil içerisinde gruplandırılmıştır. Açık tonda taramalar yapıların giriş katlarını ifade etmektedir.
 
-Yapılara ait rölöve çizimleri ve künye bilgileri her bir yapı için oluşturulan yapı bilgi formlarında düzenlenmiştirler. 110 ada 16 parselde bulunan yapıya ait örnek yapı bilgi formu şekil \ref{yapibilgiformu}'da gösterilmiştir. Yapı bilgi formları ekler kısmında bulunmaktadır.
+Yapılara ait rölöve çizimleri ve künye bilgileri her bir yapı için oluşturulan yapı bilgi formlarında düzenlenmiştirler. 110 ada 16 parselde bulunan yapıya ait örnek yapı bilgi formu şekil \ref{yapibilgiformu}'de gösterilmiştir. Yapı bilgi formları ekler kısmında bulunmaktadır.
 
 ![Yapı bilgi formu örneği. \label{yapibilgiformu}](source/figures/BilgiFormlari/110-16.pdf){width=100%}
 
-Düzenlenen rölöve verileri içerisinden gerekli ölçüler her eleman için dış hizaları temel alınarak ölçülmüştür. Örneğin pencere ve kapılar söveleri ile beraber tek bir ünite şeklinde ölçülerek hesaplara dahil edilmiştirler. 110 ada 16 parsel ve 39 parsele ait yapıların ön cephelerinin ölçülendirilmiş halleri şekil \ref{roloveoran}'de gösterilmiştir. Elde edilen verilerin incelenmesinin ardından geleneksel konutlar hakkında ortaya çıkan önemli bilgiler bir sonraki bölümde ele alınarak vurgulanmıştır.
+Düzenlenen rölöve verileri içerisinden gerekli ölçüler her eleman için dış hizaları temel alınarak ölçülmüştür. Örneğin pencere ve kapılar söveleri ile beraber tek bir ünite şeklinde ölçülerek hesaplara dahil edilmiştirler. 110 ada 16 parsel ve 39 parsele ait yapıların ön cephelerinin ölçülendirilmiş halleri şekil \ref{roloveoran}'da gösterilmiştir. Elde edilen verilerin incelenmesinin ardından geleneksel konutlar hakkında ortaya çıkan önemli bilgiler bir sonraki bölümde ele alınarak vurgulanmıştır.
 
 ![110 ada 16 ve 39 parsellerdeki yapılara ait rölövelerin ölçülendirilmiş gösterimleri. \label{roloveoran}](source/figures/RoloveOranlar.pdf){width=90%}
 

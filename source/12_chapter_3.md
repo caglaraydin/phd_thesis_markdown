@@ -524,8 +524,8 @@ Bina tipi ile ilgili kat sayısı, cephe tipi, kapalı çıkma ve kapalı çıkm
 @Group("Bina Tipi",2)
 
 @Order(1) @Range("2 katli","2.5 katli","3 katli","3.5 katli","4 katli")
-attr BinaKatSayisi	=   25%: "2 katli" 6.25%: "2.5 katli"
-					    25%: "3 katli" 31.25%: "3.5 katli"
+attr BinaKatSayisi	=   13,34%: "2 katli" 6.67%: "2.5 katli"
+					    33,34%: "3 katli" 33.34%: "3.5 katli"
                         else: "4 katli"
 
 @Order(2) @Range( "1 Parca", "3 Parca")

@@ -1,8 +1,6 @@
 \chapter{EKLER}
 \thispagestyle{empty}
-\setlength{\parindent}{10mm}
-\setlength{\leftskip}{0mm}
-\setlength{\parskip}{0pt}  
+
 <!--
 # Analiz Tabloları
 
