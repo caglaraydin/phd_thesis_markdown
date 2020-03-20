@@ -321,7 +321,7 @@ Table: Üç parçalı cepheye sahip yapıların orta cephe parçalarındaki ve t
 |               | **114** |     **30** |             6 |               6 |                |               |
 |               | **128** |      **7** |             4 |               4 |                |               |
 
-Şekil \ref{KPaneller2}'teki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde "•" simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen "*" simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde "e" ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.
+Şekil \ref{KPaneller2}'teki kurallar panellerin içindeki pencere ve kapı yerleşim düzenlerini göstermektedir. Sağ üst köşesinde "*" simgesi bulunan paneller iç düzenlerinde kapı olacağını, bu simge bulunmayan panellerde sadece pencereler olacağını ifade etmektedir. İç bölümlenmesi tanımlanan panellerde görülen "*" simgesi bulunduğu bölmenin panel içinde yeterli genişlik bulunmadığında yok sayılmasını veya yeterli genişlik bulunduğunda bir veya daha fazla sayıda tekrar ettiğini göstermektedir. Panel içlerinde "e" ile tanımlı bölümler içerisinde herhangi bir cephe elemanı bulunmayan duvar yüzeylerini göstermektedir. Bu bölümler panel genişliğine diğer bölümlerin yerleşmesinden sonra arta kalan kısmı doldurmaktadır.
 
 ![Cephe panellerinde kapı ve pencere yerleşimini gösteren gramer kuralları. \label{KPaneller2}](source/figures/KPaneller2.pdf){width=100%}
 
@@ -456,7 +456,7 @@ Table: Kat sayısına göre gruplandırılmış yapıların çatı formu ve eği
 
 ![Çatı oluşumunu gösteren gramer kuralları. \label{KCati}](source/figures/KCati.pdf){width=100%}
 
-## Üretim Süreci
+## Model Üretim Süreci
 
 Geleneksel Ortahisar konutlarının üretim süreci girdi olarak verilen bina oturum alanınından sonra kat sayısının belirlenmesi ile başlamaktadır. Bir önceki bölümde tanımlanan kural grupları ve onları destekleyen tablolardaki değerler dikkate alınarak süreç ilerlemektedir. Geleneksel Ortahisar konutlarının temelini oluşturan formların üretimi biçim grameri kuralları ile kodlanmış ve detaylandırılmıştır.
 
@@ -524,27 +524,27 @@ Bina tipi ile ilgili kat sayısı, cephe tipi, kapalı çıkma ve kapalı çıkm
 @Group("Bina Tipi",2)
 
 @Order(1) @Range("2 katli","2.5 katli","3 katli","3.5 katli","4 katli")
-attr BinaKatSayisi	=   13,34%: "2 katli" 6.67%: "2.5 katli"
-					    33,34%: "3 katli" 33.34%: "3.5 katli"
+attr BinaKatSayisi    =   13,34%: "2 katli" 6.67%: "2.5 katli"
+                        33,34%: "3 katli" 33.34%: "3.5 katli"
                         else: "4 katli"
 
 @Order(2) @Range( "1 Parca", "3 Parca")
 attr CepheTipi =
-	case geometry.area > 100.23 : "3 Parca"
-	else :
-		75%: "3 Parca" else: "1 Parca"
-		
+    case geometry.area > 100.23 : "3 Parca"
+    else :
+        75%: "3 Parca" else: "1 Parca"
+        
 @Order(3) @Range("Cumbalı", "Cumbasız")
 attr cumba = 43.75% : true else : false
-attr cumbaGenislikDerinlikOran	=   71.42% : rand(2.107, 2.696)
+attr cumbaGenislikDerinlikOran    =   71.42% : rand(2.107, 2.696)
                                     14.29% : 1.27  
                                     else : 3.247
-attr cumbaIkinciKatOran			=
-	case ikinciKatYukseklik == 0 || CepheTipi == "1 Bay" :
-		1
-	else :
-		12.5% : rand(1.061, 1.098)
-		else : 1
+attr cumbaIkinciKatOran            =
+    case ikinciKatYukseklik == 0 || CepheTipi == "1 Bay" :
+        1
+    else :
+        12.5% : rand(1.061, 1.098)
+        else : 1
 ```
 
 Sabitler ve değişkenler yukarıdaki gibi tanımlanırken verilen oturum alanının belirlenen değerlere uygun olup olmadığının test edildiği ve uygunluğu sonucunda kat oluşumlarını başlatan kurallar aşağıdaki örnek gramer kodunda gösterilmiştir.

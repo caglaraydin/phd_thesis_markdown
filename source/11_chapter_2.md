@@ -40,7 +40,7 @@ Bu çalışmalar haricinde Stiny'nin [-@Stiny:1976im] iki boyutlu formal kompozi
 
 Özgün gramerlerin tamamen baştan oluşturulması teori üzerinde olmaktadır [@Knight:1999uf]. Uygulamada ise yeni tasarım dilleri eski ve güncel dillerin değiştirilmesi, geliştirilmesi veya birleştirmesi gibi işlemler ile oluşturulur. Knight [-@Knight:1981ky] önerdiği mevcut tasarım dilleri üzerinden yeni tasarım dilleri üretme yönteminde ilk önce mevcut dil için bir gramer çıkartılarak analiz edilir, çıkarılan gramerin kuralları dönüştürülür ve dönüştürülen kurallar yeni bir gramerin ve dilin temeli haline gelir. Knight bu yöntemin bilinen dillerin tarihsel evrimini başarılı bir şekilde tanımlamak ve yeni tasarımlar geliştirmek için kullanabileceğini belirtmektedir. Bu nedenle bu yöntem hem analitik hem sentetiktir. Knight *Transformations in Design* adlı kitabında bu yöntemi kullanarak Frank Lloyd Wright'ın çalışmalarında, De Stijl resminde ve antik Yunan süsleme tasarımlarında stilistik değişimleri analiz etmek için uygulamaktadır [@Knight:1999uf]. Flemming [-@Flemming:1990tn] Knight'ın yöntemine benzer bir yöntemi bilgisayar üzerinde mimari kompozisyonları öğretebilmek için kullanmmıştır.
 
-Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel “Hayat” evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de Zaouiat Lakhdar bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
+Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:2001wi] 18. ve 19. yüzyılda Saraybosna'da Osmanlı tarzında tasarlanan geleneksel "Hayat" evlerinin gramerini oluşturarak tarihi bağlama uygun yeni formların üretimini sağladı. Duarte [-@Duarte:2005gd] 1977 ve 1996 yılları arasında Siza tarafından Malagueira için tasarlanmış otuzbeş konut üzerinden Siza'nın da desteğini alarak oluşturduğu gramer ile Siza'nın tasarım mantığına yatkın çeşitli yeni tasarımlar üretebildi. Marakeş Medine'de Zaouiat Lakhdar bölgesi için geliştirilen yerel konut ve kentsel form üreten gramerler, *rabo-de-bacalhau* bina tipolojisindeki evlerin rehabilitasyonu için geliştirilen dönüşüm grameri hibrid gramerlere örnek oluşturmaktadır [@Duarte:2006wg; @Duarte:2007eq; @Eloy:2014kn].
 
 <!--
 [@Sonmez:2018jx] Eklenmeyen referans listesi.
@@ -49,7 +49,7 @@ Bu gramer yapısının örneklerine baktığımızda Çolakoğlu [-@Colakoglu:20
 [27] GeroJS,LouisSJ,KunduS.Evolutionarylearningofnovelgrammarsfordesign improvement. AI EDAM 1994;8(2):83–94. http://dx.doi.org/10.1017/S089006040000069X.
 [28] Shea K, Cagan J. Innovative dome design: Applying geodesic patterns with shape annealing. AI EDAM 1997;11:379–94.
 [29] RosenmanMA,GeroJS.Evolvingdesignsbygeneratingusefulcomplexgene structures. In: Bentley PJ, editor. Evolutionary design by computers. San Francisco, CA: Morgan Kaufmann; 1999. p. 345–64.
-[30] GroblerF,AksamijaA,KimH,KrishnamurtiR,YueK,HickersonC.Ontologies and shape grammars: Communication between knowledge-based and gener- ative Systems. In: Gero JS, Goel AK, editors. Design computing and cognition ’08. Netherlands: Springer; 2008. p. 23–40.
+[30] GroblerF,AksamijaA,KimH,KrishnamurtiR,YueK,HickersonC.Ontologies and shape grammars: Communication between knowledge-based and gener- ative Systems. In: Gero JS, Goel AK, editors. Design computing and cognition '08. Netherlands: Springer; 2008. p. 23–40.
 [31] GranadeiroV,DuarteJP,CorreiaJR,LealVMS.Buildingenvelopeshapedesign in early stages of the design process: Integrating architectural design systems and energy simulation. Autom Constr 2013;32:196–209. http://dx.doi.org/10.1016/j.autcon.2012.12.003.
 [32] MandićM,TepavčevićB.Analysisofshapegrammarapplicationasatoolfor urban design. Environ Plann B: Plann Des 2015;42(4):675–87. http://dx.doi.org/10.1068/b130084p.
 [33] Vitins BJ, Axhausen K. Shape grammars overview and assessment for trans- port and urban design: Review, terminology, assessment, and application. J Transp Land Use 2016;9(1):. http://dx.doi.org/10.5198/jtlu.2016.620.
@@ -119,7 +119,7 @@ Wonka vd. (Wonka vd., 2003) bina modelleri oluşturmak için özel bir biçim gr
 
 Bu yöntem Müller vd. (Müller vd., 2006) tarafından geliştirilerek CGA gramerleri olarak adlandırılmıştır. Geliştirilen bu yöntemde farklı olarak tanımlanmış modelleme kuralları ve cephe üretimi zor olan karmaşık kütleler için eklentiler bulunmaktadır. Bununla beraber çatı üretimi ve yönlenmiş kütleler için cephe üretimini de olanaklı hale getirmiştir. CGA gramer yöntemi çokgen ile belirlenmiş bir parsel hattını yükseltip katlara bölünmüş bir hacim oluşturarak işleme başlamaktadır. Katların cepheleri biçim kuralları kullanılarak duvar, kapı, pencere gibi bölümlere bölünmektedir. Koşullu ya da tahmini kurallar, biçim parametreleri, rastgele numara üretimi bu yöntem içerisinde çeşitlilik üretmek için kullanılmaktadır. Biçim gramerleri güncel olarak bina üretimi için en gelişmiş yöntem olarak kullanılmaktadır.
 
-Yong vd. (Yong vd., 2004) Çin’in güneydoğu bölgesindeki yöresel yapıları biçim gramerleri ile oluşturdukları bir yöntem ortaya koymuşlar. Diğer biçim grameri yöntemleri tekil bir parsel hattına uygulanmaktayken bu hiyerarşik gramer kentsel ölçekten başlamakta ve akabinde sokaklar, konut blokları, yollar ve daha detaylı modeller de kapılar, pencereler ve çatıları oluşturmaya kadar devam etmektedir.
+Yong vd. (Yong vd., 2004) Çin'in güneydoğu bölgesindeki yöresel yapıları biçim gramerleri ile oluşturdukları bir yöntem ortaya koymuşlar. Diğer biçim grameri yöntemleri tekil bir parsel hattına uygulanmaktayken bu hiyerarşik gramer kentsel ölçekten başlamakta ve akabinde sokaklar, konut blokları, yollar ve daha detaylı modeller de kapılar, pencereler ve çatıları oluşturmaya kadar devam etmektedir.
 
 ##### Yordamsal İç Mekan Çözümleme
 
@@ -127,15 +127,15 @@ Yordamsal yöntemler ile plan üretimi gramer tabanlı cephe üretimi yaklaşım
 
 Rau-Chaplin vd. (Rau-Chaplin vd., 1996) biçim gramerlerini kullanarak kat planları üretmişlerdir. Biçim gramerleri ile oluşturulan plan şeması kamusal, özel, yarı-özel gibi fonksiyonel bölgelere gruplandırılmış oda birimleri üretmektedir. Gruplandırılmış oda birimlerine sistemde daha önceden tanımlanmış çözümü yapılmış oda planları kullanıcı tarafından seçilip atanmaktadır. Sistemin üretkenliği sisteme tanımlı oda çözümleri ile sınırlanmaktadır.
 
-Hahn vd. (Hahn vd., 2006) alt birimlere ayırma yöntemini kullanarak ofis yapıları oluşturmayı başarmışlardır. Başlangıçta verilen kütle katlara ayrılmış ve ardından kat planlarında koridor alanları ve odalar oluşturulmuştur. Bir başka alt birimlere ayırma uygulamasını Marson ve Musso (Marson ve Musse, 2010) “squarified treemaps” algoritması kullanarak oluşturmuştur. Kullanıcı tarafından belirlenen oda alanları ve işlevleri ile bina sınır hatları belirlendikten sonra kat planı tekrarlanan bir şekilde küçük alanlara bölünmüştür. Bir sonraki aşamasında koridorlar otomatik olarak oluşturulmuştur.
+Hahn vd. (Hahn vd., 2006) alt birimlere ayırma yöntemini kullanarak ofis yapıları oluşturmayı başarmışlardır. Başlangıçta verilen kütle katlara ayrılmış ve ardından kat planlarında koridor alanları ve odalar oluşturulmuştur. Bir başka alt birimlere ayırma uygulamasını Marson ve Musso (Marson ve Musse, 2010) "squarified treemaps" algoritması kullanarak oluşturmuştur. Kullanıcı tarafından belirlenen oda alanları ve işlevleri ile bina sınır hatları belirlendikten sonra kat planı tekrarlanan bir şekilde küçük alanlara bölünmüştür. Bir sonraki aşamasında koridorlar otomatik olarak oluşturulmuştur.
 
-Martin (Martin, 2006) yapı sınırlarını belirleyip bu alanı odalara bölmek yerine ilk önce odalar arasındaki bağlantı ilişkilerini tanımlayan bir şema oluşturmaktadır. Şemadaki düğüm noktaları odaları ve kenarlar odalar arası bağlantıları temsil etmektedir. Şemanın mekânsal planlamaya dönmesi şemadaki düğüm noktalarına belirli ölçüde “basınç” uygulanarak istenen büyüklüğe kadar genişletilerek yapılmaktadır. Bu yöntem ile istenen büyüklükte ve istenilen bağlantıları olan odalar elde edilmektedir.
+Martin (Martin, 2006) yapı sınırlarını belirleyip bu alanı odalara bölmek yerine ilk önce odalar arasındaki bağlantı ilişkilerini tanımlayan bir şema oluşturmaktadır. Şemadaki düğüm noktaları odaları ve kenarlar odalar arası bağlantıları temsil etmektedir. Şemanın mekânsal planlamaya dönmesi şemadaki düğüm noktalarına belirli ölçüde "basınç" uygulanarak istenen büyüklüğe kadar genişletilerek yapılmaktadır. Bu yöntem ile istenen büyüklükte ve istenilen bağlantıları olan odalar elde edilmektedir.
 
 Charman (Charman, 1993) mekân oluşturma problemini çözümü için kısıtlama çözümlemesi tekniği hakkında bilgiler vermektedir. Önerilen plan çözücü bir aksa hizalanmış çeşitli ölçü, pozisyon ve yönelim parametreleri olan dikdörtgenler ile çalışmaktadır. Kısıtlama çözümleme yöntemi sonuca ulaştırsa da uygulamada karmaşık ve zor bir yöntemdir.
 
 Merrel vd. (Merrell vd., 2010) konut planları üretmek için Bayes Ağları kullanan bir yöntem önermişlerdir. Makine öğrenimi ile oda alanları, oda oranları ve yakınlıklarının olduğu 120 mimari konut programı kodlanmıştır ve stokastik optimizasyon yöntemi ile kat planları oluşturmuşlardır.
 
-Tutenel vd. (Tutenel vd., 2009) Martin’in uyguladığı genişleyerek oluşan kat planı yöntemini semantik çözümleme ile ilişkilendirmişlerdir. Her bir oda tipini sınıflandırmış ve diğer odalar ile olan ilişkilerini semantik kütüphanesinde tanımlamışlardır. Oluşturulacak kat planı için minimum boyutlarda dikdörtgenler kısıtlamaları karşılayacak şekilde yerleştirilmekte ve her oda birbirine dokunana kadar genişletilmektedir. Diğer yöntemlerdeki gibi odalar, alanları ve kısıtlamaları tanımlanabileceği gibi; semantik çözümleme ile beraber içinde yaşayacak ailenin büyüklüğü, aile ihtiyaçları, arazi boyutu veya kat sayısı gibi değerler de odaların oluşturulmasına yeterli olabilmektedir.
+Tutenel vd. (Tutenel vd., 2009) Martin'in uyguladığı genişleyerek oluşan kat planı yöntemini semantik çözümleme ile ilişkilendirmişlerdir. Her bir oda tipini sınıflandırmış ve diğer odalar ile olan ilişkilerini semantik kütüphanesinde tanımlamışlardır. Oluşturulacak kat planı için minimum boyutlarda dikdörtgenler kısıtlamaları karşılayacak şekilde yerleştirilmekte ve her oda birbirine dokunana kadar genişletilmektedir. Diğer yöntemlerdeki gibi odalar, alanları ve kısıtlamaları tanımlanabileceği gibi; semantik çözümleme ile beraber içinde yaşayacak ailenin büyüklüğü, aile ihtiyaçları, arazi boyutu veya kat sayısı gibi değerler de odaların oluşturulmasına yeterli olabilmektedir.
 
 #### Yordamsal Cephe Üretiminde Kullanılan Yöntemler
 
@@ -262,7 +262,7 @@ Semboller yerine biçimleri kullandığından dolayı süreç içinde muğlaklı
 
 
 [@Stiny:2006tq] Page 58
-I’ve never been an authority on the proper use of shapes—when my first research paper was published, with James Gips.4 This was the official beginning of the subject. Gips and I were doctoral students at Stanford and UCLA, respectively, interested in how you could calculate with shapes. We worked out the idea for shape grammars together, with surprises in mind. That’s what we called ambiguity. But this was a problem when it came to putting shape grammars on a computer. Gips developed a couple of neat programs, but neither of them allowed for ambiguity.5 You could calculate with shapes on a computer only if you could describe them with symbols. You had to segment shapes into lowest-level con- stituents to start. Then there was the combinatorial play with simple things to make complex ones. Meanwhile, I worked out the details of embedding, so that you could calculate with shapes in the same way you see.6 Symbols were unnecessary for shape grammars—on a computer or not.
+I've never been an authority on the proper use of shapes—when my first research paper was published, with James Gips.4 This was the official beginning of the subject. Gips and I were doctoral students at Stanford and UCLA, respectively, interested in how you could calculate with shapes. We worked out the idea for shape grammars together, with surprises in mind. That's what we called ambiguity. But this was a problem when it came to putting shape grammars on a computer. Gips developed a couple of neat programs, but neither of them allowed for ambiguity.5 You could calculate with shapes on a computer only if you could describe them with symbols. You had to segment shapes into lowest-level con- stituents to start. Then there was the combinatorial play with simple things to make complex ones. Meanwhile, I worked out the details of embedding, so that you could calculate with shapes in the same way you see.6 Symbols were unnecessary for shape grammars—on a computer or not.
 
  Page 4 [@Sonmez:2018jx]
 Alternatively, SGs can be interpreted as computing environments, in which the basic elements are shapes, instead of symbols [10]. However, it is not straightforward to implement such systems for automatic derivation through symbolic computation [11]. In a regular SG, all the rules whose left hand sides are satisfied can become activated simultaneously. In the original SG formulation, there is no explicit mechanism to control the application sequence of these rules [12]. For this reason, traditional SG applications have been operated manually or interactively, while recent applications moved towards restricted SGs, which are usually coupled with optimization approaches or other control mechanisms. The latter mostly proceed from a single representation to automatically extract a generative model (Fig. 3). This capability may be exploited for automated problem setting.
@@ -291,11 +291,13 @@ Mimari tasarımda bilgisayarın rolü iki kategoride açıklamak mümkündür. �
 
 [@Knight:2015cq] 1972 den itibaren Stiny ile gelişen biçim grameri tarihi
 
-Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Grameri (Sharon Sung ve Tseng, 2016) Türkiye’den örnekler (Özkaraduman, 2007) (Torus, 2008) (Güzelci, 2012) (Karabağ, 2010)
+Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Grameri (Sharon Sung ve Tseng, 2016) Türkiye'den örnekler (Özkaraduman, 2007) (Torus, 2008) (Güzelci, 2012) (Karabağ, 2010)
 
 -->
 
-## Çalışma Alanının Seçimi
+## Alan Çalışması
+
+### Çalışma Alanının Seçimi
 
 Kentsel gelişim sürecinde kent kimliği hayati bir öneme sahiptir. Küreselleşmenin de etkisiyle şehirler gelişim ve dönüşüm süreçlerinde özgün kimliklerini kaybetme problemiyle karşılaşmaktadır. Bu gelişim ve dönüşüm süreçleri düzgün işletilemediğinde kent okunabilirliğini, kentliler kent hafızasını ve algısını kaybetmektedir. Bu durum kentin tarihi ve kültürel mirasını korumayı güçleştirmektedir.
 
@@ -303,7 +305,7 @@ Ekonomik, sosyal, teknolojik, kültürel değişimler ve yanlış planlama karar
 
 Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve tarih boyunca kent çekirdeğinin biçimlendiği bölge olan Ortahisar mahallesi çalışma alanı olarak seçilmiştir. Çalışma bu bölgedeki geleneksel konut karakterine ait bilgileri yordamsal modelleme yöntemi için gerekli CGA grameri ile kayıt altına almayı ve bölgede yapılması planlanan yeni yapılar için tasarım altlığı oluşturmayı hedeflemektedir.
 
-## Çalışma Alanına İlişkin Bilgiler <!-- Ortahisar’ın Genel Karakteri -->
+### Çalışma Alanına İlişkin Bilgiler <!-- Ortahisar'ın Genel Karakteri -->
 
 <!--Bu bölümde alan üzerine yapılan çalışmalar yer alacaktır. Kaynaklardan bölge ve konutlar hakkında bilgiler verilecektir. Ayrıca rölöveler ve fotoğraflarda bu bölümde yer alacaktır. Bu bölümde elde edilen bilgiler ile analizler yapılıp, gramer oluşturulmuştur.-->
 
@@ -318,21 +320,21 @@ Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu
 - Askeri Mimari
     - Kent surları
 - Dini Mimari
-	- Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
-	- Musa Paşa Cami
-	- Ortasaray Mescidi - Saraçzade Medresesi
-	- Şirin Hatun Mescidi
+    - Panaghia Chrysokephalos Kilisesi (Ortahisar veya Büyük Fatih Cami)
+    - Musa Paşa Cami
+    - Ortasaray Mescidi - Saraçzade Medresesi
+    - Şirin Hatun Mescidi
 - Endüstriyel Mimari
-	- Tabakhane Köprüsü
-	- Zağnos Köprüsü
+    - Tabakhane Köprüsü
+    - Zağnos Köprüsü
 - Su Mimarisi
-	- Çifte Hamam
-	- Çarıkçı-Zade Hacı İsmail Çeşmesi
-	- Çeşme (Ortahisar Cami güneyinde)
+    - Çifte Hamam
+    - Çarıkçı-Zade Hacı İsmail Çeşmesi
+    - Çeşme (Ortahisar Cami güneyinde)
 - Kamusal Mimari
-	- Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
-	- Trabzon Kültür Müdürlüğü (Eski Hükümet Konağı)
-	- Gazi Paşa İlköğretim Okulu
+    - Hüseyin Kazaz Kültür Merkezi (Eski Cezaevi Binası)
+    - Trabzon Kültür Müdürlüğü (Eski Hükümet Konağı)
+    - Gazi Paşa İlköğretim Okulu
 
 ![Ortahisar dini mimari örnekleri. Solda Ortahisar Cami ve sağda yıkılmış Şirin Hatun Mescidi [@Ozen:2009wo].](source/figures/DiniMimari.png){width=100%}
 
@@ -378,18 +380,18 @@ Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre
 ![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
 
 * Cephe;
-	* Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
-	* Cephede köşe noktalarda düşey, kat aralarında yatay bantlar kullanılmıştır,
-	* Cephede açık ve kapalı çıkmalar görülmektedir, bu çıkmalar iç mekanda bulunan oda veya sofa genişliğindedir,
-	* Cepheler sokağa paraleldir,
-	* Beşik çatı ve ağırlıkla kırma çatı tipi hakimdir,
-	* Zemin katlar su basman seviyesinde yükseltilerek bodrum katların aydınlatılması için pencereler kullanılmaktadır,
+    * Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
+    * Cephede köşe noktalarda düşey, kat aralarında yatay bantlar kullanılmıştır,
+    * Cephede açık ve kapalı çıkmalar görülmektedir, bu çıkmalar iç mekanda bulunan oda veya sofa genişliğindedir,
+    * Cepheler sokağa paraleldir,
+    * Beşik çatı ve ağırlıkla kırma çatı tipi hakimdir,
+    * Zemin katlar su basman seviyesinde yükseltilerek bodrum katların aydınlatılması için pencereler kullanılmaktadır,
 * Giriş;
-	* Genellikle cephenin simetri ekseninde, diğer durumlarda yapının köşesine yakın bulunurlar,
-	* Basamaklar ve hemen üzerindeki çıkmalar ile vurgulanmışlardır,
+    * Genellikle cephenin simetri ekseninde, diğer durumlarda yapının köşesine yakın bulunurlar,
+    * Basamaklar ve hemen üzerindeki çıkmalar ile vurgulanmışlardır,
 * Pencereler;
-	* Dikdörtgen formda ve düşey hatlıdırlar,
-	* Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
+    * Dikdörtgen formda ve düşey hatlıdırlar,
+    * Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
 
 ![Geleneksel konut cephesi örnekleri. Solda 110 ada 23 parseldeki bina sağda 110 ada 41 parseldeki bina. Trabzon Büyükşehir Belediyesi arşivelerinden alınmıştır.](source/figures/KonutCepheleri2.jpg){width=100%}
 
@@ -397,7 +399,7 @@ Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa 
 
 ![Geleneksel konut cephesi örnekleri. Solda 128 ada 7 parseldeki bina sağda 129 ada 26 parseldeki bina. Trabzon Büyükşehir Belediyesi arşivelerinden alınmıştır.](source/figures/KonutCepheleri3.jpg){width=100%}
 
-## Verilerin Toplanması
+### Verilerin Toplanması
 <!-- Toplam 73 tescilli yapı var çalışma alanında-->
 
 Geleneksel Ortahisar konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır. 
