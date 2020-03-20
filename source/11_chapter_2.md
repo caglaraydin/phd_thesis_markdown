@@ -309,7 +309,7 @@ Bu bağlamda Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri b
 
 ![Türkiye'de Trabzon'un konum haritası. ](source/figures/TrabzonTurkiye.png){width=100%}
 
-Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağı hisar kısımlarının inşaa edildiği söylenebilir [@Uspenski:2003ta].
+Trabzon Doğu Karadeniz sahil şeridinde doğal bir liman olan Asya ve Ortadoğu transit yolunun başında kurulmuştur. Liman ve ticaret kenti olarak özellikle 7. yüzyıldan sonra ekonomik anlamda bölgenin önemli merkezi olmuştur . Kuzeyde Karadeniz, doğu ve batıda ise derin vadiler ile çevrili kent coğrafi olarak korunaklı bir bölgede konumlandırılmıştır. Güney kısmında doğal bir sınırının olmaması ve savunma ihtiyacından ötürü kent önce Yukarıhisar diye adlandırılan güneydeki en yüksek kısmından başlanarak kuzeye doğru sırayla Ortahisar ve Aşağıhisar kısımlarının inşaa edildiği söylenebilir [@Uspenski:2003ta].
 
 ![Ortahisar bölgesinin kentin 1223 yılı öncesi ve 1869 yılına kadar olan tarihlerde konumunu gösteren harita [@Bryer:2011ul]. ](source/figures/TrabzonMap.png){width=100%}
 
@@ -362,7 +362,7 @@ Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan 
 
 <!-- TODO: BURAYA FOTOĞRAF EKLENMELİ KONUT ÖZELLİKLERİ İLE İLGİLİ-->
 
-Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur [@Birlik:1999ux].
+Geleneksel Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur [@Birlik:1999ux].
 
 ![Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri [@Ozen:2009wo].](source/figures/SofaliPlanlar.jpg){width=100%}
 
@@ -373,7 +373,7 @@ Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın 
 [@Birlik:1999ux]
 -->
 
-Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer [-@Fallmerayer:2011vq] Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;
+Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer [-@Fallmerayer:2011vq] geleneksel Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;
 
 ![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
 
@@ -400,7 +400,7 @@ Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa 
 ## Verilerin Toplanması
 <!-- Toplam 73 tescilli yapı var çalışma alanında-->
 
-Ortahisar geleneksel konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır. 
+Geleneksel Ortahisar konutlarına ait bilgiler rölövelerden, akademik çalışmalardan ve alan üzerine yazılmış kitaplardan elde edilmiştir. Konutlara ait rölöveler iki arşivden derlenerek gramer için örneklem kümesi oluşturulmuştur. Örneklem kümesi geleneksel Ortahisar konutlarının hepsini içermemektedir; ancak değişik özelliklere sahip yapıları barındırmaktadır. 
 
 Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil \ref{ortahisartescilli}'da gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.
 

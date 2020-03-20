@@ -15,7 +15,7 @@ analiz edilerek incelenmiştir. Bu analizlere ek olarak yapıların kütlesel fo
 
 Oluşturulan kütleler kat sayıları ve yükseklik oranlarına göre dilimlenerek katlar oluşturulmaktadır. Cephe karakteri analizi sonucunda ise oluşan katların panel parçalarına ayrılması sağlanmaktadır. Ardından cephe elemanları ve pencereler oranlarına göre panel içinde dilimlenerek yerleri belli edilmektedir.
 
-## Ortahisar’ın Mimari Dil Analizi ve Biçim Grameri
+## Ortahisar Konutlarının Mimari Dil Analizi ve Biçim Grameri
 
 Gramer kuralları iki boyutlu bina oturum alanı ve üç boyutlu bloklardan oluşmaktadır. CGA gramerinin başlangıcı bir parsel veya bina oturum alanının tanımlanması ile gerçekleşmektedir. Üç boyutlu bloklar kütlesel hacimlere karşılık gelmekte ve analiz-sentez aşaması sonucunda elde edilen veriler ile parametreleştirilmektedir. Gramerin basitleştirilmesi açısından parametre değer verileri ayrıca tablolar ile açıklanmıştır.
 
@@ -27,11 +27,11 @@ Analiz edilen yapıların kendi içlerinde ve birbirleri ile karşılaştırıla
 
 ### Yapı Taban Alanı
 
-Ortahisar geleneksel evleri sokağa göre paralel konumlanmaktadır. Yapıların giriş ve kapalı çıkmasının bulunduğu cephe sokağa doğru bakmaktadır. Kural 1 ve 2 başlangıç için verilen oturum alanını ve sokağın yönünü belirler (Şekil \ref{K1K2}). Kural 1 herhangi bir alanın bir noktasında oturum alanını konumlandırmak için kullanabileceğinden alan planlamasını mümkün kılmaktadır.
+Geleneksel Ortahisar konutları sokağa göre paralel konumlanmaktadır. Yapıların giriş ve kapalı çıkmasının bulunduğu cephe sokağa doğru bakmaktadır. Kural 1 ve 2 başlangıç için verilen oturum alanını ve sokağın yönünü belirler (Şekil \ref{K1K2}). Kural 1 herhangi bir alanın bir noktasında oturum alanını konumlandırmak için kullanabileceğinden alan planlamasını mümkün kılmaktadır.
 
 ![Oturum alanı ve sokak yönünün tanımlanmasını gösteren kurallar. \label{K1K2}](source/figures/K1-K2.pdf){width=100%}
 
-Seçilen Ortahisar evlerinin taban alanları incelendiğinde;
+Seçilen geleneksel Ortahisar konutlarının taban alanları incelendiğinde;
 
 - En küçük yapı taban alanı : 50,38 m^2^
 - En büyük yapı taban alanı : 315,67 m^2^
@@ -42,7 +42,7 @@ Seçilen Ortahisar evlerinin taban alanları incelendiğinde;
 oldukları bulunmuştur. Bulunan değerler CGA gramerine girdi olarak verilen taban alanlarının seçimi için kullanılmaktadır. Bu kısıtlar dışında olan girdilerde model oluşumu gerçekleşmemektir. <!-- Alt sınırlar için model oluşumu gerçekleşmemekteyken, üst sınırlar için parsel kullanım analizi yapılarak parsel içinde taban alanı oluşumu yaptırılması fikri değerlendirilecektir. -->
 \newpage
 
-Table: Seçilmiş Ortahisar evlerinin oturum alanları, ortalama derinlik ve ortalama genişlik değerleri tablosu. \label{EvlerAlanlarOrtalamalar}
+Table: Seçilmiş geleneksel Ortahisar konutlarının oturum alanları, ortalama derinlik ve ortalama genişlik değerleri tablosu. \label{EvlerAlanlarOrtalamalar}
 
 | **Ada** | **Parsel** | **Ort. Derinlik** | **Ort. Genişlik** | **Der. / Gen.** | **Taban Alanı** | **Parsel Alanı** |
 | ------: | ---------: | ----------------: | ----------------: | --------------: | --------------: | ---------------: |
@@ -66,11 +66,11 @@ Table: Seçilmiş Ortahisar evlerinin oturum alanları, ortalama derinlik ve ort
 
 Seçilmiş geleneksel konutlar kat sayısına göre iki katlı, çatı katı olan iki katlı, üç katlı, çatı katı olan üç katlı ve dört katlı yapılar olarak beş gruba ayrılmaktadırlar. Çatı katları yarım kat olarak hesap edilerek şekil \ref{katgruplama}'de gösterilmiştir. Analiz edilen yapıların katlarına göre yüzdelerine bakıldığında %13,34'ü iki katlı, %6,67'sı çatı katı olan iki katlı, %33,34'sı üç katlı, %33,34'ü çatı katı olan üç katlı, %13,34'ü dört katlı yapılardır. Bu oranlar gramer içerisinde eğer kat sayısı tercihi yapılmaz ise oluşturulacak yapıların oluşturulma oranlarını belirtmektedir.
 
-![Kat sayısına göre gruplandırılmış Ortahisar evleri. \label{katgruplama}](source/figures/katgruplandirma.pdf){width=100%}
+![Kat sayısına göre gruplandırılmış geleneksel Ortahisar konutları. \label{katgruplama}](source/figures/katgruplandirma.pdf){width=100%}
 
 <!-- TODO: Zemin katın K6 daki gibi alt tarafına eklenme yapılmayacağına dair bir kural eklenmeli midir? -->
 
-Tablo \ref{katbulunmayuzde}'de yapı tipini belirleyen katların bulunma yüzdeleri gösterilmiştir. Analiz edilen Ortahisar evlerinin hepsinde zemin ve birinci kat bulunmaktadır. Buna ek olarak dört katlı yapılarda çatı katı oluşumu görülmemektedir. Üç katlı ve çatı katı bulunan yapıların %80'inde bodrum katı bulunurken %20'sinde bodrum kat yerine ikinci kat bulunmaktadır. Üç katlı yapıların %60'ında bodrum kat bulunurken %40'ında bodrum kat yerine ikinci kat bulunmaktadır. Bu değerler yapı tipinin hangi kat tipleri ile oluşacağını belirlemektedir.
+Tablo \ref{katbulunmayuzde}'de yapı tipini belirleyen katların bulunma yüzdeleri gösterilmiştir. Analiz edilen geleneksel Ortahisar konutlarının hepsinde zemin ve birinci kat bulunmaktadır. Buna ek olarak dört katlı yapılarda çatı katı oluşumu görülmemektedir. Üç katlı ve çatı katı bulunan yapıların %80'inde bodrum katı bulunurken %20'sinde bodrum kat yerine ikinci kat bulunmaktadır. Üç katlı yapıların %60'ında bodrum kat bulunurken %40'ında bodrum kat yerine ikinci kat bulunmaktadır. Bu değerler yapı tipinin hangi kat tipleri ile oluşacağını belirlemektedir.
 
 Table: Kat sayısına göre gruplandırılmış yapılarda katların bulunma yüzdeleri tablosu. \label{katbulunmayuzde}
 
@@ -82,7 +82,7 @@ Table: Kat sayısına göre gruplandırılmış yapılarda katların bulunma yü
 |        **2,5** |              0 |           100 |             100 |              0 |           100 |
 |          **2** |              0 |           100 |             100 |              0 |             0 |
 
-Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı  katlarının oluşumu K3'ten K9'a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil \ref{K3K7}). Bütün Ortahisar geleneksel konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir (Şekil \ref{110131}).
+Oturum alanı ve sokak yönü ilk iki kural ile belirlendikten sonra bahsedilen oranlar ile beraber yapı tipi oluşturulmaktadır. Yapı  katlarının oluşumu K3'ten K9'a kadar olan gramer kuralları ile tanımlanmaktadır (Şekil \ref{K3K7}). Bütün geleneksel Ortahisar konutlarında zemin kat ve birinci kat bulunduğundan ötürü K4 kuralı yapılar için çekirdek birimi oluşturmaktadır. K6, K7 ve K8 de görülen koyu gri tarama mevcut katın üzerine tam kat gelemeyeceğini belirtmektedir. Katlar birbiri üzerine eklenirken dış sınırları aynı olacak şekilde kurallarda işlenmiştir. Sadece K8 kuralında, 110 ada 131 parsel ve 118 ada 1 parselde görüleceği üzere, diğer kurallardan ayrı olarak birinci katın üzerine gelen ikinci kat sınırları arka cephe kısmı hariç olmak üzere üç yandanda büyümektedir (Şekil \ref{110131}).
 
 ![Kat oluşumlarını gösteren gramer kuralları. \label{K3K7}](source/figures/K3-K8.pdf){width=100%}
 
@@ -140,7 +140,7 @@ Table: Kat yükseklikleri tablosu. \label{katyukseklikleri}
 
 <!-- TODO: Yan cephe tipleri açıklanmalı. Cephe Panelleri kısmında da açıklanabilir.-->
 
-İncelenen Ortahisar geleneksel dokusu üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil \ref{cephegruplama}). Tek parçalı cepheye sahip yapılar şekil \ref{K24K27}'da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir. Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil \ref{K9K12}'te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10  kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise  bodrum kat cephesinin bölümlenmesini göstermektedir.
+İncelenen geleneksel Ortahisar konutları üç parçalı ve tek parçalı cephesi olan yapılar olarak iki gruba ayrılmaktadır (Şekil \ref{cephegruplama}). Tek parçalı cepheye sahip yapılar şekil \ref{K24K27}'da tanımlanan cephe panelleri kuralları ile oluşumuna devam etmektedir. Üç parçalı cepheye sahip yapıların oluşumunu gösteren bölümlenme kuralları şekil \ref{K9K12}'te gösterilmiştir. Kurallardaki kesikli çizgiler bölümlenme hatlarını belirtmektedirler. Yapılar ön cephesinde gösterdiği üç veya tek parçalı cephe tipini arka cephesinde de göstermektedir. K9 kuralı zemin kattaki, K10  kuralı birinci kattaki cephe bölümlenmesini tanımlamaktadır. K11 üzerine tam kat gelmeyen birinci veya ikinci kat cephesinin bölümlenmesini tanımlamaktadır. K12 kuralı ise  bodrum kat cephesinin bölümlenmesini göstermektedir.
 
 ![Üç parçalı cephe tipi oluşumunu gösteren gramer kuralları. \label{K9K12}](source/figures/K9-K12.pdf){width=100%}
 
@@ -148,9 +148,9 @@ Cephe tipini belirleyen bir başka koşul ise yapıların taban alanından gelme
 
 \newpage
 
-![Ortahisar evlerinin cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. \label{cephegruplama}](source/figures/cephegruplandirma.pdf){width=90%}
+![Geleneksel Ortahisar konutlarının cephe kurgusuna göre gruplandırılması. Sol tarafta 3 parçalı ve sağ tarafta 1 parçalı cephe düzenleri. \label{cephegruplama}](source/figures/cephegruplandirma.pdf){width=90%}
 
-Table: Ortahisar evlerinin cephe parçalarının genişlik oranları analizi tablosu. \label{genislikoranlari}
+Table: Geleneksel Ortahisar konutlarının cephe parçalarının genişlik oranları analizi tablosu. \label{genislikoranlari}
 
 |           | **Ada** | **Parsel** | **Sol** | **Orta** | **Sağ** | **Sol / Orta** | **Sağ / Orta** |
 | --------- | ------: | ---------: | ----------: | -----------: | ----------: | -------------: | -------------: |
@@ -253,7 +253,7 @@ Yapı katlarının cephelerini tanımlayan cephe panelleri cephe elemanlarından
 
 \newpage
 
-Geleneksel Ortahisar evlerinin cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo \ref{silmebantolcu}'de gösterilmiştir. Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir. Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir ve 0,105m ile 0,571m arasında değişmektedir.
+Geleneksel Ortahisar konutlarının cepheleri incelendiğinde düşeyde ve yatayda simetrik olduğu gözlemlenmektedir. Bununla birlikte cephelerde yataylığı ve düşeyliği vurgulayan kat hizalarında kat silmeleri ve onların aralarında yapının ve kapalı çıkmaların dış köşelerinde bulunan düşey bantlar bulunmaktadır. Yatay ve düşey bantların genişlikleri tutarlı bir şekilde birbirine yakın değerler ile tekrar etmektedir. Panellerin alt kısmındaki koyu ince bant kat silmesini tanımlamaktadır. Panel kenarlarında kat silmesine göre daha açık renkte taralı dikey hatlar düşey bantları belirtmektedir. İncelenen yapılardaki bu elemanların ölçüleri tablo \ref{silmebantolcu}'de gösterilmiştir. Kat silmeleri kat yüksekliğine göre ölçüsü oranlı bir şekilde değişmeyip cephe boyunca tutarlı bir değer almaktadır. Ayrıca kat sayısına göre gruplandırılan yapılarda yakın değerler göstermektedir. Bu sebeple çatı katı olan iki katlı ve çatı katı olan üç katlı yapılarda 0,13m ile 0,21m, diğer yapılarda 0,19m ile 0,44m aralığında değerler almaktadır. Köşelerdeki düşey bantların genişlik ölçüleri de kat silmeleri gibi cephe genişlikleri ile bir korelasyon içinde bulunmadığından dolayı gerçek ölçüleri ile değerlendirilmiştir ve 0,105m ile 0,571m arasında değişmektedir.
 
 Table: Kat silmeleri ve düşey bant ölçülerinin tablosu. \label{silmebantolcu}
 
@@ -421,7 +421,7 @@ Table: Pencere denizlik yüksekliklerinin tablosu. \label{PDenizlik}
 
 ### Çatı Formu ve Eğimi
 
-İncelenen Ortahisar yapılarında kırma, beşik ve ikisinin birleşimi olan melez çatılara rastlanmaktadır. Melez çatılar genellikle kapalı çıkma üzerinde üçgen alınlık oluşturan kırma çatılardır. Çatı katı üzerine gelen çatılar beşik çatı olarak şekillenmektedir. Eğerki çatı katı yan cephelere doğru genişliyorsa bu parçaların üzeri kırma veya beşik çatı ile örtülmektedir. Sadece 110 ada 16 parseldeki yapının çatı katı kırma çatı ve çatı katı altında kalan katı örten çatı melez çatı ile örtülmektedir. Tablo \ref{Cati}'de yapıların çatı eğimlerine bakıldığında %80'i %17 ile %23 arasında geri kalanı %28 ile %34 arasındadır. Üç katlı yapıların tamamı kırma çatı ile örtülmüştürlerdir.
+İncelenen geleneksel Ortahisar konutlarında kırma, beşik ve ikisinin birleşimi olan melez çatılara rastlanmaktadır. Melez çatılar genellikle kapalı çıkma üzerinde üçgen alınlık oluşturan kırma çatılardır. Çatı katı üzerine gelen çatılar beşik çatı olarak şekillenmektedir. Eğerki çatı katı yan cephelere doğru genişliyorsa bu parçaların üzeri kırma veya beşik çatı ile örtülmektedir. Sadece 110 ada 16 parseldeki yapının çatı katı kırma çatı ve çatı katı altında kalan katı örten çatı melez çatı ile örtülmektedir. Tablo \ref{Cati}'de yapıların çatı eğimlerine bakıldığında %80'i %17 ile %23 arasında geri kalanı %28 ile %34 arasındadır. Üç katlı yapıların tamamı kırma çatı ile örtülmüştürlerdir.
 
 <!--
 Ortahisar evlerinin çatı eğimleri 17° ile 34° arasında değişmektedir. Çatı katı olmayan yapılar %77.7'si kırma çatıya %11,1'i beşik çatı ve geri kalanı kırma ve beşik melez bir çatıya sahiptir. Çatı katı olan yapılarda alt kat çatısı eşit oranlarda kırma, beşik ve melez çatıya sahiptir. Çatı katı olan yapıların çatı katı %16,6'sı kırma, %66,6 beşik ve %16,6'sı melez çatıya sahiptir.
@@ -460,7 +460,7 @@ Table: Kat sayısına göre gruplandırılmış yapıların çatı formu ve eği
 
 Geleneksel Ortahisar konutlarının üretim süreci girdi olarak verilen bina oturum alanınından sonra kat sayısının belirlenmesi ile başlamaktadır. Bir önceki bölümde tanımlanan kural grupları ve onları destekleyen tablolardaki değerler dikkate alınarak süreç ilerlemektedir. Geleneksel Ortahisar konutlarının temelini oluşturan formların üretimi biçim grameri kuralları ile kodlanmış ve detaylandırılmıştır.
 
-Biçim grameri kurallarını kullanarak geleneksel Ortahisar konutlarına ait taslak modelleri 8 adımda oluşturabilmek mümkündür.
+Biçim grameri kurallarını kullanarak geleneksel Ortahisar konutlarına ait taslak modelleri sekiz adımda oluşturabilmek mümkündür.
 
 ![Gramer kuralları ile üretilebilen kaba kütle türevleri. \label{kutleTurev}](source/figures/kutleTurevleri.pdf){width=100%}
 

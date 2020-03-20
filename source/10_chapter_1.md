@@ -15,9 +15,9 @@ Yordamsal modelleme tekniğinin bir diğer avantajı ise modellenen bina veya ob
 
 Yordamsal modeller semantik bir yapıya sahiptirler ve bu özellikleri ile simülasyon ve planlama için geleneksel modellere göre daha uygundurlar. Günümüz kentsel yenileme ve kentsel canlandırma projelerinde kullanımları da birçok varyasyona ve analiz olanağına kısa sürede imkân sağlamaktadır. Aynı şekilde tekil birimler içinde çeşitli öneriler sunması bu önerilerin yeni tasarım yorumları için altlık oluşturmaktadır.
 
-Bu bağlamda gün geçtikçe sayıları azalan Trabzon Ortahisar geleneksel konutları örnek çalışma alanı olarak incelenecektir. Ortahisar Mahallesi Trabzon'un tarihi kent çekirdeğinin biçimlendiği bölgeyi ihtiva etmektedir. Kentin geleneksel mimari karakterini barındıran bölge kent kimliği ve kültürel mirası açısından önem arz etmektedir.
+Bu bağlamda gün geçtikçe sayıları azalan geleneksel Trabzon Ortahisar  konutları örnek çalışma alanı olarak incelenecektir. Ortahisar Mahallesi Trabzon'un tarihi kent çekirdeğinin biçimlendiği bölgeyi ihtiva etmektedir. Kentin geleneksel mimari karakterini barındıran bölge kent kimliği ve kültürel mirası açısından önem arz etmektedir.
 
-Bu çalışma Trabzon Ortahisar geleneksel konutlarının bir split gramer türevi olan CGA (Computer Generated Architecture) gramerinin oluşturulması ve parametrik olarak üretilmesini amaçlamaktadır. Trabzon kenti içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturmaktadır. Bu veriler üzerinden çalışmanın ilk bölümü için analiz-sentez yöntemi kullanılacaktır. İkinci aşama için biçim gramerleri hazırlanacaktır. Hazırlanan biçim gramerleri üzerinden CGA biçim grameri bilgisayar ortamında kodlanacaktır.
+Bu çalışma geleneksel Trabzon Ortahisar konutlarının bir split gramer türevi olan CGA (Computer Generated Architecture) gramerinin oluşturulması ve parametrik olarak üretilmesini amaçlamaktadır. Trabzon kenti içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturmaktadır. Bu veriler üzerinden çalışmanın ilk bölümü için analiz-sentez yöntemi kullanılacaktır. İkinci aşama için biçim gramerleri hazırlanacaktır. Hazırlanan biçim gramerleri üzerinden CGA biçim grameri bilgisayar ortamında kodlanacaktır.
 
 <!-- Bunun için mimarların aktif olarak kullandığı ve tanıdığı Rhinoceros programı üzerinde çalışan Grasshopper platform olarak seçilmiştir. Grasshopper için yazılmış birçok eklenti bulunmaktadır ve model üzerinde interaktif olarak analiz yapma olanağı sunmaktadır. Bunun yanında gelişmeye açık bir platform olması da tercih sebebidir. Bu kapsamda Grasshopper üzerinde C\# programlama dili üzerinden geliştirilecek kodlar ile Trabzon evlerinin kurallarını içeren bir eklenti geliştirilecektir. -->
 
@@ -37,9 +37,9 @@ Hedefler;
 
 2. Üretilecek modellerin varyasyonlarını yeni tasarımlar için altlık olarak sunmak.
 
-3. Trabzon Ortahisar evlerine ait kütle ve cephelerin oluşumunu tanımlayan  biçim gramerini oluşturmak.
+3. Geleneksel Trabzon Ortahisar konutlarına ait kütle ve cephelerin oluşumunu tanımlayan  biçim gramerini oluşturmak.
 
-Bu çalışma kapsamında geleneksel Trabzon Ortahisar evlerinin yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Çalışma kütle ve cephe bazında olup, modeller için plan üretimi yapılmamaktadır. Elde edilen veriler dahilinde yeterli sayıda plan rölövesine ulaşılamadığı için plan üretimi bu çalışma kapsamı dışında tutulmuştur.
+Bu çalışma kapsamında geleneksel Trabzon Ortahisar konutlarının yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Çalışma kütle ve cephe bazında olup, modeller için plan üretimi yapılmamaktadır. Elde edilen veriler dahilinde yeterli sayıda plan rölövesine ulaşılamadığı için plan üretimi bu çalışma kapsamı dışında tutulmuştur.
 
 Üretilen taslak modeller birbirinden bağımsız olarak türetilmektedir ve sokak dokusu üzerine bir çalışma yapılmamıştır. Parsel ile olan ilişkiler ve sokak-komşuluk ünitesi oluşumu için gerekli araştırmalar yapılarak bu çalışmanın üzerine ek olarak geliştirilebilir. <!-- Sokak kütle arasındaki oransal ilişkiler de bu sayede algılanmış olacaktır. -->
 
@@ -73,9 +73,9 @@ Özbek bu çalışmasında analiz ettiği geleneksel Mardin evlerinin biçim gr
 
 ## Çalışmanın Yöntemi
 
-Çalışmada Ortahisar konutlarının CGA grameri kodlaması ve tasarım altlıklarının parametrik olarak üretilmesi amaçlanmaktadır. CGA grameri bir split gramer türevidir ve yordamsal modelleme tekniğinde kullanılan araçlardan biridir. Yordamsal modelleme ile otomatik model üretilebilmesinin yanında kullanıcının üretim sürecinde kısıtları seçebildiği yarı otomatik bir sürece de olanak vermektedir.
+Çalışmada geleneksel Ortahisar konutlarının CGA grameri kodlaması ve tasarım altlıklarının parametrik olarak üretilmesi amaçlanmaktadır. CGA grameri bir split gramer türevidir ve yordamsal modelleme tekniğinde kullanılan araçlardan biridir. Yordamsal modelleme ile otomatik model üretilebilmesinin yanında kullanıcının üretim sürecinde kısıtları seçebildiği yarı otomatik bir sürece de olanak vermektedir.
 
-CGA grameri kodlanmadan önce Ortahisar konutlarının tipolojik tasarım analizi ve sentezi için öncelikle biçim gramerleri bir araştırma aracı olarak kullanılmıştır. Bu sayede konutların tipik özellikleri kurallar yardımıyla açıklanmıştır ve taslak üretmek için zemin hazırlanmıştır. 
+CGA grameri kodlanmadan önce geleneksel Ortahisar konutlarının tipolojik tasarım analizi ve sentezi için öncelikle biçim gramerleri bir araştırma aracı olarak kullanılmıştır. Bu sayede konutların tipik özellikleri kurallar yardımıyla açıklanmıştır ve taslak üretmek için zemin hazırlanmıştır. 
 
 Çalışma süreci iki kademeli olarak işlemektedir;
 
@@ -83,7 +83,7 @@ CGA grameri kodlanmadan önce Ortahisar konutlarının tipolojik tasarım analiz
 
    Çalışmanın ilk bölümünde analiz-sentez yöntemi kullanılmıştır ve ikinci aşama için gerekli olan biçim grameri verileri hazırlanmış olacaktır.
 
-   * Trabzon Ortahisar geleneksel konutlarına ait verilerin toplanması:
+   * Geleneksel Trabzon Ortahisar konutlarına ait verilerin toplanması:
       Çalışma için gerekli olan Trabzon geleneksel evlerine ait veriler akademik ve profesyonel çalışmalardan toplanmıştır. Temel Kaynaklar;
 
        - Trabzon Kültür ve Tabiat Varlıklarını Koruma Bölge Kurulu Müdürlüğü Arşivi
@@ -110,7 +110,7 @@ CGA grameri kodlanmadan önce Ortahisar konutlarının tipolojik tasarım analiz
 
 2. CGA gramer kodunun oluşturulması
 
-   İkinci bölümde Ortahisar evleri için hazırlanan biçim grameri kuralları üzerinden CGA grameri kodlaması yapılmıştır. Üretilen kod ESRI firmasına ait CityEngine yazılımı üzerinde çalıştırılmaktadır.
+   İkinci bölümde geleneksel Ortahisar konutları için hazırlanan biçim grameri kuralları üzerinden CGA grameri kodlaması yapılmıştır. Üretilen kod ESRI firmasına ait CityEngine yazılımı üzerinde çalıştırılmaktadır.
 
 Çalışmanın temelini oluşturan veriler Trabzon Büyükşehir Belediyesi ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden toplanan rölövelerden elde edilmiştir. Elde edilen rölöveler geleneksel yöntemlerdeki gibi çizimler üzerinden incelenerek ve ölçülerek yapı tektoniği hakkında bilgi edinilmiş ve gerekli sayısal değerler tablolara dökülmüştür. Veriler ve işlenişi ile ilgili bilgi yapılan çalışmalar kısmında daha detaylı anlatılmıştır.
 
