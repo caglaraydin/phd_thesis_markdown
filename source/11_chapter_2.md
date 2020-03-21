@@ -82,7 +82,9 @@ Set grameri üretim kurallarını görsel işlem yerine etiketli biçimler üzer
 
 ### CGA Biçim Grameri
 
-Split gramerler Müller vd. [-@Muller:2006fy] tarafından geliştirilerek CGA gramerleri olarak adlandırılmıştır. Geliştirilen bu yöntemde katı kütle modelleme sistemi ve farklı olarak tanımlanmış birçok modelleme kuralının yanında cephe üretimi zor olan karmaşık kütleler içinde eklentiler bulunmaktadır. <!-- Bununla beraber çatı üretimi ve yönlenmiş kütleler için cephe üretimini de olanaklı hale getirmiştir. --> CGA gramer yöntemi çokgen ile belirlenmiş bir parsel hattını yükseltip katlara bölünmüş bir hacim oluşturarak işleme başlamaktadır. Katların cepheleri biçim kuralları kullanılarak duvar, kapı, pencere gibi bölümlere bölünmektedir. Koşullu ya da tahmini kurallar, biçim parametreleri, rastgele numara üretimi bu yöntem içerisinde çeşitlilik oluşturmak için kullanılmaktadır. CGA bir biçim grameri olması ile beraber aynı zamanda bir programlama dilidir. Örnek bir CGA biçim kuralı aşağıdaki gibi yazılmaktadır.
+Split gramer Müller vd. [-@Muller:2006fy] tarafından ETH Zurich Computer Vision Laboratory'de geliştirilerek CGA grameri olarak adlandırılmıştır ve CityEngine yazılımı olarak ticarileştirilmiştir. CityEngine yazılımı üç boyutlu kentsel sanal ortamların üretiminde özelleşmiştir ve kentsel tasarım, mimarlık, arkeoloji, kültürel miras, oyun, görselleştirme, eğlence ve coğrafi bilgi sistemi gibi alanlarda kullanılmaktadır. Yazılım katı kütle modelleme sistemi ve farklı olarak tanımlanmış birçok modelleme kuralının yanında cephe üretimi zor olan karmaşık kütleler için de eklentiler bulundurmaktadır. <!-- Bununla beraber çatı üretimi ve yönlenmiş kütleler için cephe üretimini de olanaklı hale getirmiştir. --> 
+
+CGA gramer yöntemi çokgen ile belirlenmiş bir parsel hattını yükseltip katlara bölünmüş bir hacim oluşturarak işleme başlamaktadır. Katların cepheleri biçim kuralları kullanılarak duvar, kapı, pencere gibi bölümlere bölünmektedir. Koşullu ya da tahmini kurallar, biçim parametreleri, rastgele numara üretimi bu yöntem içerisinde çeşitlilik oluşturmak için kullanılmaktadır. CGA bir biçim grameri olması ile beraber aynı zamanda bir programlama dilidir. Örnek bir CGA biçim kuralı aşağıdaki gibi yazılmaktadır.
 
 ```CGA
 başlangıçŞekli -->
@@ -294,6 +296,7 @@ Mimari tasarımda bilgisayarın rolü iki kategoride açıklamak mümkündür. �
 Geleneksel Türk Evleri (Karaman, 2004) Klasik Osmanlı Camileri için Kütle Grameri (Sharon Sung ve Tseng, 2016) Türkiye'den örnekler (Özkaraduman, 2007) (Torus, 2008) (Güzelci, 2012) (Karabağ, 2010)
 
 -->
+\newpage
 
 ## Alan Çalışması
 
@@ -362,13 +365,11 @@ Ortahisar'da bulunan geleneksel konutlar yaklaşık bir asır öncesine dayanan 
 * Parsel sınırları içinde yönlere ve kullanışlara göre bir veya iki kenarı parsel sınırına ya da komşu binaya dayanarak geliştirilmiş konut grubu
 şeklinde bir araya gelmişlerdir. <!-- Liste paraphrase edilmeli -->
 
-<!-- TODO: BURAYA FOTOĞRAF EKLENMELİ KONUT ÖZELLİKLERİ İLE İLGİLİ-->
+Geleneksel Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur [@Birlik:1999ux] (Şekil \ref{icsofali}, Şekil \ref{dissofali}).
 
-Geleneksel Ortahisar konutları plan şeması olarak karnıyarık diye adlandırılan iç sofalı düzenlemeye sahiptirler. Az sayıda da olsa dış sofalı plan şeması örnekleri de bölgede bulunmaktadır. İç sofalı plana sahip evlerde çıkmalı ve çıkmasız olarak örnekleri varken, dış sofalı konutlarda açık ve kapalı olma durumları söz konusudur [@Birlik:1999ux].
+![Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri [@Ozen:2009wo]. \label{icsofali}](source/figures/SofaliPlanlar.jpg){width=100%}
 
-![Çıkmalı ve çıkmasız iç sofa örnekleri olarak Nilay Soley ve Resul Özerk evleri [@Ozen:2009wo].](source/figures/SofaliPlanlar.jpg){width=100%}
-
-![Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri [@Kuloglu:1994uy].](source/figures/disSofaliPlanlar.jpg){width=100%}
+![Açık ve kapalı dış sofa örnekleri olarak Bekir Gerçek ve Salih Türkmen evleri [@Kuloglu:1994uy]. \label{dissofali}](source/figures/disSofaliPlanlar.jpg){width=100%}
 
 <!--
 Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın geçtiği üst katı da sofa etrafında yer almış odalardan meydana gelen bu eski evlerin Rumlar zamanında yapılmış olanlarının taş, Osmanlılar devrinde yapılmış olanlarının da zemin katı taş ve üst katı ahşap karkas-dolgu sisteminde üretilmiş
@@ -377,7 +378,7 @@ Zemin katı taşlık, kiler, mutfak gibi yardımcı elemanlardan, esas hayatın 
 
 Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre bazı özelliklerinde farklılıklar göstermektedir. Ancak Fallmerayer [-@Fallmerayer:2011vq] geleneksel Ortahisar konutları için Bizans'a bağlı Komnenos Hanedanlığı döneminden itibaren mimari üslup bakımından değişime uğramadığını hatta ölçü ve yönlenme gibi özelliklerinin de değişmediğini belirtmektedir. Yapı stoğu incelendiğinde bölgede Rum dönemi, Osmanlı dönemi, Cumhuriyet sonrası dönem olmak üzere üç döneme ait yapılara rastlanmaktadır. Rum ve Osmanlı dönemi yapıları birbirlerinden yapı malzemesi kullanımında ayrışmaktadır. Rum dönemi yapıların inşaasında yapı malzemesi olarak genellikle taş kullanılırken Osmanlı dönemi yapılarında ağırlıklı olarak ahşap kullanılmıştır. Osmanlı dönemi ve önceki dönemlerin benzer özellikleri;
 
-![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
+\newpage
 
 * Cephe;
     * Yapı cepheleri genel olarak yatayda ve düşeyde simetriktir,
@@ -393,6 +394,8 @@ Geleneksel dokuda ve çevresinde bulunan mimari örnekler yapım dönemine göre
     * Dikdörtgen formda ve düşey hatlıdırlar,
     * Sokak cephesinde diğer cephelere göre daha çok pencere bulunmaktadır.
 
+![Geleneksel konut cephesi örnekleri. Solda İsmail Taşkın evi sağda Mustafa Saltoğlu evi [@Ozen:2009wo].](source/figures/KonutCepheleri.jpg){width=100%}
+
 ![Geleneksel konut cephesi örnekleri. Solda 110 ada 23 parseldeki bina sağda 110 ada 41 parseldeki bina. Trabzon Büyükşehir Belediyesi arşivelerinden alınmıştır.](source/figures/KonutCepheleri2.jpg){width=100%}
 
 Cumhuriyet sonrası dönem yapıları kargir-yığma ve betonarme olarak inşaa edilmişlerdir [@Kuloglu:1994uy]. Osmanlı dönemi sonrası yapılan bu yapılar hızlı gelişen ekonomik, sosyal, teknolojik ve kültürel değişimlerin sonucu olarak geleneksel dokuya uyum sağlayamamıştır.
@@ -406,13 +409,15 @@ Geleneksel Ortahisar konutlarına ait bilgiler rölövelerden, akademik çalış
 
 Çalışma alanı içerisinde 73 adet tescilli yapı bulunmaktadır. Bunlardan 25 adet tescilli yapının rölöveleri Trabzon Büyükşehir Belediyesi arşivlerinden ve Trabzon Rölöve ve Anıtlar Müdürlüğü arşivlerinden elde edilen veriler bir araya getirilerek derlenmiştir. Ortahisar bölgesindeki tescilli yapılar ve rölövelerine ulaşılabilen tescilli yapılar şekil \ref{ortahisartescilli}'da gösterilmiştir. Arka planı koyu renkli olan yapılar rölövelerine ulaşılabilenleri ifade etmektedir.
 
-![Ortahisar bölgesi tescilli yapılarını gösteren vaziyet planı. \label{ortahisartescilli}](source/figures/vaziyetplanitescilli.pdf){width=100%}
-
 Trabzon Büyükşehir Belediyesi arşivlerinden Trabzon Büyükşehir Belediyesi ve Bimtaş A.Ş. tarafından 2012 yılında Ortahisar'da LIDAR teknolojisi kullanılarak yapılan çalışmadan bölgenin sokak silüetleri elde edilmiştir. Sokak silüetlerinden bazı yapıların sadece tek cepheleri elde edilebilmiş ve geri kalan cephelerinin rölövelerine ulaşılamamıştır. Bir kısmı ise tescilli olmasına rağmen geleneksel dokuyu yansıtmadığından dolayı çalışmaya katılmamıştır.
 
-![Grameri oluşturan yapı tiplerinin örneklem kümesi. \label{orneklemkumesi}](source/figures/Corpus.pdf){width=100%}
+![Ortahisar bölgesi tescilli yapılarını gösteren vaziyet planı. \label{ortahisartescilli}](source/figures/vaziyetplanitescilli.pdf){width=100%}
+
+\newpage
 
 Çalışma kapsamında incelenen 15 adet yapı 19. yüzyılın ikinci yarısı ve 20. yüzyılın ilk çeyreği arasındaki dönemde yapılmıştırlar. Bunlar arasından 118 ada 1 parsel ve 128 ada 10 parselde bulunan konutlar yakın tarihte betonarme olarak yeniden inşa edilmiş yapılardır.
+
+![Grameri oluşturan yapı tiplerinin örneklem kümesi. \label{orneklemkumesi}](source/figures/Corpus.pdf){width=100%}
 
 Örneklem kümesindeki yapılar şekil \ref{orneklemkumesi}'de yapı tipine göre sınıflandırılarak gösterilmiştir. Yapılar ilk olarak cephe tipine göre bir parçalı ve üç parçalı cepheye sahip olarak ikiye ayrılmaktadır. Yapıların bir parçalı ve üç parçalı cepheye göre sınıflandırılması ön ve arka cephelerindeki pencere dizilimi ve kapalı veya açık çıkmasına bağlı olarak gerçekleşmektedir. Ardından yapılar kat sayısına, çıkma tipine, giriş katlarına göre şekil içerisinde gruplandırılmıştır. Açık tonda taramalar yapıların giriş katlarını ifade etmektedir.
 
