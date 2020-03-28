@@ -11,19 +11,21 @@ Yordamsal modelleme kural tabanlı otomatik veya yarı otomatik içerik üretmey
 
 Yordamsal modeller bir binanın tasarım stilini veya kültürel bir dönemin tasarım ve yapım bilgilerini kodlamak için kullanılabilmektedirler. En önemli avantajlarından birisi tekil bir yapının detaylı şekilde rekonstrüksiyonunu yapabilmesidir. Bunun yanında aynı tasarım ve yapım kurallarını paylaşan çok sayıda benzer modelleri üretebilmektedir. Yordamsal modellerin üretiminde Lindenmayer sistemi, fraktal, split gramer, biçim grameri gibi birçok üretken sistem kullanılmaktadır. Yordamsal modelleme ile bina modellerinin oluşturulmasında özellikle yordamsal cephe üretimi kullanılmaktadır. Model üretimi iki boyutlu parsel hattının girdi olarak sisteme tanıtılması ile başlamaktadır.
 
-Yordamsal modelleme tekniğinin bir diğer avantajı ise modellenen bina veya obje hakkında uzman düzeyde bilgiye sahip olunmasını sağlamaktadır. Mimaride kullanılan yapı tiplerine ait sınıflandırma şemalarının ve tablolarının kod içine aktarımı gerekmektedir. Bu da günümüz kentlerinde o veya bu şekilde kaybettiğimiz geleneksel yapıların kurallarının elde edilip, kayıt altına alınmasını sağlamaktadır. Koruma anlamında sunduğu olanağın yanında geleneksel doku içinde tasarım yaparken temel olarak alınacak verileri de sağlamış olmaktadır. Kuşkusuz ki bu yöntem klasik yöntemlere göre geleneksel yapı karakteri üzerine daha fazla bilgi sunmaktadır.
+Yordamsal modelleme tekniğinin bir diğer avantajı ise modellenen bina veya obje hakkında uzman düzeyde bilgiye sahip olunmasını sağlamaktadır. Mimaride kullanılan yapı tiplerine ait sınıflandırma şemalarının ve tablolarının kod içine aktarımı gerekmektedir. Bir başka deyişle incelenen mimari yapı stoğu için bir ontoloji çalışmasının yapılması gerekmektedir. Ontoloji belirli bir alanın nesnelerini, süreçlerini, niteliklerini ve bunlara karşılık gelen ilişkileri içeren oldukça yapılandırılmış bir kavramlar sistemidir [@Li:2008by]. Ontolojiler, bilgiyi temsil etmenin yanı sıra bilgi alışverişi için de gereklidir [@Obitko:2004wq]. Bir ontoloji iyi tanımlanmış bir terminoloji sisteminin semantik yapısını açıklamak için bir araç olarak kullanılabilir [@Lee:2009cm]. Chandrasegaran vd. [-@Chandrasegaran:2013gl] ontolojilerin semantik işlerliği kolaylaştırmasının yanı sıra tasarım bilgisini kodlamak için gerekli olduğunu belirtmektedir.
 
-Yordamsal modeller semantik bir yapıya sahiptirler ve bu özellikleri ile simülasyon ve planlama için geleneksel modellere göre daha uygundurlar. Günümüz kentsel yenileme ve kentsel canlandırma projelerinde kullanımları da birçok varyasyona ve analiz olanağına kısa sürede imkân sağlamaktadır. Aynı şekilde tekil birimler içinde çeşitli öneriler sunması bu önerilerin yeni tasarım yorumları için altlık oluşturmaktadır.
+Yordamsal modeller de semantik bir yapıya sahiptirler ve bu özellikleri ile simülasyon ve planlama için geleneksel modellere göre daha uygundurlar. Günümüz kentsel yenileme ve kentsel canlandırma projelerinde kullanımları da birçok varyasyona ve analiz olanağına kısa sürede imkân sağlamaktadır. Aynı şekilde tekil birimler içinde çeşitli öneriler sunması bu önerilerin yeni tasarım yorumları için altlık oluşturmaktadır.
 
 Bu bağlamda gün geçtikçe sayıları azalan geleneksel Trabzon Ortahisar  konutları örnek çalışma alanı olarak incelenecektir. Ortahisar Mahallesi Trabzon'un tarihi kent çekirdeğinin biçimlendiği bölgeyi ihtiva etmektedir. Kentin geleneksel mimari karakterini barındıran bölge kent kimliği ve kültürel mirası açısından önem arz etmektedir.
 
-Bu çalışma geleneksel Trabzon Ortahisar konutlarının bir split gramer türevi olan CGA (Computer Generated Architecture) gramerinin oluşturulması ve parametrik olarak üretilmesini amaçlamaktadır. Trabzon kenti içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturmaktadır. Bu veriler üzerinden çalışmanın ilk bölümü için analiz-sentez yöntemi kullanılacaktır. İkinci aşama için biçim gramerleri hazırlanacaktır. Hazırlanan biçim gramerleri üzerinden CGA biçim grameri bilgisayar ortamında kodlanacaktır.
+Bu çalışma geleneksel Trabzon Ortahisar konutlarının bir split gramer türevi olan CGA (Computer Generated Architecture) gramerinin oluşturulması ve parametrik olarak üretilmesini amaçlamaktadır. Trabzon kenti içinde bulunan geleneksel konutlar üzerinde yapılmış rölöve çalışmaları ve akademik çalışmalar proje için gerekli ana veriyi oluşturmaktadır. Bu veriler üzerinden çalışmanın ilk bölümü için analiz-sentez yöntemi kullanılarak bir ontoloji çalışması yapılacaktır. Bu ontoloji çalışması ile biçim grameri ikinci aşama için hazırlanacaktır. Hazırlanan biçim gramerleri üzerinden CGA biçim grameri bilgisayar ortamında kodlanacaktır.
 
 <!-- Bunun için mimarların aktif olarak kullandığı ve tanıdığı Rhinoceros programı üzerinde çalışan Grasshopper platform olarak seçilmiştir. Grasshopper için yazılmış birçok eklenti bulunmaktadır ve model üzerinde interaktif olarak analiz yapma olanağı sunmaktadır. Bunun yanında gelişmeye açık bir platform olması da tercih sebebidir. Bu kapsamda Grasshopper üzerinde C\# programlama dili üzerinden geliştirilecek kodlar ile Trabzon evlerinin kurallarını içeren bir eklenti geliştirilecektir. -->
 
 ## Amaç ve Kapsam
 
 Önerilen çalışma yordamsal modelleme yöntemi kullanılarak geleneksel Trabzon Ortahisar konutlarının CGA grameri kodlamasını ve tasarım altlığı olarak sunulacak modellerin parametrik olarak üretilmesini amaçlamaktadır.
+
+\newpage
 
 Hedefler;
 
@@ -37,9 +39,9 @@ Hedefler;
 
 2. Üretilecek modellerin varyasyonlarını yeni tasarımlar için altlık olarak sunmak.
 
-3. Geleneksel Trabzon Ortahisar konutlarına ait kütle ve cephelerin oluşumunu tanımlayan  biçim gramerini oluşturmak.
+3. Geleneksel Trabzon Ortahisar konutlarına ait kütle ve cephelerin oluşumunu tanımlayan biçim gramerini oluşturmak.
 
-Bu çalışma kapsamında geleneksel Trabzon Ortahisar konutlarının yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Çalışma kütle ve cephe bazında olup, modeller için plan üretimi yapılmamaktadır. Elde edilen veriler dahilinde yeterli sayıda plan rölövesine ulaşılamadığı için plan üretimi bu çalışma kapsamı dışında tutulmuştur.
+Bu çalışma kapsamında geleneksel Trabzon Ortahisar konutlarının yordamsal modelleme için kural gruplarının çıkarılması ve modellerinin üretilmesi yer almaktadır. Yapılan ontoloji çalışması kütle ve cephe bazında olup, modeller için plan üretimi yapılmamaktadır. Elde edilen veriler dahilinde yeterli sayıda plan rölövesine ulaşılamadığı için plan üretimi bu çalışma kapsamı dışında tutulmuştur.
 
 Üretilen taslak modeller birbirinden bağımsız olarak türetilmektedir ve sokak dokusu üzerine bir çalışma yapılmamıştır. Parsel ile olan ilişkiler ve sokak-komşuluk ünitesi oluşumu için gerekli araştırmalar yapılarak bu çalışmanın üzerine ek olarak geliştirilebilir. <!-- Sokak kütle arasındaki oransal ilişkiler de bu sayede algılanmış olacaktır. -->
 
@@ -55,11 +57,11 @@ Bu çalışmada da aynı hedefler göz önünde bulundurularak yeni yapılaşmal
 
 <!--
 
-Çolakoğlu, Birgül, “An Informal Shape Grammars for Interpolations of Traditional Bosnian Hayat Houses in a Contemporary Context”, paper presented in Generative Art Conference, December 11- 14, 2002, Milano Polytechnic University. (Generative Art, http://www.generativeart.com/on/cic/papersGA2002/15.pdf, last visited on October 2010) Furthermore, information on her and colleagues’ studies on traditional Mardin tissue and new building design through utilization of shape grammar are available online on Yıldız Teknik Universitesi, http://www.bot.yildiz.edu.tr/_sites/mardin/index.htm, last visited on October 2010. 
+Çolakoğlu, Birgül, "An Informal Shape Grammars for Interpolations of Traditional Bosnian Hayat Houses in a Contemporary Context", paper presented in Generative Art Conference, December 11- 14, 2002, Milano Polytechnic University. (Generative Art, http://www.generativeart.com/on/cic/papersGA2002/15.pdf, last visited on October 2010) Furthermore, information on her and colleagues' studies on traditional Mardin tissue and new building design through utilization of shape grammar are available online on Yıldız Teknik Universitesi, http://www.bot.yildiz.edu.tr/_sites/mardin/index.htm, last visited on October 2010. 
 
 Yöresel anlamda bugüne kadar yapılan çalışmalarda neler var?
 Sivrihisar geleneksel ve yeni kent dokusunun analizi
-Öz Sivrihisar’daki geleneksel ve yeni kent dokusu içinde kamusal, yarı kamusal ve özel alan bağlamında kent kurgusunu ve kentsel elemanlar arasındaki bağıntı ve odakları tespit etmek için biçim grameri ile analiz yapmıştır.
+Öz Sivrihisar'daki geleneksel ve yeni kent dokusu içinde kamusal, yarı kamusal ve özel alan bağlamında kent kurgusunu ve kentsel elemanlar arasındaki bağıntı ve odakları tespit etmek için biçim grameri ile analiz yapmıştır.
 Geleneksel Sille Evleri
 Erkış Sille yerleşkesinin konutlarının tipolojilerini çıkarmak üzere biçim grameri metodu kullanılmıştır. Bu yöntem ile belirli algoritmik düzene sahip olan sivil mimarileri analiz ederek kuralları belirlenmiştir.
 Amasya Yalıboyu Evleri
@@ -67,7 +69,7 @@ Güzelci bu çalışmasında Amasya Yalıboyu evlerinin biçim gramer strüktü
 Bodrum Geleneksel ve Güncel Konutlarının Analizi
 Karakoyun Bodrum üzerine yaptığı çalışmasında 8 adet tescilli yapının tipolojik ve geometrik analizini yaparak elde ettiği bilgiler üzerinden oluşturduğu biçim grameri kuralları ile güncel konutların geleneksel dokuya uyumunu tespit etmeyi hedeflemiştir.
 Çağdaş̧ Mardin konut yerleşimi
-Özbek bu çalışmasında analiz ettiği geleneksel Mardin evlerinin biçim gramer kurallarını çıkarıp günümüze uyarlayarak Mardin’de çağdaş konut üretimi için alternatif ürünler ortaya koymuştur.
+Özbek bu çalışmasında analiz ettiği geleneksel Mardin evlerinin biçim gramer kurallarını çıkarıp günümüze uyarlayarak Mardin'de çağdaş konut üretimi için alternatif ürünler ortaya koymuştur.
 
 -->
 
@@ -75,7 +77,7 @@ Özbek bu çalışmasında analiz ettiği geleneksel Mardin evlerinin biçim gr
 
 Çalışmada geleneksel Ortahisar konutlarının CGA grameri kodlaması ve tasarım altlıklarının parametrik olarak üretilmesi amaçlanmaktadır. CGA grameri bir split gramer türevidir ve yordamsal modelleme tekniğinde kullanılan araçlardan biridir. Yordamsal modelleme ile otomatik model üretilebilmesinin yanında kullanıcının üretim sürecinde kısıtları seçebildiği yarı otomatik bir sürece de olanak vermektedir.
 
-CGA grameri kodlanmadan önce geleneksel Ortahisar konutlarının tipolojik tasarım analizi ve sentezi için öncelikle biçim gramerleri bir araştırma aracı olarak kullanılmıştır. Bu sayede konutların tipik özellikleri kurallar yardımıyla açıklanmıştır ve taslak üretmek için zemin hazırlanmıştır. 
+CGA grameri kodlanmadan önce geleneksel Ortahisar konutlarının tasarım analizini ve sentezini yapan biçim gramerleri bir araştırma aracı olarak kullanılmıştır. Bu sayede konutların ontolojik özellikleri kurallar yardımıyla açıklanmıştır ve taslak üretmek için zemin hazırlanmıştır. 
 
 Çalışma süreci iki kademeli olarak işlemektedir;
 
