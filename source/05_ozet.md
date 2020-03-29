@@ -34,7 +34,7 @@ Mimarlık Anabilim Dalı
 
 Danışman: Doç. Dr. Serbülent VURAL
 
-2020, 68 Sayfa
+2020, 71 Sayfa
 \end{singlespace}
 
 \end{center}
@@ -43,9 +43,7 @@ Danışman: Doç. Dr. Serbülent VURAL
 
 Kentlerde geleneksel dokuların kimlik kaybı önemli bir problem olarak karşımıza çıkmaktadır. Ayrıca kentlerin geleneksel dokularının bulunduğu bölgelerde yeni yapılaşma yapmak daimi olarak bir tartışma ve araştırma konusu olmuştur. Çalışma Trabzon kentinin geleneksel dokusuna ait karakteristik örnekleri bir arada bulunduran ve kent çekirdeğini oluşturan Ortahisar mahallesini örnek alan belirleyerek, yordamsal modelleme tekniği ile geleneksel konutların CGA gramer kodlamasının yapılmasını ve bu bölgede yapılacak yeni tasarımlar için parametrik tasarım altlıkları üretimini amaçlamaktadır.
 
-Geleneksel Ortahisar konutlarına dair veriler toplanırken en önemli kaynak  Trabzon Büyükşehir Belediyesi ve Anıtlar Müdürlüğü arşivlerindeki konutlara ait rölöveler olmuştur. Bu rölöveler geleneksel yöntemler ile incelenerek ve ölçülerek yapılar hakkında gerekli sayısal değerler tablolara işlenmiştir. Geleneksel konutların tipolojik tasarım dili biçim grameri kullanılarak analiz edilmiş ve gramer kuralları tanımlanmıştır. <!--Tanımlanan biçim grameri kuralları Ortahisar geleneksel konutlarının tipolojik analizine ek olarak sentezi içinde bir tasarım aracı olarak kullanılabilmektedir.-->
-
-Konutların yapı taban alanı, kat sayısı ve yükseklikleri, cephe karakteri, cephe çıkmaları, cephe elemanları ve çatı formu ve eğimi gibi özellikleri tipolojik tasarım dilinin belirleyicileri olduğu bulunmuştur. Bu özellikler dikkate alınarak tasarım elemanları ve onların bir araya geliş kurgularının sentaktik ve biçimsel bilgileri bir set grameri olan CGA grameri ile parametrik olarak tanımlanmıştır. Oluşturulan CGA grameri ile ortaya koyulan sistem konvansiyonel bir tasarım sürecine yardımcı olarak hazırlanmıştır ve tasarımcıya taslak modeller üzerinde interaktif olarak değişiklikler yapabilmeyi olanaklı hale getirmiştir.
+CGA gramerinin kodlanabilmesi için geleneksel Ortahisar konutları üzerine bir ontoloji çalışması yapılarak biçim grameri ile konutlara ait kurallar görsel hale getirilmiştir. Bu kurallara ek olarak rölövelerden elde edilen sayısal veriler tablolara işlenmiştir. Konutların yapı taban alanı, kat sayısı ve yükseklikleri, cephe karakteri, cephe çıkmaları, cephe elemanları ve çatı formu ve eğimi gibi özellikleri tipolojik tasarım dilinin belirleyicileri olduğu bulunmuştur. Bu özellikler dikkate alınarak tasarım elemanları ve onların bir araya geliş kurgularının semantik ve biçimsel bilgileri bir set grameri olan CGA grameri ile parametrik olarak tanımlanmıştır. Oluşturulan CGA grameri ile ortaya koyulan sistem bilgisayarlı ve konvansiyonel tasarım süreçlerine yardımcı olarak hazırlanmıştır ve tasarımcıya taslak modeller üzerinde interaktif olarak değişiklikler yapabilmeyi olanaklı hale getirmiştir.
 
 
 \vspace*{\fill}

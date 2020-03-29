@@ -13,24 +13,34 @@
 - açık çıkmaların derinliğinin kapalı çıkmaların derinliğine oranının %60 olduğu,
 - çatı katının cephedeki genişliğinin bir alt katın cephesinin orta parçasının genişliğine eşit olduğu gözlemlenmiştir.
 
-Bu gramer diğer biçim gramerleri gibi tasarım bilgisini biçim kuralları ile ifade etmektedir. Bir biçim organizasyonunun bir başkasından nasıl türetileceğini açıklamaktadır. Bu sayede geleneksel Ortahisar konutlarının kütlesel tasarım sürecini izah etmektedir. Tasarım elemanlarının ve onların bir araya geliş kurgularının sentaktik ve biçimsel bilgileri bir set grameri olan CGA grameri ile parametrik olarak tanımlanmıştır. Bu parametreler CityEngine ekranında bir panelde düzenlenerek, kısıtların interaktif olarak tercihler çerçevesinde değiştirilebilmesine olanak verilmiştir (Şekil \ref{CGAPanel}).
+Üretilen gramer diğer biçim gramerleri gibi tasarım bilgisini biçim kuralları ile ifade etmektedir. Bir biçim organizasyonunun bir başkasından nasıl türetileceğini açıklamaktadır ve geleneksel Ortahisar konutlarının kütlesel tasarım sürecini izah etmektedir. 
 
-Hazırlanan gramer geleneksel Ortahisar konutlarının cephe ve cephe elemanları organizasyonu hakkında bilgi sunmaktadır. İncelenen yapılardan elde edilen bu  bilgiler ışığında CGA grameri ile üretilen ve Ortahisar tipolojisini yansıtan üç boyutlu modeller yeni tasarımlar için altlık olarak kullanılabilir (Şekil \ref{Eskimodel} ve \ref{Yenimodel}).
+\newpage
 
-Özellikle Ortahisar bölgesinin geleneksel dokusunu korumak amacıyla bu bölgede yapılacak yeni yapılar için ilgili belediye tarafından alternatif tasarım altlıkların üretilebileceği bir araç olarak işleyecektir. Bu bölgede tasarım yapacak tasarım ofisleri ve mimarlar için gerekli oran ve kompozisyon bilgilerini sunan bir kaynak görevi görecektir. Gramerin sağladığı tasarım diline ait kompozisyonsal yönleri, geleneksel Ortahisar konutları üzerine çalışacak öğrencilerin keşfetmesinde yardımcı olacaktır. Bütün biçim gramerleri gibi tasarımların geliştirilmesinde ve elde edilen bilgilerin gelecek tasarımlara aktarılmasına yardımcı olacaktır. CityEngine üzerinde gramerin kullanımı için gerekli beceri seti bir oturum alanı çizilmesi ve alternatif üret tuşuna basılmasından ibaret olup, herkes tarafından kullanılabilecek düzeydedir. Bu anlamda ortaya koyulan sistem konvansiyonel bir çalışma yöntemine de yardımcı olarak hazırlanmıştır.
+Tasarım elemanlarının ve onların bir araya geliş kurgularının semantik ve biçimsel bilgileri bir set grameri olan CGA grameri ile CityEngine yazılımı üzerinde parametrik olarak tanımlanmıştır. Bu parametreler yazılım içinde bir panelde düzenlenerek, kısıtların interaktif olarak tercihler çerçevesinde değiştirilebilmesine olanak verilmiştir (Şekil \ref{CGAPanel}). Tasarım sürecinde kısıtlar üzerinde yapılacak değişikliklerle kütle ve cephe nitelikleri ile ilgili görsel ve sayısal geri bildirimler sayesinde farklı fikirler arasında geçiş ve yorumlamaya olanak sağlanmaktadır. Böylece tasarım düşünme sürecinde tasarımcının görsel ve emsal tabanlı muhakeme süreçleri üretilen taslak modeller ve sayısal veriler sayesinde desteklenmektedir.
 
-CGA grameri içinde tanımlı kurallar üç boyutlu cephe karakteristikleri üzerine uygulanmıştır. İncelenen ve rölövelerine ulaşılamayan geleneksel Ortahisar konutlarının cephe özelliklerine ek olarak plan şemaları içinde kural gruplarının oluşturulması yeni çalışmalarda hedeflenebilir. Bu sayede iç mekanların kullanım amacına, mekanların birbirleriyle olan orantılarına, aydınlanma ve sirkülasyon gibi özelliklerine ait bilgiler de gramer içine dahil edilebilir. 
+Sunulan yöntemde tasarımcının karar verme süreci gerçek zamanlı veri toplama ve üç boyutlu taslak modeller ile desteklenmektedir. Tercihler çerçevesinde üretilen taslak modeller tasarımcı tarafından kullanılan bir bilgisayar destekli tasarım programı veya üç boyutlu modelleme yazılımına uygun dosya formatı ile aktarılabilmektedir. İstenilen yazılıma aktarılan taslak modeller tasarım altlığı olarak ele alınıp tasarımcı tarafından geliştirilebilir. Bir önceki bölümde gösterilen örnek model çalışmaları da CityEngine yazılımından 3ds Max yazılımına FBX dosya formatı kullanılarak aktarılmıştır (Şekil \ref{Yenimodel}). Taslak modelden elde edilen sayısal veriler tasarımcı tarafından geleneksel çalışma yönteminde kullanılmak üzere de ele alınabilir.
+
+Önerilen bu tasarımı destekleyici yöntem tasarımcılar açısından kullanımı kolaydır ve etkileşim kurmak için temel bilgisayar bilgisi yeterlidir. Tasarımcıya alternatif üretme ve değerlendirme kolaylığı sunmaktadır. Tasarım süreci için hem görsel hem de sayısal veriler sunmaktadır. Ayrıca bilgisayarlı ve geleneksel tasarım yöntemlerinin ikisinde de sürece katılabilmektedir. 
+
+Önerilen yöntemde kullanılan CityEngine yazılımı bazı durumlarda kısıtlayıcı olmaktadır. İlk olarak model üretimi hususunda melez çatı formları yazılımın güncel hali ile olanaklı değildir. Biçim gramerleri ile açıklanan kurallar yazılımın bazı teknik kısıtlarından dolayı CGA biçim grameri içinde farklı kodlanarak aynı sonuçlara ulaşılmıştır. Bir diğer yandan yazılımın ticari lisanslı oluşu ulaşılabilecek tasarımcı kitlesini sınırlı kılmaktadır. 
+
+Bu çalışma yöntemi tasarım altlıkları üretmesini ek olarak dört ayrı yönde geliştirilebilir. Bunlardan birincisi geleneksel Ortahisar konutlarının tasarım diline ait kompozisyonsal yönleri hakkında mimarlık eğitiminde bir araç olarak kullanılabilir. İkinci olarak Ortahisar bölgesinin geleneksel dokusunu korumak amacıyla bu bölgede yapılacak yeni yapılar için görsel ve sayısal veriler doğrultusunda bir denetim aracı olarak kullanılabilir. Birden çok modeli aynı anda üretebilme özelliği ile beraber kentsel dönüşüm süreçlerinde kullanılabilir. Bunlara ek olarak Geleneksel Ortahisar konutlarının tahrip olmadan önceki haline dair muhtemel karakteristik özelliklerini üretebilmek için kullanılabilir.
+
+CGA grameri içindeki kurallar üç boyutlu kütle ve cephe karakteristiklerini tanımlamaktadır. Ontoloji çalışmasına katılan örneklem kümesinin genişletilmesi ve örneklerin plan şemalarının çalışmaya dahil edilmesi daha fazla bilgi ve kural tanımlamayı olanaklı kılacaktır. Örneklerin plan şeması analizleriyle iç mekanların kullanım amacına, mekanların birbirleriyle olan orantılarına, aydınlanma ve sirkülasyon gibi özelliklerine ait bilgiler de gramer içine dahil edilebilir.
 
 <!-- Nasıl, hangi süreçler sonucunda, kim tarafından, yönetmeliklerden mi alınır. Hangi süreçler yapılırsa sağlıklı olur. Sen ontolojiyi yaparken ne süreçte bıraktın. Bu detaylı bilgiler nereden alınır. -->
 
-CGA grameri aynı anda bir çok model üretimine olanak sağladığından dolayı mahalle veya kentsel dönüşüm ölçekleri içinde alternatif üretmesi açısından kullanılabilir. Ancak bu çalışmada sokak dokusu ve komşuluk ilişkileri ele alınamamıştır. Bu imkanı sağlaması için gramer içerisine yapıların birbirleriyle olan konumlanma, yönlenme vb. ilişkileri analiz edilip entegre edilmesi gerekmektedir. Ayrıca pencere-kapı söveleri, malzeme dokuları, ince detaylar vb. özellikler CGA gramerine dahil edilip tahrip olmuş geleneksel Ortahisar konutlarının tahrip olmadan önceki haline dair muhtemel karakteristik özelliklerini üretebilmek mümkün olacaktır.
+CGA grameri aynı anda bir çok model üretimine olanak sağladığından dolayı mahalle veya kentsel dönüşüm ölçekleri için alternatif üretmesi açısından kullanılabilir. Ancak bu çalışmada sokak dokusu ve komşuluk ilişkileri ele alınamamıştır. Bölgenin bu anlamda çalışılıp analizinin yapılması ile gramer içerisine yapıların birbirleriyle olan konumlanma, yönlenme vb. ilişkileri entegre edilebilir. Ayrıca güncel yönetmelikler ve standartların kısıtları gramer içinde tanımlanması durumunda imara uygun modellerin üretimi sağlanacaktır. Birim inşaat maliyetleri sisteme entegre edilerek bu ölçekte yapılacak çalışmalar için tahmini maliyetlerde karar sürecinde yardımcı olacaktır.
+
+<!-- In order to maintain and support such processes, in addition to the geometric formation of housing units, cost estimation and valuation of the existing housing units can be integrated into the model. Cost estimations can be essential to calculate the budget, funds, and approximate timetable, not only for inhabitants but also for governments. More detailed feasibility studies can be generated by adding construction cost and funding opportunities as a parameter to eventually enhance the bottom-up urban planning and design processes.  -->
+
+Ontoloji çalışması kütle ve cephe özellikleri ile sınırlı kalmıştır. Bu çalışma üzerine yukarıda bahsedilen önerilere ek olarak yapılardaki malzeme kullanımı, birleşme detayları, bahçe kullanımı vb. özellikleri de analiz edilip kuralları oluşturularak tahrip olmuş geleneksel Ortahisar konutlarının tahrip olmadan önceki haline dair muhtemel karakteristik özelliklerini üretebilmek mümkün olacaktır.
 
 <!-- Tahrip olmadan korunacak başka özellikler neler olabilir, daha detaylı çalışılacak olsa. Ahşap ustası gelip çalışmış olsa onunda grameri yapılana bütünleşebilse vb. tartışılsa. Ne işe yarar bu doktora diye anlatsan. -->
 
-
-
 <!--
-Nasıl altlık olarak kullanılacak?
++ Nasıl altlık olarak kullanılacak?
 
 Bu alana ne kattın
 Bu araçtan ne öğrendin, bu araç nelerde kullanılıyor
@@ -39,11 +49,11 @@ Bu alanda kullanılırsa nasıl geliştirilebilir
 Geleceğe dair bir takım spekülatif öneriler yapmak gerekiyor.
 Yapılı çevrede kontrol mekanizması olarak kullanılabilir
 
-Ontoloji çalışması olduğu vurgulanmalı. Girişte ve literatürde belirtilmeli. Sonuçlarda ontoloji çalışması tartışılmalı.
++ Ontoloji çalışması olduğu vurgulanmalı. Girişte ve literatürde belirtilmeli. Sonuçlarda ontoloji çalışması tartışılmalı.
 Herkes kim, nasıl süreçler söz konusu, alternatif üret tuşu hangi senaryolarda karşımıza çıkar. Açık olmalı
-CityEngine kısıtlarından bahsedilmeli. Lisanslı olması, Türkiyede satıcısı bulunmuyor herhalde.
++ CityEngine kısıtlarından bahsedilmeli. Lisanslı olması, Türkiyede satıcısı bulunmuyor herhalde.
 
-Altlıklar modern tasarımlara olanak veriyor mu, tasarımcıyı kısıtlıyor mu?
++ Altlıklar modern tasarımlara olanak veriyor mu, tasarımcıyı kısıtlıyor mu?
 Mevcut yazılımlar ile nasıl çalışacak.
 
 
