@@ -49,7 +49,7 @@
           <text variable="container-title" prefix=","/>
         </else>
       </choose>
-      <text variable="publisher" text-decoration="none" prefix=", "/>
+      <text variable="publisher" prefix=", "/>
       <text variable="volume" prefix=", "/>
       <text variable="issue" prefix=", "/>
       <text variable="page" prefix=", "/>
